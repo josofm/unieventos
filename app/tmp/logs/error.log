@@ -8188,3 +8188,228 @@ Request URL: /unieventos/images/left.png
 Stack Trace:
 #0 /var/www/unieventos/app/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
 #1 {main}
+2013-11-14 20:54:18 Error: [MissingControllerException] Controller class Rs-pluginController could not be found.
+Exception Attributes: array (
+  'class' => 'Rs-pluginController',
+  'plugin' => NULL,
+)
+Request URL: /unieventos/rs-plugin/js/jquery.themepunch.revolution.js
+Stack Trace:
+#0 C:\xampp\htdocs\unieventos\app\webroot\index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2013-11-14 20:54:18 Error: [MissingControllerException] Controller class ImagesController could not be found.
+Exception Attributes: array (
+  'class' => 'ImagesController',
+  'plugin' => NULL,
+)
+Request URL: /unieventos/images/thum2.png
+Stack Trace:
+#0 C:\xampp\htdocs\unieventos\app\webroot\index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2013-11-14 20:54:18 Error: [MissingControllerException] Controller class ImagesController could not be found.
+Exception Attributes: array (
+  'class' => 'ImagesController',
+  'plugin' => NULL,
+)
+Request URL: /unieventos/images/thum3.png
+Stack Trace:
+#0 C:\xampp\htdocs\unieventos\app\webroot\index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2013-11-14 20:54:18 Error: [MissingControllerException] Controller class ImagesController could not be found.
+Exception Attributes: array (
+  'class' => 'ImagesController',
+  'plugin' => NULL,
+)
+Request URL: /unieventos/images/footer-logo.png
+Stack Trace:
+#0 C:\xampp\htdocs\unieventos\app\webroot\index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2013-11-14 20:54:18 Error: [MissingControllerException] Controller class Rs-pluginController could not be found.
+Exception Attributes: array (
+  'class' => 'Rs-pluginController',
+  'plugin' => NULL,
+)
+Request URL: /unieventos/rs-plugin/js/jquery.themepunch.plugins.min.js
+Stack Trace:
+#0 C:\xampp\htdocs\unieventos\app\webroot\index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2013-11-14 20:54:18 Error: [MissingControllerException] Controller class ImagesController could not be found.
+Exception Attributes: array (
+  'class' => 'ImagesController',
+  'plugin' => NULL,
+)
+Request URL: /unieventos/images/nav-bg.png
+Stack Trace:
+#0 C:\xampp\htdocs\unieventos\app\webroot\index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2013-11-14 20:54:18 Error: [MissingControllerException] Controller class ImagesController could not be found.
+Exception Attributes: array (
+  'class' => 'ImagesController',
+  'plugin' => NULL,
+)
+Request URL: /unieventos/images/topsap.png
+Stack Trace:
+#0 C:\xampp\htdocs\unieventos\app\webroot\index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2013-11-14 20:54:18 Error: [MissingControllerException] Controller class ImagesController could not be found.
+Exception Attributes: array (
+  'class' => 'ImagesController',
+  'plugin' => NULL,
+)
+Request URL: /unieventos/images/eye.png
+Stack Trace:
+#0 C:\xampp\htdocs\unieventos\app\webroot\index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2013-11-14 20:54:18 Error: [MissingControllerException] Controller class ImagesController could not be found.
+Exception Attributes: array (
+  'class' => 'ImagesController',
+  'plugin' => NULL,
+)
+Request URL: /unieventos/images/nav-sap.png
+Stack Trace:
+#0 C:\xampp\htdocs\unieventos\app\webroot\index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2013-11-14 20:54:18 Error: [MissingControllerException] Controller class ImagesController could not be found.
+Exception Attributes: array (
+  'class' => 'ImagesController',
+  'plugin' => NULL,
+)
+Request URL: /unieventos/images/tiles/bgtile.jpg
+Stack Trace:
+#0 C:\xampp\htdocs\unieventos\app\webroot\index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2013-11-14 20:54:19 Error: [MissingControllerException] Controller class ImagesController could not be found.
+Exception Attributes: array (
+  'class' => 'ImagesController',
+  'plugin' => NULL,
+)
+Request URL: /unieventos/images/title-arrow.jpg
+Stack Trace:
+#0 C:\xampp\htdocs\unieventos\app\webroot\index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2013-11-14 20:54:19 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /unieventos/css/app/webroot/img/tab1hover.png
+Stack Trace:
+#0 C:\xampp\htdocs\unieventos\app\webroot\index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2013-11-14 20:54:19 Error: [MissingControllerException] Controller class ImagesController could not be found.
+Exception Attributes: array (
+  'class' => 'ImagesController',
+  'plugin' => NULL,
+)
+Request URL: /unieventos/images/time.png
+Stack Trace:
+#0 C:\xampp\htdocs\unieventos\app\webroot\index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2013-11-14 20:54:19 Error: [MissingControllerException] Controller class ImagesController could not be found.
+Exception Attributes: array (
+  'class' => 'ImagesController',
+  'plugin' => NULL,
+)
+Request URL: /unieventos/images/talk.png
+Stack Trace:
+#0 C:\xampp\htdocs\unieventos\app\webroot\index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2013-11-14 20:54:19 Error: [MissingControllerException] Controller class ImagesController could not be found.
+Exception Attributes: array (
+  'class' => 'ImagesController',
+  'plugin' => NULL,
+)
+Request URL: /unieventos/images/down-arrow.png
+Stack Trace:
+#0 C:\xampp\htdocs\unieventos\app\webroot\index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2013-11-14 20:54:19 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /unieventos/css/app/webroot/img/tab3.png
+Stack Trace:
+#0 C:\xampp\htdocs\unieventos\app\webroot\index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2013-11-14 20:54:19 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /unieventos/css/app/webroot/img/tab2.png
+Stack Trace:
+#0 C:\xampp\htdocs\unieventos\app\webroot\index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2013-11-14 20:54:19 Error: [MissingControllerException] Controller class ImagesController could not be found.
+Exception Attributes: array (
+  'class' => 'ImagesController',
+  'plugin' => NULL,
+)
+Request URL: /unieventos/images/bottom-errow.png
+Stack Trace:
+#0 C:\xampp\htdocs\unieventos\app\webroot\index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2013-11-14 20:54:19 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /unieventos/css/fonts/philosopher-regular-webfont.woff
+Stack Trace:
+#0 C:\xampp\htdocs\unieventos\app\webroot\index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2013-11-14 20:54:19 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /unieventos/css/fonts/philosopher-regular-webfont.ttf
+Stack Trace:
+#0 C:\xampp\htdocs\unieventos\app\webroot\index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2013-11-14 20:54:20 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /unieventos/css/fonts/philosopher-regular-webfont.svg
+Stack Trace:
+#0 C:\xampp\htdocs\unieventos\app\webroot\index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2013-11-14 20:54:20 Error: [MissingControllerException] Controller class ImagesController could not be found.
+Exception Attributes: array (
+  'class' => 'ImagesController',
+  'plugin' => NULL,
+)
+Request URL: /unieventos/images/right.png
+Stack Trace:
+#0 C:\xampp\htdocs\unieventos\app\webroot\index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2013-11-14 20:54:20 Error: [MissingControllerException] Controller class ImagesController could not be found.
+Exception Attributes: array (
+  'class' => 'ImagesController',
+  'plugin' => NULL,
+)
+Request URL: /unieventos/images/left.png
+Stack Trace:
+#0 C:\xampp\htdocs\unieventos\app\webroot\index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2013-11-14 20:54:21 Error: [MissingControllerException] Controller class ImagesController could not be found.
+Exception Attributes: array (
+  'class' => 'ImagesController',
+  'plugin' => NULL,
+)
+Request URL: /unieventos/images/favicon.jpg
+Stack Trace:
+#0 C:\xampp\htdocs\unieventos\app\webroot\index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2013-11-14 20:54:34 Error: [MissingControllerException] Controller class ImagesController could not be found.
+Exception Attributes: array (
+  'class' => 'ImagesController',
+  'plugin' => NULL,
+)
+Request URL: /unieventos/images/tab2hover.png
+Stack Trace:
+#0 C:\xampp\htdocs\unieventos\app\webroot\index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
