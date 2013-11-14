@@ -253,13 +253,13 @@ ul.newsticker li {float: left; margin-right: 75px !important;}
 #product_tabs > ul > li:hover a.two {background: url("../images/tab2hover.png") center no-repeat}
 #product_tabs > ul > li:hover a.three {background: url("../images/tab3hover.png") center no-repeat}
 
-#product_tabs > ul .ui-state-active a.one {background: url("../images/tab1.png") center no-repeat}
+#product_tabs > ul .ui-state-active a.one {background: url("app/webroot/img/tab1.png") center no-repeat}
 #product_tabs > ul .ui-state-active a.two {background: url("../images/tab2hover.png") center no-repeat}
 #product_tabs > ul .ui-state-active a.three {background: url("../images/tab3hover.png") center no-repeat}
 
-#product_tabs > ul > li a.one {background: url("../images/tab1hover.png") center no-repeat}
-#product_tabs > ul > li a.two {background: url("../images/tab2.png") center no-repeat}
-#product_tabs > ul > li a.three {background: url("../images/tab3.png") center no-repeat}
+#product_tabs > ul > li a.one {background: url("app/webroot/img/tab1hover.png") center no-repeat}
+#product_tabs > ul > li a.two {background: url("app/webroot/img/tab2.png") center no-repeat}
+#product_tabs > ul > li a.three {background: url("app/webroot/img/tab3.png") center no-repeat}
 
 .tab {padding: 15px 15px 0px;; border: 1px solid #e8e8e8; }
 .tab p a { font: 13px 'philosopherregular', sans-serif; color: #8f8f8f; }
