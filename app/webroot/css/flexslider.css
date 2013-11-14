@@ -1,0 +1,51 @@
+/****************************************************************************
+  *-*-*-*FLEX SLIDER*-*-*-*
+****************************************************************************/
+
+.flexslider .slides > li {display: none;} /* Hide the slides before the JS is loaded. Avoids image jumping */
+.flex-pauseplay span {text-transform: capitalize;}
+
+/* Clearfix for the .slides element */
+.slides:after {content: "."; display: block; clear: both; visibility: hidden; line-height: 0; height: 0;}
+html[xmlns] .slides {display: block;}
+* html .slides {height: 1%;}
+
+/* No JavaScript Fallback */
+/* If you are not using another script, such as Modernizr, make sure you
+ * include js that eliminates this class on page load */
+.no-js .slides > li:first-child {display: block;}
+
+
+/* FlexSlider Default Theme
+*********************************/
+.flexslider { margin-bottom:15px;background: #fff; position: relative; -webkit-border-radius: 5px; -moz-border-radius: 5px; -o-border-radius: 5px; border-radius: 5px; zoom: 1;}
+.flexslider .slides {zoom: 1;}
+.flexslider .slides > li {position: relative; overflow: hidden;}
+.flexslider .slides > li a { display: block; line-height: 0px; text-decoration: none; }
+/* Suggested container for "Slide" animation setups. Can replace this with your own, if you wish */
+.flex-container {zoom: 1; position: relative;}
+
+/* Caption style */
+/* IE rgba() hack */
+
+.flex-caption {position: absolute; left: -1px;bottom: -3%;font-size: 14px; line-height: 18px; }
+.flex-caption h3 { display: inline-block; background: rgba(0,0,0,0.8); padding: 20px 20px 15px;; font: 20px 'philosopherregular' sans-serif; color: #ffffff;  }
+.flex-caption h3 span {color: #ff7200;}
+/* Direction Nav */
+.flex-direction-nav  {position: absolute; top: 15px; right: 6px;z-index: 999;width: 53px;}
+.flex-direction-nav li a {width: 12px; height:20px;display: block; float: left; margin-left: 10px; cursor: pointer; text-indent: -9999px; background-position: 0 0;}
+.flex-direction-nav li .next {background:url("../images/left.png") no-repeat;}
+.flex-direction-nav li .prev {background:url("../images/right.png") no-repeat;}
+.flex-direction-nav li .disabled {opacity: .3; filter:alpha(opacity=30); cursor: default;}
+
+/* Control Nav */
+.flex-control-nav { position: absolute; bottom: 25px; right: 22px; z-index: 999;}
+.flex-control-nav li {margin: 0 0 0 5px; display: inline-block; zoom: 1; *display: inline;}
+.flex-control-nav li:first-child {margin: 0;}
+.flex-control-nav li a { -webkit-transition: background-color 1s; -moz-transition: background-color 1s; -o-transition: background-color 1s; -ms-transition: background-color 1s; transition: background-color 1s; font-size: 0px; background: #ffffff; height: 10px; width: 10px;display: block; float: left; margin-left: 5px; }
+.flex-control-nav li a:hover{background: #ff7200;}
+.flex-control-nav li a.active {background: #ff7200;}
+
+.slider-wrapr .buttons { position: absolute; bottom: 15px; left: 50%; margin-left: -40px; z-index: 999; }
+
+

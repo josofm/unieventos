@@ -57,7 +57,7 @@ abstract class CacheEngine {
 			$this->_groupPrefix = str_repeat('%s_', count($this->settings['groups']));
 		}
 		if (!is_numeric($this->settings['duration'])) {
-			$this->settings['duration'] = strtotime($this->settings['duration']) - time();
+			$this->settings['duration'] = strtotime($this->settings['duration']) - time('UTC');
 		}
 		return true;
 	}

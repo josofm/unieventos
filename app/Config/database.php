@@ -65,9 +65,9 @@ class DATABASE_CONFIG {
 		'datasource' => 'Database/Mysql',
 		'persistent' => false,
 		'host' => 'localhost',
-		'login' => 'user',
-		'password' => 'password',
-		'database' => 'database_name',
+		'login' => 'unieventos',
+		'password' => 'uN13v3nt0$',
+		'database' => 'uniEvents',
 		'prefix' => '',
 		//'encoding' => 'utf8',
 	);

@@ -1,0 +1,507 @@
+/*
+	Author: Umair Chaudary @ Pixel Art Inc.
+	Author URI: http://www.pixelartinc.com/
+*/
+
+
+
+/****************************************************************************
+CSS RESET
+****************************************************************************/
+
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address,
+big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl,
+dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas,
+details, embed,  figure, figcaption, footer, header, hgroup,  menu, nav, output, ruby, section, summary, time, mark, audio,
+video {	margin: 0; 	padding: 0;	border: 0;	font-size: 100%;	font: inherit;	vertical-align: baseline;}
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section { display: block; }
+ol, ul { list-style: none;}
+blockquote, q {	quotes: none;}
+blockquote:before, blockquote:after, q:before, q:after { content: ''; content: none; }
+table {	border-collapse: collapse; border-spacing: 0; }
+
+
+
+/****************************************************************************
+FONTS
+****************************************************************************/
+
+@font-face {
+    font-family: 'philosopherbold';
+    src: url('fonts/philosopher-bold-webfont.eot');
+    src: url('fonts/philosopher-bold-webfont.eot?#iefix') format('embedded-opentype'),
+    url('fonts/philosopher-bold-webfont.woff') format('woff'),
+    url('fonts/philosopher-bold-webfont.ttf') format('truetype'),
+    url('fonts/philosopher-bold-webfont.svg#philosopherbold') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+
+@font-face {
+    font-family: 'philosopherregular';
+    src: url('fonts/philosopher-regular-webfont.eot');
+    src: url('fonts/philosopher-regular-webfont.eot?#iefix') format('embedded-opentype'),
+    url('fonts/philosopher-regular-webfont.woff') format('woff'),
+    url('fonts/philosopher-regular-webfont.ttf') format('truetype'),
+    url('fonts/philosopher-regular-webfont.svg#philosopherregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+
+/****************************************************************************
+BASIC STYLES
+****************************************************************************/
+html { background: url(../images/bg.jpg) no-repeat center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;}
+body {center top no-repeat !important; background-position: top center; background-size:cover; color: #000; font: 14px 'tahoma', Helvetica, sans-serif; }
+
+a { color: #8f8f8f; text-decoration: none;-webkit-transition: 0.5s; -moz-transition: 0.5s; -o-transition: 0.5s; -ms-transition: 0.5s; transition:  0.5s; }
+/*a:visited { color: #551a8b; }*/
+a:hover { color: #ff7200 !important; /*text-decoration: underline; */}
+a:focus { outline: thin dotted; }
+a:hover, a:active { outline: 0; }
+
+h1, h2, h3, h4, h5, h6 { font: bold 14px Arial, Helvetica, sans-serif; color: #000; }
+h1 { font-size: 30px; }
+h1 a { color: #000; }
+h2 { font: 20px 'philosopherregular', sans-serif; color: #000000; padding-left: 10px !important; border-left: 1px solid #ff7200 !important; margin-bottom: 15px !important; }
+h2 a { color: #000; }
+h3 { font: 18px 'philosopherregular', sans-serif;  color: #000000; margin-bottom: 10px !important; }
+h3 a { color: #000; }
+h4 {  font: 18px 'philosopherregular', sans-serif;line-height: 20px; color: #000000; margin-bottom: 15px !important; }
+h4 a { color: #000; }
+h5 { font: 21px 'oswald', sans-serif; }
+h5 a { color: #000; }
+h6 { font-size: 10px; }
+h6 a { color: #000; }
+
+.heading  { text-transform: uppercase; font: 18px 'oswald', sans-serif; padding: 14px 28px ; border:1px solid #e2e2e2; border-left: 0px; background: url("../images/heading-bg.png") left center no-repeat;}
+
+ul {}
+ul li []
+ul li a {}
+ol {}
+ol li {}
+ol li a {}
+
+p strong { font-weight: bold; }
+p em { font-style: italic; }
+
+blockquote {}
+blockquote p {}
+
+::-moz-selection { background: #fe57a1; color: #fff; text-shadow: none; }
+::selection { background: #fe57a1; color: #fff; text-shadow: none; }
+
+.clearfix:before, .clearfix:after { content: ""; display: table; }
+.clearfix:after { clear: both; }
+.clearfix { *zoom: 1; }
+.wrapper {background: #ffffff;}
+
+p { color: #7b7b7b; font:400 13px 'tahoma', sans-serif; font-weight: normal; margin-bottom: 15px; line-height: 18px;}
+
+/****************************************************************************
+    Header
+****************************************************************************/
+#accordion div {display: none;}
+#tabs-2, #tabs-3 {display: none;}
+.header-bar {background:#000000;line-height: 26px;}
+.header-bar li { float: left; padding: 0px 14px;vertical-align: middle; background: url(../images/topsap.png) center right no-repeat;}
+.header-bar li:last-child { background: none; }
+.header-bar li a {font:12px 'philosopherregular', sans-serif;color: #FFFFFF;}
+
+.logo { line-height: 100px;  }
+.logo a img {vertical-align: middle;}
+
+.adver-banner { line-height: 94px; text-align: right;  }
+.adver-banner a img {vertical-align: middle;}
+
+nav { height: 58px;line-height: 58px;position: relative;background: url(../images/nav-bg.png) 0 2px repeat-x; margin-bottom: 15px;}
+nav > ul > li { float: left; position: relative;background: url(../images/nav-sap.png) center right no-repeat;}
+nav > ul > li:last-child {background: none;}
+
+nav > ul > li > a{ padding:13px 16px;}
+nav > ul > li > a:hover {color: #ff7200; border-top: 4px solid #ff7200;}
+nav ul li a {  font: 16px 'Oswald', sans-serif; color: #000000;border-top: 4px solid transparent;}
+
+nav ul >  li.current > a {border-top: 4px solid #ff7200;}
+
+nav li ul { background: rgba(255,255,255,0.7); width: 150px; position: absolute; top:58px; left: 0px; display: none; z-index: 99999; }
+nav li ul a { display: block; padding: 10px 10px; }
+nav li ul a:hover { background: #ff7200; color: #ffffff !important;  }
+
+.responsive { width: 100%; display: none; }
+.responsive ul li { text-align: left; }
+.responsive > ul > li > a {display: block; padding: 15px 10px; background: url(../images/nav-bg.png) 0 2px repeat-x; font: 16px 'Oswald', sans-serif; color: #000000;}
+.responsive > ul > li {width: 100%; position: relative; }
+.responsive li ul { position: absolute; top: 49px; left: 0px; width: 100%;  background: rgba(255,255,255,0.9) ; display: none; z-index: 1000; }
+.responsive li ul li { width: 100%;    }
+.responsive li ul li a { display: block;padding:8px 10px;font: 14px 'Oswald', sans-serif; color: #000000 }
+.responsive li ul li a:hover { background: #ff7200;; color: #ffffff !important;    }
+/****************************************************************************
+    News Scroller
+****************************************************************************/
+
+
+.news-scrol {background: #FF7200;height: 30px;position: relative;overflow: hidden; margin-bottom: 15px; line-height: 30px;}
+.news-scrol span { position: relative; z-index: 999; font: 13px 'Oswald', sans-serif; float: left; color:#fff; background: #4c4c4c url(../images/title-arrow.jpg) right center no-repeat;height: 30px; line-height: 30px; position: relative;padding: 0 20px 0 10px;display: inline-block;}
+.news-scrol ul li a:hover{color: #ffffff !important;}
+.news-scrol ul li a {font: 13px 'philosopherregular', sans-serif; color: #ffffff;}
+
+ul.newsticker { position: relative; left: 389px;}
+ul.newsticker li {float: left; margin-right: 75px !important;}
+
+/****************************************************************************
+    Slider
+****************************************************************************/
+.slider-wrapper{width:100%;position:relative; height:auto; overflow: hidden; margin-bottom: 20px;}
+.slider-wrapper .slider { width:100% !important; }
+.slider .slide{height:auto !important; width:100%;}
+.slider .slide img{width:100% !important; height:100%;}
+
+.slider .slide .heading-a{ text-align: center; font: 40px 'oswald', sans-serif; line-height:normal !important; color:#FFF; }
+.slider .slide .heading-a span {color: #ff7200;}
+.slider .slide .heading-b { text-align: center; padding:10px 20px;;font: 16px 'open sans', sans-serif; line-height:normal !important; color:#FFF; border-radius:2px; background:#000000; border: 1px solid #4e4e4e;opacity: 0.8 !important; text-shadow:0px 1px 0px #000;  }
+
+.slider-wrapper .tp-leftarrow{height:78px !important;width:78px !important; display:block; position:absolute;left:0px; top: 40%;  background:url(../images/arrow_large_left.png) no-repeat !important;z-index:999; background-position: 0 0 ;}
+.slider-wrapper .tp-rightarrow{height:78px !important;width:78px !important; display:block; position:absolute;left:42px;top: 40%; background:url(../images/arrow_large_right.png) no-repeat  !important;z-index:999; background-position: 0 0 ;}
+
+.slider-wrapper .tp-leftarrow:hover  {  background:url(../images/arrow_large_left_hover.png) no-repeat !important;}
+.slider-wrapper .tp-rightarrow:hover {background:url(../images/arrow_large_right_hover.png) no-repeat  !important;}
+
+.slot {display: none !important;}
+
+
+/****************************************************************************
+    Content
+****************************************************************************/
+.post {width: 270px;float: left; margin-right: 25px; margin-bottom: 30px;}
+.post.last { margin-right: 0px }
+
+.line  { margin-bottom:12px; width: 100%;height: 1px;background: #d5d5d5; position: relative;}
+.line span { width: 20px; height: 4px; background: #000000; position: absolute; top: -4px; left: 0px;}
+
+.post > figure { width: 100%; height: auto; margin-bottom: 15px; }
+.post > figure a { width: 100%; height: 100%; display: block }
+.post figure a:hover { opacity: 0.8; }
+.post figure img{ width: 100%; height: auto; }
+
+.post p { margin-bottom: 12px !important; }
+.post-meta { margin-bottom: 15px; display: inline-block; }
+.post-meta span { font: 11px 'Open Sans', sans-serif; color:#cccccc ; padding-left: 22px; margin-right: 15px; }
+.post-meta span a {font: 11px 'Open Sans', sans-serif !important; color:#cccccc ; }
+.talk {background: url(../images/talk.png) left center no-repeat;}
+.time {background: url(../images/time.png) left center no-repeat;}
+.eye {background: url(../images/eye.png) left center no-repeat;}
+
+.rating {display: inline-block; vertical-align: middle;}
+.rating a { width: 14px; height: 13px; display: inline-block; background: url(../images/wh.png) no-repeat; margin-right: 5px;}
+.rating a:hover { background: url(../images/star-.png) no-repeat }
+.rating a.star { background: url(../images/star-.png) no-repeat }
+
+.bottom-section > figure { width: 44px; height:44px; margin-bottom: 15px; float: left; margin-right: 10px; }
+.bottom-section figure a { width: 44px; height: 44px; display: block }
+
+.bottom-section p{  margin-top: 5px; width: 213px; color: #8f8f8f; float: right;  }
+
+.small-post {width: 412px; margin-right: 36px; float: left; margin-bottom: 20px;}
+.small-post.last { margin-right: 0px; }
+
+.small-post figure { width: 130; height: 144px; margin-bottom: 15px; float: left }
+.small-post figure a { width: 100%; height: 100%; display: block; }
+.small-post figure a:hover { opacity: 0.8; }
+.small-post figure img{ width: 100%; height: 100%; }
+
+.small-post > div { float: right; width: 258px;}
+
+.big-post { margin-bottom: 20px; }
+.big-post figure { width: 382px; height: 249px; margin-bottom: 15px; float: left }
+.big-post figure a { width: 100%; height: 100%; display: block; }
+.big-post figure a:hover { opacity: 0.8; }
+.big-post figure img{ width: 100%; height: 100%; }
+.big-post > div { float: right; width: 449px;}
+
+.carousel {margin-bottom: 12px; !important;}
+
+
+/****************************************************************************
+    Sidebar
+****************************************************************************/
+
+#product_tabs { margin-bottom: 15px; }
+#product_tabs .ui-tabs-active { color: #1d9bcd; background: #FFF; border-bottom: 0px; }
+#product_tabs > ul { border-bottom: 4px solid #000000; }
+
+#product_tabs > ul > li {   text-align: center; background: #ff7200; float: left; border: 1px solid #e8e8e8; border-bottom: 0px; margin-right: 8px;-webkit-transition: 0.5s; -moz-transition: 0.5s; -o-transition: 0.5s; -ms-transition: 0.5s; transition:  0.5s;  }
+#product_tabs > ul > li a { padding: 10px 15px; width: 18px; height: 16px; display: inline-block;outline: 0px; -webkit-transition: color 0.5s; -moz-transition: color 0.5s; -o-transition: color 0.5s; -ms-transition: color 0.5s; transition: color 0.5s;  }
+#product_tabs > ul > li:hover  {border-bottom: 0px; background: #ffffff; border-color: #e8e8e8; border-bottom-color: #ffffff;}
+#product_tabs > ul > li:hover a { color: #ffffff !important;  }
+
+#product_tabs > ul .ui-state-active {border-bottom: 0px; background: #ffffff; border-color: #e8e8e8; border-bottom-color: #ffffff;}
+#product_tabs > ul .ui-state-active a { color: #ffffff;  }
+
+#product_tabs > ul > li:hover a.one {background: url("../images/tab1.png") center no-repeat}
+#product_tabs > ul > li:hover a.two {background: url("../images/tab2hover.png") center no-repeat}
+#product_tabs > ul > li:hover a.three {background: url("../images/tab3hover.png") center no-repeat}
+
+#product_tabs > ul .ui-state-active a.one {background: url("../images/tab1.png") center no-repeat}
+#product_tabs > ul .ui-state-active a.two {background: url("../images/tab2hover.png") center no-repeat}
+#product_tabs > ul .ui-state-active a.three {background: url("../images/tab3hover.png") center no-repeat}
+
+#product_tabs > ul > li a.one {background: url("../images/tab1hover.png") center no-repeat}
+#product_tabs > ul > li a.two {background: url("../images/tab2.png") center no-repeat}
+#product_tabs > ul > li a.three {background: url("../images/tab3.png") center no-repeat}
+
+.tab {padding: 15px 15px 0px;; border: 1px solid #e8e8e8; }
+.tab p a { font: 13px 'philosopherregular', sans-serif; color: #8f8f8f; }
+
+.tab li { margin-bottom: 15px; }
+.tab li figure { width: 44px; height:44px; float: left; margin-right: 10px; }
+.tab li figure a { width: 44px; height: 44px; display: block; }
+.tab li figure a img { width: 100%; height:100%; }
+.tab li p { width: 165px; float: right; margin-top: -3px; }
+
+
+.sidebar_banner { margin-bottom: 15px;}
+
+#accordion {border-top: 4px solid #000000; margin-bottom: 15px;}
+#accordion h5 {font:700 13px 'open sans', sans-serif; color: #000; margin-bottom: -1px; }
+#accordion h5 a { display: block; outline: none; padding: 20px 0px 20px 15px;  background: #ffffff url("../images/down-arrow.png") 90% center no-repeat; border: 1px solid #d6d6d6; }
+#accordion h5 a:hover { color: #ffffff !important; background: #ff7200 url("../images/down-arrow.png") 90% center no-repeat; }
+#accordion h5 a:focus { outline: none; }
+#accordion h5.ui-accordion-header-active a { color: #ffffff; background: #ff7200 url("../images/up-arow.png") 90% center no-repeat; }
+
+
+#accordion div {padding: 15px 15px 0px;; border: 1px solid #e8e8e8; border-top: 0px; }
+#accordion p a { font: 13px 'philosopherregular', sans-serif; color: #8f8f8f; }
+
+#accordion li { margin-bottom: 15px; }
+#accordion li figure { width: 44px; height:44px; float: left; margin-right: 10px; }
+#accordion li figure a { width: 44px; height: 44px; display: block; }
+#accordion li figure a img { width: 100%; height:100%; }
+#accordion li p { width: 165px; float: right; margin-top: -3px; }
+
+
+.clients a { width: 122px; height: 114px; float: left; display: inline-block; margin-right: 16px; margin-bottom: 15px; }
+.clients .last {margin-right: 0px;}
+.clients a img { width: 100%; height: 100%;}
+
+.tags {border-top: 4px solid #000000; }
+.tags-wrap {border: 1px solid #e8e8e8; border-top: 0px; margin-bottom: 15px;}
+.tags h4 {font:700 13px 'open sans', sans-serif; color: #000; border-bottom: 1px solid #e8e8e8; padding: 10px 0px 10px 15px; margin-bottom: 0px; }
+.tags a { font: 10px 'open sans', sans-serif; background: #FF7200;border-radius: 8px 8px 8px 8px;color: #FFFFFF;display: inline-block;margin: 0px 2px 5px;;padding: 6px 10px 10px;;}
+.tags a:hover {background:#eaeaea}
+.tags div {padding: 15px;}
+.video {padding: 15px;}
+.facebook-plg {margin-bottom: 15px;}
+
+/****************************************************************************
+    Title bar
+****************************************************************************/
+
+.title-bar {background: #FF7200;height: 55px;position: relative;overflow: hidden; margin-bottom: 15px;}
+.title-bar span {margin-right: 10px; position: relative; z-index: 999; font: 23px 'Oswald', sans-serif; float: left; color:#fff; background: #4c4c4c url(../images/title-arrow.jpg) right center no-repeat;height: 55px; line-height: 55px; position: relative;padding: 0 20px 0 10px;display: inline-block;}
+.title-bar p{font: 18px 'philosopherregular', sans-serif; color: #ffffff; line-height: 55px;}
+
+
+/****************************************************************************
+    News
+****************************************************************************/
+
+.pagination ul {border-radius: 0px; box-shadow: none !important;}
+.pagination ul li {margin-right: 7px; float: left;}
+.pagination ul li a {border-radius: 0px !important; display: inline-block; padding: 5px 11px !important; background: #74777b; color: #fff;text-decoration: none;}
+.pagination ul li a:hover {background: #ff7200; color: #ffffff;}
+.pagination ul li a:active {background: #ff7200;}
+
+
+/****************************************************************************
+    Single
+****************************************************************************/
+.single-post  {border-bottom: 1px solid #f0f0f0; margin-bottom: 15px;  }
+.single-post figure { width: 100%; height: 400px;; display: block; margin-bottom: 15px; }
+.single-post figure img{ width: 100%; height: 100%; }
+.single-post h4 { font-size: 22px; }
+.single-post p { font-size: 14px;  line-height: 20px;}
+
+.comment ul li figure  {width: 80px; height: 80px; float: left;}
+.comment ul li figure a{ width: 100%; height: 100%; }
+.comment ul li figure a:hover {opacity: 0.8;}
+.comment ul li figure a img{ width: 100%; height: 100%; }
+
+.comment h5 {color: #ff7200; margin-bottom: 15px;}
+.comment li {padding-bottom: 20px; margin-bottom: 20px; border-bottom: 1px solid #f0f0f0;}
+.comment li div  { margin-top: 7px; width: 88%; float: right; }
+.comment li div h6 { font: 14px 'open sans', sans-serif; color: #3c3c3c; margin-bottom: 5px; display: inline-block;  margin-right: 10px;}
+.comment li div span {  font: 11px 'open sans' sans-serif; color: #b8b8b8;}
+.comment li div p { margin-bottom: 5px; font: 13px 'open sans', sans-serif; color: #868686; }
+.comment li div a {font: 11px 'open sans', sans-serif; background: #868686; padding: 6px 11px; color: #fff; border-radius: 5px;display: inline-block;}
+
+.comment li.last { border: 0px; padding-bottom: 0px; margin-bottom: 0px; }
+.comment li ul { margin-left: 95px; }
+.comment li ul li div { width: 87%; }
+.comment li ul li ul li div { width: 85%; }
+
+.comment-form {margin-bottom: 20px;}
+.comment-form h5 {color: #ff7200; margin-bottom: 15px;}
+.comment-form fieldset {width: 246px; float: left;}
+.comment-form input[type="text"] { color:#555555;font: 12px 'open sans', sans-serif; width: 90%; padding: 0px 10px; outline: 0px; box-shadow: none; border: 1px solid #d9d9d9; border-radius: 5px;height:48px;margin-bottom: 12px; background: #f9f9f9;}
+.comment-form textarea {resize: none; color:#555555;font: 12px 'open sans', sans-serif; float: right; padding: 10px 10px; outline: 0px; box-shadow: none;width: 67%; height: 154px;border-radius: 5px; border: 1px solid #d9d9d9;background: #f9f9f9;}
+.comment-form input[type="submit"] {font: 12px 'open sans', sans-serif;background: #ff7200;border: none; border-radius: 5px 5px 5px 5px;color: #fff;float: right; padding: 10px 15px;}
+
+
+#map_canvas {height: 390px; margin-bottom: 15px;}
+.text h5 {color: #ff7200;margin-bottom: 10px;}
+.text p {line-height: 20px;}
+
+
+/****************************************************************************
+    Portfolio
+****************************************************************************/
+.navigation { border-bottom: 1px solid #e8e8e8; border-top: 1px solid #e8e8e8; padding: 10px 0px; margin-bottom: 15px;}
+.navigation li {float: left; margin-right: 15px;}
+.navigation li a { text-transform: uppercase; font:700 14px 'open sans', sans-serif; color:#747474 ;  display: inline-block;padding: 6px 10px; -moz-border-radius: 5px;-webkit-border-radius: 5px; border-radius: 5px;}
+.navigation li a:hover { background: #ff7200; color: #ffffff !important; }
+.navigation li a.selected { background: #ff7200; color: #ffffff; }
+
+.portfolio-wrap { position: relative;}
+.portfolio-wrap .container { width: 1140px; }
+.portfolio-wrap.two-colm .protfolio { width: 362px;height: 248px; }
+.portfolio-wrap.three-colm .protfolio { width: 260px;height: 180px; }
+.portfolio-wrap.three-colm .protfolio h4 { padding: 15px 0px 0px 15px;}
+
+.protfolio { position: relative; width: 557px; height: 379px; margin-bottom: 28px;}
+.protfolio a { width: 100%; height: 100%; display: block;  overflow: hidden; }
+.protfolio img { width: 100%; height: 100%; }
+
+
+.overlay { display: none; background: #ff7200; width: 100%; height: 100%; position: absolute; top: 0px; left: 0px;}
+.overlay h4 { margin-bottom: 10px;  font-weight: bold; padding: 30px 0px 0px 15px; color: #ffffff; }
+.overlay p { font-size: 15px; color: #ffffff; padding:0px 35px 0px 15px; }
+.overlay .zoom { width: 41px; height: 41px; display: block; background: url("../images/zoom.png") no-repeat; position: absolute; bottom: 0px; right: 43px;}
+.overlay .pls { width: 41px; height: 41px; display: block; background: url("../images/plus.png") no-repeat; position: absolute; bottom: 0px; right: 0px;}
+
+.elastislide-list  li { position: relative; width: 33% !important;}
+.overlay-colm { display: none; background: #ff7200; width: 100%; height: 100%; position: absolute; top: 0px; left: 0px;}
+
+.overlay-colm .zoom { width: 41px; height: 41px; display: block; background: rgba(0, 0, 0, 0.1) url("../images/zoom.png") center center no-repeat; position: absolute; bottom: 0px; right: 43px;top: 50%;right: 50%;margin: -20px -42px 0 0;}
+.overlay-colm .pls { width: 41px; height: 41px; display: block; background: url("../images/plus.png") no-repeat; position: absolute; bottom: 0px; right: 0px;top: 50%;right: 50%;margin: -20px 2px 0 0;}
+
+
+/****************************************************************************
+    home2
+****************************************************************************/
+.services-wrap h5 { font-size: 16px; margin-bottom: 7px; }
+.services-wrap a {margin-bottom: 7px; display: block; height:55px;}
+.services-wrap p { font:12px 'open sans', sans-serif; color: #464646; line-height: 18px; margin-bottom: 15px; }
+
+.carousel-two .elastislide-horizontal nav span { top: -273px !important; background: url(../images/slider-right.png) center center no-repeat !important; ;}
+.carousel-two .elastislide-horizontal nav span:hover  {background: url(../images/slider-right.png) center center no-repeat !important;}
+.carousel-two .slierbutton .arrow-left {background: url(../images/slider-right.png) center center no-repeat !important; ;}
+.carousel-two .elastislide-horizontal nav span.elastislide-next:hover {background: url(../images/slider-left.png) center center no-repeat !important; ;}
+.carousel-two .elastislide-horizontal nav span.elastislide-next {top: -273px !important;background: url(../images/slider-left.png) center center no-repeat !important;}
+
+.recent {margin-bottom: 22px;}
+.recent figure { width: 170px; height: 130px; float: left;}
+.recent figure a{ width: 100%; height: 100%;}
+.recent figure a:hover {opacity: 0.8;}
+.recent figure a img { width: 100%; height: 100%;}
+.recent div { width: 177px; float: right; margin-top: 15px; }
+
+.recent div h3 {font-size: 15px; color: #000000; margin-bottom: 10px !important;}
+.recent div p {  font:13px 'philosopherregular', sans-serif; margin-bottom: 10px !important; line-height: 18px; color: #747474;}
+.recent div a {  font:13px 'open sans', sans-serif; line-height: 18px; color: #ff7200; text-decoration: underline;}
+
+.our-client ul { border: 1px solid #e2e2e2;}
+.our-client ul li{ border-left: 1px solid #e2e2e2;border-bottom: 1px solid #e2e2e2; width: 180px; height: 92px; line-height: 92px; text-align: center; float: left;}
+.our-client ul li img {vertical-align: middle;}
+
+.client-slider {background: #f1f1f1; position: relative; margin-bottom: 15px;}
+.client-slider > a {width: 33px; height: 33px; position: absolute; top: -58px; right: 17px; z-index: 9999;}
+.client-slider > a.next {background: url("../images/slider-right.png") no-repeat;right: 58px;}
+.client-slider > a.prew {background: url("../images/slider-left.png") no-repeat; }
+
+.client-slider p {margin: 24px 22px 20px !important; font: 15px 'philosopherregular', sana-serif; color: #6d6d6d; line-height: 25px;}
+.client-slider span { width: 19px; height: 9px; display: block; background: url("../images/erro.png") no-repeat; position: absolute; bottom: -9px; left: 15px;}
+
+cite {font:italic 17px 'Georgia', sans-serif; color:#484848; }
+cite  span {display: block; font-size: 11px; color: #ff7200;}
+
+/****************************************************************************
+    Footer
+****************************************************************************/
+
+footer {background: #434343; padding: 40px 0px;}
+footer .widget  p { font:300 13px 'open sans', sans-serif !important; color: #ffffff; line-height: 17px; }
+footer .widget p a {color: #FF7200; font-weight: 700;}
+footer .widget ul li { font: 13px'open sans', sans-serif; color: #ffffff; margin-bottom: 10px; padding-bottom: 10px; line-height: 17px;border-bottom: 1px solid #3c3c3c;}
+footer .widget ul li a  {color: #FF7200;}
+footer .widget h5 {font:bold 17px 'open sans', sans-serif; color: #ffffff; margin-bottom: 15px;}
+footer .span3 {width: 265px;}
+footer .widget .recent-post li a { font: 13px'open sans', sans-serif; color: #ffffff;}
+
+footer fieldset { width: 114px;  margin-right: 20px; float: left }
+footer fieldset.last {margin-right: 0px;}
+footer input[type="text"] { border-radius: 0px; outline: 0px;background: rgba(54,54,54,0.8); color: #fff;  border: 1px solid #363636; margin-bottom: 10px;box-shadow: 0 0 1px rgba(50,50,50,0.7);width: 96%; padding: 7px 8px;}
+footer textarea {outline: 0px; background: #363636;border-radius: 0px;color: #fff;box-shadow: none;border: 1px solid #363636;width: 92%;resize: none; font: 13px 'open sans', sans-serif; height: 80px;  padding: 7px 7px;}
+footer input[type="submit"] { margin-right:5px;font:bold 11px 'open sans', sans-serif;  border: none; background: #fff;width: 83px;height: 28px; color: #000;float: right;border-radius: 10px;}
+footer input[type="submit"]:hover {background:#FF7200; color:#FFF;}
+
+.footer-bottom { background: #dadada; height: 88px; line-height: 88px; }
+.footer-bottom  p { font: 11px 'open sans', sans-serif !important; color: #000 !important; margin-bottom: 0px !important; line-height: 88px !important;}
+
+.bottom-errow {text-align: right;}
+.bottom-errow a {background: url("../images/bottom-errow.png") no-repeat; width: 52px; height: 52px; display: block; float: right; margin-top: 25px;}
+.bottom-errow a:hover {background: url("../images/bottom-hover.png") no-repeat;}
+
+/******************************
+   Isotope CSS3 transitions
+******************************/
+
+.isotope,
+.isotope .isotope-item {
+    -webkit-transition-duration: 0.8s;
+    -moz-transition-duration: 0.8s;
+    -o-transition-duration: 0.8s;
+    transition-duration: 0.8s;
+}
+.isotope {
+    -webkit-transition-property: height, width;
+    -moz-transition-property: height, width;
+    -o-transition-property: height, width;
+    transition-property: height, width;
+}
+.isotope .isotope-item {
+    -webkit-transition-property: -webkit-transform, opacity;
+    -moz-transition-property:    -moz-transform, opacity;
+    -o-transition-property:         top, left, opacity;
+    transition-property:         transform, opacity;
+}
+
+
+/********************************************************
+   disabling Isotope CSS3 transitions
+*********************************************************/
+
+
+.isotope.no-transition,
+.isotope.no-transition .isotope-item,
+.isotope .isotope-item.no-transition {
+    -webkit-transition-duration: 0s;
+    -moz-transition-duration: 0s;
+    -o-transition-duration: 0s;
+    transition-duration: 0s;
+}
+
+
+
+
