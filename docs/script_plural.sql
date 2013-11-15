@@ -1,494 +1,354 @@
--- phpMyAdmin SQL Dump
--- version 4.0.4.1
--- http://www.phpmyadmin.net
---
--- MÃ¡quina: 127.0.0.1
--- Data de CriaÃ§Ã£o: 14-Nov-2013 Ã s 21:42
--- VersÃ£o do servidor: 5.5.32
--- versÃ£o do PHP: 5.4.19
+SET @OLD_UNIQUE_CHECKS=@@UNIQUE_CHECKS, UNIQUE_CHECKS=0;
+SET @OLD_FOREIGN_KEY_CHECKS=@@FOREIGN_KEY_CHECKS, FOREIGN_KEY_CHECKS=0;
+SET @OLD_SQL_MODE=@@SQL_MODE, SQL_MODE='TRADITIONAL,ALLOW_INVALID_DATES';
 
-SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
-SET time_zone = "+00:00";
+CREATE SCHEMA IF NOT EXISTS `uniEvents` DEFAULT CHARACTER SET utf8 COLLATE utf8_general_ci ;
+USE `uniEvents` ;
+
+-- -----------------------------------------------------
+-- Table `uniEvents`.`estados`
+-- -----------------------------------------------------
+CREATE TABLE IF NOT EXISTS `uniEvents`.`estados` (
+  `id` INT UNSIGNED NOT NULL AUTO_INCREMENT,
+  `nome` VARCHAR(45) NOT NULL,
+  `uf` VARCHAR(3) NOT NULL,
+  PRIMARY KEY (`id`))
+ENGINE = InnoDB;
 
 
-/*!40101 SET @OLD_CHARACTER_SET_CLIENT=@@CHARACTER_SET_CLIENT */;
-/*!40101 SET @OLD_CHARACTER_SET_RESULTS=@@CHARACTER_SET_RESULTS */;
-/*!40101 SET @OLD_COLLATION_CONNECTION=@@COLLATION_CONNECTION */;
-/*!40101 SET NAMES utf8 */;
-
---
--- Base de Dados: `unievents`
---
-CREATE DATABASE IF NOT EXISTS `unievents` DEFAULT CHARACTER SET utf8 COLLATE utf8_general_ci;
-USE `unievents`;
-
--- --------------------------------------------------------
-
---
--- Estrutura da tabela `cidades`
---
-
-CREATE TABLE IF NOT EXISTS `cidades` (
-  `id` int(10) unsigned NOT NULL AUTO_INCREMENT,
-  `cidadecol` varchar(45) NOT NULL,
-  `estado_idestado` int(10) unsigned NOT NULL,
-  `estado_id` int(10) unsigned NOT NULL,
-  PRIMARY KEY (`id`,`estado_idestado`),
-  KEY `fk_cidade_estado1_idx` (`estado_id`)
-) ENGINE=InnoDB  DEFAULT CHARSET=utf8 AUTO_INCREMENT=7 ;
-
---
--- Extraindo dados da tabela `cidades`
---
-
-INSERT INTO `cidades` (`id`, `cidadecol`, `estado_idestado`, `estado_id`) VALUES
-(1, 'Santa Maria', 0, 1),
-(4, 'Porto Alegre', 1, 1),
-(6, 'Pelotas', 1, 1);
-
--- --------------------------------------------------------
-
---
--- Estrutura da tabela `conexoes`
---
-
-CREATE TABLE IF NOT EXISTS `conexoes` (
-  `id` int(10) unsigned NOT NULL AUTO_INCREMENT,
-  `login` varchar(17) NOT NULL,
-  `senha` varchar(17) NOT NULL,
-  PRIMARY KEY (`id`)
-) ENGINE=InnoDB  DEFAULT CHARSET=utf8 AUTO_INCREMENT=2 ;
-
---
--- Extraindo dados da tabela `conexoes`
---
-
-INSERT INTO `conexoes` (`id`, `login`, `senha`) VALUES
-(1, 'usuario', 'teste');
-
--- --------------------------------------------------------
-
---
--- Estrutura da tabela `dia_meses`
---
-
-CREATE TABLE IF NOT EXISTS `dia_meses` (
-  `id` int(10) unsigned NOT NULL AUTO_INCREMENT,
-  `dia` int(11) NOT NULL,
-  `dia_semana_id` int(10) unsigned NOT NULL,
+-- -----------------------------------------------------
+-- Table `uniEvents`.`cidades`
+-- -----------------------------------------------------
+CREATE TABLE IF NOT EXISTS `uniEvents`.`cidades` (
+  `id` INT UNSIGNED NOT NULL AUTO_INCREMENT,
+  `nome` VARCHAR(45) NOT NULL,
+  `estado_id` INT UNSIGNED NOT NULL,
   PRIMARY KEY (`id`),
-  KEY `fk_dia_mes_dia_semana1_idx` (`dia_semana_id`)
-) ENGINE=InnoDB  DEFAULT CHARSET=utf8 AUTO_INCREMENT=2 ;
+  INDEX `fk_cidades_estados1_idx` (`estado_id` ASC),
+  CONSTRAINT `fk_cidades_estados1`
+    FOREIGN KEY (`estado_id`)
+    REFERENCES `uniEvents`.`estados` (`id`)
+    ON DELETE NO ACTION
+    ON UPDATE NO ACTION)
+ENGINE = InnoDB;
 
--- --------------------------------------------------------
 
---
--- Estrutura da tabela `dia_semanas`
---
-
-CREATE TABLE IF NOT EXISTS `dia_semanas` (
-  `id` int(10) unsigned NOT NULL AUTO_INCREMENT,
-  `nome` varchar(7) NOT NULL,
-  `horario_id` int(10) unsigned NOT NULL,
+-- -----------------------------------------------------
+-- Table `uniEvents`.`usuarios`
+-- -----------------------------------------------------
+CREATE TABLE IF NOT EXISTS `uniEvents`.`usuarios` (
+  `id` INT UNSIGNED NOT NULL AUTO_INCREMENT,
+  `nome` VARCHAR(110) NOT NULL,
+  `cpf` VARCHAR(11) NOT NULL,
+  `rg` VARCHAR(10) NOT NULL,
+  `data_nasc` DATE NOT NULL,
+  `sexo` INT NOT NULL,
+  `email` VARCHAR(90) NOT NULL,
+  `senha` VARCHAR(255) NOT NULL,
+  `instituicao` VARCHAR(45) NULL,
+  `end_rede_soc` VARCHAR(120) NULL,
+  `outro_contato_url` VARCHAR(120) NULL,
+  `cidade_id` INT UNSIGNED NOT NULL,
+  `estado_id` INT UNSIGNED NOT NULL,
   PRIMARY KEY (`id`),
-  KEY `fk_dia_semana_horario1_idx` (`horario_id`)
-) ENGINE=InnoDB  DEFAULT CHARSET=utf8 AUTO_INCREMENT=7 ;
+  INDEX `fk_usuarios_cidades1_idx` (`cidade_id` ASC, `estado_id` ASC),
+  CONSTRAINT `fk_usuarios_cidades1`
+    FOREIGN KEY (`cidade_id` , `estado_id`)
+    REFERENCES `uniEvents`.`cidades` (`id` , `estado_id`)
+    ON DELETE NO ACTION
+    ON UPDATE NO ACTION)
+ENGINE = InnoDB;
 
--- --------------------------------------------------------
 
---
--- Estrutura da tabela `enderecos`
---
-
-CREATE TABLE IF NOT EXISTS `enderecos` (
-  `id` int(10) unsigned NOT NULL AUTO_INCREMENT,
-  `rua` varchar(90) NOT NULL,
-  `numero` int(11) NOT NULL,
-  `bairro` varchar(45) NOT NULL,
-  `complemento` varchar(90) NOT NULL,
-  `cep` varchar(9) NOT NULL,
-  `cidade_id` int(10) unsigned NOT NULL,
-  `cidade_estado_id` int(10) unsigned NOT NULL,
+-- -----------------------------------------------------
+-- Table `uniEvents`.`enderecos`
+-- -----------------------------------------------------
+CREATE TABLE IF NOT EXISTS `uniEvents`.`enderecos` (
+  `id` INT UNSIGNED NOT NULL AUTO_INCREMENT,
+  `rua` VARCHAR(90) NOT NULL,
+  `numero` INT NOT NULL,
+  `bairro` VARCHAR(45) NOT NULL,
+  `complemento` VARCHAR(90) NOT NULL,
+  `cep` VARCHAR(9) NOT NULL,
+  `cidade_id` INT UNSIGNED NOT NULL,
+  `estado_id` INT UNSIGNED NOT NULL,
   PRIMARY KEY (`id`),
-  KEY `fk_endereco_cidade1_idx` (`cidade_id`,`cidade_estado_id`)
-) ENGINE=InnoDB  DEFAULT CHARSET=utf8 AUTO_INCREMENT=5 ;
+  INDEX `fk_enderecos_cidades1_idx` (`cidade_id` ASC, `estado_id` ASC),
+  CONSTRAINT `fk_enderecos_cidades1`
+    FOREIGN KEY (`cidade_id` , `estado_id`)
+    REFERENCES `uniEvents`.`cidades` (`id` , `estado_id`)
+    ON DELETE NO ACTION
+    ON UPDATE NO ACTION)
+ENGINE = InnoDB;
 
--- --------------------------------------------------------
 
---
--- Estrutura da tabela `estados`
---
-
-CREATE TABLE IF NOT EXISTS `estados` (
-  `id` int(10) unsigned NOT NULL AUTO_INCREMENT,
-  `nome` varchar(45) NOT NULL,
-  `uf` varchar(3) NOT NULL,
-  PRIMARY KEY (`id`)
-) ENGINE=InnoDB  DEFAULT CHARSET=utf8 AUTO_INCREMENT=3 ;
-
---
--- Extraindo dados da tabela `estados`
---
-
-INSERT INTO `estados` (`id`, `nome`, `uf`) VALUES
-(1, 'Rio Grande do Sul', 'RS');
-
--- --------------------------------------------------------
-
---
--- Estrutura da tabela `eventos`
---
-
-CREATE TABLE IF NOT EXISTS `eventos` (
-  `id` int(10) unsigned NOT NULL AUTO_INCREMENT,
-  `nome` varchar(90) NOT NULL,
-  `descricao` varchar(120) NOT NULL,
-  `data_ini` date NOT NULL,
-  `data_fim` date NOT NULL,
-  `tipo_evento` varchar(45) NOT NULL,
-  `tema` varchar(45) NOT NULL,
-  `vagas` int(11) NOT NULL,
-  `duracao_horas` double NOT NULL,
-  `aprovacao` tinyint(1) NOT NULL,
-  `url` varchar(120) DEFAULT NULL,
-  `endereco_id` int(10) unsigned NOT NULL,
-  `imagem_id` int(10) unsigned NOT NULL,
+-- -----------------------------------------------------
+-- Table `uniEvents`.`patrocinadores`
+-- -----------------------------------------------------
+CREATE TABLE IF NOT EXISTS `uniEvents`.`patrocinadores` (
+  `id` INT UNSIGNED NOT NULL AUTO_INCREMENT,
+  `nome` VARCHAR(100) NOT NULL,
+  `endereco_id` INT UNSIGNED NOT NULL,
   PRIMARY KEY (`id`),
-  KEY `fk_evento_endereco1_idx` (`endereco_id`),
-  KEY `fk_evento_imagem1_idx` (`imagem_id`)
-) ENGINE=InnoDB DEFAULT CHARSET=utf8 AUTO_INCREMENT=1 ;
+  INDEX `fk_patrocinador_endereco1_idx` (`endereco_id` ASC),
+  CONSTRAINT `fk_patrocinador_endereco1`
+    FOREIGN KEY (`endereco_id`)
+    REFERENCES `uniEvents`.`enderecos` (`id`)
+    ON DELETE NO ACTION
+    ON UPDATE NO ACTION)
+ENGINE = InnoDB;
 
--- --------------------------------------------------------
 
---
--- Estrutura da tabela `evento_has_usuarios`
---
-
-CREATE TABLE IF NOT EXISTS `evento_has_usuarios` (
-  `evento_id` int(10) unsigned NOT NULL,
-  `usuario_id` int(10) unsigned NOT NULL,
-  `usuario_pessoa_id` int(10) unsigned NOT NULL,
-  `usuario_imagem_id` int(10) unsigned NOT NULL,
-  `usuario_cidade_id` int(10) unsigned NOT NULL,
-  `usuario_cidade_estado_id` int(10) unsigned NOT NULL,
-  PRIMARY KEY (`evento_id`,`usuario_id`,`usuario_pessoa_id`,`usuario_imagem_id`,`usuario_cidade_id`,`usuario_cidade_estado_id`),
-  KEY `fk_evento_has_usuario_usuario1_idx` (`usuario_id`,`usuario_pessoa_id`,`usuario_imagem_id`,`usuario_cidade_id`,`usuario_cidade_estado_id`),
-  KEY `fk_evento_has_usuario_evento1_idx` (`evento_id`)
-) ENGINE=InnoDB DEFAULT CHARSET=utf8;
-
--- --------------------------------------------------------
-
---
--- Estrutura da tabela `horarios`
---
-
-CREATE TABLE IF NOT EXISTS `horarios` (
-  `id` int(10) unsigned NOT NULL AUTO_INCREMENT,
-  `hora_ini` varchar(5) NOT NULL,
-  `hora_fim` varchar(5) NOT NULL,
-  `programacao_id` int(10) unsigned NOT NULL,
+-- -----------------------------------------------------
+-- Table `uniEvents`.`telefones`
+-- -----------------------------------------------------
+CREATE TABLE IF NOT EXISTS `uniEvents`.`telefones` (
+  `id` INT UNSIGNED NOT NULL AUTO_INCREMENT,
+  `numero` VARCHAR(13) NULL,
+  `patrocinador_id` INT UNSIGNED NOT NULL,
+  `usuario_id` INT UNSIGNED NOT NULL,
   PRIMARY KEY (`id`),
-  KEY `fk_horario_programacao1_idx` (`programacao_id`)
-) ENGINE=InnoDB  DEFAULT CHARSET=utf8 AUTO_INCREMENT=2 ;
+  INDEX `fk_telefone_patrocinador1_idx` (`patrocinador_id` ASC),
+  INDEX `fk_telefones_usuarios1_idx` (`usuario_id` ASC),
+  CONSTRAINT `fk_telefone_patrocinador1`
+    FOREIGN KEY (`patrocinador_id`)
+    REFERENCES `uniEvents`.`patrocinadores` (`id`)
+    ON DELETE NO ACTION
+    ON UPDATE NO ACTION,
+  CONSTRAINT `fk_telefones_usuarios1`
+    FOREIGN KEY (`usuario_id`)
+    REFERENCES `uniEvents`.`usuarios` (`id`)
+    ON DELETE NO ACTION
+    ON UPDATE NO ACTION)
+ENGINE = InnoDB;
 
--- --------------------------------------------------------
 
---
--- Estrutura da tabela `imagens`
---
-
-CREATE TABLE IF NOT EXISTS `imagens` (
-  `id` int(10) unsigned NOT NULL AUTO_INCREMENT,
-  `nome` varchar(45) NOT NULL,
-  `caminho` varchar(120) NOT NULL,
-  PRIMARY KEY (`id`)
-) ENGINE=InnoDB DEFAULT CHARSET=utf8 AUTO_INCREMENT=1 ;
-
--- --------------------------------------------------------
-
---
--- Estrutura da tabela `inscricoes`
---
-
-CREATE TABLE IF NOT EXISTS `inscricoes` (
-  `id` int(10) unsigned NOT NULL AUTO_INCREMENT,
-  `data_ini` date NOT NULL,
-  `data_fim` date NOT NULL,
-  `evento_id` int(10) unsigned NOT NULL,
-  `tipo_inscricao_id` int(10) unsigned NOT NULL,
+-- -----------------------------------------------------
+-- Table `uniEvents`.`imagens`
+-- -----------------------------------------------------
+CREATE TABLE IF NOT EXISTS `uniEvents`.`imagens` (
+  `id` INT UNSIGNED NOT NULL AUTO_INCREMENT,
+  `nome` VARCHAR(45) NULL,
+  `caminho` VARCHAR(120) NULL,
+  `usuario_id` INT UNSIGNED NOT NULL,
   PRIMARY KEY (`id`),
-  KEY `fk_inscricao_evento1_idx` (`evento_id`),
-  KEY `fk_inscricao_tipo_inscricao1_idx` (`tipo_inscricao_id`)
-) ENGINE=InnoDB DEFAULT CHARSET=utf8 AUTO_INCREMENT=1 ;
+  INDEX `fk_imagens_usuarios1_idx` (`usuario_id` ASC),
+  CONSTRAINT `fk_imagens_usuarios1`
+    FOREIGN KEY (`usuario_id`)
+    REFERENCES `uniEvents`.`usuarios` (`id`)
+    ON DELETE NO ACTION
+    ON UPDATE NO ACTION)
+ENGINE = InnoDB;
 
--- --------------------------------------------------------
 
---
--- Estrutura da tabela `mensagens`
---
-
-CREATE TABLE IF NOT EXISTS `mensagens` (
-  `id` int(10) unsigned NOT NULL AUTO_INCREMENT,
-  `recado` varchar(190) DEFAULT NULL,
-  `usuario_id` int(10) unsigned NOT NULL,
-  `usuario_pessoa_id` int(10) unsigned NOT NULL,
-  `usuario_imagem_id` int(10) unsigned NOT NULL,
-  `usuario_cidade_id` int(10) unsigned NOT NULL,
-  `usuario_cidade_estado_id` int(10) unsigned NOT NULL,
+-- -----------------------------------------------------
+-- Table `uniEvents`.`mensagens`
+-- -----------------------------------------------------
+CREATE TABLE IF NOT EXISTS `uniEvents`.`mensagens` (
+  `id` INT UNSIGNED NOT NULL AUTO_INCREMENT,
+  `recado` VARCHAR(190) NULL,
+  `usuarios_id` INT UNSIGNED NOT NULL,
   PRIMARY KEY (`id`),
-  KEY `fk_mensagem_usuario1_idx` (`usuario_id`,`usuario_pessoa_id`,`usuario_imagem_id`,`usuario_cidade_id`,`usuario_cidade_estado_id`)
-) ENGINE=InnoDB DEFAULT CHARSET=utf8 AUTO_INCREMENT=1 ;
+  INDEX `fk_mensagens_usuarios1_idx` (`usuarios_id` ASC),
+  CONSTRAINT `fk_mensagens_usuarios1`
+    FOREIGN KEY (`usuarios_id`)
+    REFERENCES `uniEvents`.`usuarios` (`id`)
+    ON DELETE NO ACTION
+    ON UPDATE NO ACTION)
+ENGINE = InnoDB;
 
--- --------------------------------------------------------
 
---
--- Estrutura da tabela `noticias`
---
-
-CREATE TABLE IF NOT EXISTS `noticias` (
-  `id` int(10) unsigned NOT NULL AUTO_INCREMENT,
-  `titulo` varchar(45) NOT NULL,
-  `descricao` varchar(120) NOT NULL,
-  `data` date NOT NULL,
-  `evento_id` int(10) unsigned NOT NULL,
+-- -----------------------------------------------------
+-- Table `uniEvents`.`eventos`
+-- -----------------------------------------------------
+CREATE TABLE IF NOT EXISTS `uniEvents`.`eventos` (
+  `id` INT UNSIGNED NOT NULL AUTO_INCREMENT,
+  `nome` VARCHAR(90) NOT NULL,
+  `descricao` VARCHAR(120) NOT NULL,
+  `data_ini` DATE NOT NULL,
+  `data_fim` DATE NOT NULL,
+  `tipo_evento` VARCHAR(45) NOT NULL,
+  `tema` VARCHAR(45) NOT NULL,
+  `vagas` INT NOT NULL,
+  `duracao_horas` DOUBLE NOT NULL,
+  `aprovacao` TINYINT(1) NOT NULL,
+  `url` VARCHAR(120) NULL,
+  `endereco_id` INT UNSIGNED NOT NULL,
+  `imagem_id` INT UNSIGNED NOT NULL,
   PRIMARY KEY (`id`),
-  KEY `fk_noticia_evento1_idx` (`evento_id`)
-) ENGINE=InnoDB DEFAULT CHARSET=utf8 AUTO_INCREMENT=1 ;
+  INDEX `fk_evento_endereco1_idx` (`endereco_id` ASC),
+  INDEX `fk_evento_imagem1_idx` (`imagem_id` ASC),
+  CONSTRAINT `fk_evento_endereco1`
+    FOREIGN KEY (`endereco_id`)
+    REFERENCES `uniEvents`.`enderecos` (`id`)
+    ON DELETE NO ACTION
+    ON UPDATE NO ACTION,
+  CONSTRAINT `fk_evento_imagem1`
+    FOREIGN KEY (`imagem_id`)
+    REFERENCES `uniEvents`.`imagens` (`id`)
+    ON DELETE NO ACTION
+    ON UPDATE NO ACTION)
+ENGINE = InnoDB;
 
--- --------------------------------------------------------
 
---
--- Estrutura da tabela `pagamentos`
---
+-- -----------------------------------------------------
+-- Table `uniEvents`.`pagamentos`
+-- -----------------------------------------------------
+CREATE TABLE IF NOT EXISTS `uniEvents`.`pagamentos` (
+  `id` INT UNSIGNED NOT NULL AUTO_INCREMENT,
+  `valor` DOUBLE NOT NULL,
+  `forma` VARCHAR(45) NOT NULL,
+  `vencimento` DATE NOT NULL,
+  `num_cartao` INT NULL,
+  `cod_seg` INT(3) NULL,
+  PRIMARY KEY (`id`))
+ENGINE = InnoDB;
 
-CREATE TABLE IF NOT EXISTS `pagamentos` (
-  `id` int(10) unsigned NOT NULL AUTO_INCREMENT,
-  `valor` double NOT NULL,
-  `forma` varchar(45) NOT NULL,
-  `vencimento` date NOT NULL,
-  `num_cartao` int(11) DEFAULT NULL,
-  `cod_seg` int(3) DEFAULT NULL,
-  PRIMARY KEY (`id`)
-) ENGINE=InnoDB DEFAULT CHARSET=utf8 AUTO_INCREMENT=1 ;
 
--- --------------------------------------------------------
-
---
--- Estrutura da tabela `patrocinadores`
---
-
-CREATE TABLE IF NOT EXISTS `patrocinadores` (
-  `id` int(10) unsigned NOT NULL AUTO_INCREMENT,
-  `nome` varchar(100) NOT NULL,
-  `endereco_id` int(10) unsigned NOT NULL,
+-- -----------------------------------------------------
+-- Table `uniEvents`.`tipo_inscricoes`
+-- -----------------------------------------------------
+CREATE TABLE IF NOT EXISTS `uniEvents`.`tipo_inscricoes` (
+  `id` INT UNSIGNED NOT NULL AUTO_INCREMENT,
+  `pago` TINYINT(1) NULL,
+  `status` TINYINT(1) NOT NULL,
+  `pagamento_id` INT UNSIGNED NOT NULL,
   PRIMARY KEY (`id`),
-  KEY `fk_patrocinador_endereco1_idx` (`endereco_id`)
-) ENGINE=InnoDB DEFAULT CHARSET=utf8 AUTO_INCREMENT=1 ;
+  INDEX `fk_tipo_inscricao_pagamento1_idx` (`pagamento_id` ASC),
+  CONSTRAINT `fk_tipo_inscricao_pagamento1`
+    FOREIGN KEY (`pagamento_id`)
+    REFERENCES `uniEvents`.`pagamentos` (`id`)
+    ON DELETE NO ACTION
+    ON UPDATE NO ACTION)
+ENGINE = InnoDB;
 
--- --------------------------------------------------------
 
---
--- Estrutura da tabela `patrocinador_has_eventos`
---
-
-CREATE TABLE IF NOT EXISTS `patrocinador_has_eventos` (
-  `patrocinador_id` int(10) unsigned NOT NULL,
-  `evento_id` int(10) unsigned NOT NULL,
-  PRIMARY KEY (`patrocinador_id`,`evento_id`),
-  KEY `fk_patrocinador_has_evento_evento1_idx` (`evento_id`),
-  KEY `fk_patrocinador_has_evento_patrocinador1_idx` (`patrocinador_id`)
-) ENGINE=InnoDB DEFAULT CHARSET=utf8;
-
--- --------------------------------------------------------
-
---
--- Estrutura da tabela `programacoes`
---
-
-CREATE TABLE IF NOT EXISTS `programacoes` (
-  `id` int(10) unsigned NOT NULL AUTO_INCREMENT,
-  `evento_id` int(10) unsigned NOT NULL,
-  `titulo` varchar(45) NOT NULL,
-  `descricao` varchar(120) NOT NULL,
-  `palestrante` varchar(45) DEFAULT NULL,
+-- -----------------------------------------------------
+-- Table `uniEvents`.`inscricoes`
+-- -----------------------------------------------------
+CREATE TABLE IF NOT EXISTS `uniEvents`.`inscricoes` (
+  `id` INT UNSIGNED NOT NULL AUTO_INCREMENT,
+  `data_ini` DATE NOT NULL,
+  `data_fim` DATE NOT NULL,
+  `evento_id` INT UNSIGNED NOT NULL,
+  `tipo_inscricao_id` INT UNSIGNED NOT NULL,
   PRIMARY KEY (`id`),
-  KEY `fk_programacao_evento1_idx` (`evento_id`)
-) ENGINE=InnoDB  DEFAULT CHARSET=utf8 AUTO_INCREMENT=2 ;
+  INDEX `fk_inscricao_evento1_idx` (`evento_id` ASC),
+  INDEX `fk_inscricao_tipo_inscricao1_idx` (`tipo_inscricao_id` ASC),
+  CONSTRAINT `fk_inscricao_evento1`
+    FOREIGN KEY (`evento_id`)
+    REFERENCES `uniEvents`.`eventos` (`id`)
+    ON DELETE NO ACTION
+    ON UPDATE NO ACTION,
+  CONSTRAINT `fk_inscricao_tipo_inscricao1`
+    FOREIGN KEY (`tipo_inscricao_id`)
+    REFERENCES `uniEvents`.`tipo_inscricoes` (`id`)
+    ON DELETE NO ACTION
+    ON UPDATE NO ACTION)
+ENGINE = InnoDB;
 
--- --------------------------------------------------------
 
---
--- Estrutura da tabela `telefones`
---
-
-CREATE TABLE IF NOT EXISTS `telefones` (
-  `id` int(10) unsigned NOT NULL AUTO_INCREMENT,
-  `numero` varchar(13) DEFAULT NULL,
-  `patrocinador_id` int(10) unsigned NOT NULL,
-  `usuario_id` int(10) unsigned NOT NULL,
-  `usuario_pessoa_id` int(10) unsigned NOT NULL,
-  `usuario_imagem_id` int(10) unsigned NOT NULL,
-  `usuario_cidade_id` int(10) unsigned NOT NULL,
-  `usuario_cidade_estado_id` int(10) unsigned NOT NULL,
+-- -----------------------------------------------------
+-- Table `uniEvents`.`programacoes`
+-- -----------------------------------------------------
+CREATE TABLE IF NOT EXISTS `uniEvents`.`programacoes` (
+  `id` INT UNSIGNED NOT NULL AUTO_INCREMENT,
+  `evento_id` INT UNSIGNED NOT NULL,
+  `titulo` VARCHAR(45) NOT NULL,
+  `descricao` VARCHAR(120) NULL,
+  `palestrante` VARCHAR(45) NULL,
   PRIMARY KEY (`id`),
-  KEY `fk_telefone_patrocinador1_idx` (`patrocinador_id`),
-  KEY `fk_telefone_usuario1_idx` (`usuario_id`,`usuario_pessoa_id`,`usuario_imagem_id`,`usuario_cidade_id`,`usuario_cidade_estado_id`)
-) ENGINE=InnoDB DEFAULT CHARSET=utf8 AUTO_INCREMENT=1 ;
+  INDEX `fk_programacao_evento1_idx` (`evento_id` ASC),
+  CONSTRAINT `fk_programacao_evento1`
+    FOREIGN KEY (`evento_id`)
+    REFERENCES `uniEvents`.`eventos` (`id`)
+    ON DELETE NO ACTION
+    ON UPDATE NO ACTION)
+ENGINE = InnoDB;
 
--- --------------------------------------------------------
 
---
--- Estrutura da tabela `tipo_inscricoes`
---
+-- -----------------------------------------------------
+-- Table `uniEvents`.`evento_has_usuarios`
+-- -----------------------------------------------------
+CREATE TABLE IF NOT EXISTS `uniEvents`.`evento_has_usuarios` (
+  `evento_id` INT UNSIGNED NOT NULL,
+  `usuario_id` INT UNSIGNED NOT NULL,
+  PRIMARY KEY (`evento_id`, `usuario_id`),
+  INDEX `fk_evento_has_usuario_evento1_idx` (`evento_id` ASC),
+  INDEX `fk_evento_has_usuarios_usuarios1_idx` (`usuario_id` ASC),
+  CONSTRAINT `fk_evento_has_usuario_evento1`
+    FOREIGN KEY (`evento_id`)
+    REFERENCES `uniEvents`.`eventos` (`id`)
+    ON DELETE NO ACTION
+    ON UPDATE NO ACTION,
+  CONSTRAINT `fk_evento_has_usuarios_usuarios1`
+    FOREIGN KEY (`usuario_id`)
+    REFERENCES `uniEvents`.`usuarios` (`id`)
+    ON DELETE NO ACTION
+    ON UPDATE NO ACTION)
+ENGINE = InnoDB;
 
-CREATE TABLE IF NOT EXISTS `tipo_inscricoes` (
-  `id` int(10) unsigned NOT NULL AUTO_INCREMENT,
-  `pago` tinyint(1) NOT NULL,
-  `status` tinyint(1) NOT NULL,
-  `pagamento_id` int(10) unsigned NOT NULL,
+
+-- -----------------------------------------------------
+-- Table `uniEvents`.`noticias`
+-- -----------------------------------------------------
+CREATE TABLE IF NOT EXISTS `uniEvents`.`noticias` (
+  `id` INT UNSIGNED NOT NULL AUTO_INCREMENT,
+  `titulo` VARCHAR(45) NULL,
+  `descricao` VARCHAR(120) NULL,
+  `data` DATE NULL,
+  `evento_id` INT UNSIGNED NOT NULL,
   PRIMARY KEY (`id`),
-  KEY `fk_tipo_inscricao_pagamento1_idx` (`pagamento_id`)
-) ENGINE=InnoDB DEFAULT CHARSET=utf8 AUTO_INCREMENT=1 ;
+  INDEX `fk_noticia_evento1_idx` (`evento_id` ASC),
+  CONSTRAINT `fk_noticia_evento1`
+    FOREIGN KEY (`evento_id`)
+    REFERENCES `uniEvents`.`eventos` (`id`)
+    ON DELETE NO ACTION
+    ON UPDATE NO ACTION)
+ENGINE = InnoDB;
 
--- --------------------------------------------------------
 
---
--- Estrutura da tabela `usuarios`
---
+-- -----------------------------------------------------
+-- Table `uniEvents`.`horarios`
+-- -----------------------------------------------------
+CREATE TABLE IF NOT EXISTS `uniEvents`.`horarios` (
+  `id` INT UNSIGNED NOT NULL AUTO_INCREMENT,
+  `hora_ini` VARCHAR(5) NOT NULL,
+  `hora_fim` VARCHAR(5) NOT NULL,
+  `data` DATE NOT NULL,
+  `programacao_id` INT UNSIGNED NOT NULL,
+  PRIMARY KEY (`id`),
+  INDEX `fk_horario_programacao1_idx` (`programacao_id` ASC),
+  CONSTRAINT `fk_horario_programacao1`
+    FOREIGN KEY (`programacao_id`)
+    REFERENCES `uniEvents`.`programacoes` (`id`)
+    ON DELETE NO ACTION
+    ON UPDATE NO ACTION)
+ENGINE = InnoDB;
 
-CREATE TABLE IF NOT EXISTS `usuarios` (
-  `id` int(10) unsigned NOT NULL AUTO_INCREMENT,
-  `nome` varchar(110) NOT NULL,
-  `cpf` varchar(11) NOT NULL,
-  `rg` varchar(10) NOT NULL,
-  `data_nasc` date NOT NULL,
-  `sexo` char(1) NOT NULL,
-  `email` varchar(90) NOT NULL,
-  `instituicao` varchar(45) DEFAULT NULL,
-  `tipo_user` varchar(45) NOT NULL,
-  `end_rede_soc` varchar(120) DEFAULT NULL,
-  `outro_contato_url` varchar(120) DEFAULT NULL,
-  `pessoa_idpessoa` int(10) unsigned NOT NULL,
-  `imagem_idimagem` int(10) unsigned NOT NULL,
-  `cidade_idcidade` int(10) unsigned NOT NULL,
-  `cidade_estado_idestado` int(10) unsigned NOT NULL,
-  `cidade_id` int(10) unsigned NOT NULL,
-  `cidade_estado_id` int(10) unsigned NOT NULL,
-  `imagem_id` int(10) unsigned NOT NULL,
-  `pessoa_id` int(10) unsigned NOT NULL,
-  PRIMARY KEY (`id`,`pessoa_idpessoa`,`imagem_idimagem`,`cidade_idcidade`,`cidade_estado_idestado`),
-  KEY `fk_usuario_cidade1_idx` (`cidade_id`,`cidade_estado_id`),
-  KEY `fk_usuario_imagem1_idx` (`imagem_id`),
-  KEY `fk_usuario_pessoa1_idx` (`pessoa_id`)
-) ENGINE=InnoDB DEFAULT CHARSET=utf8 AUTO_INCREMENT=1 ;
 
---
--- Constraints for dumped tables
---
+-- -----------------------------------------------------
+-- Table `uniEvents`.`patrocinador_has_eventos`
+-- -----------------------------------------------------
+CREATE TABLE IF NOT EXISTS `uniEvents`.`patrocinador_has_eventos` (
+  `patrocinador_id` INT UNSIGNED NOT NULL,
+  `evento_id` INT UNSIGNED NOT NULL,
+  PRIMARY KEY (`patrocinador_id`, `evento_id`),
+  INDEX `fk_patrocinador_has_evento_evento1_idx` (`evento_id` ASC),
+  INDEX `fk_patrocinador_has_evento_patrocinador1_idx` (`patrocinador_id` ASC),
+  CONSTRAINT `fk_patrocinador_has_evento_patrocinador1`
+    FOREIGN KEY (`patrocinador_id`)
+    REFERENCES `uniEvents`.`patrocinadores` (`id`)
+    ON DELETE NO ACTION
+    ON UPDATE NO ACTION,
+  CONSTRAINT `fk_patrocinador_has_evento_evento1`
+    FOREIGN KEY (`evento_id`)
+    REFERENCES `uniEvents`.`eventos` (`id`)
+    ON DELETE NO ACTION
+    ON UPDATE NO ACTION)
+ENGINE = InnoDB;
 
---
--- Limitadores para a tabela `cidades`
---
-ALTER TABLE `cidades`
-  ADD CONSTRAINT `fk_cidade_estado1` FOREIGN KEY (`estado_id`) REFERENCES `estados` (`id`) ON DELETE NO ACTION ON UPDATE NO ACTION;
 
---
--- Limitadores para a tabela `dia_meses`
---
-ALTER TABLE `dia_meses`
-  ADD CONSTRAINT `fk_dia_mes_dia_semana1` FOREIGN KEY (`dia_semana_id`) REFERENCES `dia_semanas` (`id`) ON DELETE NO ACTION ON UPDATE NO ACTION;
-
---
--- Limitadores para a tabela `dia_semanas`
---
-ALTER TABLE `dia_semanas`
-  ADD CONSTRAINT `fk_dia_semana_horario1` FOREIGN KEY (`horario_id`) REFERENCES `horarios` (`id`) ON DELETE NO ACTION ON UPDATE NO ACTION;
-
---
--- Limitadores para a tabela `enderecos`
---
-ALTER TABLE `enderecos`
-  ADD CONSTRAINT `fk_endereco_cidade1` FOREIGN KEY (`cidade_id`, `cidade_estado_id`) REFERENCES `cidades` (`id`, `estado_idestado`) ON DELETE NO ACTION ON UPDATE NO ACTION;
-
---
--- Limitadores para a tabela `eventos`
---
-ALTER TABLE `eventos`
-  ADD CONSTRAINT `fk_evento_endereco1` FOREIGN KEY (`endereco_id`) REFERENCES `enderecos` (`id`) ON DELETE NO ACTION ON UPDATE NO ACTION,
-  ADD CONSTRAINT `fk_evento_imagem1` FOREIGN KEY (`imagem_id`) REFERENCES `imagens` (`id`) ON DELETE NO ACTION ON UPDATE NO ACTION;
-
---
--- Limitadores para a tabela `evento_has_usuarios`
---
-ALTER TABLE `evento_has_usuarios`
-  ADD CONSTRAINT `fk_evento_has_usuario_evento1` FOREIGN KEY (`evento_id`) REFERENCES `eventos` (`id`) ON DELETE NO ACTION ON UPDATE NO ACTION,
-  ADD CONSTRAINT `fk_evento_has_usuario_usuario1` FOREIGN KEY (`usuario_id`, `usuario_pessoa_id`, `usuario_imagem_id`, `usuario_cidade_id`, `usuario_cidade_estado_id`) REFERENCES `usuarios` (`id`, `pessoa_idpessoa`, `imagem_idimagem`, `cidade_idcidade`, `cidade_estado_idestado`) ON DELETE NO ACTION ON UPDATE NO ACTION;
-
---
--- Limitadores para a tabela `horarios`
---
-ALTER TABLE `horarios`
-  ADD CONSTRAINT `fk_horario_programacao1` FOREIGN KEY (`programacao_id`) REFERENCES `programacoes` (`id`) ON DELETE NO ACTION ON UPDATE NO ACTION;
-
---
--- Limitadores para a tabela `inscricoes`
---
-ALTER TABLE `inscricoes`
-  ADD CONSTRAINT `fk_inscricao_evento1` FOREIGN KEY (`evento_id`) REFERENCES `eventos` (`id`) ON DELETE NO ACTION ON UPDATE NO ACTION,
-  ADD CONSTRAINT `fk_inscricao_tipo_inscricao1` FOREIGN KEY (`tipo_inscricao_id`) REFERENCES `tipo_inscricoes` (`id`) ON DELETE NO ACTION ON UPDATE NO ACTION;
-
---
--- Limitadores para a tabela `mensagens`
---
-ALTER TABLE `mensagens`
-  ADD CONSTRAINT `fk_mensagem_usuario1` FOREIGN KEY (`usuario_id`, `usuario_pessoa_id`, `usuario_imagem_id`, `usuario_cidade_id`, `usuario_cidade_estado_id`) REFERENCES `usuarios` (`id`, `pessoa_idpessoa`, `imagem_idimagem`, `cidade_idcidade`, `cidade_estado_idestado`) ON DELETE NO ACTION ON UPDATE NO ACTION;
-
---
--- Limitadores para a tabela `noticias`
---
-ALTER TABLE `noticias`
-  ADD CONSTRAINT `fk_noticia_evento1` FOREIGN KEY (`evento_id`) REFERENCES `eventos` (`id`) ON DELETE NO ACTION ON UPDATE NO ACTION;
-
---
--- Limitadores para a tabela `patrocinadores`
---
-ALTER TABLE `patrocinadores`
-  ADD CONSTRAINT `fk_patrocinador_endereco1` FOREIGN KEY (`endereco_id`) REFERENCES `enderecos` (`id`) ON DELETE NO ACTION ON UPDATE NO ACTION;
-
---
--- Limitadores para a tabela `patrocinador_has_eventos`
---
-ALTER TABLE `patrocinador_has_eventos`
-  ADD CONSTRAINT `fk_patrocinador_has_evento_patrocinador1` FOREIGN KEY (`patrocinador_id`) REFERENCES `patrocinadores` (`id`) ON DELETE NO ACTION ON UPDATE NO ACTION,
-  ADD CONSTRAINT `fk_patrocinador_has_evento_evento1` FOREIGN KEY (`evento_id`) REFERENCES `eventos` (`id`) ON DELETE NO ACTION ON UPDATE NO ACTION;
-
---
--- Limitadores para a tabela `programacoes`
---
-ALTER TABLE `programacoes`
-  ADD CONSTRAINT `fk_programacao_evento1` FOREIGN KEY (`evento_id`) REFERENCES `eventos` (`id`) ON DELETE NO ACTION ON UPDATE NO ACTION;
-
---
--- Limitadores para a tabela `telefones`
---
-ALTER TABLE `telefones`
-  ADD CONSTRAINT `fk_telefone_patrocinador1` FOREIGN KEY (`patrocinador_id`) REFERENCES `patrocinadores` (`id`) ON DELETE NO ACTION ON UPDATE NO ACTION,
-  ADD CONSTRAINT `fk_telefone_usuario1` FOREIGN KEY (`usuario_id`, `usuario_pessoa_id`, `usuario_imagem_id`, `usuario_cidade_id`, `usuario_cidade_estado_id`) REFERENCES `usuarios` (`id`, `pessoa_idpessoa`, `imagem_idimagem`, `cidade_idcidade`, `cidade_estado_idestado`) ON DELETE NO ACTION ON UPDATE NO ACTION;
-
---
--- Limitadores para a tabela `tipo_inscricoes`
---
-ALTER TABLE `tipo_inscricoes`
-  ADD CONSTRAINT `fk_tipo_inscricao_pagamento1` FOREIGN KEY (`pagamento_id`) REFERENCES `pagamentos` (`id`) ON DELETE NO ACTION ON UPDATE NO ACTION;
-
---
--- Limitadores para a tabela `usuarios`
---
-ALTER TABLE `usuarios`
-  ADD CONSTRAINT `fk_usuario_cidade1` FOREIGN KEY (`cidade_id`, `cidade_estado_id`) REFERENCES `cidades` (`id`, `estado_idestado`) ON DELETE NO ACTION ON UPDATE NO ACTION,
-  ADD CONSTRAINT `fk_usuario_imagem1` FOREIGN KEY (`imagem_id`) REFERENCES `imagens` (`id`) ON DELETE NO ACTION ON UPDATE NO ACTION,
-  ADD CONSTRAINT `fk_usuario_pessoa1` FOREIGN KEY (`pessoa_id`) REFERENCES `conexoes` (`id`) ON DELETE NO ACTION ON UPDATE NO ACTION;
-
-/*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
-/*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;
-/*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
+SET SQL_MODE=@OLD_SQL_MODE;
+SET FOREIGN_KEY_CHECKS=@OLD_FOREIGN_KEY_CHECKS;
+SET UNIQUE_CHECKS=@OLD_UNIQUE_CHECKS;
