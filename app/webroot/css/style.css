@@ -57,7 +57,7 @@ FONTS
 /****************************************************************************
 BASIC STYLES
 ****************************************************************************/
-html { background: url(../images/bg.jpg) no-repeat center center fixed; 
+html { background: url(../img/bg.jpg) no-repeat center center fixed; 
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -84,7 +84,7 @@ h5 a { color: #000; }
 h6 { font-size: 10px; }
 h6 a { color: #000; }
 
-.heading  { text-transform: uppercase; font: 18px 'oswald', sans-serif; padding: 14px 28px ; border:1px solid #e2e2e2; border-left: 0px; background: url("../images/heading-bg.png") left center no-repeat;}
+.heading  { text-transform: uppercase; font: 18px 'oswald', sans-serif; padding: 14px 28px ; border:1px solid #e2e2e2; border-left: 0px; background: url("../img/heading-bg.png") left center no-repeat;}
 
 ul {}
 ul li []
@@ -115,7 +115,7 @@ p { color: #7b7b7b; font:400 13px 'tahoma', sans-serif; font-weight: normal; mar
 #accordion div {display: none;}
 #tabs-2, #tabs-3 {display: none;}
 .header-bar {background:#000000;line-height: 26px;}
-.header-bar li { float: left; padding: 0px 14px;vertical-align: middle; background: url(../images/topsap.png) center right no-repeat;}
+.header-bar li { float: left; padding: 0px 14px;vertical-align: middle; background: url(../img/topsap.png) center right no-repeat;}
 .header-bar li:last-child { background: none; }
 .header-bar li a {font:12px 'philosopherregular', sans-serif;color: #FFFFFF;}
 
@@ -199,14 +199,14 @@ ul.newsticker li {float: left; margin-right: 75px !important;}
 .post-meta { margin-bottom: 15px; display: inline-block; }
 .post-meta span { font: 11px 'Open Sans', sans-serif; color:#cccccc ; padding-left: 22px; margin-right: 15px; }
 .post-meta span a {font: 11px 'Open Sans', sans-serif !important; color:#cccccc ; }
-.talk {background: url(../images/talk.png) left center no-repeat;}
-.time {background: url(../images/time.png) left center no-repeat;}
-.eye {background: url(../images/eye.png) left center no-repeat;}
+.talk {background: url(../img/talk.png) left center no-repeat;}
+.time {background: url(../img/time.png) left center no-repeat;}
+.eye {background: url(../img/eye.png) left center no-repeat;}
 
 .rating {display: inline-block; vertical-align: middle;}
-.rating a { width: 14px; height: 13px; display: inline-block; background: url(../images/wh.png) no-repeat; margin-right: 5px;}
-.rating a:hover { background: url(../images/star-.png) no-repeat }
-.rating a.star { background: url(../images/star-.png) no-repeat }
+.rating a { width: 14px; height: 13px; display: inline-block; background: url(../img/wh.png) no-repeat; margin-right: 5px;}
+.rating a:hover { background: url(../img/star-.png) no-repeat }
+.rating a.star { background: url(../img/star-.png) no-repeat }
 
 .bottom-section > figure { width: 44px; height:44px; margin-bottom: 15px; float: left; margin-right: 10px; }
 .bottom-section figure a { width: 44px; height: 44px; display: block }
@@ -249,13 +249,13 @@ ul.newsticker li {float: left; margin-right: 75px !important;}
 #product_tabs > ul .ui-state-active {border-bottom: 0px; background: #ffffff; border-color: #e8e8e8; border-bottom-color: #ffffff;}
 #product_tabs > ul .ui-state-active a { color: #ffffff;  }
 
-#product_tabs > ul > li:hover a.one {background: url("../images/tab1.png") center no-repeat}
-#product_tabs > ul > li:hover a.two {background: url("../images/tab2hover.png") center no-repeat}
-#product_tabs > ul > li:hover a.three {background: url("../images/tab3hover.png") center no-repeat}
+#product_tabs > ul > li:hover a.one {background: url("../img/tab1.png") center no-repeat}
+#product_tabs > ul > li:hover a.two {background: url("../img/tab2hover.png") center no-repeat}
+#product_tabs > ul > li:hover a.three {background: url("../img/tab3hover.png") center no-repeat}
 
 #product_tabs > ul .ui-state-active a.one {background: url("app/webroot/img/tab1.png") center no-repeat}
-#product_tabs > ul .ui-state-active a.two {background: url("../images/tab2hover.png") center no-repeat}
-#product_tabs > ul .ui-state-active a.three {background: url("../images/tab3hover.png") center no-repeat}
+#product_tabs > ul .ui-state-active a.two {background: url("../img/tab2hover.png") center no-repeat}
+#product_tabs > ul .ui-state-active a.three {background: url("../img/tab3hover.png") center no-repeat}
 
 #product_tabs > ul > li a.one {background: url("app/webroot/img/tab1hover.png") center no-repeat}
 #product_tabs > ul > li a.two {background: url("app/webroot/img/tab2.png") center no-repeat}
@@ -275,10 +275,10 @@ ul.newsticker li {float: left; margin-right: 75px !important;}
 
 #accordion {border-top: 4px solid #000000; margin-bottom: 15px;}
 #accordion h5 {font:700 13px 'open sans', sans-serif; color: #000; margin-bottom: -1px; }
-#accordion h5 a { display: block; outline: none; padding: 20px 0px 20px 15px;  background: #ffffff url("../images/down-arrow.png") 90% center no-repeat; border: 1px solid #d6d6d6; }
-#accordion h5 a:hover { color: #ffffff !important; background: #ff7200 url("../images/down-arrow.png") 90% center no-repeat; }
+#accordion h5 a { display: block; outline: none; padding: 20px 0px 20px 15px;  background: #ffffff url("../img/down-arrow.png") 90% center no-repeat; border: 1px solid #d6d6d6; }
+#accordion h5 a:hover { color: #ffffff !important; background: #ff7200 url("../img/down-arrow.png") 90% center no-repeat; }
 #accordion h5 a:focus { outline: none; }
-#accordion h5.ui-accordion-header-active a { color: #ffffff; background: #ff7200 url("../images/up-arow.png") 90% center no-repeat; }
+#accordion h5.ui-accordion-header-active a { color: #ffffff; background: #ff7200 url("../img/up-arow.png") 90% center no-repeat; }
 
 
 #accordion div {padding: 15px 15px 0px;; border: 1px solid #e8e8e8; border-top: 0px; }
@@ -309,7 +309,7 @@ ul.newsticker li {float: left; margin-right: 75px !important;}
 ****************************************************************************/
 
 .title-bar {background: #FF7200;height: 55px;position: relative;overflow: hidden; margin-bottom: 15px;}
-.title-bar span {margin-right: 10px; position: relative; z-index: 999; font: 23px 'Oswald', sans-serif; float: left; color:#fff; background: #4c4c4c url(../images/title-arrow.jpg) right center no-repeat;height: 55px; line-height: 55px; position: relative;padding: 0 20px 0 10px;display: inline-block;}
+.title-bar span {margin-right: 10px; position: relative; z-index: 999; font: 23px 'Oswald', sans-serif; float: left; color:#fff; background: #4c4c4c url(../img/title-arrow.jpg) right center no-repeat;height: 55px; line-height: 55px; position: relative;padding: 0 20px 0 10px;display: inline-block;}
 .title-bar p{font: 18px 'philosopherregular', sans-serif; color: #ffffff; line-height: 55px;}
 
 
@@ -387,14 +387,14 @@ ul.newsticker li {float: left; margin-right: 75px !important;}
 .overlay { display: none; background: #ff7200; width: 100%; height: 100%; position: absolute; top: 0px; left: 0px;}
 .overlay h4 { margin-bottom: 10px;  font-weight: bold; padding: 30px 0px 0px 15px; color: #ffffff; }
 .overlay p { font-size: 15px; color: #ffffff; padding:0px 35px 0px 15px; }
-.overlay .zoom { width: 41px; height: 41px; display: block; background: url("../images/zoom.png") no-repeat; position: absolute; bottom: 0px; right: 43px;}
-.overlay .pls { width: 41px; height: 41px; display: block; background: url("../images/plus.png") no-repeat; position: absolute; bottom: 0px; right: 0px;}
+.overlay .zoom { width: 41px; height: 41px; display: block; background: url("../img/zoom.png") no-repeat; position: absolute; bottom: 0px; right: 43px;}
+.overlay .pls { width: 41px; height: 41px; display: block; background: url("../img/plus.png") no-repeat; position: absolute; bottom: 0px; right: 0px;}
 
 .elastislide-list  li { position: relative; width: 33% !important;}
 .overlay-colm { display: none; background: #ff7200; width: 100%; height: 100%; position: absolute; top: 0px; left: 0px;}
 
-.overlay-colm .zoom { width: 41px; height: 41px; display: block; background: rgba(0, 0, 0, 0.1) url("../images/zoom.png") center center no-repeat; position: absolute; bottom: 0px; right: 43px;top: 50%;right: 50%;margin: -20px -42px 0 0;}
-.overlay-colm .pls { width: 41px; height: 41px; display: block; background: url("../images/plus.png") no-repeat; position: absolute; bottom: 0px; right: 0px;top: 50%;right: 50%;margin: -20px 2px 0 0;}
+.overlay-colm .zoom { width: 41px; height: 41px; display: block; background: rgba(0, 0, 0, 0.1) url("../img/zoom.png") center center no-repeat; position: absolute; bottom: 0px; right: 43px;top: 50%;right: 50%;margin: -20px -42px 0 0;}
+.overlay-colm .pls { width: 41px; height: 41px; display: block; background: url("../img/plus.png") no-repeat; position: absolute; bottom: 0px; right: 0px;top: 50%;right: 50%;margin: -20px 2px 0 0;}
 
 
 /****************************************************************************
@@ -404,11 +404,11 @@ ul.newsticker li {float: left; margin-right: 75px !important;}
 .services-wrap a {margin-bottom: 7px; display: block; height:55px;}
 .services-wrap p { font:12px 'open sans', sans-serif; color: #464646; line-height: 18px; margin-bottom: 15px; }
 
-.carousel-two .elastislide-horizontal nav span { top: -273px !important; background: url(../images/slider-right.png) center center no-repeat !important; ;}
-.carousel-two .elastislide-horizontal nav span:hover  {background: url(../images/slider-right.png) center center no-repeat !important;}
-.carousel-two .slierbutton .arrow-left {background: url(../images/slider-right.png) center center no-repeat !important; ;}
-.carousel-two .elastislide-horizontal nav span.elastislide-next:hover {background: url(../images/slider-left.png) center center no-repeat !important; ;}
-.carousel-two .elastislide-horizontal nav span.elastislide-next {top: -273px !important;background: url(../images/slider-left.png) center center no-repeat !important;}
+.carousel-two .elastislide-horizontal nav span { top: -273px !important; background: url(../img/slider-right.png) center center no-repeat !important; ;}
+.carousel-two .elastislide-horizontal nav span:hover  {background: url(../img/slider-right.png) center center no-repeat !important;}
+.carousel-two .slierbutton .arrow-left {background: url(../img/slider-right.png) center center no-repeat !important; ;}
+.carousel-two .elastislide-horizontal nav span.elastislide-next:hover {background: url(../img/slider-left.png) center center no-repeat !important; ;}
+.carousel-two .elastislide-horizontal nav span.elastislide-next {top: -273px !important;background: url(../img/slider-left.png) center center no-repeat !important;}
 
 .recent {margin-bottom: 22px;}
 .recent figure { width: 170px; height: 130px; float: left;}
@@ -427,11 +427,11 @@ ul.newsticker li {float: left; margin-right: 75px !important;}
 
 .client-slider {background: #f1f1f1; position: relative; margin-bottom: 15px;}
 .client-slider > a {width: 33px; height: 33px; position: absolute; top: -58px; right: 17px; z-index: 9999;}
-.client-slider > a.next {background: url("../images/slider-right.png") no-repeat;right: 58px;}
-.client-slider > a.prew {background: url("../images/slider-left.png") no-repeat; }
+.client-slider > a.next {background: url("../img/slider-right.png") no-repeat;right: 58px;}
+.client-slider > a.prew {background: url("../img/slider-left.png") no-repeat; }
 
 .client-slider p {margin: 24px 22px 20px !important; font: 15px 'philosopherregular', sana-serif; color: #6d6d6d; line-height: 25px;}
-.client-slider span { width: 19px; height: 9px; display: block; background: url("../images/erro.png") no-repeat; position: absolute; bottom: -9px; left: 15px;}
+.client-slider span { width: 19px; height: 9px; display: block; background: url("../img/erro.png") no-repeat; position: absolute; bottom: -9px; left: 15px;}
 
 cite {font:italic 17px 'Georgia', sans-serif; color:#484848; }
 cite  span {display: block; font-size: 11px; color: #ff7200;}
@@ -460,8 +460,8 @@ footer input[type="submit"]:hover {background:#FF7200; color:#FFF;}
 .footer-bottom  p { font: 11px 'open sans', sans-serif !important; color: #000 !important; margin-bottom: 0px !important; line-height: 88px !important;}
 
 .bottom-errow {text-align: right;}
-.bottom-errow a {background: url("../images/bottom-errow.png") no-repeat; width: 52px; height: 52px; display: block; float: right; margin-top: 25px;}
-.bottom-errow a:hover {background: url("../images/bottom-hover.png") no-repeat;}
+.bottom-errow a {background: url("../img/bottom-errow.png") no-repeat; width: 52px; height: 52px; display: block; float: right; margin-top: 25px;}
+.bottom-errow a:hover {background: url("../img/bottom-hover.png") no-repeat;}
 
 /******************************
    Isotope CSS3 transitions
