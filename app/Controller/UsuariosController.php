@@ -5,7 +5,7 @@ class UsuariosController extends AppController {
 	public $helpers = array('Html', 'Form');
 	public $components = array('Session');
 
-	public function adicionar(){
+	public function cadastro(){
 		if ($this->request->is('post')) {
             $this->Usuario->create();
             if ($this->Usuario->save($this->request->data)) {
