@@ -294,11 +294,20 @@
                         </div>
 
                     <!-- Scripts -->
-                    <script src="js/jquery-1.7.1.min.js"></script>
-                    <script src="js/jquery.flexslider-min.js"></script>
-                    <script src="js/modernizr.custom.17475.js"></script>
-                    <script src="js/jquery.elastislide.js"></script>
-                    <script src="js/jquery.isotope.min.js"></script>
+                    <?php
+                        echo $this->Html->script('jquery-1.7.1.min');
+                        echo $this->Html->script('jquery.flexslider-min');
+                        echo $this->Html->script('modernizr.custom.17475');
+                        echo $this->Html->script('jquery.elastislide');
+                        echo $this->Html->script('jquery.isotope.min');
+                        echo $this->Html->script('jquery.themepunch.plugins.min');
+                        echo $this->Html->script('jquery.themepunch.revolution');
+                        echo $this->Html->script('prettyPhoto');
+                        echo $this->Html->script('http://maps.google.com/maps/api/js?sensor=true');
+                        echo $this->Html->script('jquery.ui.map.full.min');
+                        echo $this->Html->script('custom');
+                    ?>
+
                     <script src="rs-plugin/js/jquery.themepunch.plugins.min.js"></script>
                     <script src="rs-plugin/js/jquery.themepunch.revolution.js"></script>
                     <script src="js/jquery.cycle.all.js"></script>
