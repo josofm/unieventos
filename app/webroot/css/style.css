@@ -125,8 +125,8 @@ p { color: #7b7b7b; font:400 13px 'tahoma', sans-serif; font-weight: normal; mar
 .adver-banner { line-height: 94px; text-align: right;  }
 .adver-banner a img {vertical-align: middle;}
 
-nav { height: 58px;line-height: 58px;position: relative;background: url(../images/nav-bg.png) 0 2px repeat-x; margin-bottom: 15px;}
-nav > ul > li { float: left; position: relative;background: url(../images/nav-sap.png) center right no-repeat;}
+nav { height: 58px;line-height: 58px;position: relative;background: url(../img/nav-bg.png) 0 2px repeat-x; margin-bottom: 15px;}
+nav > ul > li { float: left; position: relative;background: url(../img/nav-sap.png) center right no-repeat;}
 nav > ul > li:last-child {background: none;}
 
 nav > ul > li > a{ padding:13px 16px;}
@@ -141,7 +141,7 @@ nav li ul a:hover { background: #ff7200; color: #ffffff !important;  }
 
 .responsive { width: 100%; display: none; }
 .responsive ul li { text-align: left; }
-.responsive > ul > li > a {display: block; padding: 15px 10px; background: url(../images/nav-bg.png) 0 2px repeat-x; font: 16px 'Oswald', sans-serif; color: #000000;}
+.responsive > ul > li > a {display: block; padding: 15px 10px; background: url(../img/nav-bg.png) 0 2px repeat-x; font: 16px 'Oswald', sans-serif; color: #000000;}
 .responsive > ul > li {width: 100%; position: relative; }
 .responsive li ul { position: absolute; top: 49px; left: 0px; width: 100%;  background: rgba(255,255,255,0.9) ; display: none; z-index: 1000; }
 .responsive li ul li { width: 100%;    }
@@ -153,7 +153,7 @@ nav li ul a:hover { background: #ff7200; color: #ffffff !important;  }
 
 
 .news-scrol {background: #FF7200;height: 30px;position: relative;overflow: hidden; margin-bottom: 15px; line-height: 30px;}
-.news-scrol span { position: relative; z-index: 999; font: 13px 'Oswald', sans-serif; float: left; color:#fff; background: #4c4c4c url(../images/title-arrow.jpg) right center no-repeat;height: 30px; line-height: 30px; position: relative;padding: 0 20px 0 10px;display: inline-block;}
+.news-scrol span { position: relative; z-index: 999; font: 13px 'Oswald', sans-serif; float: left; color:#fff; background: #4c4c4c url(../img/title-arrow.jpg) right center no-repeat;height: 30px; line-height: 30px; position: relative;padding: 0 20px 0 10px;display: inline-block;}
 .news-scrol ul li a:hover{color: #ffffff !important;}
 .news-scrol ul li a {font: 13px 'philosopherregular', sans-serif; color: #ffffff;}
 
@@ -172,11 +172,11 @@ ul.newsticker li {float: left; margin-right: 75px !important;}
 .slider .slide .heading-a span {color: #ff7200;}
 .slider .slide .heading-b { text-align: center; padding:10px 20px;;font: 16px 'open sans', sans-serif; line-height:normal !important; color:#FFF; border-radius:2px; background:#000000; border: 1px solid #4e4e4e;opacity: 0.8 !important; text-shadow:0px 1px 0px #000;  }
 
-.slider-wrapper .tp-leftarrow{height:78px !important;width:78px !important; display:block; position:absolute;left:0px; top: 40%;  background:url(../images/arrow_large_left.png) no-repeat !important;z-index:999; background-position: 0 0 ;}
-.slider-wrapper .tp-rightarrow{height:78px !important;width:78px !important; display:block; position:absolute;left:42px;top: 40%; background:url(../images/arrow_large_right.png) no-repeat  !important;z-index:999; background-position: 0 0 ;}
+.slider-wrapper .tp-leftarrow{height:78px !important;width:78px !important; display:block; position:absolute;left:0px; top: 40%;  background:url(../img/arrow_large_left.png) no-repeat !important;z-index:999; background-position: 0 0 ;}
+.slider-wrapper .tp-rightarrow{height:78px !important;width:78px !important; display:block; position:absolute;left:42px;top: 40%; background:url(../img/arrow_large_right.png) no-repeat  !important;z-index:999; background-position: 0 0 ;}
 
-.slider-wrapper .tp-leftarrow:hover  {  background:url(../images/arrow_large_left_hover.png) no-repeat !important;}
-.slider-wrapper .tp-rightarrow:hover {background:url(../images/arrow_large_right_hover.png) no-repeat  !important;}
+.slider-wrapper .tp-leftarrow:hover  {  background:url(../img/arrow_large_left_hover.png) no-repeat !important;}
+.slider-wrapper .tp-rightarrow:hover {background:url(../img/arrow_large_right_hover.png) no-repeat  !important;}
 
 .slot {display: none !important;}
 

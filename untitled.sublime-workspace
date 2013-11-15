@@ -1,0 +1,197 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"el",
+				"element"
+			],
+			[
+				"li",
+				"link"
+			]
+		]
+	},
+	"buffers":
+	[
+	],
+	"build_system": "",
+	"command_palette":
+	{
+		"height": 0.0,
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"console":
+	{
+		"height": 0.0,
+		"history":
+		[
+		]
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"file_history":
+	[
+		"/var/www/unieventos/app/View/Elements/busca.ctp",
+		"/var/www/unieventos/app/View/Layouts/default.ctp",
+		"/var/www/unieventos/app/tmp/cache/persistent/myapp_cake_core_file_map",
+		"/var/www/unieventos/app/Config/core.php",
+		"/var/www/unieventos/app/webroot/css/style.css",
+		"/var/www/unieventos/app/View/Elements/tabs.ctp",
+		"/var/www/unieventos/app/View/Layouts/default2.ctp",
+		"/var/www/unieventos/app/View/Layouts/admin.ctp",
+		"/var/www/unieventos/app/View/Elements/tags.ctp",
+		"/var/www/unieventos/app/View/Elements/accordion.ctp",
+		"/var/www/unieventos/app/View/Elements/menu2.ctp",
+		"/var/www/unieventos/app/View/Elements/menu.ctp",
+		"/var/www/unieventos/app/webroot/css/ie.css",
+		"/var/www/unieventos/app/webroot/js/custom.js",
+		"/var/www/unieventos/app/webroot/js/jquery.ui.map.full.min.js",
+		"/var/www/unieventos/app/webroot/js/jquery.prettyPhoto.js",
+		"/var/www/unieventos/app/webroot/js/jquery.cycle.all.js",
+		"/var/www/unieventos/app/webroot/js/jquery.themepunch.revolution.js",
+		"/var/www/unieventos/app/webroot/js/jquery.themepunch.plugins.min.js",
+		"/var/www/unieventos/app/webroot/js/jquery.isotope.min.js",
+		"/var/www/unieventos/app/webroot/js/jquery.elastislide.js",
+		"/var/www/unieventos/app/webroot/js/modernizr.custom.17475.js",
+		"/var/www/unieventos/app/webroot/js/jquery.flexslider-min.js",
+		"/var/www/unieventos/app/webroot/js/jquery-1.7.1.min.js",
+		"/var/www/unieventos/app/webroot/css/settings.css",
+		"/var/www/unieventos/app/webroot/css/responsive.css",
+		"/var/www/unieventos/app/webroot/css/responseive2.css",
+		"/var/www/unieventos/app/webroot/css/elastislide.css",
+		"/var/www/unieventos/app/webroot/css/prettyPhoto.css",
+		"/var/www/unieventos/app/webroot/.htaccess",
+		"/var/www/unieventos/lib/Cake/Cache/CacheEngine.php",
+		"/var/www/unieventos/app/Config/database.php",
+		"/var/www/unieventos/app/webroot/css/flexslider.css",
+		"/var/www/unieventos/app/View/Layouts/magrev.ctp",
+		"/var/www/unieventos/app/webroot/css/bootstrap.css",
+		"/media/adriano/3d29b5fa-9ff1-4493-aa4d-c2ea3839f481/adriano/Dropbox/layouts/quadro_negro/index.html"
+	],
+	"find":
+	{
+		"height": 35.0
+	},
+	"find_in_files":
+	{
+		"height": 0.0,
+		"where_history":
+		[
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+			"product_tabs",
+			"time",
+			"images"
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"sheets":
+			[
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 25.0
+	},
+	"input":
+	{
+		"height": 33.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"project": "untitled.sublime-project",
+	"replace":
+	{
+		"height": 46.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 0.0,
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_symbol":
+	{
+		"height": 0.0,
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"settings":
+	{
+	},
+	"show_minimap": true,
+	"show_open_files": false,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 245.0,
+	"status_bar_visible": true,
+	"template_settings":
+	{
+	}
+}
