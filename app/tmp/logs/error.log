@@ -11551,3 +11551,48 @@ Request URL: /unieventos/img/footer-logo.png
 Stack Trace:
 #0 C:\xampp2\htdocs\unieventos\app\webroot\index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
 #1 {main}
+2013-11-15 20:01:22 Error: [MissingControllerException] Controller class ImagesController could not be found.
+Exception Attributes: array (
+  'class' => 'ImagesController',
+  'plugin' => NULL,
+)
+Request URL: /unieventos/images/thum3.png
+Stack Trace:
+#0 C:\xampp2\htdocs\unieventos\app\webroot\index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2013-11-15 20:01:22 Error: [MissingControllerException] Controller class ImagesController could not be found.
+Exception Attributes: array (
+  'class' => 'ImagesController',
+  'plugin' => NULL,
+)
+Request URL: /unieventos/images/thum2.png
+Stack Trace:
+#0 C:\xampp2\htdocs\unieventos\app\webroot\index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2013-11-15 20:01:22 Error: [MissingControllerException] Controller class ImagesController could not be found.
+Exception Attributes: array (
+  'class' => 'ImagesController',
+  'plugin' => NULL,
+)
+Request URL: /unieventos/images/footer-logo.png
+Stack Trace:
+#0 C:\xampp2\htdocs\unieventos\app\webroot\index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2013-11-15 20:01:23 Error: [MissingControllerException] Controller class Rs-pluginController could not be found.
+Exception Attributes: array (
+  'class' => 'Rs-pluginController',
+  'plugin' => NULL,
+)
+Request URL: /unieventos/rs-plugin/js/jquery.themepunch.plugins.min.js
+Stack Trace:
+#0 C:\xampp2\htdocs\unieventos\app\webroot\index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2013-11-15 20:01:23 Error: [MissingControllerException] Controller class Rs-pluginController could not be found.
+Exception Attributes: array (
+  'class' => 'Rs-pluginController',
+  'plugin' => NULL,
+)
+Request URL: /unieventos/rs-plugin/js/jquery.themepunch.revolution.js
+Stack Trace:
+#0 C:\xampp2\htdocs\unieventos\app\webroot\index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
