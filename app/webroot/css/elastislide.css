@@ -22,7 +22,7 @@
 }
 
 .elastislide-wrapper.elastislide-loading {
-	background-image: url(../images/loading.gif);
+	background-image: url(../img/loading.gif);
 	background-repeat: no-repeat;
 	background-position: center center;
 }
@@ -104,10 +104,10 @@
 
 .elastislide-horizontal nav span {
     right: 53px;
-    top: -252px;background: url(../images/arrow-left.png) center center no-repeat ;
+    top: -252px;background: url(../img/arrow-left.png) center center no-repeat ;
 	border-radius: 4px 0 0 4px; display:block !important;
 }
-.elastislide-horizontal nav span:hover  {background: url(../images/arrow-right1.png) center center no-repeat ;}
+.elastislide-horizontal nav span:hover  {background: url(../img/arrow-right1.png) center center no-repeat ;}
 .elastislide-vertical nav span {
 	top: 0;
 	right: 0;
@@ -115,15 +115,15 @@
 }
 
 .slierbutton .arrow-left {
-	background: url(../images/arrow-left.png) center center no-repeat ;
+	background: url(../img/arrow-left.png) center center no-repeat ;
 	border-radius: 4px 0 0 4px;
 }
-.elastislide-horizontal nav span.elastislide-next:hover {background: url(../images/arrow-right.png) center center no-repeat ;}
+.elastislide-horizontal nav span.elastislide-next:hover {background: url(../img/arrow-right.png) center center no-repeat ;}
 
 
 .elastislide-horizontal nav span.elastislide-next {
 	 right: 14px;
-    top: -252px;display:block !important;background: url(../images/arrow-left1.png) center center no-repeat;
+    top: -252px;display:block !important;background: url(../img/arrow-left1.png) center center no-repeat;
 	border-radius: 0 4px 4px 0;
 	margin-right: 0
 }

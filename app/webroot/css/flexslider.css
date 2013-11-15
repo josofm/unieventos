@@ -34,8 +34,8 @@ html[xmlns] .slides {display: block;}
 /* Direction Nav */
 .flex-direction-nav  {position: absolute; top: 15px; right: 6px;z-index: 999;width: 53px;}
 .flex-direction-nav li a {width: 12px; height:20px;display: block; float: left; margin-left: 10px; cursor: pointer; text-indent: -9999px; background-position: 0 0;}
-.flex-direction-nav li .next {background:url("../images/left.png") no-repeat;}
-.flex-direction-nav li .prev {background:url("../images/right.png") no-repeat;}
+.flex-direction-nav li .next {background:url("../img/left.png") no-repeat;}
+.flex-direction-nav li .prev {background:url("../img/right.png") no-repeat;}
 .flex-direction-nav li .disabled {opacity: .3; filter:alpha(opacity=30); cursor: default;}
 
 /* Control Nav */
