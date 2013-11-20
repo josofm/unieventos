@@ -38,7 +38,7 @@
                     <?php echo $this->element('menu'); ?>
                     <div class="span4">
                         <div class="logo">
-                            <?php echo $this->Html->image('logo.png'); ?>
+                            <?php echo $this->Html->link($this->Html->image('logo.png', array('alt' => 'Unieventos')), array('controller' => 'pages', 'action' => 'display'), array('escape' => false)); ?>
                         </div>
                     </div>
                     <div class="span8">
