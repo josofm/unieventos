@@ -1,0 +1,42 @@
+
+msgid "Cadastre-se para participe dos eventos"
+msgstr "Sign up to participate in the event"
+
+msgid "Nome:"
+msgstr "Name:"
+
+msgid "CPF"
+msgstr "CPF"
+
+msgid "RG"
+msgstr "ID"
+
+msgid "Sexo"
+msgstr "Sex"
+
+msgid "Data de Nascimento"
+msgstr "Birthdate"
+
+msgid "Email"
+msgstr "Email"
+
+msgid "Senha"
+msgstr "Password"
+
+msgid "Instituição de ensino"
+msgstr "Educational institution"
+	
+msgid "Rede Social"
+msgstr "Social Network"
+
+msgid "Outro contato"
+msgstr "Other contact"
+
+msgid "Estado"
+msgstr "State"
+
+msgid "Cidade"
+msgstr "City"
+
+msgid "Cadastrar"
+msgstr "Save"
