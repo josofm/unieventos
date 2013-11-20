@@ -1,4 +1,5 @@
-<?php echo $this->Form->create('Usuario', array('class' => 'form-horizontal', 'novalidate' )); ?>
+<?php  
+  echo $this->Form->create('Usuario', array('class' => 'form-horizontal', 'novalidate' )); ?>
     <fieldset>  
       <legend><?php echo __('Cadastre-se para participe dos eventos') ?></legend>  
       <div class="control-group">  
@@ -19,16 +20,16 @@
         	<?php echo $this->Form->input('rg', array('class' => 'input-xlarge', 'label' => false)); ?> 
         </div>  
       </div>
-      <div class="control-group">  
+      <div class="control-group ">  
         <label class="control-label" for="input01"><?php echo __('Sexo'); ?></label>  
-        <div class="controls"> 
-          <?php echo $this->Form->input('sexo', array('class' => 'input-xlarge', 'label' => false)); ?> 
+        <div class="controls radio"> 
+          <?php echo $this->Form->radio('sexo', array('0' => __('Feminino'), '1' => __('Masculino')) ,array('legend' => false, 'after' => '--after--', 'between' => '--between---','separator' => '<br />')); ?> 
         </div>  
       </div>
       <div class="control-group">  
         <label class="control-label" for="input01"><?php echo __('Data de Nascimento'); ?></label>  
         <div class="controls"> 
-          <?php echo $this->Form->input('data_nasc', array('class' => 'input-xlarge', 'label' => false)); ?> 
+          <?php echo $this->Form->input('data_nasc', array('dateFormat' => 'DMY','separator' => '/', 'label' => false, 'style' => 'width: inherit;')); ?> 
         </div>  
       </div>
       <div class="control-group">  
@@ -65,13 +66,14 @@
       <div class="control-group">  
         <label class="control-label" for="input01"><?php echo __('Estado'); ?></label>  
         <div class="controls"> 
-          <?php echo $this->Form->input('estado_id', array('class' => 'input-xlarge', 'label' => false)); ?> 
-        </div>  
+          <?php echo $this->Form->input('estado_id', array('class' => 'input-xlarge','options' => $estados, 'label' => false, 'type' => 'select', 'id' => 'estados', 'empty' => 'Selecione um estado...')); ?> 
+        </div> 
+
       </div>
       <div class="control-group">  
         <label class="control-label" for="input01"><?php echo __('Cidade') ?></label>  
         <div class="controls"> 
-          <?php echo $this->Form->input('cidade_id', array('class' => 'input-xlarge', 'label' => false)); ?> 
+          <?php echo $this->Form->input('cidade_id', array('class' => 'input-xlarge', 'label' => false, 'id' =>'cidades', 'empty' => 'Selecione uma cidade...')); ?> 
         </div>  
       </div>
 

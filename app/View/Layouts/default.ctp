@@ -4,7 +4,7 @@
     <!DOCTYPE html>
     <html lang="en-US"> <!--<![endif]-->
         <head>
-            <?php echo $this->Html->charset(); ?>
+            <?php echo $this->Html->charset('UTF-8'); ?>
             <title>
                 <?php echo $cakeDescription ?>:
                 <?php echo $title_for_layout; ?>
