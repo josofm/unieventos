@@ -23,5 +23,9 @@ class UsuariosController extends AppController {
 			$this->set(compact('Estado'));
 		}
 
+	public function login(){
+		$this->layout = 'login';
+	}
+
 }
 ?>
