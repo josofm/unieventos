@@ -13,8 +13,15 @@ class UsuariosController extends AppController {
                 return $this->redirect(array('action' => 'index'));
             }
             $this->Session->setFlash(__('Ocorreu um erro!'));
-	    }	
+	    }
+	    self::getEstado();	
 	}
+
+	public function getEstado(){
+			//projetos = $this->Aluno->Projeto->find('list', array('fields' => array('id', 'nome')));
+			$this->set('estados', $this->Usuario->Estado->find('list',array('fields' => array('id','nome'))));
+			$this->set(compact('Estado'));
+		}
 
 }
 ?>
