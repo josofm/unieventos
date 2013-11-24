@@ -17,6 +17,18 @@ class UsuariosController extends AppController {
 	    self::getEstado();	
 	}
 
+	public function admin_cadastro(){
+		if ($this->request->is('post')) {
+            $this->Usuario->create();
+            if ($this->Usuario->save($this->request->data)) {
+                $this->Session->setFlash(__('O usuario foi cadastrado com sucesso.'));
+                return $this->redirect(array('action' => 'index'));
+            }
+            $this->Session->setFlash(__('Ocorreu um erro!'));
+	    }
+	    self::getEstado();	
+	}
+
 	public function getEstado(){
 			//projetos = $this->Aluno->Projeto->find('list', array('fields' => array('id', 'nome')));
 			$this->set('estados', $this->Usuario->Estado->find('list',array('fields' => array('id','nome'))));
@@ -26,6 +38,7 @@ class UsuariosController extends AppController {
 	public function login(){
 		$this->layout = 'login';
 	}
+
 
 }
 ?>

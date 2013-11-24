@@ -9,7 +9,9 @@
 		</button>
 
 		<button class="btn btn-warning">
-			<i class="icon-group"></i>
+			<a href="www.google.com">
+				<i class="icon-group"></i>
+			</a>
 		</button>
 
 		<button class="btn btn-danger">

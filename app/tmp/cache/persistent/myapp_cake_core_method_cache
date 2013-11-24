@@ -1,2 +1,2 @@
-1384976876
-a:1:{s:4:"name";a:2:{s:32:"b4a3aca0295178f1d9fe0ad396fbad88";s:11:"`uniEvents`";s:32:"f8ca9f0a5ad8f946bfef53b59a4e276f";s:10:"`usuarios`";}}
+1385270224
+a:2:{s:4:"name";a:6:{s:32:"b4a3aca0295178f1d9fe0ad396fbad88";s:11:"`uniEvents`";s:32:"e6ff789edcb41cd12280c5f9d9dda525";s:13:"`Estado`.`id`";s:32:"2234ecd34ea624ca1a0313816d592131";s:15:"`Estado`.`nome`";s:32:"f835b4e1ecc9948596dffb1f0561d9c1";s:9:"`estados`";s:32:"2aa910393e2ea06437febae2731c9341";s:8:"`Estado`";s:32:"f8ca9f0a5ad8f946bfef53b59a4e276f";s:10:"`usuarios`";}s:6:"fields";a:1:{s:32:"c151ac49d4d94fdb4722ca8d34fe3f35";a:2:{i:0;s:13:"`Estado`.`id`";i:1;s:15:"`Estado`.`nome`";}}}
