@@ -8,18 +8,10 @@
 	"buffers":
 	[
 		{
-			"file": "/media/adriano/6EBACE0DBACDD22F/Meus Sites/painel/mz121star.github.io/AFE/index.html",
-			"settings":
-			{
-				"buffer_size": 58874,
-				"line_ending": "Unix"
-			}
-		},
-		{
 			"file": "/var/www/unieventos/app/View/Layouts/admin.ctp",
 			"settings":
 			{
-				"buffer_size": 10065,
+				"buffer_size": 3314,
 				"line_ending": "Unix"
 			}
 		},
@@ -27,15 +19,7 @@
 			"file": "/var/www/unieventos/app/View/Elements/admin/sidebar.ctp",
 			"settings":
 			{
-				"buffer_size": 5815,
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "/var/www/unieventos/app/View/Pages/admin_index.ctp",
-			"settings":
-			{
-				"buffer_size": 847,
+				"buffer_size": 4923,
 				"line_ending": "Unix"
 			}
 		}
@@ -67,17 +51,21 @@
 	},
 	"file_history":
 	[
+		"/var/www/unieventos/app/webroot/css/font-awesome.min.css",
+		"/var/www/unieventos/app/webroot/js/admin/ace.min.js",
+		"/var/www/unieventos/app/View/Layouts/default.ctp",
+		"/var/www/unieventos/app/webroot/js/1.9.1/jquery.min.js",
+		"/var/www/unieventos/app/webroot/js/1.9.1/jquery-1.10.2.min.map",
+		"/var/www/unieventos/app/View/Pages/admin_index.ctp",
+		"/media/adriano/6EBACE0DBACDD22F/Meus Sites/painel/mz121star.github.io/AFE/index.html",
 		"/var/www/unieventos/app/View/Elements/admin/header.ctp",
 		"/var/www/unieventos/app/View/Elements/admin/sidebar.ctp",
 		"/var/www/unieventos/app/webroot/css/ace.min.css",
-		"/var/www/unieventos/app/webroot/css/font-awesome.min.css",
 		"/var/www/unieventos/app/View/Elements/admin/menuSidebar.ctp",
 		"/var/www/unieventos/app/Controller/UsuariosController.php",
 		"/var/www/unieventos/app/webroot/js/ace-elements.min.js",
-		"/var/www/unieventos/app/View/Pages/admin_index.ctp",
 		"/var/www/unieventos/app/View/Usuarios/admin_cadastro.ctp",
 		"/var/www/unieventos/app/View/Layouts/admin.ctp",
-		"/var/www/unieventos/app/View/Layouts/default.ctp",
 		"/var/www/unieventos/app/View/Usuarios/cadastro.ctp",
 		"/var/www/unieventos/app/Config/database.php",
 		"/var/www/unieventos/app/View/Elements/menu2.ctp"
@@ -98,6 +86,18 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			"time",
+			"('",
+			"ace",
+			"css('ace",
+			"css('",
+			"css('ace",
+			"('",
+			"ace",
+			"css('ace",
+			"('",
+			"drop",
+			"('",
 			".js\"></script>",
 			"<script src=\"assets/js/",
 			".js\"></script>",
@@ -133,29 +133,31 @@
 	"groups":
 	[
 		{
-			"selected": 2,
+			"selected": 0,
 			"sheets":
 			[
 				{
 					"buffer": 0,
-					"file": "/media/adriano/6EBACE0DBACDD22F/Meus Sites/painel/mz121star.github.io/AFE/index.html",
+					"file": "/var/www/unieventos/app/View/Layouts/admin.ctp",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 58874,
+						"buffer_size": 3314,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								58874,
-								58874
+								191,
+								191
 							]
 						],
 						"settings":
 						{
-							"syntax": "Packages/HTML/HTML.tmLanguage"
+							"syntax": "Packages/HTML/HTML.tmLanguage",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
 						},
 						"translation.x": 0.0,
 						"translation.y": 0.0,
@@ -165,77 +167,19 @@
 				},
 				{
 					"buffer": 1,
-					"file": "/var/www/unieventos/app/View/Layouts/admin.ctp",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 10065,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								3199,
-								3199
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/HTML/HTML.tmLanguage",
-							"tab_size": 4,
-							"translate_tabs_to_spaces": true
-						},
-						"translation.x": 0.0,
-						"translation.y": 2550.0,
-						"zoom_level": 1.0
-					},
-					"type": "text"
-				},
-				{
-					"buffer": 2,
 					"file": "/var/www/unieventos/app/View/Elements/admin/sidebar.ctp",
-					"semi_transient": true,
-					"settings":
-					{
-						"buffer_size": 5815,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								0,
-								0
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/HTML/HTML.tmLanguage",
-							"tab_size": 4,
-							"translate_tabs_to_spaces": true
-						},
-						"translation.x": 0.0,
-						"translation.y": 459.0,
-						"zoom_level": 1.0
-					},
-					"type": "text"
-				},
-				{
-					"buffer": 3,
-					"file": "/var/www/unieventos/app/View/Pages/admin_index.ctp",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 847,
+						"buffer_size": 4923,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								777,
-								777
+								1259,
+								1259
 							]
 						],
 						"settings":
@@ -321,7 +265,7 @@
 	"show_open_files": false,
 	"show_tabs": true,
 	"side_bar_visible": true,
-	"side_bar_width": 319.0,
+	"side_bar_width": 225.0,
 	"status_bar_visible": true,
 	"template_settings":
 	{

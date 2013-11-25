@@ -35,9 +35,22 @@ class UsuariosController extends AppController {
 			$this->set(compact('Estado'));
 		}
 
-	public function login(){
-		$this->layout = 'login';
-	}
+	public function admin_login(){
+			$this->layout = 'login';
+			if($this->request->is('post')){
+				if($this->Auth->login()){
+					$this->redirect(array('controller' => 'pages', 'action' => 'index', 'admin' => true));	
+				}
+					
+				}else{
+					$this->Session->setFlash('Siape e/ou Senha Incorretos!');
+				}
+			}
+	public function admin_logout(){
+			$this->redirect($this->Auth->logout());
+		}
+
+
 
 
 }

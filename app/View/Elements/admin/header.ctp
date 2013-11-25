@@ -3,10 +3,12 @@
 <div class="container-fluid">
 <a href="#" class="brand">
     <small>
-        <img src="img/reunion-logo-top.png" alt="Reunion">
-        <span></span>
+        <i class="icon-fire"></i>
+        <span>UniEventos</span>
     </small>
-</a><!--/.brand-->
+</a>
+<?php echo $this->Html->link('Sair', array('controller' => 'usuarios', 'action' => 'logout', 'admin' => true)) ?>
+<!--/.brand-->
 
 <ul class="nav ace-nav pull-right">
 <li>

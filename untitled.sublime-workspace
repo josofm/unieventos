@@ -4,6 +4,10 @@
 		"selected_items":
 		[
 			[
+				"bo",
+				"bootstrap"
+			],
+			[
 				"el",
 				"element"
 			],
@@ -15,6 +19,94 @@
 	},
 	"buffers":
 	[
+		{
+			"file": "app/View/Layouts/default.ctp",
+			"settings":
+			{
+				"buffer_size": 10098,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "app/View/Elements/admin/sidebar.ctp",
+			"settings":
+			{
+				"buffer_size": 574,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "app/Controller/UsuariosController.php",
+			"settings":
+			{
+				"buffer_size": 1714,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "app/Model/Usuario.php",
+			"settings":
+			{
+				"buffer_size": 332,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "app/Controller/MsgsController.php",
+			"settings":
+			{
+				"buffer_size": 1133,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "app/View/Usuarios/cadastro.ctp",
+			"settings":
+			{
+				"buffer_size": 4326,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "app/View/Msgs/admin_enviar.ctp",
+			"settings":
+			{
+				"buffer_size": 283,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "app/Model/Msg.php",
+			"settings":
+			{
+				"buffer_size": 79,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "app/View/Elements/menu.ctp",
+			"settings":
+			{
+				"buffer_size": 541,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "app/View/Layouts/admin.ctp",
+			"settings":
+			{
+				"buffer_size": 9531,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "app/View/Elements/admin/header.ctp",
+			"settings":
+			{
+				"buffer_size": 8290,
+				"line_ending": "Unix"
+			}
+		}
 	],
 	"build_system": "",
 	"command_palette":
@@ -43,6 +135,14 @@
 	},
 	"file_history":
 	[
+		"/var/www/unieventos/app/View/Mensagens/admin_enviar.ctp",
+		"/var/www/unieventos/app/View/Usuarios/admin_cadastro.ctp",
+		"/var/www/unieventos/app/Controller/AppController.php",
+		"/var/www/unieventos/app/View/Elements/admin/header.ctp",
+		"/var/www/unieventos/app/Model/Usuario.php",
+		"/var/www/gmicro/app/Controller/DocentesController.php",
+		"/var/www/gmicro/app/Model/Docente.php",
+		"/var/www/gmicro/app/Controller/AppController.php",
 		"/var/www/unieventos/app/View/Elements/busca.ctp",
 		"/var/www/unieventos/app/View/Layouts/default.ctp",
 		"/var/www/unieventos/app/tmp/cache/persistent/myapp_cake_core_file_map",
@@ -96,6 +196,13 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			"Mensagem",
+			"('",
+			"js\"></script>",
+			"<script src=\"assets/js/",
+			"Post",
+			"docentes",
+			"form-group",
 			"product_tabs",
 			"time",
 			"images"
@@ -116,8 +223,318 @@
 	"groups":
 	[
 		{
+			"selected": 4,
 			"sheets":
 			[
+				{
+					"buffer": 0,
+					"file": "app/View/Layouts/default.ctp",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 10098,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								4911,
+								4911
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/HTML/HTML.tmLanguage",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"file": "app/View/Elements/admin/sidebar.ctp",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 574,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								539,
+								539
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/HTML/HTML.tmLanguage",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 2,
+					"file": "app/Controller/UsuariosController.php",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 1714,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								1215,
+								1215
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/PHP/PHP.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 204.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 3,
+					"file": "app/Model/Usuario.php",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 332,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								74,
+								74
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/PHP/PHP.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 4,
+					"file": "app/Controller/MsgsController.php",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 1133,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								585,
+								585
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/HTML/HTML.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 153.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 5,
+					"file": "app/View/Usuarios/cadastro.ctp",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 4326,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								3665,
+								3665
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/HTML/HTML.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 765.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 6,
+					"file": "app/View/Msgs/admin_enviar.ctp",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 283,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								134,
+								134
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/HTML/HTML.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 7,
+					"file": "app/Model/Msg.php",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 79,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								68,
+								68
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/HTML/HTML.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 8,
+					"file": "app/View/Elements/menu.ctp",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 541,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								517,
+								517
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/HTML/HTML.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 9,
+					"file": "app/View/Layouts/admin.ctp",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 9531,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								3293,
+								3293
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/HTML/HTML.tmLanguage",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 10,
+					"file": "app/View/Elements/admin/header.ctp",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 8290,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								324,
+								324
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/HTML/HTML.tmLanguage",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				}
 			]
 		}
 	],
@@ -189,7 +606,7 @@
 	"show_open_files": false,
 	"show_tabs": true,
 	"side_bar_visible": true,
-	"side_bar_width": 245.0,
+	"side_bar_width": 216.0,
 	"status_bar_visible": true,
 	"template_settings":
 	{

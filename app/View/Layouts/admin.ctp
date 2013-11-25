@@ -112,25 +112,16 @@
 <![endif]-->
 
 <?php 
-    echo $this->Html->script('jquery-ui-1.10.3.custom.min');
-    echo $this->Html->script('jquery.ui.touch-punch.min');
-    echo $this->Html->script('jquery.slimscroll.min');
-    echo $this->Html->script('jquery.easy-pie-chart.min');
-    echo $this->Html->script('jquery.sparkline.min');
-    echo $this->Html->script('raphael.2.1.0.min');
-    echo $this->Html->script('justgage.1.0.1.min');
-    echo $this->Html->script('flot/jquery.flot.min');
-    echo $this->Html->script('flot/jquery.flot.pie.min');
-    echo $this->Html->script('flot/jquery.flot.resize.min');
-    echo $this->Html->script('ace-elements.min');
-    echo $this->Html->script('ace.min');
-    echo $this->Html->script('sparklines'); 
-    echo $this->Html->script('charts'); 
-    echo $this->Html->script('MetroJs.min');
-    echo $this->Html->script('Chart.min');
-    echo $this->Html->script('custom');
-    echo $this->Html->script('jquery191.min');
-    echo $this->Html->script('bootstrap.min');
+    echo $this->Html->script('admin/markdown/markdown.min');
+echo $this->Html->script('admin/markdown/bootstrap-markdown.min');
+echo $this->Html->script('admin/jquery.hotkeys.min');
+echo $this->Html->script('admin/bootstrap-wysiwyg.min');
+echo $this->Html->script('admin/bootbox.min');
+echo $this->Html->script('1.9.1/jquery.min');
+
+
+echo $this->Html->script('admin/ace-elements.min');
+echo $this->Html->script('admin/ace.min');
 ?>
 
 
