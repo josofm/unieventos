@@ -20,69 +20,10 @@
 	"buffers":
 	[
 		{
-			"file": "app/Controller/UsuariosController.php",
-			"settings":
-			{
-				"buffer_size": 1714,
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "app/View/Layouts/default.ctp",
-			"settings":
-			{
-				"buffer_size": 2508,
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "docs/unieventos.sql",
-			"settings":
-			{
-				"buffer_size": 278845,
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "app/View/Pages/home.ctp",
-			"settings":
-			{
-				"buffer_size": 0,
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"contents": "<?php\n/**\n *\n * PHP 5\n *\n * CakePHP(tm) : Rapid Development Framework (http://cakephp.org)\n * Copyright (c) Cake Software Foundation, Inc. (http://cakefoundation.org)\n *\n * Licensed under The MIT License\n * For full copyright and license information, please see the LICENSE.txt\n * Redistributions of files must retain the above copyright notice.\n *\n * @copyright     Copyright (c) Cake Software Foundation, Inc. (http://cakefoundation.org)\n * @link          http://cakephp.org CakePHP(tm) Project\n * @package       app.View.Layouts\n * @since         CakePHP(tm) v 0.10.0.1076\n * @license       http://www.opensource.org/licenses/mit-license.php MIT License\n */\n\n$cakeDescription = __d('cake_dev', 'CakePHP: the rapid development php framework');\n?>\n<!DOCTYPE html>\n<html>\n<head>\n	<?php echo $this->Html->charset(); ?>\n	<title>\n		<?php echo $cakeDescription ?>:\n		<?php echo $title_for_layout; ?>\n	</title>\n	<?php\n		echo $this->Html->meta('icon');\n\n		echo $this->Html->css('cake.generic');\n\n		echo $this->fetch('meta');\n		echo $this->fetch('css');\n		echo $this->fetch('script');\n	?>\n</head>\n<body>\n	<div id=\"container\">\n		<div id=\"header\">\n			<h1><?php echo $this->Html->link($cakeDescription, 'http://cakephp.org'); ?></h1>\n		</div>\n		<div id=\"content\">\n\n			\n		</div>\n		<div id=\"footer\">\n			<?php echo $this->Html->link(\n					$this->Html->image('cake.power.gif', array('alt' => $cakeDescription, 'border' => '0')),\n					'http://www.cakephp.org/',\n					array('target' => '_blank', 'escape' => false)\n				);\n			?>\n		</div>\n	</div>\n	<?php echo $this->element('sql_dump'); ?>\n</body>\n</html>\n",
-			"file": "app/View/Layouts/default2.ctp",
-			"file_size": 1669,
-			"file_write_time": 130297870269518904,
-			"settings":
-			{
-				"buffer_size": 1588,
-				"line_ending": "Unix"
-			}
-		},
-		{
 			"file": "app/Controller/MsgsController.php",
 			"settings":
 			{
-				"buffer_size": 1411,
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "app/View/Msgs/admin_index.ctp",
-			"settings":
-			{
-				"buffer_size": 102,
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "/var/www/gmicro/app/View/Docentes/index.ctp",
-			"settings":
-			{
-				"buffer_size": 326,
+				"buffer_size": 1349,
 				"line_ending": "Unix"
 			}
 		},
@@ -91,6 +32,14 @@
 			"settings":
 			{
 				"buffer_size": 1146,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "app/Model/Usuario.php",
+			"settings":
+			{
+				"buffer_size": 339,
 				"line_ending": "Unix"
 			}
 		},
@@ -106,15 +55,7 @@
 			"file": "app/Model/Msg.php",
 			"settings":
 			{
-				"buffer_size": 79,
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "app/View/Elements/admin/header.ctp",
-			"settings":
-			{
-				"buffer_size": 8290,
+				"buffer_size": 44,
 				"line_ending": "Unix"
 			}
 		}
@@ -146,9 +87,28 @@
 	},
 	"file_history":
 	[
+		"/var/www/unieventos/app/View/Elements/admin/header.ctp",
+		"/var/www/unieventos/app/Model/Msg.php",
+		"/var/www/unieventos/app/View/Msgs/admin_enviar.ctp",
+		"/var/www/gmicro/app/Model/Projeto.php",
+		"/var/www/gmicro/app/Model/Aluno.php",
+		"/var/www/gmicro/app/Controller/AlunosController.php",
+		"/var/www/gmicro/app/View/Docentes/index.ctp",
+		"/var/www/unieventos/app/Model/Usuario.php",
+		"/var/www/unieventos/app/View/Msgs/admin_index.ctp",
+		"/var/www/gmicro/app/Controller/AppController.php",
+		"/var/www/unieventos/docs/unieventos.sql",
+		"/var/www/unieventos/app/View/Layouts/admin.ctp",
+		"/var/www/unieventos/app/View/Layouts/default.ctp",
+		"/var/www/unieventos/app/Controller/UsuariosController.php",
+		"/var/www/gmicro/app/View/Elements/head_painel.ctp",
+		"/var/www/gmicro/app/Controller/DocentesController.php",
+		"/var/www/gmicro/app/Controller/ProjetosController.php",
+		"/var/www/gmicro/app/View/Docentes/painel_index.ctp",
+		"/var/www/unieventos/app/View/Layouts/default2.ctp",
+		"/var/www/unieventos/app/View/Pages/home.ctp",
 		"/var/www/unieventos/app/View/Elements/menu.ctp",
 		"/var/www/unieventos/app/View/Elements/site/navBar.ctp",
-		"/var/www/unieventos/app/Model/Usuario.php",
 		"/var/www/unieventos/app/View/Elements/site/footer.ctp",
 		"/var/www/unieventos/app/webroot/css/site/font-awesome.min.css",
 		"/var/www/unieventos/app/webroot/js/site/bootswatch.js",
@@ -159,24 +119,17 @@
 		"/var/www/unieventos/app/webroot/js/site/bsa.js",
 		"/var/www/unieventos/app/webroot/css/site/bootstrap-responsive.min.css",
 		"/var/www/unieventos/app/webroot/css/site/bootstrap.min.css",
-		"/var/www/unieventos/app/View/Layouts/admin.ctp",
-		"/var/www/gmicro/app/View/Docentes/painel_index.ctp",
 		"/var/www/unieventos/app/View/Usuarios/cadastro.ctp",
-		"/var/www/unieventos/app/View/Layouts/default.ctp",
 		"/var/www/unieventos/app/View/Elements/admin/sidebar.ctp",
 		"/var/www/unieventos/app/View/Mensagens/admin_enviar.ctp",
 		"/var/www/unieventos/app/View/Usuarios/admin_cadastro.ctp",
 		"/var/www/unieventos/app/Controller/AppController.php",
-		"/var/www/unieventos/app/View/Elements/admin/header.ctp",
-		"/var/www/gmicro/app/Controller/DocentesController.php",
 		"/var/www/gmicro/app/Model/Docente.php",
-		"/var/www/gmicro/app/Controller/AppController.php",
 		"/var/www/unieventos/app/View/Elements/busca.ctp",
 		"/var/www/unieventos/app/tmp/cache/persistent/myapp_cake_core_file_map",
 		"/var/www/unieventos/app/Config/core.php",
 		"/var/www/unieventos/app/webroot/css/style.css",
 		"/var/www/unieventos/app/View/Elements/tabs.ctp",
-		"/var/www/unieventos/app/View/Layouts/default2.ctp",
 		"/var/www/unieventos/app/View/Elements/tags.ctp",
 		"/var/www/unieventos/app/View/Elements/accordion.ctp",
 		"/var/www/unieventos/app/View/Elements/menu2.ctp",
@@ -221,6 +174,10 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			"$recado",
+			"Post",
+			"$post",
+			"post",
 			"\"></script>",
 			"<script src=\"",
 			".css\" rel=\"stylesheet\">",
@@ -255,232 +212,38 @@
 	"groups":
 	[
 		{
-			"selected": 2,
+			"selected": 0,
 			"sheets":
 			[
 				{
 					"buffer": 0,
-					"file": "app/Controller/UsuariosController.php",
+					"file": "app/Controller/MsgsController.php",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 1714,
+						"buffer_size": 1349,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								1305,
-								1305
+								1286,
+								1286
 							]
 						],
 						"settings":
 						{
-							"syntax": "Packages/PHP/PHP.tmLanguage"
+							"syntax": "Packages/HTML/HTML.tmLanguage"
 						},
 						"translation.x": 0.0,
-						"translation.y": 204.0,
+						"translation.y": 51.0,
 						"zoom_level": 1.0
 					},
 					"type": "text"
 				},
 				{
 					"buffer": 1,
-					"file": "app/View/Layouts/default.ctp",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 2508,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								1861,
-								1861
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/HTML/HTML.tmLanguage",
-							"tab_size": 4,
-							"translate_tabs_to_spaces": true
-						},
-						"translation.x": 0.0,
-						"translation.y": 561.0,
-						"zoom_level": 1.0
-					},
-					"type": "text"
-				},
-				{
-					"buffer": 2,
-					"file": "docs/unieventos.sql",
-					"semi_transient": true,
-					"settings":
-					{
-						"buffer_size": 278845,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								0,
-								0
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/SQL/SQL.tmLanguage"
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"type": "text"
-				},
-				{
-					"buffer": 3,
-					"file": "app/View/Pages/home.ctp",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 0,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								0,
-								0
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/HTML/HTML.tmLanguage",
-							"tab_size": 4,
-							"translate_tabs_to_spaces": true
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"type": "text"
-				},
-				{
-					"buffer": 4,
-					"file": "app/View/Layouts/default2.ctp",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 1588,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								1258,
-								1258
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/HTML/HTML.tmLanguage",
-							"translate_tabs_to_spaces": false
-						},
-						"translation.x": 0.0,
-						"translation.y": 306.0,
-						"zoom_level": 1.0
-					},
-					"type": "text"
-				},
-				{
-					"buffer": 5,
-					"file": "app/Controller/MsgsController.php",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 1411,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								426,
-								426
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/HTML/HTML.tmLanguage"
-						},
-						"translation.x": 0.0,
-						"translation.y": 68.0,
-						"zoom_level": 1.0
-					},
-					"type": "text"
-				},
-				{
-					"buffer": 6,
-					"file": "app/View/Msgs/admin_index.ctp",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 102,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								52,
-								52
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/HTML/HTML.tmLanguage"
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"type": "text"
-				},
-				{
-					"buffer": 7,
-					"file": "/var/www/gmicro/app/View/Docentes/index.ctp",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 326,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								5,
-								5
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/HTML/HTML.tmLanguage"
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"type": "text"
-				},
-				{
-					"buffer": 8,
 					"file": "/var/www/gmicro/app/Controller/AlunosController.php",
 					"semi_transient": false,
 					"settings":
@@ -492,8 +255,8 @@
 						"selection":
 						[
 							[
-								267,
-								267
+								441,
+								441
 							]
 						],
 						"settings":
@@ -508,7 +271,35 @@
 					"type": "text"
 				},
 				{
-					"buffer": 9,
+					"buffer": 2,
+					"file": "app/Model/Usuario.php",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 339,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								40,
+								40
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/PHP/PHP.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 3,
 					"file": "app/View/Msgs/admin_enviar.ctp",
 					"semi_transient": false,
 					"settings":
@@ -520,8 +311,8 @@
 						"selection":
 						[
 							[
-								138,
-								138
+								0,
+								0
 							]
 						],
 						"settings":
@@ -535,55 +326,25 @@
 					"type": "text"
 				},
 				{
-					"buffer": 10,
+					"buffer": 4,
 					"file": "app/Model/Msg.php",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 79,
+						"buffer_size": 44,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								68,
-								68
+								36,
+								36
 							]
 						],
 						"settings":
 						{
-							"syntax": "Packages/HTML/HTML.tmLanguage",
-							"translate_tabs_to_spaces": false
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"type": "text"
-				},
-				{
-					"buffer": 11,
-					"file": "app/View/Elements/admin/header.ctp",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 8290,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								566,
-								566
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/HTML/HTML.tmLanguage",
-							"tab_size": 4,
-							"translate_tabs_to_spaces": true
+							"syntax": "Packages/PHP/PHP.tmLanguage"
 						},
 						"translation.x": 0.0,
 						"translation.y": 0.0,

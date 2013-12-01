@@ -1,6 +1,6 @@
 <?php 
 class Usuario extends AppModel{
-	public $hasMany = array('Estado');
+	public $hasMany = array('Estado', 'Msg');
 
 	public function beforeSave($created = true){
 		$senha = $this->data['Usuario']['senha'];

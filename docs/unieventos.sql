@@ -3,7 +3,7 @@
 -- http://www.phpmyadmin.net
 --
 -- Servidor: localhost
--- Tempo de Geração: 25/11/2013 às 23:40
+-- Tempo de Geração: 01/12/2013 às 18:54
 -- Versão do servidor: 5.5.34-0ubuntu0.13.10.1
 -- Versão do PHP: 5.5.3-1ubuntu2
 
@@ -9772,6 +9772,8 @@ CREATE TABLE IF NOT EXISTS `enderecos` (
   `complemento` varchar(90) NOT NULL,
   `cep` varchar(9) NOT NULL,
   `cidade_id` int(10) unsigned NOT NULL,
+  `created` datetime DEFAULT NULL,
+  `modified` datetime DEFAULT NULL,
   PRIMARY KEY (`id`),
   KEY `fk_enderecos_cidades1_idx` (`cidade_id`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 AUTO_INCREMENT=1 ;
@@ -9842,6 +9844,8 @@ CREATE TABLE IF NOT EXISTS `eventos` (
   `url` varchar(120) DEFAULT NULL,
   `endereco_id` int(10) unsigned NOT NULL,
   `imagem_id` int(10) unsigned NOT NULL,
+  `created` datetime DEFAULT NULL,
+  `modified` datetime DEFAULT NULL,
   PRIMARY KEY (`id`),
   KEY `fk_evento_endereco1_idx` (`endereco_id`),
   KEY `fk_evento_imagem1_idx` (`imagem_id`)
@@ -9873,6 +9877,8 @@ CREATE TABLE IF NOT EXISTS `horarios` (
   `hora_fim` varchar(5) NOT NULL,
   `data` date NOT NULL,
   `programacao_id` int(10) unsigned NOT NULL,
+  `created` datetime DEFAULT NULL,
+  `modified` datetime DEFAULT NULL,
   PRIMARY KEY (`id`),
   KEY `fk_horario_programacao1_idx` (`programacao_id`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 AUTO_INCREMENT=1 ;
@@ -9888,6 +9894,8 @@ CREATE TABLE IF NOT EXISTS `imagens` (
   `nome` varchar(45) DEFAULT NULL,
   `caminho` varchar(120) DEFAULT NULL,
   `usuario_id` int(10) unsigned NOT NULL,
+  `created` datetime DEFAULT NULL,
+  `modified` datetime DEFAULT NULL,
   PRIMARY KEY (`id`),
   KEY `fk_imagens_usuarios1_idx` (`usuario_id`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 AUTO_INCREMENT=1 ;
@@ -9904,6 +9912,8 @@ CREATE TABLE IF NOT EXISTS `inscricoes` (
   `data_fim` date NOT NULL,
   `evento_id` int(10) unsigned NOT NULL,
   `tipo_inscricao_id` int(10) unsigned NOT NULL,
+  `created` datetime DEFAULT NULL,
+  `modified` datetime DEFAULT NULL,
   PRIMARY KEY (`id`),
   KEY `fk_inscricao_evento1_idx` (`evento_id`),
   KEY `fk_inscricao_tipo_inscricao1_idx` (`tipo_inscricao_id`)
@@ -9919,20 +9929,27 @@ CREATE TABLE IF NOT EXISTS `msgs` (
   `id` int(10) unsigned NOT NULL AUTO_INCREMENT,
   `titulo` varchar(190) DEFAULT NULL,
   `texto` text,
-  `usuarios_msg` int(10) unsigned DEFAULT NULL,
+  `status` int(11) NOT NULL DEFAULT '0',
+  `usuario_msg` int(11) NOT NULL,
   `usuarios_id` int(10) unsigned DEFAULT NULL,
+  `created` datetime NOT NULL,
+  `modified` datetime NOT NULL,
   PRIMARY KEY (`id`),
-  KEY `fk_mensagens_usuarios1_idx` (`usuarios_id`),
-  KEY `fk_mensagens_usuarios2_idx` (`usuarios_msg`)
-) ENGINE=InnoDB  DEFAULT CHARSET=utf8 AUTO_INCREMENT=11 ;
+  KEY `fk_mensagens_usuarios1_idx` (`usuarios_id`)
+) ENGINE=InnoDB  DEFAULT CHARSET=utf8 AUTO_INCREMENT=19 ;
 
 --
 -- Fazendo dump de dados para tabela `msgs`
 --
 
-INSERT INTO `msgs` (`id`, `titulo`, `texto`, `usuarios_msg`, `usuarios_id`) VALUES
-(9, 'teste', 'testeee', 59, 57),
-(10, 'teste de envio', 'reste', 57, 59);
+INSERT INTO `msgs` (`id`, `titulo`, `texto`, `status`, `usuario_msg`, `usuarios_id`, `created`, `modified`) VALUES
+(11, 'teste', 'teste de msgafddfsadfasdfsadfsadf dfdsfda', 1, 2, 1, '0000-00-00 00:00:00', '2013-12-01 00:54:37'),
+(13, 'oi', 'msn de teste', 0, 2, 3, '2013-11-30 18:15:07', '2013-11-30 18:15:07'),
+(14, 'mais um teste', 've se funciona', 0, 2, 5, '2013-11-30 18:35:35', '2013-11-30 18:35:35'),
+(15, 'sdad', 'sdadas dffsdd dkfaafbbjusdfa df aspoijfadkfc dfsdd f', 0, 1, 3, '2013-11-30 18:40:18', '2013-11-30 18:40:18'),
+(16, 'sad', 'dasdas', 1, 2, 1, '2013-11-30 18:41:11', '2013-12-01 00:55:36'),
+(17, 'dsfsf', 'dfsdfsd', 0, 1, 5, '2013-11-30 18:42:36', '2013-11-30 18:42:36'),
+(18, 'dfds', 'dfsdfsd', 0, 2, 1, '2013-11-30 18:43:20', '2013-11-30 18:43:20');
 
 -- --------------------------------------------------------
 
@@ -9946,6 +9963,8 @@ CREATE TABLE IF NOT EXISTS `noticias` (
   `descricao` varchar(120) DEFAULT NULL,
   `data` date DEFAULT NULL,
   `evento_id` int(10) unsigned NOT NULL,
+  `created` datetime DEFAULT NULL,
+  `modified` datetime DEFAULT NULL,
   PRIMARY KEY (`id`),
   KEY `fk_noticia_evento1_idx` (`evento_id`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 AUTO_INCREMENT=1 ;
@@ -9963,6 +9982,8 @@ CREATE TABLE IF NOT EXISTS `pagamentos` (
   `vencimento` date NOT NULL,
   `num_cartao` int(11) DEFAULT NULL,
   `cod_seg` int(3) DEFAULT NULL,
+  `created` datetime DEFAULT NULL,
+  `modified` datetime DEFAULT NULL,
   PRIMARY KEY (`id`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 AUTO_INCREMENT=1 ;
 
@@ -9976,6 +9997,8 @@ CREATE TABLE IF NOT EXISTS `patrocinadores` (
   `id` int(10) unsigned NOT NULL AUTO_INCREMENT,
   `nome` varchar(100) NOT NULL,
   `endereco_id` int(10) unsigned NOT NULL,
+  `created` datetime DEFAULT NULL,
+  `modified` datetime DEFAULT NULL,
   PRIMARY KEY (`id`),
   KEY `fk_patrocinador_endereco1_idx` (`endereco_id`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 AUTO_INCREMENT=1 ;
@@ -10006,6 +10029,8 @@ CREATE TABLE IF NOT EXISTS `programacoes` (
   `titulo` varchar(45) NOT NULL,
   `descricao` varchar(120) DEFAULT NULL,
   `palestrante` varchar(45) DEFAULT NULL,
+  `created` datetime DEFAULT NULL,
+  `modified` datetime DEFAULT NULL,
   PRIMARY KEY (`id`),
   KEY `fk_programacao_evento1_idx` (`evento_id`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 AUTO_INCREMENT=1 ;
@@ -10049,7 +10074,8 @@ CREATE TABLE IF NOT EXISTS `tipo_inscricoes` (
 
 CREATE TABLE IF NOT EXISTS `usuarios` (
   `id` int(10) unsigned NOT NULL AUTO_INCREMENT,
-  `nome` varchar(110) DEFAULT NULL,
+  `nome` varchar(30) DEFAULT NULL,
+  `sobrenome` varchar(100) NOT NULL,
   `cpf` varchar(11) DEFAULT NULL,
   `rg` varchar(10) DEFAULT NULL,
   `data_nasc` date DEFAULT NULL,
@@ -10060,20 +10086,22 @@ CREATE TABLE IF NOT EXISTS `usuarios` (
   `end_rede_soc` varchar(120) DEFAULT NULL,
   `outro_contato_url` varchar(120) DEFAULT NULL,
   `cidade_id` int(10) unsigned DEFAULT NULL,
+  `created` datetime DEFAULT NULL,
+  `modified` datetime DEFAULT NULL,
   PRIMARY KEY (`id`),
   KEY `fk_usuarios_cidades1_idx` (`cidade_id`)
-) ENGINE=InnoDB  DEFAULT CHARSET=utf8 AUTO_INCREMENT=62 ;
+) ENGINE=InnoDB  DEFAULT CHARSET=utf8 AUTO_INCREMENT=6 ;
 
 --
 -- Fazendo dump de dados para tabela `usuarios`
 --
 
-INSERT INTO `usuarios` (`id`, `nome`, `cpf`, `rg`, `data_nasc`, `sexo`, `email`, `senha`, `instituicao`, `end_rede_soc`, `outro_contato_url`, `cidade_id`) VALUES
-(57, 'admin', NULL, NULL, NULL, NULL, 'admin@localhost.com', 'd033e22ae348aeb5660fc2140aec35850c4da997', NULL, NULL, NULL, NULL),
-(58, 'adriano', NULL, NULL, NULL, NULL, 'adriano@localhost.com', 'd033e22ae348aeb5660fc2140aec35850c4da997', NULL, NULL, NULL, NULL),
-(59, 'paulo', NULL, NULL, NULL, NULL, 'paulo@localhost.com', 'd033e22ae348aeb5660fc2140aec35850c4da997', NULL, NULL, NULL, NULL),
-(60, 'Antonio', NULL, NULL, NULL, NULL, 'a@localhost.com', 'd033e22ae348aeb5660fc2140aec35850c4da997', NULL, NULL, NULL, NULL),
-(61, 'pedro', NULL, NULL, NULL, NULL, 'pedro@localhost.com', 'd033e22ae348aeb5660fc2140aec35850c4da997', NULL, NULL, NULL, NULL);
+INSERT INTO `usuarios` (`id`, `nome`, `sobrenome`, `cpf`, `rg`, `data_nasc`, `sexo`, `email`, `senha`, `instituicao`, `end_rede_soc`, `outro_contato_url`, `cidade_id`, `created`, `modified`) VALUES
+(1, 'admin', '', NULL, NULL, NULL, NULL, 'admin@localhost.com', 'd033e22ae348aeb5660fc2140aec35850c4da997', NULL, NULL, NULL, NULL, NULL, NULL),
+(2, 'adriano', '', NULL, NULL, NULL, NULL, 'adriano@localhost.com', 'd033e22ae348aeb5660fc2140aec35850c4da997', NULL, NULL, NULL, NULL, NULL, NULL),
+(3, 'paulo', '', NULL, NULL, NULL, NULL, 'paulo@localhost.com', 'd033e22ae348aeb5660fc2140aec35850c4da997', NULL, NULL, NULL, NULL, NULL, NULL),
+(4, 'Antonio', '', NULL, NULL, NULL, NULL, 'a@localhost.com', 'd033e22ae348aeb5660fc2140aec35850c4da997', NULL, NULL, NULL, NULL, NULL, NULL),
+(5, 'pedro', '', NULL, NULL, NULL, NULL, 'pedro@localhost.com', 'd033e22ae348aeb5660fc2140aec35850c4da997', NULL, NULL, NULL, NULL, NULL, NULL);
 
 --
 -- Restrições para dumps de tabelas
@@ -10128,8 +10156,7 @@ ALTER TABLE `inscricoes`
 -- Restrições para tabelas `msgs`
 --
 ALTER TABLE `msgs`
-  ADD CONSTRAINT `fk_mensagens_usuarios1` FOREIGN KEY (`usuarios_id`) REFERENCES `usuarios` (`id`) ON DELETE NO ACTION ON UPDATE NO ACTION,
-  ADD CONSTRAINT `fk_mensagens_usuarios2` FOREIGN KEY (`usuarios_msg`) REFERENCES `usuarios` (`id`) ON DELETE NO ACTION ON UPDATE NO ACTION;
+  ADD CONSTRAINT `fk_mensagens_usuarios1` FOREIGN KEY (`usuarios_id`) REFERENCES `usuarios` (`id`) ON DELETE NO ACTION ON UPDATE NO ACTION;
 
 --
 -- Restrições para tabelas `noticias`

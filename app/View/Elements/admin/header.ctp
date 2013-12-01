@@ -14,7 +14,7 @@
 <li>
     <a class="win-command" href="#">
         <p class="pull-left" style="font-size:18px;">
-            <span>Welcome<br /><span style="font-size:12px;">Carito Garcia</span></span>
+            <span><?php echo __('Seja Bem vindo') ?><br /><span style="font-size:12px;"> <?php echo AuthComponent::user('nome') ?></span></span>
         </p>
 						        <span class="pull-right">
                                     <i class="win-commandicon win-commandring icon-user"></i>

@@ -1,5 +1,6 @@
 <?php 
 class Msg extends AppModel{
-	public $hasMany = array('Usuario');
+	 //public $belongsTo = 'Usuario';
+	
 }
 ?>   
