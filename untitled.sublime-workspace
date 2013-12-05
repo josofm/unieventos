@@ -4,6 +4,10 @@
 		"selected_items":
 		[
 			[
+				"bo",
+				"bootstrap"
+			],
+			[
 				"el",
 				"element"
 			],
@@ -15,6 +19,46 @@
 	},
 	"buffers":
 	[
+		{
+			"file": "app/Controller/MsgsController.php",
+			"settings":
+			{
+				"buffer_size": 1349,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "/var/www/gmicro/app/Controller/AlunosController.php",
+			"settings":
+			{
+				"buffer_size": 1146,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "app/Model/Usuario.php",
+			"settings":
+			{
+				"buffer_size": 339,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "app/View/Msgs/admin_enviar.ctp",
+			"settings":
+			{
+				"buffer_size": 284,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "app/Model/Msg.php",
+			"settings":
+			{
+				"buffer_size": 44,
+				"line_ending": "Unix"
+			}
+		}
 	],
 	"build_system": "",
 	"command_palette":
@@ -43,18 +87,52 @@
 	},
 	"file_history":
 	[
-		"/var/www/unieventos/app/View/Elements/busca.ctp",
+		"/var/www/unieventos/app/View/Elements/admin/header.ctp",
+		"/var/www/unieventos/app/Model/Msg.php",
+		"/var/www/unieventos/app/View/Msgs/admin_enviar.ctp",
+		"/var/www/gmicro/app/Model/Projeto.php",
+		"/var/www/gmicro/app/Model/Aluno.php",
+		"/var/www/gmicro/app/Controller/AlunosController.php",
+		"/var/www/gmicro/app/View/Docentes/index.ctp",
+		"/var/www/unieventos/app/Model/Usuario.php",
+		"/var/www/unieventos/app/View/Msgs/admin_index.ctp",
+		"/var/www/gmicro/app/Controller/AppController.php",
+		"/var/www/unieventos/docs/unieventos.sql",
+		"/var/www/unieventos/app/View/Layouts/admin.ctp",
 		"/var/www/unieventos/app/View/Layouts/default.ctp",
+		"/var/www/unieventos/app/Controller/UsuariosController.php",
+		"/var/www/gmicro/app/View/Elements/head_painel.ctp",
+		"/var/www/gmicro/app/Controller/DocentesController.php",
+		"/var/www/gmicro/app/Controller/ProjetosController.php",
+		"/var/www/gmicro/app/View/Docentes/painel_index.ctp",
+		"/var/www/unieventos/app/View/Layouts/default2.ctp",
+		"/var/www/unieventos/app/View/Pages/home.ctp",
+		"/var/www/unieventos/app/View/Elements/menu.ctp",
+		"/var/www/unieventos/app/View/Elements/site/navBar.ctp",
+		"/var/www/unieventos/app/View/Elements/site/footer.ctp",
+		"/var/www/unieventos/app/webroot/css/site/font-awesome.min.css",
+		"/var/www/unieventos/app/webroot/js/site/bootswatch.js",
+		"/var/www/unieventos/app/webroot/js/site/jquery.smooth-scroll.min.js",
+		"/var/www/unieventos/app/webroot/js/site/bootstrap.min.js",
+		"/var/www/unieventos/app/View/Elements/site/header.ctp",
+		"/var/www/unieventos/app/webroot/css/site/bootswatch.css",
+		"/var/www/unieventos/app/webroot/js/site/bsa.js",
+		"/var/www/unieventos/app/webroot/css/site/bootstrap-responsive.min.css",
+		"/var/www/unieventos/app/webroot/css/site/bootstrap.min.css",
+		"/var/www/unieventos/app/View/Usuarios/cadastro.ctp",
+		"/var/www/unieventos/app/View/Elements/admin/sidebar.ctp",
+		"/var/www/unieventos/app/View/Mensagens/admin_enviar.ctp",
+		"/var/www/unieventos/app/View/Usuarios/admin_cadastro.ctp",
+		"/var/www/unieventos/app/Controller/AppController.php",
+		"/var/www/gmicro/app/Model/Docente.php",
+		"/var/www/unieventos/app/View/Elements/busca.ctp",
 		"/var/www/unieventos/app/tmp/cache/persistent/myapp_cake_core_file_map",
 		"/var/www/unieventos/app/Config/core.php",
 		"/var/www/unieventos/app/webroot/css/style.css",
 		"/var/www/unieventos/app/View/Elements/tabs.ctp",
-		"/var/www/unieventos/app/View/Layouts/default2.ctp",
-		"/var/www/unieventos/app/View/Layouts/admin.ctp",
 		"/var/www/unieventos/app/View/Elements/tags.ctp",
 		"/var/www/unieventos/app/View/Elements/accordion.ctp",
 		"/var/www/unieventos/app/View/Elements/menu2.ctp",
-		"/var/www/unieventos/app/View/Elements/menu.ctp",
 		"/var/www/unieventos/app/webroot/css/ie.css",
 		"/var/www/unieventos/app/webroot/js/custom.js",
 		"/var/www/unieventos/app/webroot/js/jquery.ui.map.full.min.js",
@@ -96,6 +174,24 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			"$recado",
+			"Post",
+			"$post",
+			"post",
+			"\"></script>",
+			"<script src=\"",
+			".css\" rel=\"stylesheet\">",
+			"\" rel=\"stylesheet\">",
+			"<link href=\"",
+			"Docente",
+			"docente",
+			"Mensagem",
+			"('",
+			"js\"></script>",
+			"<script src=\"assets/js/",
+			"Post",
+			"docentes",
+			"form-group",
 			"product_tabs",
 			"time",
 			"images"
@@ -116,8 +212,146 @@
 	"groups":
 	[
 		{
+			"selected": 0,
 			"sheets":
 			[
+				{
+					"buffer": 0,
+					"file": "app/Controller/MsgsController.php",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 1349,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								1286,
+								1286
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/HTML/HTML.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 51.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"file": "/var/www/gmicro/app/Controller/AlunosController.php",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 1146,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								441,
+								441
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/PHP/PHP.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 2,
+					"file": "app/Model/Usuario.php",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 339,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								40,
+								40
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/PHP/PHP.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 3,
+					"file": "app/View/Msgs/admin_enviar.ctp",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 284,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/HTML/HTML.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 4,
+					"file": "app/Model/Msg.php",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 44,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								36,
+								36
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/PHP/PHP.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				}
 			]
 		}
 	],
@@ -185,11 +419,11 @@
 	"settings":
 	{
 	},
-	"show_minimap": true,
+	"show_minimap": false,
 	"show_open_files": false,
 	"show_tabs": true,
 	"side_bar_visible": true,
-	"side_bar_width": 245.0,
+	"side_bar_width": 216.0,
 	"status_bar_visible": true,
 	"template_settings":
 	{

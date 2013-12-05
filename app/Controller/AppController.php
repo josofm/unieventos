@@ -33,6 +33,8 @@ App::uses('Controller', 'Controller');
  */
 class AppController extends Controller {
 
+	public $components = array('Auth','Session');
+
 	public function isPrefix($prefix){
 		return isset($this->request->params['prefix']) && $this->request->params['prefix'] == $prefix;
 	}
@@ -40,7 +42,29 @@ class AppController extends Controller {
 	public function beforeFilter(){
 		if($this->isPrefix('admin')){
 			$this->layout = 'admin';
+		}else{
+			$this->Auth->allow();
 		}
+
+		$this->Auth->authenticate = array('Form' => array(
+			'userModel' => 'Usuario',
+			'fields' => array(
+				'username' => 'email',
+				'password' => 'senha'
+				)
+			));
+		$this->Auth->loginAction = array(
+			'controller' => 'usuarios',
+			'action' => 'login',
+			'admin' => true
+			);
+		/*$this->loadModel('Usuario');
+		$this->Usuario->save(array(
+			'nome' => 'admin',
+			'email' => 'admin@localhost.com',
+			'senha' => 'admin'
+			));
+		*/
 
 		parent::beforeFilter();
 
