@@ -11,5 +11,6 @@ class Usuario extends AppModel{
 		
 		return parent::beforeSave($created);	
 	}
+
 }
 ?>

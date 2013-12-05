@@ -6,7 +6,7 @@
     </div>
     <div class="span6">
       <div class="bsa well">
-          <div id="bsap_1277971" class="bsarocks bsap_c466df00a3cd5ee8568b5c4983b6bb19"></div>
+          <?php echo $this->Html->image('logo.jpg') ?>
       </div>
     </div>
   </div>

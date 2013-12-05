@@ -23,7 +23,7 @@
       <div class="control-group ">  
         <label class="control-label" for="input01"><?php echo __('Sexo'); ?></label>  
         <div class="controls radio"> 
-          <?php echo $this->Form->radio('sexo', array('0' => __('Feminino'), '1' => __('Masculino')) ,array('legend' => false, 'after' => '--after--', 'between' => '--between---','separator' => '<br />')); ?> 
+          <?php echo $this->Form->select('sexo',array('0' => __('Feminino'), '1' => __('Masculino'))); ?> 
         </div>  
       </div>
       <div class="control-group">  

@@ -10,7 +10,7 @@ class UsuariosController extends AppController {
             $this->Usuario->create();
             if ($this->Usuario->save($this->request->data)) {
                 $this->Session->setFlash(__('Voce foi cadastrado com sucesso.'));
-                return $this->redirect(array('action' => 'index'));
+                return $this->redirect(array('action' => 'sucesso'));
             }
             $this->Session->setFlash(__('Ocorreu um erro!'));
 	    }
@@ -51,6 +51,9 @@ class UsuariosController extends AppController {
 		}
 
 
+	public function sucesso(){
+
+	}
 
 
 }
