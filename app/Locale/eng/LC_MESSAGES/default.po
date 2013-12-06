@@ -40,3 +40,15 @@ msgstr "City"
 
 msgid "Cadastrar"
 msgstr "Save"
+
+msgid "Seu cadastro foi efetuado com sucesso, clique aqui para entrar no sistema"
+msgstr "Your registration was successful, click here to enter the system"
+
+msgid "Entrar"
+msgstr "Sign In"
+
+msgid "Esqueceu sua senha?"
+msgstr "Forgot your password?"
+
+msgid "Seja Bem vindo"
+msgstr "Welcome"
