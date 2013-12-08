@@ -6,12 +6,11 @@
         <?php echo $this->html->link('<i class="fa fa-envelope"></i> '.__('Caixa de entrada'), array('controller' => 'msgs', 'action' => 'index', 'admin' => true), array('escape' => false)) ?>
     </li>
     <li>
-        <?php echo $this->html->link('<i class="fa fa-envelope"></i> '.__('Caixa de entrada'), array('controller' => 'msgs', 'action' => 'index', 'admin' => true), array('escape' => false)) ?>
+        <?php echo $this->html->link('<i class="fa fa-envelope"></i> '.__('Eventos'), array('controller' => 'eventos', 'action' => 'index', 'admin' => true), array('escape' => false)) ?>
     </li>
-
-    <li><a href="tables.html"><i class="fa fa-table"></i> </a></li>
-    <li><a href="forms.html"><i class="fa fa-edit"></i> Forms</a></li>
-    <li><a href="typography.html"><i class="fa fa-font"></i> Typography</a></li>
+    <li>
+        <?php echo $this->html->link('<i class="fa fa-envelope"></i> '.__('Criar eventos'), array('controller' => 'eventos', 'action' => 'cadastrarEvento', 'admin' => true), array('escape' => false)) ?>
+    </li>
     <li><a href="bootstrap-elements.html"><i class="fa fa-desktop"></i> Bootstrap Elements</a></li>
     <li><a href="bootstrap-grid.html"><i class="fa fa-wrench"></i> Bootstrap Grid</a></li>
     <li><a href="blank-page.html"><i class="fa fa-file"></i> Blank Page</a></li>

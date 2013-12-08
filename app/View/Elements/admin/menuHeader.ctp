@@ -55,7 +55,7 @@
       <li>
         <?php echo $this->html->link('<i class="fa fa-envelope"></i> '.__('Caixa de entrada'), array('controller' => 'msgs', 'action' => 'index', 'admin' => true), array('escape' => false)) ?>
       </li>
-      <li><a href="#"><i class="fa fa-gear"></i> Settings</a></li>
+      <li><a href="#"><i class="fa fa-gear"></i> <?php echo __('Configurações'); ?></a></li>
       <li class="divider"></li>
       <li>
         <?php echo $this->html->link('<i class="fa fa-power-off"></i> '.__('Sair'), array('controller' => 'usuarios', 'action' => 'logout', 'admin' => true), array('escape' => false)) ?>

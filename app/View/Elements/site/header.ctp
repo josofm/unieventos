@@ -5,7 +5,7 @@
       <p class="lead">A calm, blue sky.</p>
     </div>
     <div class="span6">
-      <div class="bsa well">
+      <div class="bsa">
           <?php echo $this->Html->image('logo.png') ?>
       </div>
     </div>

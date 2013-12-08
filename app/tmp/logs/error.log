@@ -69634,3 +69634,148 @@ Request URL: /unieventos/js/admin/jquery.min.map
 Stack Trace:
 #0 /var/www/unieventos/app/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
 #1 {main}
+2013-12-08 17:00:51 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /unieventos/css/bootstrap3.css
+Stack Trace:
+#0 /var/www/unieventos/app/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2013-12-08 17:00:51 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /unieventos/css/login.css
+Stack Trace:
+#0 /var/www/unieventos/app/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2013-12-08 17:00:56 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /unieventos/css/files/fontSite/fontawesome-webfont.woff?v=3.0.1
+Stack Trace:
+#0 /var/www/unieventos/app/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2013-12-08 17:00:56 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /unieventos/css/files/fontSite/fontawesome-webfont.ttf?v=3.0.1
+Stack Trace:
+#0 /var/www/unieventos/app/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2013-12-08 17:01:00 Error: [MissingControllerException] Controller class JsController could not be found.
+Exception Attributes: array (
+  'class' => 'JsController',
+  'plugin' => NULL,
+)
+Request URL: /unieventos/js/1.9.1/jquery.min.map
+Stack Trace:
+#0 /var/www/unieventos/app/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2013-12-08 17:02:02 Error: [MissingControllerException] Controller class JsController could not be found.
+Exception Attributes: array (
+  'class' => 'JsController',
+  'plugin' => NULL,
+)
+Request URL: /unieventos/js/1.9.1/jquery.min.map
+Stack Trace:
+#0 /var/www/unieventos/app/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2013-12-08 17:02:54 Error: [MissingControllerException] Controller class JsController could not be found.
+Exception Attributes: array (
+  'class' => 'JsController',
+  'plugin' => NULL,
+)
+Request URL: /unieventos/js/1.9.1/jquery.min.map
+Stack Trace:
+#0 /var/www/unieventos/app/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2013-12-08 17:03:00 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /unieventos/css/login.css
+Stack Trace:
+#0 /var/www/unieventos/app/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2013-12-08 17:03:00 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /unieventos/css/bootstrap3.css
+Stack Trace:
+#0 /var/www/unieventos/app/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2013-12-08 17:03:14 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /unieventos/css/files/fontSite/fontawesome-webfont.woff?v=3.0.1
+Stack Trace:
+#0 /var/www/unieventos/app/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2013-12-08 17:03:14 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /unieventos/css/files/fontSite/fontawesome-webfont.ttf?v=3.0.1
+Stack Trace:
+#0 /var/www/unieventos/app/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2013-12-08 17:03:43 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /unieventos/css/login.css
+Stack Trace:
+#0 /var/www/unieventos/app/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2013-12-08 17:03:43 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /unieventos/css/bootstrap3.css
+Stack Trace:
+#0 /var/www/unieventos/app/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2013-12-08 17:17:38 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /unieventos/css/bootstrap3.css
+Stack Trace:
+#0 /var/www/unieventos/app/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2013-12-08 17:17:38 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /unieventos/css/login.css
+Stack Trace:
+#0 /var/www/unieventos/app/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2013-12-08 17:22:10 Error: Fatal Error (1): Call to a member function find() on a non-object in [/var/www/unieventos/app/Controller/UsuariosController.php, line 34]
+2013-12-08 17:22:10 Error: [FatalErrorException] Call to a member function find() on a non-object
+Request URL: /unieventos/usuarios/cadastro
+Stack Trace:
+#0 /var/www/unieventos/lib/Cake/Error/ErrorHandler.php(205): ErrorHandler::handleFatalError(1, 'Call to a membe...', '/var/www/unieve...', 34)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to a membe...', '/var/www/unieve...', 34, Array)
+#2 /var/www/unieventos/lib/Cake/Core/App.php(931): call_user_func('ErrorHandler::h...', 1, 'Call to a membe...', '/var/www/unieve...', 34, Array)
+#3 /var/www/unieventos/lib/Cake/Core/App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}

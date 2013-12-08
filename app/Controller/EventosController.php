@@ -6,7 +6,7 @@ class EventosController extends AppController{
 	public $helpers = array('Html', 'Form');
 	public $components = array('Session');
 
-	public function admin_add() {
+	public function admin_cadastrarEventos() {
 	    if ($this->request->is('post')) {
 	    	$this->Evento->create();
 	    	if ($this->Evento->saveAll($this->request->data)) {

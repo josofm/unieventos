@@ -26,10 +26,6 @@
           <?php echo $this->Html->tag('li',$this->Html->link(__('Cadastre-se'), array('controller' => 'usuarios', 'action' => 'cadastro')));  ?>
           <?php echo $this->Html->tag('li', $this->Html->link(__('Entrar'), array('controller' => 'usuarios', 'action' => 'login', 'admin' => true))); ?>
         </ul>
-        <ul class="nav pull-right" id="main-menu-right">
-          <li><a rel="tooltip" target="_blank" href="http://builtwithbootstrap.com/" title="Showcase of Bootstrap sites &amp; apps" onclick="_gaq.push(['_trackEvent', 'click', 'outbound', 'builtwithbootstrap']);">Built With Bootstrap <i class="icon-share-alt"></i></a></li>
-          <li><a rel="tooltip" target="_blank" href="https://wrapbootstrap.com/?ref=bsw" title="Marketplace for premium Bootstrap templates" onclick="_gaq.push(['_trackEvent', 'click', 'outbound', 'wrapbootstrap']);">WrapBootstrap <i class="icon-share-alt"></i></a></li>
-        </ul>
        </div>
      </div>
    </div>
