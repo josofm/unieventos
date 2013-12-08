@@ -3,22 +3,35 @@ App::uses('AppController', 'Controller');
 
 class UsuariosController extends AppController {
 	public $helpers = array('Html', 'Form');
-	public $components = array('Session');
+	public $components = array('Security');
+        public $name = 'Usuarios';
+        public $uses = array('Usuario');
+        
+        
+        
 
 	public function cadastro(){
-		if ($this->request->is('post')) {
+            $isPost = $this->request->isPost(); //apagar
+	if ($this->request->is('post')) {
             $this->Usuario->create();
+            
+             $this->request->data['Usuario']['senha'] = Security::hash($this->request->data['Usuario']['senha'], null, true);
+            $last = $this->Usuario->save($this->request->data);
             if ($this->Usuario->save($this->request->data)) {
                 $this->Session->setFlash(__('Voce foi cadastrado com sucesso.'));
                 return $this->redirect(array('action' => 'sucesso'));
             }
             $this->Session->setFlash(__('Ocorreu um erro!'));
 	    }
+            //apagar daqui
+            
+            
+             //ateh aqui
 	    self::getEstado();	
 	}
 
 	public function admin_cadastro(){
-		if ($this->request->is('post')) {
+	if ($this->request->is('post')) {
             $this->Usuario->create();
             if ($this->Usuario->save($this->request->data)) {
                 $this->Session->setFlash(__('O usuario foi cadastrado com sucesso.'));

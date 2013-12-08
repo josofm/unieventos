@@ -69779,3 +69779,336 @@ Stack Trace:
 #3 /var/www/unieventos/lib/Cake/Core/App.php(904): App::_checkFatalError()
 #4 [internal function]: App::shutdown()
 #5 {main}
+2013-12-08 18:12:47 Error: [PDOException] SQLSTATE[42S22]: Column not found: 1054 Unknown column 'Estado.usuario_id' in 'on clause'
+Request URL: /unieventos/admin/usuarios/login
+Stack Trace:
+#0 C:\xampp\htdocs\unieventos\lib\Cake\Model\Datasource\DboSource.php(460): PDOStatement->execute(Array)
+#1 C:\xampp\htdocs\unieventos\lib\Cake\Model\Datasource\DboSource.php(426): DboSource->_execute('SELECT `Usuario...', Array)
+#2 C:\xampp\htdocs\unieventos\lib\Cake\Model\Datasource\DboSource.php(666): DboSource->execute('SELECT `Usuario...', Array, Array)
+#3 C:\xampp\htdocs\unieventos\lib\Cake\Model\Datasource\DboSource.php(1077): DboSource->fetchAll('SELECT `Usuario...', false)
+#4 C:\xampp\htdocs\unieventos\lib\Cake\Model\Model.php(2880): DboSource->read(Object(Usuario), Array)
+#5 C:\xampp\htdocs\unieventos\lib\Cake\Model\Model.php(2852): Model->_readDataSource('first', Array)
+#6 C:\xampp\htdocs\unieventos\lib\Cake\Controller\Component\Auth\BaseAuthenticate.php(114): Model->find('first', Array)
+#7 C:\xampp\htdocs\unieventos\lib\Cake\Controller\Component\Auth\FormAuthenticate.php(81): BaseAuthenticate->_findUser('admin@localhost...', 'admin')
+#8 C:\xampp\htdocs\unieventos\lib\Cake\Controller\Component\AuthComponent.php(752): FormAuthenticate->authenticate(Object(CakeRequest), Object(CakeResponse))
+#9 C:\xampp\htdocs\unieventos\lib\Cake\Controller\Component\AuthComponent.php(599): AuthComponent->identify(Object(CakeRequest), Object(CakeResponse))
+#10 C:\xampp\htdocs\unieventos\app\Controller\UsuariosController.php(41): AuthComponent->login()
+#11 [internal function]: UsuariosController->admin_login()
+#12 C:\xampp\htdocs\unieventos\lib\Cake\Controller\Controller.php(490): ReflectionMethod->invokeArgs(Object(UsuariosController), Array)
+#13 C:\xampp\htdocs\unieventos\lib\Cake\Routing\Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
+#14 C:\xampp\htdocs\unieventos\lib\Cake\Routing\Dispatcher.php(162): Dispatcher->_invoke(Object(UsuariosController), Object(CakeRequest), Object(CakeResponse))
+#15 C:\xampp\htdocs\unieventos\app\webroot\index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#16 {main}
+2013-12-08 18:13:02 Error: [PDOException] SQLSTATE[42S22]: Column not found: 1054 Unknown column 'Estado.usuario_id' in 'on clause'
+Request URL: /unieventos/admin/usuarios/login
+Stack Trace:
+#0 C:\xampp\htdocs\unieventos\lib\Cake\Model\Datasource\DboSource.php(460): PDOStatement->execute(Array)
+#1 C:\xampp\htdocs\unieventos\lib\Cake\Model\Datasource\DboSource.php(426): DboSource->_execute('SELECT `Usuario...', Array)
+#2 C:\xampp\htdocs\unieventos\lib\Cake\Model\Datasource\DboSource.php(666): DboSource->execute('SELECT `Usuario...', Array, Array)
+#3 C:\xampp\htdocs\unieventos\lib\Cake\Model\Datasource\DboSource.php(1077): DboSource->fetchAll('SELECT `Usuario...', false)
+#4 C:\xampp\htdocs\unieventos\lib\Cake\Model\Model.php(2880): DboSource->read(Object(Usuario), Array)
+#5 C:\xampp\htdocs\unieventos\lib\Cake\Model\Model.php(2852): Model->_readDataSource('first', Array)
+#6 C:\xampp\htdocs\unieventos\lib\Cake\Controller\Component\Auth\BaseAuthenticate.php(114): Model->find('first', Array)
+#7 C:\xampp\htdocs\unieventos\lib\Cake\Controller\Component\Auth\FormAuthenticate.php(81): BaseAuthenticate->_findUser('cpossobom@inf.u...', '123456')
+#8 C:\xampp\htdocs\unieventos\lib\Cake\Controller\Component\AuthComponent.php(752): FormAuthenticate->authenticate(Object(CakeRequest), Object(CakeResponse))
+#9 C:\xampp\htdocs\unieventos\lib\Cake\Controller\Component\AuthComponent.php(599): AuthComponent->identify(Object(CakeRequest), Object(CakeResponse))
+#10 C:\xampp\htdocs\unieventos\app\Controller\UsuariosController.php(41): AuthComponent->login()
+#11 [internal function]: UsuariosController->admin_login()
+#12 C:\xampp\htdocs\unieventos\lib\Cake\Controller\Controller.php(490): ReflectionMethod->invokeArgs(Object(UsuariosController), Array)
+#13 C:\xampp\htdocs\unieventos\lib\Cake\Routing\Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
+#14 C:\xampp\htdocs\unieventos\lib\Cake\Routing\Dispatcher.php(162): Dispatcher->_invoke(Object(UsuariosController), Object(CakeRequest), Object(CakeResponse))
+#15 C:\xampp\htdocs\unieventos\app\webroot\index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#16 {main}
+2013-12-08 19:01:41 Error: Fatal Error (1): Call to a member function find() on a non-object in [C:\xampp\htdocs\unieventos\app\Controller\UsuariosController.php, line 45]
+2013-12-08 19:01:41 Error: [FatalErrorException] Call to a member function find() on a non-object
+Request URL: /unieventos/usuarios/cadastro
+Stack Trace:
+#0 C:\xampp\htdocs\unieventos\lib\Cake\Error\ErrorHandler.php(205): ErrorHandler::handleFatalError(1, 'Call to a membe...', 'C:\xampp\htdocs...', 45)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to a membe...', 'C:\xampp\htdocs...', 45, Array)
+#2 C:\xampp\htdocs\unieventos\lib\Cake\Core\App.php(931): call_user_func('ErrorHandler::h...', 1, 'Call to a membe...', 'C:\xampp\htdocs...', 45, Array)
+#3 C:\xampp\htdocs\unieventos\lib\Cake\Core\App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2013-12-08 19:01:47 Error: Fatal Error (1): Call to a member function find() on a non-object in [C:\xampp\htdocs\unieventos\app\Controller\UsuariosController.php, line 45]
+2013-12-08 19:01:47 Error: [FatalErrorException] Call to a member function find() on a non-object
+Request URL: /unieventos/usuarios/cadastro
+Stack Trace:
+#0 C:\xampp\htdocs\unieventos\lib\Cake\Error\ErrorHandler.php(205): ErrorHandler::handleFatalError(1, 'Call to a membe...', 'C:\xampp\htdocs...', 45)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to a membe...', 'C:\xampp\htdocs...', 45, Array)
+#2 C:\xampp\htdocs\unieventos\lib\Cake\Core\App.php(931): call_user_func('ErrorHandler::h...', 1, 'Call to a membe...', 'C:\xampp\htdocs...', 45, Array)
+#3 C:\xampp\htdocs\unieventos\lib\Cake\Core\App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2013-12-08 19:02:35 Error: Fatal Error (1): Call to a member function find() on a non-object in [C:\xampp\htdocs\unieventos\app\Controller\UsuariosController.php, line 45]
+2013-12-08 19:02:35 Error: [FatalErrorException] Call to a member function find() on a non-object
+Request URL: /unieventos/usuarios/cadastro
+Stack Trace:
+#0 C:\xampp\htdocs\unieventos\lib\Cake\Error\ErrorHandler.php(205): ErrorHandler::handleFatalError(1, 'Call to a membe...', 'C:\xampp\htdocs...', 45)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to a membe...', 'C:\xampp\htdocs...', 45, Array)
+#2 C:\xampp\htdocs\unieventos\lib\Cake\Core\App.php(931): call_user_func('ErrorHandler::h...', 1, 'Call to a membe...', 'C:\xampp\htdocs...', 45, Array)
+#3 C:\xampp\htdocs\unieventos\lib\Cake\Core\App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2013-12-08 19:02:40 Error: Fatal Error (1): Call to a member function find() on a non-object in [C:\xampp\htdocs\unieventos\app\Controller\UsuariosController.php, line 45]
+2013-12-08 19:02:40 Error: [FatalErrorException] Call to a member function find() on a non-object
+Request URL: /unieventos/usuarios/cadastro
+Stack Trace:
+#0 C:\xampp\htdocs\unieventos\lib\Cake\Error\ErrorHandler.php(205): ErrorHandler::handleFatalError(1, 'Call to a membe...', 'C:\xampp\htdocs...', 45)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to a membe...', 'C:\xampp\htdocs...', 45, Array)
+#2 C:\xampp\htdocs\unieventos\lib\Cake\Core\App.php(931): call_user_func('ErrorHandler::h...', 1, 'Call to a membe...', 'C:\xampp\htdocs...', 45, Array)
+#3 C:\xampp\htdocs\unieventos\lib\Cake\Core\App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2013-12-08 19:02:48 Error: Fatal Error (1): Call to a member function find() on a non-object in [C:\xampp\htdocs\unieventos\app\Controller\UsuariosController.php, line 45]
+2013-12-08 19:02:48 Error: [FatalErrorException] Call to a member function find() on a non-object
+Request URL: /unieventos/usuarios/cadastro
+Stack Trace:
+#0 C:\xampp\htdocs\unieventos\lib\Cake\Error\ErrorHandler.php(205): ErrorHandler::handleFatalError(1, 'Call to a membe...', 'C:\xampp\htdocs...', 45)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to a membe...', 'C:\xampp\htdocs...', 45, Array)
+#2 C:\xampp\htdocs\unieventos\lib\Cake\Core\App.php(931): call_user_func('ErrorHandler::h...', 1, 'Call to a membe...', 'C:\xampp\htdocs...', 45, Array)
+#3 C:\xampp\htdocs\unieventos\lib\Cake\Core\App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2013-12-08 19:05:41 Error: Fatal Error (1): Call to a member function find() on a non-object in [C:\xampp\htdocs\unieventos\app\Controller\UsuariosController.php, line 47]
+2013-12-08 19:05:41 Error: [FatalErrorException] Call to a member function find() on a non-object
+Request URL: /unieventos/usuarios/cadastro
+Stack Trace:
+#0 C:\xampp\htdocs\unieventos\lib\Cake\Error\ErrorHandler.php(205): ErrorHandler::handleFatalError(1, 'Call to a membe...', 'C:\xampp\htdocs...', 47)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to a membe...', 'C:\xampp\htdocs...', 47, Array)
+#2 C:\xampp\htdocs\unieventos\lib\Cake\Core\App.php(931): call_user_func('ErrorHandler::h...', 1, 'Call to a membe...', 'C:\xampp\htdocs...', 47, Array)
+#3 C:\xampp\htdocs\unieventos\lib\Cake\Core\App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2013-12-08 19:05:46 Error: Fatal Error (1): Call to a member function find() on a non-object in [C:\xampp\htdocs\unieventos\app\Controller\UsuariosController.php, line 47]
+2013-12-08 19:05:46 Error: [FatalErrorException] Call to a member function find() on a non-object
+Request URL: /unieventos/usuarios/cadastro
+Stack Trace:
+#0 C:\xampp\htdocs\unieventos\lib\Cake\Error\ErrorHandler.php(205): ErrorHandler::handleFatalError(1, 'Call to a membe...', 'C:\xampp\htdocs...', 47)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to a membe...', 'C:\xampp\htdocs...', 47, Array)
+#2 C:\xampp\htdocs\unieventos\lib\Cake\Core\App.php(931): call_user_func('ErrorHandler::h...', 1, 'Call to a membe...', 'C:\xampp\htdocs...', 47, Array)
+#3 C:\xampp\htdocs\unieventos\lib\Cake\Core\App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2013-12-08 19:15:38 Error: Fatal Error (1): Call to a member function find() on a non-object in [C:\xampp\htdocs\unieventos\app\Controller\UsuariosController.php, line 47]
+2013-12-08 19:15:38 Error: [FatalErrorException] Call to a member function find() on a non-object
+Request URL: /unieventos/usuarios/cadastro
+Stack Trace:
+#0 C:\xampp\htdocs\unieventos\lib\Cake\Error\ErrorHandler.php(205): ErrorHandler::handleFatalError(1, 'Call to a membe...', 'C:\xampp\htdocs...', 47)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to a membe...', 'C:\xampp\htdocs...', 47, Array)
+#2 C:\xampp\htdocs\unieventos\lib\Cake\Core\App.php(931): call_user_func('ErrorHandler::h...', 1, 'Call to a membe...', 'C:\xampp\htdocs...', 47, Array)
+#3 C:\xampp\htdocs\unieventos\lib\Cake\Core\App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2013-12-08 19:15:44 Error: Fatal Error (1): Call to a member function find() on a non-object in [C:\xampp\htdocs\unieventos\app\Controller\UsuariosController.php, line 47]
+2013-12-08 19:15:44 Error: [FatalErrorException] Call to a member function find() on a non-object
+Request URL: /unieventos/usuarios/cadastro
+Stack Trace:
+#0 C:\xampp\htdocs\unieventos\lib\Cake\Error\ErrorHandler.php(205): ErrorHandler::handleFatalError(1, 'Call to a membe...', 'C:\xampp\htdocs...', 47)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to a membe...', 'C:\xampp\htdocs...', 47, Array)
+#2 C:\xampp\htdocs\unieventos\lib\Cake\Core\App.php(931): call_user_func('ErrorHandler::h...', 1, 'Call to a membe...', 'C:\xampp\htdocs...', 47, Array)
+#3 C:\xampp\htdocs\unieventos\lib\Cake\Core\App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2013-12-08 19:16:57 Error: Fatal Error (1): Call to a member function find() on a non-object in [C:\xampp\htdocs\unieventos\app\Controller\UsuariosController.php, line 47]
+2013-12-08 19:16:57 Error: [FatalErrorException] Call to a member function find() on a non-object
+Request URL: /unieventos/usuarios/cadastro
+Stack Trace:
+#0 C:\xampp\htdocs\unieventos\lib\Cake\Error\ErrorHandler.php(205): ErrorHandler::handleFatalError(1, 'Call to a membe...', 'C:\xampp\htdocs...', 47)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to a membe...', 'C:\xampp\htdocs...', 47, Array)
+#2 C:\xampp\htdocs\unieventos\lib\Cake\Core\App.php(931): call_user_func('ErrorHandler::h...', 1, 'Call to a membe...', 'C:\xampp\htdocs...', 47, Array)
+#3 C:\xampp\htdocs\unieventos\lib\Cake\Core\App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2013-12-08 19:17:31 Error: Fatal Error (1): Call to a member function find() on a non-object in [C:\xampp\htdocs\unieventos\app\Controller\UsuariosController.php, line 47]
+2013-12-08 19:17:31 Error: [FatalErrorException] Call to a member function find() on a non-object
+Request URL: /unieventos/usuarios/cadastro
+Stack Trace:
+#0 C:\xampp\htdocs\unieventos\lib\Cake\Error\ErrorHandler.php(205): ErrorHandler::handleFatalError(1, 'Call to a membe...', 'C:\xampp\htdocs...', 47)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to a membe...', 'C:\xampp\htdocs...', 47, Array)
+#2 C:\xampp\htdocs\unieventos\lib\Cake\Core\App.php(931): call_user_func('ErrorHandler::h...', 1, 'Call to a membe...', 'C:\xampp\htdocs...', 47, Array)
+#3 C:\xampp\htdocs\unieventos\lib\Cake\Core\App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2013-12-08 19:17:35 Error: Fatal Error (1): Call to a member function find() on a non-object in [C:\xampp\htdocs\unieventos\app\Controller\UsuariosController.php, line 47]
+2013-12-08 19:17:35 Error: [FatalErrorException] Call to a member function find() on a non-object
+Request URL: /unieventos/usuarios/cadastro
+Stack Trace:
+#0 C:\xampp\htdocs\unieventos\lib\Cake\Error\ErrorHandler.php(205): ErrorHandler::handleFatalError(1, 'Call to a membe...', 'C:\xampp\htdocs...', 47)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to a membe...', 'C:\xampp\htdocs...', 47, Array)
+#2 C:\xampp\htdocs\unieventos\lib\Cake\Core\App.php(931): call_user_func('ErrorHandler::h...', 1, 'Call to a membe...', 'C:\xampp\htdocs...', 47, Array)
+#3 C:\xampp\htdocs\unieventos\lib\Cake\Core\App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2013-12-08 19:17:36 Error: Fatal Error (1): Call to a member function find() on a non-object in [C:\xampp\htdocs\unieventos\app\Controller\UsuariosController.php, line 47]
+2013-12-08 19:17:36 Error: [FatalErrorException] Call to a member function find() on a non-object
+Request URL: /unieventos/usuarios/cadastro
+Stack Trace:
+#0 C:\xampp\htdocs\unieventos\lib\Cake\Error\ErrorHandler.php(205): ErrorHandler::handleFatalError(1, 'Call to a membe...', 'C:\xampp\htdocs...', 47)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to a membe...', 'C:\xampp\htdocs...', 47, Array)
+#2 C:\xampp\htdocs\unieventos\lib\Cake\Core\App.php(931): call_user_func('ErrorHandler::h...', 1, 'Call to a membe...', 'C:\xampp\htdocs...', 47, Array)
+#3 C:\xampp\htdocs\unieventos\lib\Cake\Core\App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2013-12-08 19:18:22 Error: Fatal Error (1): Call to a member function find() on a non-object in [C:\xampp\htdocs\unieventos\app\Controller\UsuariosController.php, line 48]
+2013-12-08 19:18:22 Error: [FatalErrorException] Call to a member function find() on a non-object
+Request URL: /unieventos/usuarios/cadastro
+Stack Trace:
+#0 C:\xampp\htdocs\unieventos\lib\Cake\Error\ErrorHandler.php(205): ErrorHandler::handleFatalError(1, 'Call to a membe...', 'C:\xampp\htdocs...', 48)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to a membe...', 'C:\xampp\htdocs...', 48, Array)
+#2 C:\xampp\htdocs\unieventos\lib\Cake\Core\App.php(931): call_user_func('ErrorHandler::h...', 1, 'Call to a membe...', 'C:\xampp\htdocs...', 48, Array)
+#3 C:\xampp\htdocs\unieventos\lib\Cake\Core\App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2013-12-08 19:18:25 Error: Fatal Error (1): Call to a member function find() on a non-object in [C:\xampp\htdocs\unieventos\app\Controller\UsuariosController.php, line 48]
+2013-12-08 19:18:25 Error: [FatalErrorException] Call to a member function find() on a non-object
+Request URL: /unieventos/usuarios/cadastro
+Stack Trace:
+#0 C:\xampp\htdocs\unieventos\lib\Cake\Error\ErrorHandler.php(205): ErrorHandler::handleFatalError(1, 'Call to a membe...', 'C:\xampp\htdocs...', 48)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to a membe...', 'C:\xampp\htdocs...', 48, Array)
+#2 C:\xampp\htdocs\unieventos\lib\Cake\Core\App.php(931): call_user_func('ErrorHandler::h...', 1, 'Call to a membe...', 'C:\xampp\htdocs...', 48, Array)
+#3 C:\xampp\htdocs\unieventos\lib\Cake\Core\App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2013-12-08 19:18:29 Error: Fatal Error (1): Call to a member function find() on a non-object in [C:\xampp\htdocs\unieventos\app\Controller\UsuariosController.php, line 48]
+2013-12-08 19:18:29 Error: [FatalErrorException] Call to a member function find() on a non-object
+Request URL: /unieventos/usuarios/cadastro
+Stack Trace:
+#0 C:\xampp\htdocs\unieventos\lib\Cake\Error\ErrorHandler.php(205): ErrorHandler::handleFatalError(1, 'Call to a membe...', 'C:\xampp\htdocs...', 48)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to a membe...', 'C:\xampp\htdocs...', 48, Array)
+#2 C:\xampp\htdocs\unieventos\lib\Cake\Core\App.php(931): call_user_func('ErrorHandler::h...', 1, 'Call to a membe...', 'C:\xampp\htdocs...', 48, Array)
+#3 C:\xampp\htdocs\unieventos\lib\Cake\Core\App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2013-12-08 19:22:32 Error: Fatal Error (1): Call to a member function find() on a non-object in [C:\xampp\htdocs\unieventos\app\Controller\UsuariosController.php, line 49]
+2013-12-08 19:22:32 Error: [FatalErrorException] Call to a member function find() on a non-object
+Request URL: /unieventos/usuarios/cadastro
+Stack Trace:
+#0 C:\xampp\htdocs\unieventos\lib\Cake\Error\ErrorHandler.php(205): ErrorHandler::handleFatalError(1, 'Call to a membe...', 'C:\xampp\htdocs...', 49)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to a membe...', 'C:\xampp\htdocs...', 49, Array)
+#2 C:\xampp\htdocs\unieventos\lib\Cake\Core\App.php(931): call_user_func('ErrorHandler::h...', 1, 'Call to a membe...', 'C:\xampp\htdocs...', 49, Array)
+#3 C:\xampp\htdocs\unieventos\lib\Cake\Core\App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2013-12-08 19:24:45 Error: Fatal Error (1): Call to a member function find() on a non-object in [C:\xampp\htdocs\unieventos\app\Controller\UsuariosController.php, line 49]
+2013-12-08 19:24:45 Error: [FatalErrorException] Call to a member function find() on a non-object
+Request URL: /unieventos/usuarios/cadastro
+Stack Trace:
+#0 C:\xampp\htdocs\unieventos\lib\Cake\Error\ErrorHandler.php(205): ErrorHandler::handleFatalError(1, 'Call to a membe...', 'C:\xampp\htdocs...', 49)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to a membe...', 'C:\xampp\htdocs...', 49, Array)
+#2 C:\xampp\htdocs\unieventos\lib\Cake\Core\App.php(931): call_user_func('ErrorHandler::h...', 1, 'Call to a membe...', 'C:\xampp\htdocs...', 49, Array)
+#3 C:\xampp\htdocs\unieventos\lib\Cake\Core\App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2013-12-08 19:24:47 Error: Fatal Error (1): Call to a member function find() on a non-object in [C:\xampp\htdocs\unieventos\app\Controller\UsuariosController.php, line 49]
+2013-12-08 19:24:47 Error: [FatalErrorException] Call to a member function find() on a non-object
+Request URL: /unieventos/usuarios/cadastro
+Stack Trace:
+#0 C:\xampp\htdocs\unieventos\lib\Cake\Error\ErrorHandler.php(205): ErrorHandler::handleFatalError(1, 'Call to a membe...', 'C:\xampp\htdocs...', 49)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to a membe...', 'C:\xampp\htdocs...', 49, Array)
+#2 C:\xampp\htdocs\unieventos\lib\Cake\Core\App.php(931): call_user_func('ErrorHandler::h...', 1, 'Call to a membe...', 'C:\xampp\htdocs...', 49, Array)
+#3 C:\xampp\htdocs\unieventos\lib\Cake\Core\App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2013-12-08 19:25:20 Error: Fatal Error (1): Call to a member function find() on a non-object in [C:\xampp\htdocs\unieventos\app\Controller\UsuariosController.php, line 49]
+2013-12-08 19:25:20 Error: [FatalErrorException] Call to a member function find() on a non-object
+Request URL: /unieventos/usuarios/cadastro
+Stack Trace:
+#0 C:\xampp\htdocs\unieventos\lib\Cake\Error\ErrorHandler.php(205): ErrorHandler::handleFatalError(1, 'Call to a membe...', 'C:\xampp\htdocs...', 49)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to a membe...', 'C:\xampp\htdocs...', 49, Array)
+#2 C:\xampp\htdocs\unieventos\lib\Cake\Core\App.php(931): call_user_func('ErrorHandler::h...', 1, 'Call to a membe...', 'C:\xampp\htdocs...', 49, Array)
+#3 C:\xampp\htdocs\unieventos\lib\Cake\Core\App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2013-12-08 19:29:02 Error: Fatal Error (1): Call to a member function save() on a non-object in [C:\xampp\htdocs\unieventos\app\Controller\UsuariosController.php, line 29]
+2013-12-08 19:29:02 Error: [FatalErrorException] Call to a member function save() on a non-object
+Request URL: /unieventos/usuarios/cadastro
+Stack Trace:
+#0 C:\xampp\htdocs\unieventos\lib\Cake\Error\ErrorHandler.php(205): ErrorHandler::handleFatalError(1, 'Call to a membe...', 'C:\xampp\htdocs...', 29)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to a membe...', 'C:\xampp\htdocs...', 29, Array)
+#2 C:\xampp\htdocs\unieventos\lib\Cake\Core\App.php(931): call_user_func('ErrorHandler::h...', 1, 'Call to a membe...', 'C:\xampp\htdocs...', 29, Array)
+#3 C:\xampp\htdocs\unieventos\lib\Cake\Core\App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2013-12-08 19:31:13 Error: Fatal Error (1): Call to a member function save() on a non-object in [C:\xampp\htdocs\unieventos\app\Controller\UsuariosController.php, line 29]
+2013-12-08 19:31:13 Error: [FatalErrorException] Call to a member function save() on a non-object
+Request URL: /unieventos/usuarios/cadastro
+Stack Trace:
+#0 C:\xampp\htdocs\unieventos\lib\Cake\Error\ErrorHandler.php(205): ErrorHandler::handleFatalError(1, 'Call to a membe...', 'C:\xampp\htdocs...', 29)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to a membe...', 'C:\xampp\htdocs...', 29, Array)
+#2 C:\xampp\htdocs\unieventos\lib\Cake\Core\App.php(931): call_user_func('ErrorHandler::h...', 1, 'Call to a membe...', 'C:\xampp\htdocs...', 29, Array)
+#3 C:\xampp\htdocs\unieventos\lib\Cake\Core\App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2013-12-08 19:33:51 Error: Fatal Error (1): Call to a member function save() on a non-object in [C:\xampp\htdocs\unieventos\app\Controller\UsuariosController.php, line 29]
+2013-12-08 19:33:51 Error: [FatalErrorException] Call to a member function save() on a non-object
+Request URL: /unieventos/usuarios/cadastro
+Stack Trace:
+#0 C:\xampp\htdocs\unieventos\lib\Cake\Error\ErrorHandler.php(205): ErrorHandler::handleFatalError(1, 'Call to a membe...', 'C:\xampp\htdocs...', 29)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to a membe...', 'C:\xampp\htdocs...', 29, Array)
+#2 C:\xampp\htdocs\unieventos\lib\Cake\Core\App.php(931): call_user_func('ErrorHandler::h...', 1, 'Call to a membe...', 'C:\xampp\htdocs...', 29, Array)
+#3 C:\xampp\htdocs\unieventos\lib\Cake\Core\App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2013-12-08 19:35:12 Error: Fatal Error (1): Call to a member function save() on a non-object in [C:\xampp\htdocs\unieventos\app\Controller\UsuariosController.php, line 29]
+2013-12-08 19:35:12 Error: [FatalErrorException] Call to a member function save() on a non-object
+Request URL: /unieventos/usuarios/cadastro
+Stack Trace:
+#0 C:\xampp\htdocs\unieventos\lib\Cake\Error\ErrorHandler.php(205): ErrorHandler::handleFatalError(1, 'Call to a membe...', 'C:\xampp\htdocs...', 29)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to a membe...', 'C:\xampp\htdocs...', 29, Array)
+#2 C:\xampp\htdocs\unieventos\lib\Cake\Core\App.php(931): call_user_func('ErrorHandler::h...', 1, 'Call to a membe...', 'C:\xampp\htdocs...', 29, Array)
+#3 C:\xampp\htdocs\unieventos\lib\Cake\Core\App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2013-12-08 19:36:36 Error: Fatal Error (1): Call to a member function save() on a non-object in [C:\xampp\htdocs\unieventos\app\Controller\UsuariosController.php, line 29]
+2013-12-08 19:36:36 Error: [FatalErrorException] Call to a member function save() on a non-object
+Request URL: /unieventos/usuarios/cadastro
+Stack Trace:
+#0 C:\xampp\htdocs\unieventos\lib\Cake\Error\ErrorHandler.php(205): ErrorHandler::handleFatalError(1, 'Call to a membe...', 'C:\xampp\htdocs...', 29)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to a membe...', 'C:\xampp\htdocs...', 29, Array)
+#2 C:\xampp\htdocs\unieventos\lib\Cake\Core\App.php(931): call_user_func('ErrorHandler::h...', 1, 'Call to a membe...', 'C:\xampp\htdocs...', 29, Array)
+#3 C:\xampp\htdocs\unieventos\lib\Cake\Core\App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2013-12-08 19:40:00 Error: Fatal Error (1): Call to a member function save() on a non-object in [C:\xampp\htdocs\unieventos\app\Controller\UsuariosController.php, line 29]
+2013-12-08 19:40:00 Error: [FatalErrorException] Call to a member function save() on a non-object
+Request URL: /unieventos/usuarios/cadastro
+Stack Trace:
+#0 C:\xampp\htdocs\unieventos\lib\Cake\Error\ErrorHandler.php(205): ErrorHandler::handleFatalError(1, 'Call to a membe...', 'C:\xampp\htdocs...', 29)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to a membe...', 'C:\xampp\htdocs...', 29, Array)
+#2 C:\xampp\htdocs\unieventos\lib\Cake\Core\App.php(931): call_user_func('ErrorHandler::h...', 1, 'Call to a membe...', 'C:\xampp\htdocs...', 29, Array)
+#3 C:\xampp\htdocs\unieventos\lib\Cake\Core\App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2013-12-08 19:40:48 Error: Fatal Error (1): Call to a member function save() on a non-object in [C:\xampp\htdocs\unieventos\app\Controller\UsuariosController.php, line 29]
+2013-12-08 19:40:48 Error: [FatalErrorException] Call to a member function save() on a non-object
+Request URL: /unieventos/usuarios/cadastro
+Stack Trace:
+#0 C:\xampp\htdocs\unieventos\lib\Cake\Error\ErrorHandler.php(205): ErrorHandler::handleFatalError(1, 'Call to a membe...', 'C:\xampp\htdocs...', 29)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to a membe...', 'C:\xampp\htdocs...', 29, Array)
+#2 C:\xampp\htdocs\unieventos\lib\Cake\Core\App.php(931): call_user_func('ErrorHandler::h...', 1, 'Call to a membe...', 'C:\xampp\htdocs...', 29, Array)
+#3 C:\xampp\htdocs\unieventos\lib\Cake\Core\App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2013-12-08 19:42:15 Error: Fatal Error (1): Call to a member function save() on a non-object in [C:\xampp\htdocs\unieventos\app\Controller\UsuariosController.php, line 29]
+2013-12-08 19:42:15 Error: [FatalErrorException] Call to a member function save() on a non-object
+Request URL: /unieventos/usuarios/cadastro
+Stack Trace:
+#0 C:\xampp\htdocs\unieventos\lib\Cake\Error\ErrorHandler.php(205): ErrorHandler::handleFatalError(1, 'Call to a membe...', 'C:\xampp\htdocs...', 29)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to a membe...', 'C:\xampp\htdocs...', 29, Array)
+#2 C:\xampp\htdocs\unieventos\lib\Cake\Core\App.php(931): call_user_func('ErrorHandler::h...', 1, 'Call to a membe...', 'C:\xampp\htdocs...', 29, Array)
+#3 C:\xampp\htdocs\unieventos\lib\Cake\Core\App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2013-12-08 20:08:15 Error: [BadRequestException] The request has been black-holed
+Request URL: /unieventos/usuarios/cadastro
+Stack Trace:
+#0 C:\xampp\htdocs\unieventos\lib\Cake\Controller\Component\SecurityComponent.php(244): SecurityComponent->blackHole(Object(UsuariosController), 'csrf')
+#1 [internal function]: SecurityComponent->startup(Object(UsuariosController))
+#2 C:\xampp\htdocs\unieventos\lib\Cake\Utility\ObjectCollection.php(132): call_user_func_array(Array, Array)
+#3 [internal function]: ObjectCollection->trigger(Object(CakeEvent))
+#4 C:\xampp\htdocs\unieventos\lib\Cake\Event\CakeEventManager.php(248): call_user_func(Array, Object(CakeEvent))
+#5 C:\xampp\htdocs\unieventos\lib\Cake\Controller\Controller.php(675): CakeEventManager->dispatch(Object(CakeEvent))
+#6 C:\xampp\htdocs\unieventos\lib\Cake\Routing\Dispatcher.php(184): Controller->startupProcess()
+#7 C:\xampp\htdocs\unieventos\lib\Cake\Routing\Dispatcher.php(162): Dispatcher->_invoke(Object(UsuariosController), Object(CakeRequest), Object(CakeResponse))
+#8 C:\xampp\htdocs\unieventos\app\webroot\index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#9 {main}
