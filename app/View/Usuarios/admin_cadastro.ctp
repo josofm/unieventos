@@ -20,7 +20,13 @@
         <div class="col-sm-9"> 
           <?php echo $this->Form->input('nome', array('id' => 'form-field-1','class' => 'col-xs-10 col-sm-5', 'label' => false, 'placeholder' => 'Nome completo ')); ?> 
         </div>  
-      </div>  
+      </div>
+      <div class="control-group">  
+        <label class="control-label" for="input01"><?php echo __('Sobrenome'); ?></label>  
+        <div class="controls"> 
+          <?php echo $this->Form->input('sobrenome', array('class' => 'input-xlarge', 'label' => false, 'placeholder' => 'sobrenome')); ?> 
+        </div>  
+      </div>   
       <div class="control-group">  
         <label class="col-sm-3 control-label no-padding-right" for="form-field-2"><?php echo __('CPF'); ?></label>  
         <div class="col-sm-9"> 

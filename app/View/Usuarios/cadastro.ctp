@@ -1,3 +1,4 @@
+
 <?php  
   echo $this->Form->create('Usuario', array('class' => 'form-horizontal', 'novalidate' )); ?>
     <fieldset>  
@@ -41,7 +42,13 @@
       <div class="control-group">  
         <label class="control-label" for="input01"><?php echo __('Senha'); ?></label>  
         <div class="controls"> 
-          <?php echo $this->Form->input('senha', array('class' => 'input-xlarge', 'label' => false)); ?> 
+          <?php echo $this->Form->input('senha', array('type' => 'password','class' => 'input-xlarge', 'label' => false, 'value'=>'')); ?> 
+        </div>  
+      </div>
+      <div class="control-group">  
+        <label class="control-label" for="input01"><?php echo __('Confirmar Senha'); ?></label>  
+        <div class="controls"> 
+          <?php echo $this->Form->input('senha_confirm', array('class' => 'input-xlarge', 'label' => false, 'value'=>'', 'type'=>'password')); ?> 
         </div>  
       </div>
       <div class="control-group">  
