@@ -46,6 +46,7 @@ class UsuariosController extends AppController {
 					$this->Session->setFlash('Siape e/ou Senha Incorretos!');
 				}
 			}
+
 	public function admin_logout(){
 			$this->redirect($this->Auth->logout());
 		}
@@ -55,6 +56,23 @@ class UsuariosController extends AppController {
 
 	}
 
+	public function admin_perfil($id = null) {
+        $this->Usuario->id = $id;
+        if (!$this->Usuario->exists()) {
+            throw new NotFoundException(__('Usuario Invalido'));
+        }
+        if ($this->request->is('post') || $this->request->is('put')) {
+            if ($this->Usuario->save($this->request->data)) {
+                $this->Session->setFlash(__('O Usuario foi Salvo com sucesso.'));
+                return $this->redirect(array('action' => 'index'));
+            }
+            $this->Session->setFlash(__('O usuario não foi salvo, tente novamente em alguns segundos.'));
+        } else {
+        	$this->Usuario->recursive= 0;
+            $this->request->data = $this->Usuario->read(null, $id);
+            unset($this->request->data['Usuario']['senha']);
+        }
+    }
 
 }
 ?>

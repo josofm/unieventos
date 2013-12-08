@@ -4,10 +4,7 @@
       <strong>Atenção!!</strong> Você não tem menssagem.
     </div>
 <?php }else{ ?>
-<div class="btn-group right">
-    <button type="button" class="btn btn-default">Atualizar</button>
-    <button type="button" class="btn btn-default">Escrever</button>
-</div>
+<h1 class="text-center"><?php echo __('Eventos a serem aprovados') ?></h1>
 <table class="table table-hover">
     <?php foreach ($lista as $l): ?>
     <tr>
@@ -15,7 +12,7 @@
             <?php echo $l['Evento']['nome']; ?>
         </td>
         <td>
-            <?php echo $this->Html->link('Aprovar', array('controller' => 'eventos', 'action' => 'aprovacao', 'admin' => true, $l['Evento']['id'])) ?>
+            <?php echo $this->Html->link('Aprovar', array('controller' => 'eventos', 'action' => 'aprovacao', 'admin' => true, $l['Evento']['id']),  array('confirm' => 'Are you sure?')) ?>
         </td>
         <?php //echo $this->element('sql_dump'); ?>
         

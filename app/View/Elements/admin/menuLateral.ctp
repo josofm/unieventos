@@ -1,10 +1,15 @@
 <ul class="nav navbar-nav side-nav">
-    <li class="active"><a href="index.html"><i class="fa fa-dashboard"></i> Dashboard</a></li>
+    <li>
+        <?php echo $this->html->link('<i class="fa fa-dashboard"></i> '.__('Inicio'), array('controller' => 'pages', 'action' => 'index', 'admin' => true), array('escape' => false)) ?>
+    </li>
+    <li>
+        <?php echo $this->html->link('<i class="fa fa-envelope"></i> '.__('Caixa de entrada'), array('controller' => 'msgs', 'action' => 'index', 'admin' => true), array('escape' => false)) ?>
+    </li>
     <li>
         <?php echo $this->html->link('<i class="fa fa-envelope"></i> '.__('Caixa de entrada'), array('controller' => 'msgs', 'action' => 'index', 'admin' => true), array('escape' => false)) ?>
     </li>
 
-    <li><a href="tables.html"><i class="fa fa-table"></i> Tables</a></li>
+    <li><a href="tables.html"><i class="fa fa-table"></i> </a></li>
     <li><a href="forms.html"><i class="fa fa-edit"></i> Forms</a></li>
     <li><a href="typography.html"><i class="fa fa-font"></i> Typography</a></li>
     <li><a href="bootstrap-elements.html"><i class="fa fa-desktop"></i> Bootstrap Elements</a></li>

@@ -1,5 +1,6 @@
 <?php 
 App::uses('AppController', 'Controller');
+App::uses('CakeEmail', 'Network/Email');
 
 class EventosController extends AppController{
 	public $helpers = array('Html', 'Form');
@@ -22,7 +23,6 @@ class EventosController extends AppController{
 	}
 
 	public function admin_aprovacao($id = null){
-		$this->autoRender = false;
 		if (!$id) {
 	        throw new NotFoundException(__('Evento Invalido'));
 	    }
@@ -34,8 +34,16 @@ class EventosController extends AppController{
 
 	    //if ($this->request->is(array('post', 'put'))) {
 	        $this->Evento->id = $id;
-	        $this->Evento->aprovacao = 1;
+	        $this->request->data['Evento']['aprovacao'] = 1;
 	        $this->Evento->save($this->request->data);
+	        $Email = new CakeEmail('default');
+			$Email->from(array('adrianoknofre@gmail.com' => 'My Site'));
+			$Email->to('asantos@inf.ufsm.br');
+			$Email->subject('About');
+			$Email->send('My message');
+
+
+	        $this->redirect(array('action' => 'admin_listaAprovacoes'));
 	    
 	}
 

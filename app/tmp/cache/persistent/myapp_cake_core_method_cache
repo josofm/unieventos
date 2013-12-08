@@ -1,2 +1,2 @@
-1386463263
-a:1:{s:4:"name";a:2:{s:32:"b4a3aca0295178f1d9fe0ad396fbad88";s:11:"`uniEvents`";s:32:"f8ca9f0a5ad8f946bfef53b59a4e276f";s:10:"`usuarios`";}}
+1386519514
+a:2:{s:4:"name";a:8:{s:32:"b4a3aca0295178f1d9fe0ad396fbad88";s:11:"`uniEvents`";s:32:"1592210e6fc5ed67355ab634cb897aee";s:6:"`msgs`";s:32:"bdff66b6db806558355d8822383bee1c";s:9:"`Usuario`";s:32:"b7ba2701c6807faf5eee4f1afd90689f";s:14:"`Usuario`.`id`";s:32:"a21ef2cc1c8613a68608bf06444273e6";s:19:"`Msg`.`usuarios_id`";s:32:"f8ca9f0a5ad8f946bfef53b59a4e276f";s:10:"`usuarios`";s:32:"622426f7cdc303a6d73da8c34432db21";s:19:"`Msg`.`usuario_msg`";s:32:"869f5115f722458885d90e59ebb4ef56";s:5:"`Msg`";}s:6:"fields";a:1:{s:32:"bae20e5700b51eabf927130043cdb846";a:1:{i:0;s:1:"*";}}}

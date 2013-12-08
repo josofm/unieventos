@@ -49,7 +49,9 @@
   <li class="dropdown user-dropdown">
     <a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-user"></i> <?php echo AuthComponent::user('nome') ?> <b class="caret"></b></a>
     <ul class="dropdown-menu">
-      <li><a href="#"><i class="fa fa-user"></i> Profile</a></li>
+      <li>
+        <?php echo $this->html->link('<i class="fa fa-user"></i> '.__('Perfil'), array('controller' => 'usuarios', 'action' => 'perfil', 'admin' => true, AuthComponent::user('id')), array('escape' => false)) ?>
+      </li>
       <li>
         <?php echo $this->html->link('<i class="fa fa-envelope"></i> '.__('Caixa de entrada'), array('controller' => 'msgs', 'action' => 'index', 'admin' => true), array('escape' => false)) ?>
       </li>
