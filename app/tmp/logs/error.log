@@ -68091,3 +68091,1040 @@ Request URL: /unieventos/js/1.9.1/jquery.min.map
 Stack Trace:
 #0 C:\xampp2\htdocs\unieventos\app\webroot\index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
 #1 {main}
+2013-12-05 21:39:51 Error: [MissingControllerException] Controller class AssetsController could not be found.
+Exception Attributes: array (
+  'class' => 'AssetsController',
+  'plugin' => NULL,
+)
+Request URL: /unieventos/assets/avatars/avatar.png
+Stack Trace:
+#0 /var/www/unieventos/app/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2013-12-05 21:39:51 Error: [MissingControllerException] Controller class AssetsController could not be found.
+Exception Attributes: array (
+  'class' => 'AssetsController',
+  'plugin' => NULL,
+)
+Request URL: /unieventos/assets/avatars/avatar3.png
+Stack Trace:
+#0 /var/www/unieventos/app/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2013-12-05 21:39:51 Error: [MissingControllerException] Controller class AssetsController could not be found.
+Exception Attributes: array (
+  'class' => 'AssetsController',
+  'plugin' => NULL,
+)
+Request URL: /unieventos/assets/avatars/avatar4.png
+Stack Trace:
+#0 /var/www/unieventos/app/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2013-12-05 22:16:00 Error: [MissingControllerException] Controller class Font-awesomeController could not be found.
+Exception Attributes: array (
+  'class' => 'Font-awesomeController',
+  'plugin' => NULL,
+)
+Request URL: /unieventos/font-awesome/css/font-awesome.min.css
+Stack Trace:
+#0 /var/www/unieventos/app/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2013-12-05 22:22:25 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /unieventos/css/files/fontAdmin/fontawesome-webfont.woff?v=4.0.3
+Stack Trace:
+#0 /var/www/unieventos/app/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2013-12-05 22:22:26 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /unieventos/css/files/fontAdmin/fontawesome-webfont.ttf?v=4.0.3
+Stack Trace:
+#0 /var/www/unieventos/app/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2013-12-05 22:22:26 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /unieventos/css/files/fontAdminfontawesome-webfont.svg?v=4.0.3
+Stack Trace:
+#0 /var/www/unieventos/app/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2013-12-05 23:33:28 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /unieventos/css/files/fontSite/fontawesome-webfont.woff?v=3.0.1
+Stack Trace:
+#0 /var/www/unieventos/app/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2013-12-05 23:33:28 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /unieventos/css/files/fontSite/fontawesome-webfont.ttf?v=3.0.1
+Stack Trace:
+#0 /var/www/unieventos/app/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2013-12-06 01:38:51 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /unieventos/css/files/fontSite/fontawesome-webfont.ttf?v=3.0.1
+Stack Trace:
+#0 /var/www/unieventos/app/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2013-12-06 02:30:38 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /unieventos/css/files/fontAdmin/fontawesome-webfont.woff?v=4.0.3
+Stack Trace:
+#0 /var/www/unieventos/app/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2013-12-06 02:30:38 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /unieventos/css/files/fontAdmin/fontawesome-webfont.ttf?v=4.0.3
+Stack Trace:
+#0 /var/www/unieventos/app/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2013-12-06 02:30:39 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /unieventos/css/files/fontAdminfontawesome-webfont.svg?v=4.0.3
+Stack Trace:
+#0 /var/www/unieventos/app/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2013-12-06 02:32:36 Error: [MissingControllerException] Controller class JsController could not be found.
+Exception Attributes: array (
+  'class' => 'JsController',
+  'plugin' => NULL,
+)
+Request URL: /unieventos/js/admin/jquery.min.map
+Stack Trace:
+#0 /var/www/unieventos/app/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2013-12-06 02:34:17 Error: [MissingControllerException] Controller class JsController could not be found.
+Exception Attributes: array (
+  'class' => 'JsController',
+  'plugin' => NULL,
+)
+Request URL: /unieventos/js/admin/jquery.min.map
+Stack Trace:
+#0 /var/www/unieventos/app/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2013-12-06 02:36:58 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /unieventos/css/files/fontAdmin/fontawesome-webfont.woff?v=4.0.3
+Stack Trace:
+#0 /var/www/unieventos/app/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2013-12-06 02:36:58 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /unieventos/css/files/fontAdmin/fontawesome-webfont.ttf?v=4.0.3
+Stack Trace:
+#0 /var/www/unieventos/app/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2013-12-06 02:36:59 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /unieventos/css/files/fontAdmin/fontawesome-webfont.svg?v=4.0.3
+Stack Trace:
+#0 /var/www/unieventos/app/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2013-12-06 02:39:20 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /unieventos/css/files/fontAdmin/fontawesome-webfont.woff?v=4.0.3
+Stack Trace:
+#0 /var/www/unieventos/app/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2013-12-06 02:39:20 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /unieventos/css/files/fontAdmin/fontawesome-webfont.ttf?v=4.0.3
+Stack Trace:
+#0 /var/www/unieventos/app/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2013-12-06 02:39:20 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /unieventos/css/files/fontAdmin/fontawesome-webfont.svg?v=4.0.3
+Stack Trace:
+#0 /var/www/unieventos/app/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2013-12-06 02:39:27 Error: [MissingControllerException] Controller class JsController could not be found.
+Exception Attributes: array (
+  'class' => 'JsController',
+  'plugin' => NULL,
+)
+Request URL: /unieventos/js/admin/jquery.min.map
+Stack Trace:
+#0 /var/www/unieventos/app/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2013-12-06 02:45:29 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /unieventos/css/files/fontAdmin/fontawesome-webfont.woff?v=4.0.3
+Stack Trace:
+#0 /var/www/unieventos/app/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2013-12-06 02:45:30 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /unieventos/css/files/fontAdmin/fontawesome-webfont.ttf?v=4.0.3
+Stack Trace:
+#0 /var/www/unieventos/app/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2013-12-06 02:45:30 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /unieventos/css/files/fontAdmin/fontawesome-webfont.svg?v=4.0.3
+Stack Trace:
+#0 /var/www/unieventos/app/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2013-12-06 03:26:27 Error: [MissingControllerException] Controller class Charts.htmlController could not be found.
+Exception Attributes: array (
+  'class' => 'Charts.htmlController',
+  'plugin' => NULL,
+)
+Request URL: /unieventos/charts.html
+Stack Trace:
+#0 /var/www/unieventos/app/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2013-12-06 03:33:44 Error: [MissingControllerException] Controller class JsController could not be found.
+Exception Attributes: array (
+  'class' => 'JsController',
+  'plugin' => NULL,
+)
+Request URL: /unieventos/js/admin/jquery.min.map
+Stack Trace:
+#0 /var/www/unieventos/app/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2013-12-06 03:38:39 Error: [MissingControllerException] Controller class JsController could not be found.
+Exception Attributes: array (
+  'class' => 'JsController',
+  'plugin' => NULL,
+)
+Request URL: /unieventos/js/admin/jquery.min.map
+Stack Trace:
+#0 /var/www/unieventos/app/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2013-12-06 03:54:02 Error: [MissingActionException] Action UsuariosController::admin_logout() could not be found.
+Exception Attributes: array (
+  'controller' => 'UsuariosController',
+  'action' => 'admin_logout',
+)
+Request URL: /unieventos/admin/usuarios/logout
+Stack Trace:
+#0 /var/www/unieventos/lib/Cake/Routing/Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
+#1 /var/www/unieventos/lib/Cake/Routing/Dispatcher.php(162): Dispatcher->_invoke(Object(UsuariosController), Object(CakeRequest), Object(CakeResponse))
+#2 /var/www/unieventos/app/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2013-12-06 03:56:29 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /unieventos/css/bootstrap3.css
+Stack Trace:
+#0 /var/www/unieventos/app/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2013-12-06 03:56:29 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /unieventos/css/login.css
+Stack Trace:
+#0 /var/www/unieventos/app/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2013-12-06 03:56:40 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /unieventos/css/bootstrap3.css
+Stack Trace:
+#0 /var/www/unieventos/app/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2013-12-06 03:56:40 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /unieventos/css/login.css
+Stack Trace:
+#0 /var/www/unieventos/app/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2013-12-06 03:57:11 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /unieventos/css/bootstrap3.css
+Stack Trace:
+#0 /var/www/unieventos/app/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2013-12-06 03:57:11 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /unieventos/css/login.css
+Stack Trace:
+#0 /var/www/unieventos/app/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2013-12-06 04:04:12 Error: [MissingActionException] Action PagesController::admin_display() could not be found.
+Exception Attributes: array (
+  'controller' => 'PagesController',
+  'action' => 'admin_display',
+)
+Request URL: /unieventos/admin/pages/display/home
+Stack Trace:
+#0 /var/www/unieventos/lib/Cake/Routing/Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
+#1 /var/www/unieventos/lib/Cake/Routing/Dispatcher.php(162): Dispatcher->_invoke(Object(PagesController), Object(CakeRequest), Object(CakeResponse))
+#2 /var/www/unieventos/app/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2013-12-06 04:04:16 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /unieventos/css/bootstrap3.css
+Stack Trace:
+#0 /var/www/unieventos/app/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2013-12-06 04:04:16 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /unieventos/css/login.css
+Stack Trace:
+#0 /var/www/unieventos/app/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2013-12-06 04:05:12 Error: [MissingActionException] Action PagesController::admin_display() could not be found.
+Exception Attributes: array (
+  'controller' => 'PagesController',
+  'action' => 'admin_display',
+)
+Request URL: /unieventos/admin/pages/display/home
+Stack Trace:
+#0 /var/www/unieventos/lib/Cake/Routing/Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
+#1 /var/www/unieventos/lib/Cake/Routing/Dispatcher.php(162): Dispatcher->_invoke(Object(PagesController), Object(CakeRequest), Object(CakeResponse))
+#2 /var/www/unieventos/app/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2013-12-06 04:05:19 Error: [MissingActionException] Action PagesController::admin_display() could not be found.
+Exception Attributes: array (
+  'controller' => 'PagesController',
+  'action' => 'admin_display',
+)
+Request URL: /unieventos/admin/pages/display/home
+Stack Trace:
+#0 /var/www/unieventos/lib/Cake/Routing/Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
+#1 /var/www/unieventos/lib/Cake/Routing/Dispatcher.php(162): Dispatcher->_invoke(Object(PagesController), Object(CakeRequest), Object(CakeResponse))
+#2 /var/www/unieventos/app/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2013-12-06 04:05:57 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /unieventos/css/bootstrap3.css
+Stack Trace:
+#0 /var/www/unieventos/app/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2013-12-06 04:05:57 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /unieventos/css/login.css
+Stack Trace:
+#0 /var/www/unieventos/app/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2013-12-06 04:09:29 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /unieventos/css/bootstrap3.css
+Stack Trace:
+#0 /var/www/unieventos/app/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2013-12-06 04:09:29 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /unieventos/css/login.css
+Stack Trace:
+#0 /var/www/unieventos/app/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2013-12-06 16:15:51 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /unieventos/css/bootstrap3.css
+Stack Trace:
+#0 /var/www/unieventos/app/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2013-12-06 16:15:51 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /unieventos/css/login.css
+Stack Trace:
+#0 /var/www/unieventos/app/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2013-12-06 16:16:01 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /unieventos/css/bootstrap3.css
+Stack Trace:
+#0 /var/www/unieventos/app/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2013-12-06 16:16:01 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /unieventos/css/login.css
+Stack Trace:
+#0 /var/www/unieventos/app/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2013-12-06 16:26:02 Error: Fatal Error (4): syntax error, unexpected T_STRING in [/var/www/unieventos/app/View/Elements/admin/menuHeader.ctp, line 57]
+2013-12-06 16:26:02 Error: [FatalErrorException] syntax error, unexpected T_STRING
+Request URL: /unieventos/admin
+Stack Trace:
+#0 /var/www/unieventos/lib/Cake/Error/ErrorHandler.php(205): ErrorHandler::handleFatalError(4, 'syntax error, u...', '/var/www/unieve...', 57)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', '/var/www/unieve...', 57, Array)
+#2 /var/www/unieventos/lib/Cake/Core/App.php(931): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', '/var/www/unieve...', 57, Array)
+#3 /var/www/unieventos/lib/Cake/Core/App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2013-12-06 16:27:10 Error: [MissingControllerException] Controller class JsController could not be found.
+Exception Attributes: array (
+  'class' => 'JsController',
+  'plugin' => NULL,
+)
+Request URL: /unieventos/js/admin/jquery.min.map
+Stack Trace:
+#0 /var/www/unieventos/app/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2013-12-06 16:27:35 Error: [MissingControllerException] Controller class JsController could not be found.
+Exception Attributes: array (
+  'class' => 'JsController',
+  'plugin' => NULL,
+)
+Request URL: /unieventos/js/admin/jquery.min.map
+Stack Trace:
+#0 /var/www/unieventos/app/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2013-12-06 16:31:22 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /unieventos/css/bootstrap3.css
+Stack Trace:
+#0 /var/www/unieventos/app/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2013-12-06 16:31:22 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /unieventos/css/login.css
+Stack Trace:
+#0 /var/www/unieventos/app/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2013-12-06 18:35:55 Error: [MissingControllerException] Controller class JsController could not be found.
+Exception Attributes: array (
+  'class' => 'JsController',
+  'plugin' => NULL,
+)
+Request URL: /unieventos/js/admin/jquery.min.map
+Stack Trace:
+#0 /var/www/unieventos/app/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2013-12-06 18:39:31 Error: [MissingControllerException] Controller class JsController could not be found.
+Exception Attributes: array (
+  'class' => 'JsController',
+  'plugin' => NULL,
+)
+Request URL: /unieventos/js/admin/jquery.min.map
+Stack Trace:
+#0 /var/www/unieventos/app/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2013-12-06 18:44:22 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /unieventos/css/login.css
+Stack Trace:
+#0 /var/www/unieventos/app/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2013-12-06 18:44:22 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /unieventos/css/bootstrap3.css
+Stack Trace:
+#0 /var/www/unieventos/app/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2013-12-06 22:45:30 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /unieventos/css/bootstrap3.css
+Stack Trace:
+#0 /var/www/unieventos/app/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2013-12-06 22:45:30 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /unieventos/css/login.css
+Stack Trace:
+#0 /var/www/unieventos/app/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2013-12-07 02:04:26 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /unieventos/css/login.css
+Stack Trace:
+#0 /var/www/unieventos/app/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2013-12-07 02:04:26 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /unieventos/css/bootstrap3.css
+Stack Trace:
+#0 /var/www/unieventos/app/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2013-12-07 02:05:46 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /unieventos/css/bootstrap3.css
+Stack Trace:
+#0 /var/www/unieventos/app/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2013-12-07 02:05:46 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /unieventos/css/login.css
+Stack Trace:
+#0 /var/www/unieventos/app/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2013-12-07 02:05:49 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /unieventos/css/login.css
+Stack Trace:
+#0 /var/www/unieventos/app/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2013-12-07 02:05:49 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /unieventos/css/bootstrap3.css
+Stack Trace:
+#0 /var/www/unieventos/app/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2013-12-07 02:17:43 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /unieventos/css/login.css
+Stack Trace:
+#0 /var/www/unieventos/app/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2013-12-07 02:17:43 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /unieventos/css/bootstrap3.css
+Stack Trace:
+#0 /var/www/unieventos/app/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2013-12-07 12:06:08 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /unieventos/css/login.css
+Stack Trace:
+#0 /var/www/unieventos/app/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2013-12-07 12:06:08 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /unieventos/css/bootstrap3.css
+Stack Trace:
+#0 /var/www/unieventos/app/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2013-12-07 14:18:52 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /unieventos/css/bootstrap3.css
+Stack Trace:
+#0 /var/www/unieventos/app/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2013-12-07 14:18:52 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /unieventos/css/login.css
+Stack Trace:
+#0 /var/www/unieventos/app/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2013-12-07 14:19:33 Error: [MissingActionException] Action EventosController::admin_index() could not be found.
+Exception Attributes: array (
+  'controller' => 'EventosController',
+  'action' => 'admin_index',
+)
+Request URL: /unieventos/admin/eventos
+Stack Trace:
+#0 /var/www/unieventos/lib/Cake/Routing/Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
+#1 /var/www/unieventos/lib/Cake/Routing/Dispatcher.php(162): Dispatcher->_invoke(Object(EventosController), Object(CakeRequest), Object(CakeResponse))
+#2 /var/www/unieventos/app/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2013-12-07 14:22:53 Error: [MissingActionException] Action EventosController::admin_index() could not be found.
+Exception Attributes: array (
+  'controller' => 'EventosController',
+  'action' => 'admin_index',
+)
+Request URL: /unieventos/admin/eventos
+Stack Trace:
+#0 /var/www/unieventos/lib/Cake/Routing/Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
+#1 /var/www/unieventos/lib/Cake/Routing/Dispatcher.php(162): Dispatcher->_invoke(Object(EventosController), Object(CakeRequest), Object(CakeResponse))
+#2 /var/www/unieventos/app/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2013-12-07 15:35:52 Error: [MissingActionException] Action EventosController::admin_index() could not be found.
+Exception Attributes: array (
+  'controller' => 'EventosController',
+  'action' => 'admin_index',
+)
+Request URL: /unieventos/admin/eventos
+Stack Trace:
+#0 /var/www/unieventos/lib/Cake/Routing/Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
+#1 /var/www/unieventos/lib/Cake/Routing/Dispatcher.php(162): Dispatcher->_invoke(Object(EventosController), Object(CakeRequest), Object(CakeResponse))
+#2 /var/www/unieventos/app/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2013-12-07 15:36:02 Error: [MissingActionException] Action EventosController::admin_index() could not be found.
+Exception Attributes: array (
+  'controller' => 'EventosController',
+  'action' => 'admin_index',
+)
+Request URL: /unieventos/admin/eventos
+Stack Trace:
+#0 /var/www/unieventos/lib/Cake/Routing/Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
+#1 /var/www/unieventos/lib/Cake/Routing/Dispatcher.php(162): Dispatcher->_invoke(Object(EventosController), Object(CakeRequest), Object(CakeResponse))
+#2 /var/www/unieventos/app/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2013-12-07 15:42:10 Error: [MissingActionException] Action EventosController::admin_index() could not be found.
+Exception Attributes: array (
+  'controller' => 'EventosController',
+  'action' => 'admin_index',
+)
+Request URL: /unieventos/admin/eventos
+Stack Trace:
+#0 /var/www/unieventos/lib/Cake/Routing/Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
+#1 /var/www/unieventos/lib/Cake/Routing/Dispatcher.php(162): Dispatcher->_invoke(Object(EventosController), Object(CakeRequest), Object(CakeResponse))
+#2 /var/www/unieventos/app/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2013-12-07 15:42:19 Error: [MissingActionException] Action EventosController::admin_index() could not be found.
+Exception Attributes: array (
+  'controller' => 'EventosController',
+  'action' => 'admin_index',
+)
+Request URL: /unieventos/admin/eventos
+Stack Trace:
+#0 /var/www/unieventos/lib/Cake/Routing/Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
+#1 /var/www/unieventos/lib/Cake/Routing/Dispatcher.php(162): Dispatcher->_invoke(Object(EventosController), Object(CakeRequest), Object(CakeResponse))
+#2 /var/www/unieventos/app/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2013-12-07 15:51:38 Error: [MissingActionException] Action EventosController::admin_index() could not be found.
+Exception Attributes: array (
+  'controller' => 'EventosController',
+  'action' => 'admin_index',
+)
+Request URL: /unieventos/admin/eventos
+Stack Trace:
+#0 /var/www/unieventos/lib/Cake/Routing/Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
+#1 /var/www/unieventos/lib/Cake/Routing/Dispatcher.php(162): Dispatcher->_invoke(Object(EventosController), Object(CakeRequest), Object(CakeResponse))
+#2 /var/www/unieventos/app/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2013-12-07 15:53:40 Error: [MissingActionException] Action EventosController::admin_index() could not be found.
+Exception Attributes: array (
+  'controller' => 'EventosController',
+  'action' => 'admin_index',
+)
+Request URL: /unieventos/admin/eventos
+Stack Trace:
+#0 /var/www/unieventos/lib/Cake/Routing/Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
+#1 /var/www/unieventos/lib/Cake/Routing/Dispatcher.php(162): Dispatcher->_invoke(Object(EventosController), Object(CakeRequest), Object(CakeResponse))
+#2 /var/www/unieventos/app/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2013-12-07 16:05:51 Error: [MissingActionException] Action EventosController::admin_index() could not be found.
+Exception Attributes: array (
+  'controller' => 'EventosController',
+  'action' => 'admin_index',
+)
+Request URL: /unieventos/admin/eventos
+Stack Trace:
+#0 /var/www/unieventos/lib/Cake/Routing/Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
+#1 /var/www/unieventos/lib/Cake/Routing/Dispatcher.php(162): Dispatcher->_invoke(Object(EventosController), Object(CakeRequest), Object(CakeResponse))
+#2 /var/www/unieventos/app/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2013-12-07 16:06:12 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /unieventos/css/bootstrap3.css
+Stack Trace:
+#0 /var/www/unieventos/app/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2013-12-07 16:06:12 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /unieventos/css/login.css
+Stack Trace:
+#0 /var/www/unieventos/app/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2013-12-07 16:06:38 Error: [MissingActionException] Action EventosController::admin_index() could not be found.
+Exception Attributes: array (
+  'controller' => 'EventosController',
+  'action' => 'admin_index',
+)
+Request URL: /unieventos/admin/eventos
+Stack Trace:
+#0 /var/www/unieventos/lib/Cake/Routing/Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
+#1 /var/www/unieventos/lib/Cake/Routing/Dispatcher.php(162): Dispatcher->_invoke(Object(EventosController), Object(CakeRequest), Object(CakeResponse))
+#2 /var/www/unieventos/app/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2013-12-07 16:25:14 Error: [MissingActionException] Action EventosController::admin_index() could not be found.
+Exception Attributes: array (
+  'controller' => 'EventosController',
+  'action' => 'admin_index',
+)
+Request URL: /unieventos/admin/eventos
+Stack Trace:
+#0 /var/www/unieventos/lib/Cake/Routing/Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
+#1 /var/www/unieventos/lib/Cake/Routing/Dispatcher.php(162): Dispatcher->_invoke(Object(EventosController), Object(CakeRequest), Object(CakeResponse))
+#2 /var/www/unieventos/app/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2013-12-07 16:32:36 Error: [MissingViewException] View file "/var/www/unieventos/app/View/Eventos/admin_lista_aprovacoes.ctp" is missing.
+Exception Attributes: array (
+  'file' => '/var/www/unieventos/app/View/Eventos/admin_lista_aprovacoes.ctp',
+)
+Request URL: /unieventos/admin/eventos/listaAprovacoes
+Stack Trace:
+#0 /var/www/unieventos/lib/Cake/View/View.php(459): View->_getViewFileName(NULL)
+#1 /var/www/unieventos/lib/Cake/Controller/Controller.php(952): View->render(NULL, NULL)
+#2 /var/www/unieventos/lib/Cake/Routing/Dispatcher.php(194): Controller->render()
+#3 /var/www/unieventos/lib/Cake/Routing/Dispatcher.php(162): Dispatcher->_invoke(Object(EventosController), Object(CakeRequest), Object(CakeResponse))
+#4 /var/www/unieventos/app/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2013-12-07 16:33:11 Error: [MissingViewException] View file "/var/www/unieventos/app/View/Eventos/admin_lista_aprovacoes.ctp" is missing.
+Exception Attributes: array (
+  'file' => '/var/www/unieventos/app/View/Eventos/admin_lista_aprovacoes.ctp',
+)
+Request URL: /unieventos/admin/eventos/listaAprovacoes
+Stack Trace:
+#0 /var/www/unieventos/lib/Cake/View/View.php(459): View->_getViewFileName(NULL)
+#1 /var/www/unieventos/lib/Cake/Controller/Controller.php(952): View->render(NULL, NULL)
+#2 /var/www/unieventos/lib/Cake/Routing/Dispatcher.php(194): Controller->render()
+#3 /var/www/unieventos/lib/Cake/Routing/Dispatcher.php(162): Dispatcher->_invoke(Object(EventosController), Object(CakeRequest), Object(CakeResponse))
+#4 /var/www/unieventos/app/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2013-12-07 16:33:28 Error: [MissingActionException] Action EventosController::admin_lista-aprovacoes() could not be found.
+Exception Attributes: array (
+  'controller' => 'EventosController',
+  'action' => 'admin_lista-aprovacoes',
+)
+Request URL: /unieventos/admin/eventos/lista-aprovacoes
+Stack Trace:
+#0 /var/www/unieventos/lib/Cake/Routing/Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
+#1 /var/www/unieventos/lib/Cake/Routing/Dispatcher.php(162): Dispatcher->_invoke(Object(EventosController), Object(CakeRequest), Object(CakeResponse))
+#2 /var/www/unieventos/app/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2013-12-07 16:34:00 Error: [MissingViewException] View file "/var/www/unieventos/app/View/Eventos/admin_lista_aprovacoes.ctp" is missing.
+Exception Attributes: array (
+  'file' => '/var/www/unieventos/app/View/Eventos/admin_lista_aprovacoes.ctp',
+)
+Request URL: /unieventos/admin/eventos/listaAprovacoes
+Stack Trace:
+#0 /var/www/unieventos/lib/Cake/View/View.php(459): View->_getViewFileName(NULL)
+#1 /var/www/unieventos/lib/Cake/Controller/Controller.php(952): View->render(NULL, NULL)
+#2 /var/www/unieventos/lib/Cake/Routing/Dispatcher.php(194): Controller->render()
+#3 /var/www/unieventos/lib/Cake/Routing/Dispatcher.php(162): Dispatcher->_invoke(Object(EventosController), Object(CakeRequest), Object(CakeResponse))
+#4 /var/www/unieventos/app/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2013-12-07 16:34:23 Error: [MissingActionException] Action EventosController::admin_lista-aprovacoes() could not be found.
+Exception Attributes: array (
+  'controller' => 'EventosController',
+  'action' => 'admin_lista-aprovacoes',
+)
+Request URL: /unieventos/admin/eventos/lista-aprovacoes
+Stack Trace:
+#0 /var/www/unieventos/lib/Cake/Routing/Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
+#1 /var/www/unieventos/lib/Cake/Routing/Dispatcher.php(162): Dispatcher->_invoke(Object(EventosController), Object(CakeRequest), Object(CakeResponse))
+#2 /var/www/unieventos/app/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2013-12-07 16:42:35 Error: Fatal Error (4): syntax error, unexpected ';' in [/var/www/unieventos/app/Controller/EventosController.php, line 21]
+2013-12-07 16:42:35 Error: [FatalErrorException] syntax error, unexpected ';'
+Request URL: /unieventos/admin/eventos/listaAprovacoes
+Stack Trace:
+#0 /var/www/unieventos/lib/Cake/Error/ErrorHandler.php(205): ErrorHandler::handleFatalError(4, 'syntax error, u...', '/var/www/unieve...', 21)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', '/var/www/unieve...', 21, Array)
+#2 /var/www/unieventos/lib/Cake/Core/App.php(931): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', '/var/www/unieve...', 21, Array)
+#3 /var/www/unieventos/lib/Cake/Core/App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2013-12-07 16:44:49 Error: Fatal Error (4): syntax error, unexpected ';' in [/var/www/unieventos/app/Controller/EventosController.php, line 21]
+2013-12-07 16:44:49 Error: [FatalErrorException] syntax error, unexpected ';'
+Request URL: /unieventos/admin/eventos/listaAprovacoes
+Stack Trace:
+#0 /var/www/unieventos/lib/Cake/Error/ErrorHandler.php(205): ErrorHandler::handleFatalError(4, 'syntax error, u...', '/var/www/unieve...', 21)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', '/var/www/unieve...', 21, Array)
+#2 /var/www/unieventos/lib/Cake/Core/App.php(931): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', '/var/www/unieve...', 21, Array)
+#3 /var/www/unieventos/lib/Cake/Core/App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2013-12-07 16:45:04 Error: Fatal Error (4): syntax error, unexpected ';' in [/var/www/unieventos/app/Controller/EventosController.php, line 21]
+2013-12-07 16:45:04 Error: [FatalErrorException] syntax error, unexpected ';'
+Request URL: /unieventos/admin/eventos/listaAprovacoes
+Stack Trace:
+#0 /var/www/unieventos/lib/Cake/Error/ErrorHandler.php(205): ErrorHandler::handleFatalError(4, 'syntax error, u...', '/var/www/unieve...', 21)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', '/var/www/unieve...', 21, Array)
+#2 /var/www/unieventos/lib/Cake/Core/App.php(931): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', '/var/www/unieve...', 21, Array)
+#3 /var/www/unieventos/lib/Cake/Core/App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2013-12-07 16:45:08 Error: Fatal Error (4): syntax error, unexpected ';' in [/var/www/unieventos/app/Controller/EventosController.php, line 21]
+2013-12-07 16:45:08 Error: [FatalErrorException] syntax error, unexpected ';'
+Request URL: /unieventos/admin/eventos/listaAprovacoes
+Stack Trace:
+#0 /var/www/unieventos/lib/Cake/Error/ErrorHandler.php(205): ErrorHandler::handleFatalError(4, 'syntax error, u...', '/var/www/unieve...', 21)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', '/var/www/unieve...', 21, Array)
+#2 /var/www/unieventos/lib/Cake/Core/App.php(931): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', '/var/www/unieve...', 21, Array)
+#3 /var/www/unieventos/lib/Cake/Core/App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2013-12-07 16:46:21 Error: Fatal Error (4): syntax error, unexpected ';' in [/var/www/unieventos/app/Controller/EventosController.php, line 21]
+2013-12-07 16:46:21 Error: [FatalErrorException] syntax error, unexpected ';'
+Request URL: /unieventos/admin/eventos/listaAprovacoes
+Stack Trace:
+#0 /var/www/unieventos/lib/Cake/Error/ErrorHandler.php(205): ErrorHandler::handleFatalError(4, 'syntax error, u...', '/var/www/unieve...', 21)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', '/var/www/unieve...', 21, Array)
+#2 /var/www/unieventos/lib/Cake/Core/App.php(931): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', '/var/www/unieve...', 21, Array)
+#3 /var/www/unieventos/lib/Cake/Core/App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2013-12-07 16:55:28 Error: [NotFoundException] Evento Invalido
+Request URL: /unieventos/admin/eventos/aprovacao
+Stack Trace:
+#0 [internal function]: EventosController->admin_aprovacao()
+#1 /var/www/unieventos/lib/Cake/Controller/Controller.php(490): ReflectionMethod->invokeArgs(Object(EventosController), Array)
+#2 /var/www/unieventos/lib/Cake/Routing/Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
+#3 /var/www/unieventos/lib/Cake/Routing/Dispatcher.php(162): Dispatcher->_invoke(Object(EventosController), Object(CakeRequest), Object(CakeResponse))
+#4 /var/www/unieventos/app/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2013-12-07 16:55:57 Error: [MissingActionException] Action EventosController::admin_index() could not be found.
+Exception Attributes: array (
+  'controller' => 'EventosController',
+  'action' => 'admin_index',
+)
+Request URL: /unieventos/admin/eventos/
+Stack Trace:
+#0 /var/www/unieventos/lib/Cake/Routing/Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
+#1 /var/www/unieventos/lib/Cake/Routing/Dispatcher.php(162): Dispatcher->_invoke(Object(EventosController), Object(CakeRequest), Object(CakeResponse))
+#2 /var/www/unieventos/app/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2013-12-07 16:56:06 Error: [MissingActionException] Action EventosController::admin_aprovacao() could not be found.
+Exception Attributes: array (
+  'controller' => 'EventosController',
+  'action' => 'admin_aprovacao',
+)
+Request URL: /unieventos/admin/eventos/aprovacao
+Stack Trace:
+#0 /var/www/unieventos/lib/Cake/Routing/Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
+#1 /var/www/unieventos/lib/Cake/Routing/Dispatcher.php(162): Dispatcher->_invoke(Object(EventosController), Object(CakeRequest), Object(CakeResponse))
+#2 /var/www/unieventos/app/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2013-12-07 16:56:53 Error: [MissingActionException] Action EventosController::admin_index() could not be found.
+Exception Attributes: array (
+  'controller' => 'EventosController',
+  'action' => 'admin_index',
+)
+Request URL: /unieventos/admin/eventos/
+Stack Trace:
+#0 /var/www/unieventos/lib/Cake/Routing/Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
+#1 /var/www/unieventos/lib/Cake/Routing/Dispatcher.php(162): Dispatcher->_invoke(Object(EventosController), Object(CakeRequest), Object(CakeResponse))
+#2 /var/www/unieventos/app/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2013-12-07 16:56:59 Error: [NotFoundException] Evento Invalido
+Request URL: /unieventos/admin/eventos/aprovacao
+Stack Trace:
+#0 [internal function]: EventosController->admin_aprovacao()
+#1 /var/www/unieventos/lib/Cake/Controller/Controller.php(490): ReflectionMethod->invokeArgs(Object(EventosController), Array)
+#2 /var/www/unieventos/lib/Cake/Routing/Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
+#3 /var/www/unieventos/lib/Cake/Routing/Dispatcher.php(162): Dispatcher->_invoke(Object(EventosController), Object(CakeRequest), Object(CakeResponse))
+#4 /var/www/unieventos/app/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2013-12-07 16:58:05 Error: [MissingActionException] Action EventosController::admin_index() could not be found.
+Exception Attributes: array (
+  'controller' => 'EventosController',
+  'action' => 'admin_index',
+)
+Request URL: /unieventos/admin/eventos/
+Stack Trace:
+#0 /var/www/unieventos/lib/Cake/Routing/Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
+#1 /var/www/unieventos/lib/Cake/Routing/Dispatcher.php(162): Dispatcher->_invoke(Object(EventosController), Object(CakeRequest), Object(CakeResponse))
+#2 /var/www/unieventos/app/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2013-12-07 16:58:14 Error: [MissingViewException] View file "/var/www/unieventos/app/View/Eventos/admin_aprovacao.ctp" is missing.
+Exception Attributes: array (
+  'file' => '/var/www/unieventos/app/View/Eventos/admin_aprovacao.ctp',
+)
+Request URL: /unieventos/admin/eventos/aprovacao/1
+Stack Trace:
+#0 /var/www/unieventos/lib/Cake/View/View.php(459): View->_getViewFileName(NULL)
+#1 /var/www/unieventos/lib/Cake/Controller/Controller.php(952): View->render(NULL, NULL)
+#2 /var/www/unieventos/lib/Cake/Routing/Dispatcher.php(194): Controller->render()
+#3 /var/www/unieventos/lib/Cake/Routing/Dispatcher.php(162): Dispatcher->_invoke(Object(EventosController), Object(CakeRequest), Object(CakeResponse))
+#4 /var/www/unieventos/app/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2013-12-07 17:12:54 Error: Fatal Error (1): Call to a member function save() on a non-object in [/var/www/unieventos/app/Controller/EventosController.php, line 38]
+2013-12-07 17:12:54 Error: [FatalErrorException] Call to a member function save() on a non-object
+Request URL: /unieventos/admin/eventos/aprovacao/1
+Stack Trace:
+#0 /var/www/unieventos/lib/Cake/Error/ErrorHandler.php(205): ErrorHandler::handleFatalError(1, 'Call to a membe...', '/var/www/unieve...', 38)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to a membe...', '/var/www/unieve...', 38, Array)
+#2 /var/www/unieventos/lib/Cake/Core/App.php(931): call_user_func('ErrorHandler::h...', 1, 'Call to a membe...', '/var/www/unieve...', 38, Array)
+#3 /var/www/unieventos/lib/Cake/Core/App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2013-12-07 17:14:02 Error: Fatal Error (1): Call to a member function save() on a non-object in [/var/www/unieventos/app/Controller/EventosController.php, line 38]
+2013-12-07 17:14:02 Error: [FatalErrorException] Call to a member function save() on a non-object
+Request URL: /unieventos/admin/eventos/aprovacao/1
+Stack Trace:
+#0 /var/www/unieventos/lib/Cake/Error/ErrorHandler.php(205): ErrorHandler::handleFatalError(1, 'Call to a membe...', '/var/www/unieve...', 38)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to a membe...', '/var/www/unieve...', 38, Array)
+#2 /var/www/unieventos/lib/Cake/Core/App.php(931): call_user_func('ErrorHandler::h...', 1, 'Call to a membe...', '/var/www/unieve...', 38, Array)
+#3 /var/www/unieventos/lib/Cake/Core/App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2013-12-07 17:14:19 Error: [MissingViewException] View file "/var/www/unieventos/app/View/Eventos/admin_aprovacao.ctp" is missing.
+Exception Attributes: array (
+  'file' => '/var/www/unieventos/app/View/Eventos/admin_aprovacao.ctp',
+)
+Request URL: /unieventos/admin/eventos/aprovacao/2
+Stack Trace:
+#0 /var/www/unieventos/lib/Cake/View/View.php(459): View->_getViewFileName(NULL)
+#1 /var/www/unieventos/lib/Cake/Controller/Controller.php(952): View->render(NULL, NULL)
+#2 /var/www/unieventos/lib/Cake/Routing/Dispatcher.php(194): Controller->render()
+#3 /var/www/unieventos/lib/Cake/Routing/Dispatcher.php(162): Dispatcher->_invoke(Object(EventosController), Object(CakeRequest), Object(CakeResponse))
+#4 /var/www/unieventos/app/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2013-12-07 20:16:47 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /unieventos/css/login.css
+Stack Trace:
+#0 /var/www/unieventos/app/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2013-12-07 20:16:47 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /unieventos/css/bootstrap3.css
+Stack Trace:
+#0 /var/www/unieventos/app/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2013-12-08 00:40:53 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /unieventos/css/login.css
+Stack Trace:
+#0 /var/www/unieventos/app/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2013-12-08 00:40:53 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /unieventos/css/bootstrap3.css
+Stack Trace:
+#0 /var/www/unieventos/app/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}

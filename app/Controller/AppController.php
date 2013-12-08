@@ -33,7 +33,7 @@ App::uses('Controller', 'Controller');
  */
 class AppController extends Controller {
 
-	public $components = array('Auth','Session');
+	public $components = array('Session', 'Auth');
 
 	public function isPrefix($prefix){
 		return isset($this->request->params['prefix']) && $this->request->params['prefix'] == $prefix;

@@ -38,9 +38,9 @@ class MsgsController extends AppController {
             throw new NotFoundException(__('Invalid post'));
         }
         $this->set('msg', $post);
-        	$this->Msg->id = $id;
-        	$this->request->data['Msg']['status'] = 1;
-        	$this->Msg->save($this->request->data);
+    	$this->Msg->id = $id;
+    	$this->request->data['Msg']['status'] = 1;
+    	$this->Msg->save($this->request->data);
         
     
 
