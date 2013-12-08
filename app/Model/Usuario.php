@@ -1,8 +1,7 @@
 <?php 
 class Usuario extends AppModel{
-	public $hasMany = array('Msg');
-	public $hasOne = array('Estado');
-
+	public $hasMany = array('Estado','Msg');
+	
 	public $hasAndBelongsToMany = array(
 		'Evento' => array(
 			'className' => 'Evento',

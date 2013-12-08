@@ -69779,3 +69779,167 @@ Stack Trace:
 #3 /var/www/unieventos/lib/Cake/Core/App.php(904): App::_checkFatalError()
 #4 [internal function]: App::shutdown()
 #5 {main}
+2013-12-08 17:29:32 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /unieventos/css/bootstrap3.css
+Stack Trace:
+#0 /var/www/unieventos/app/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2013-12-08 17:29:32 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /unieventos/css/login.css
+Stack Trace:
+#0 /var/www/unieventos/app/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2013-12-08 17:29:39 Error: [PDOException] SQLSTATE[42S22]: Column not found: 1054 Unknown column 'Estado.usuario_id' in 'on clause'
+Request URL: /unieventos/admin/usuarios/login
+Stack Trace:
+#0 /var/www/unieventos/lib/Cake/Model/Datasource/DboSource.php(460): PDOStatement->execute(Array)
+#1 /var/www/unieventos/lib/Cake/Model/Datasource/DboSource.php(426): DboSource->_execute('SELECT `Usuario...', Array)
+#2 /var/www/unieventos/lib/Cake/Model/Datasource/DboSource.php(666): DboSource->execute('SELECT `Usuario...', Array, Array)
+#3 /var/www/unieventos/lib/Cake/Model/Datasource/DboSource.php(1077): DboSource->fetchAll('SELECT `Usuario...', false)
+#4 /var/www/unieventos/lib/Cake/Model/Model.php(2880): DboSource->read(Object(Usuario), Array)
+#5 /var/www/unieventos/lib/Cake/Model/Model.php(2852): Model->_readDataSource('first', Array)
+#6 /var/www/unieventos/lib/Cake/Controller/Component/Auth/BaseAuthenticate.php(114): Model->find('first', Array)
+#7 /var/www/unieventos/lib/Cake/Controller/Component/Auth/FormAuthenticate.php(81): BaseAuthenticate->_findUser('admin@localhost...', 'admin')
+#8 /var/www/unieventos/lib/Cake/Controller/Component/AuthComponent.php(752): FormAuthenticate->authenticate(Object(CakeRequest), Object(CakeResponse))
+#9 /var/www/unieventos/lib/Cake/Controller/Component/AuthComponent.php(599): AuthComponent->identify(Object(CakeRequest), Object(CakeResponse))
+#10 /var/www/unieventos/app/Controller/UsuariosController.php(41): AuthComponent->login()
+#11 [internal function]: UsuariosController->admin_login()
+#12 /var/www/unieventos/lib/Cake/Controller/Controller.php(490): ReflectionMethod->invokeArgs(Object(UsuariosController), Array)
+#13 /var/www/unieventos/lib/Cake/Routing/Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
+#14 /var/www/unieventos/lib/Cake/Routing/Dispatcher.php(162): Dispatcher->_invoke(Object(UsuariosController), Object(CakeRequest), Object(CakeResponse))
+#15 /var/www/unieventos/app/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#16 {main}
+2013-12-08 17:30:06 Error: [PDOException] SQLSTATE[42S22]: Column not found: 1054 Unknown column 'Estado.usuario_id' in 'on clause'
+Request URL: /unieventos/admin/usuarios/perfil/1
+Stack Trace:
+#0 /var/www/unieventos/lib/Cake/Model/Datasource/DboSource.php(460): PDOStatement->execute(Array)
+#1 /var/www/unieventos/lib/Cake/Model/Datasource/DboSource.php(426): DboSource->_execute('SELECT `Usuario...', Array)
+#2 /var/www/unieventos/lib/Cake/Model/Datasource/DboSource.php(666): DboSource->execute('SELECT `Usuario...', Array, Array)
+#3 /var/www/unieventos/lib/Cake/Model/Datasource/DboSource.php(1077): DboSource->fetchAll('SELECT `Usuario...', false)
+#4 /var/www/unieventos/lib/Cake/Model/Model.php(2880): DboSource->read(Object(Usuario), Array)
+#5 /var/www/unieventos/lib/Cake/Model/Model.php(2852): Model->_readDataSource('first', Array)
+#6 /var/www/unieventos/lib/Cake/Model/Model.php(1589): Model->find('first', Array)
+#7 /var/www/unieventos/app/Controller/UsuariosController.php(72): Model->read(NULL, '1')
+#8 [internal function]: UsuariosController->admin_perfil('1')
+#9 /var/www/unieventos/lib/Cake/Controller/Controller.php(490): ReflectionMethod->invokeArgs(Object(UsuariosController), Array)
+#10 /var/www/unieventos/lib/Cake/Routing/Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
+#11 /var/www/unieventos/lib/Cake/Routing/Dispatcher.php(162): Dispatcher->_invoke(Object(UsuariosController), Object(CakeRequest), Object(CakeResponse))
+#12 /var/www/unieventos/app/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#13 {main}
+2013-12-08 17:30:39 Error: Fatal Error (64): Cannot redeclare Usuario::$hasMany in [/var/www/unieventos/app/Model/Usuario.php, line 4]
+2013-12-08 17:30:39 Error: [FatalErrorException] Cannot redeclare Usuario::$hasMany
+Request URL: /unieventos/admin/usuarios/perfil/1
+Stack Trace:
+#0 /var/www/unieventos/lib/Cake/Error/ErrorHandler.php(205): ErrorHandler::handleFatalError(64, 'Cannot redeclar...', '/var/www/unieve...', 4)
+#1 [internal function]: ErrorHandler::handleError(64, 'Cannot redeclar...', '/var/www/unieve...', 4, Array)
+#2 /var/www/unieventos/lib/Cake/Core/App.php(931): call_user_func('ErrorHandler::h...', 64, 'Cannot redeclar...', '/var/www/unieve...', 4, Array)
+#3 /var/www/unieventos/lib/Cake/Core/App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2013-12-08 17:32:00 Error: Fatal Error (64): Cannot redeclare Usuario::$hasMany in [/var/www/unieventos/app/Model/Usuario.php, line 4]
+2013-12-08 17:32:00 Error: [FatalErrorException] Cannot redeclare Usuario::$hasMany
+Request URL: /unieventos/admin/usuarios/login
+Stack Trace:
+#0 /var/www/unieventos/lib/Cake/Error/ErrorHandler.php(205): ErrorHandler::handleFatalError(64, 'Cannot redeclar...', '/var/www/unieve...', 4)
+#1 [internal function]: ErrorHandler::handleError(64, 'Cannot redeclar...', '/var/www/unieve...', 4, Array)
+#2 /var/www/unieventos/lib/Cake/Core/App.php(931): call_user_func('ErrorHandler::h...', 64, 'Cannot redeclar...', '/var/www/unieve...', 4, Array)
+#3 /var/www/unieventos/lib/Cake/Core/App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2013-12-08 17:32:04 Error: Fatal Error (64): Cannot redeclare Usuario::$hasMany in [/var/www/unieventos/app/Model/Usuario.php, line 4]
+2013-12-08 17:32:04 Error: [FatalErrorException] Cannot redeclare Usuario::$hasMany
+Request URL: /unieventos/admin/usuarios/login
+Stack Trace:
+#0 /var/www/unieventos/lib/Cake/Error/ErrorHandler.php(205): ErrorHandler::handleFatalError(64, 'Cannot redeclar...', '/var/www/unieve...', 4)
+#1 [internal function]: ErrorHandler::handleError(64, 'Cannot redeclar...', '/var/www/unieve...', 4, Array)
+#2 /var/www/unieventos/lib/Cake/Core/App.php(931): call_user_func('ErrorHandler::h...', 64, 'Cannot redeclar...', '/var/www/unieve...', 4, Array)
+#3 /var/www/unieventos/lib/Cake/Core/App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2013-12-08 17:32:18 Error: Fatal Error (64): Cannot redeclare Usuario::$hasMany in [/var/www/unieventos/app/Model/Usuario.php, line 4]
+2013-12-08 17:32:18 Error: [FatalErrorException] Cannot redeclare Usuario::$hasMany
+Request URL: /unieventos/admin/usuarios/login
+Stack Trace:
+#0 /var/www/unieventos/lib/Cake/Error/ErrorHandler.php(205): ErrorHandler::handleFatalError(64, 'Cannot redeclar...', '/var/www/unieve...', 4)
+#1 [internal function]: ErrorHandler::handleError(64, 'Cannot redeclar...', '/var/www/unieve...', 4, Array)
+#2 /var/www/unieventos/lib/Cake/Core/App.php(931): call_user_func('ErrorHandler::h...', 64, 'Cannot redeclar...', '/var/www/unieve...', 4, Array)
+#3 /var/www/unieventos/lib/Cake/Core/App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2013-12-08 17:33:00 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /unieventos/css/bootstrap3.css
+Stack Trace:
+#0 /var/www/unieventos/app/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2013-12-08 17:33:00 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /unieventos/css/login.css
+Stack Trace:
+#0 /var/www/unieventos/app/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2013-12-08 17:33:15 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /unieventos/css/login.css
+Stack Trace:
+#0 /var/www/unieventos/app/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2013-12-08 17:33:15 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /unieventos/css/bootstrap3.css
+Stack Trace:
+#0 /var/www/unieventos/app/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2013-12-08 17:36:54 Error: [MissingActionException] Action EventosController::admin_cadastrarEvento() could not be found.
+Exception Attributes: array (
+  'controller' => 'EventosController',
+  'action' => 'admin_cadastrarEvento',
+)
+Request URL: /unieventos/admin/eventos/cadastrarEvento
+Stack Trace:
+#0 /var/www/unieventos/lib/Cake/Routing/Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
+#1 /var/www/unieventos/lib/Cake/Routing/Dispatcher.php(162): Dispatcher->_invoke(Object(EventosController), Object(CakeRequest), Object(CakeResponse))
+#2 /var/www/unieventos/app/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2013-12-08 17:38:51 Error: [MissingActionException] Action EventosController::admin_index() could not be found.
+Exception Attributes: array (
+  'controller' => 'EventosController',
+  'action' => 'admin_index',
+)
+Request URL: /unieventos/admin/eventos
+Stack Trace:
+#0 /var/www/unieventos/lib/Cake/Routing/Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
+#1 /var/www/unieventos/lib/Cake/Routing/Dispatcher.php(162): Dispatcher->_invoke(Object(EventosController), Object(CakeRequest), Object(CakeResponse))
+#2 /var/www/unieventos/app/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2013-12-08 17:39:12 Error: [MissingActionException] Action EventosController::admin_index() could not be found.
+Exception Attributes: array (
+  'controller' => 'EventosController',
+  'action' => 'admin_index',
+)
+Request URL: /unieventos/admin/eventos
+Stack Trace:
+#0 /var/www/unieventos/lib/Cake/Routing/Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
+#1 /var/www/unieventos/lib/Cake/Routing/Dispatcher.php(162): Dispatcher->_invoke(Object(EventosController), Object(CakeRequest), Object(CakeResponse))
+#2 /var/www/unieventos/app/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}

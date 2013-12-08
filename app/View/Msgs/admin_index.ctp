@@ -1,13 +1,13 @@
+<div class="btn-group right">
+    <button type="button" class="btn btn-default">Atualizar</button>
+    <?php echo $this->Html->link('Escrever', array('controller' => 'msgs', 'action' => 'enviar', 'admin' => true)) ?>
+</div>
 <?php if(empty($msgs)){ ?>
     <div class="alert alert-info">
       <button type="button" class="close" data-dismiss="alert">&times;</button>
       <strong>Atenção!!</strong> Você não tem menssagem.
     </div>
 <?php }else{ ?>
-<div class="btn-group right">
-    <button type="button" class="btn btn-default">Atualizar</button>
-    <button type="button" class="btn btn-default">Escrever</button>
-</div>
 <table class="table table-hover">
     <?php foreach ($msgs as $recado): ?>
     <tr>

@@ -9,7 +9,7 @@
         <?php echo $this->html->link('<i class="fa fa-envelope"></i> '.__('Eventos'), array('controller' => 'eventos', 'action' => 'index', 'admin' => true), array('escape' => false)) ?>
     </li>
     <li>
-        <?php echo $this->html->link('<i class="fa fa-envelope"></i> '.__('Criar eventos'), array('controller' => 'eventos', 'action' => 'cadastrarEvento', 'admin' => true), array('escape' => false)) ?>
+        <?php echo $this->html->link('<i class="fa fa-envelope"></i> '.__('Criar evento'), array('controller' => 'eventos', 'action' => 'cadastrarEvento', 'admin' => true), array('escape' => false)) ?>
     </li>
     <li><a href="bootstrap-elements.html"><i class="fa fa-desktop"></i> Bootstrap Elements</a></li>
     <li><a href="bootstrap-grid.html"><i class="fa fa-wrench"></i> Bootstrap Grid</a></li>
