@@ -52,3 +52,6 @@ msgstr "Forgot your password?"
 
 msgid "Seja Bem vindo"
 msgstr "Welcome"
+
+msgid "Idade"
+msgstr "Age"
