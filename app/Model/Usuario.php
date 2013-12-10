@@ -48,7 +48,7 @@ class Usuario extends AppModel{
     );
         public function passwordConfirmation($data){
          
-        $senha = $this->data['Usuario']['senha'];
+        $senha = Security::hash($this->data['Usuario']['senha'], null, true);
         $password_confirmation = Security::hash($this->data['Usuario']['senha_confirm'], null, true);
               
         if($senha===$password_confirmation){

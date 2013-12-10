@@ -10,10 +10,10 @@ class EventosController extends AppController{
 	    if ($this->request->is('post')) {
 	    	$this->Evento->create();
 	    	if ($this->Evento->saveAll($this->request->data)) {
-	        	$this->Session->setFlash(__('The post has been saved'));
+	        	$this->Session->setFlash(__('O Evento foi cadastrado com sucesso'));
 	        	$this->redirect(array('action' => 'index'));
 	      	} else {
-	        	$this->Session->setFlash(__('The post could not be saved. Please, try again.'));
+	        	$this->Session->setFlash(__('Erro ao cadastrar o evento. Por favor, tente novamente em alguns segundos.'));
 	      	} 
 	    }
 	}
@@ -29,7 +29,7 @@ class EventosController extends AppController{
 
 	    $evento = $this->Evento->findById($id);
 	    if (!$evento) {
-	        throw new NotFoundException(__('Invalid post'));
+	        throw new NotFoundException(__('Evento Invalido'));
 	    }
 
 	    //if ($this->request->is(array('post', 'put'))) {

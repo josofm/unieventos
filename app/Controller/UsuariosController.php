@@ -10,8 +10,8 @@ class UsuariosController extends AppController {
 		if ($this->request->is('post')) {
             $this->Usuario->create();
             
-             $this->request->data['Usuario']['senha'] = Security::hash($this->request->data['Usuario']['senha'], null, true);
-            $last = $this->Usuario->save($this->request->data);
+            //$this->request->data['Usuario']['senha'] = Security::hash($this->request->data['Usuario']['senha'], null, true);
+            //$last = $this->Usuario->save($this->request->data);
             if ($this->Usuario->save($this->request->data)) {
                 $this->Session->setFlash(__('Voce foi cadastrado com sucesso.'));
                 return $this->redirect(array('action' => 'sucesso'));

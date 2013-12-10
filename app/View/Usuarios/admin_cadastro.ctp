@@ -1,3 +1,6 @@
+<?php if(AuthComponent::user('nivel') == 0){ ?>
+    <h1>Voce não tem permição de acessar essa pagina</h1>
+<?php } else{?>
 <div class="breadcrumbs" id="breadcrumbs">
 </div>
 <div class="page-content">
@@ -97,3 +100,4 @@
     </div><!-- /.col -->
   </div><!-- /.row -->
 </div>
+<?php } ?>
