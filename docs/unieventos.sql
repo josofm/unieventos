@@ -1,23 +1,16 @@
 -- phpMyAdmin SQL Dump
--- version 3.4.10.1deb1
+-- version 2.11.11
 -- http://www.phpmyadmin.net
 --
 -- Servidor: localhost
--- Tempo de GeraÃ§Ã£o: 10/12/2013 Ã s 15h42min
--- VersÃ£o do Servidor: 5.5.34
--- VersÃ£o do PHP: 5.3.10-1ubuntu3.8
+-- Tempo de Geração: Dez 10, 2013 as 08:30 PM
+-- Versão do Servidor: 5.5.32
+-- Versão do PHP: 5.4.19
 
 SET SQL_MODE="NO_AUTO_VALUE_ON_ZERO";
-SET time_zone = "+00:00";
-
-
-/*!40101 SET @OLD_CHARACTER_SET_CLIENT=@@CHARACTER_SET_CLIENT */;
-/*!40101 SET @OLD_CHARACTER_SET_RESULTS=@@CHARACTER_SET_RESULTS */;
-/*!40101 SET @OLD_COLLATION_CONNECTION=@@COLLATION_CONNECTION */;
-/*!40101 SET NAMES utf8 */;
 
 --
--- Banco de Dados: `uniEvents`
+-- Banco de Dados: `unievents`
 --
 
 -- --------------------------------------------------------
@@ -9778,6 +9771,11 @@ CREATE TABLE IF NOT EXISTS `enderecos` (
   KEY `fk_enderecos_cidades1_idx` (`cidade_id`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 AUTO_INCREMENT=1 ;
 
+--
+-- Extraindo dados da tabela `enderecos`
+--
+
+
 -- --------------------------------------------------------
 
 --
@@ -9799,29 +9797,29 @@ INSERT INTO `estados` (`id`, `nome`, `uf`) VALUES
 (1, 'Acre', 'AC'),
 (2, 'Alagoas', 'AL'),
 (3, 'Amazonas', 'AM'),
-(4, 'AmapÃ¡', 'AP'),
+(4, 'Amapá', 'AP'),
 (5, 'Bahia', 'BA'),
-(6, 'CearÃ¡', 'CE'),
+(6, 'Ceará', 'CE'),
 (7, 'Distrito Federal', 'DF'),
-(8, 'EspÃ­rito Santo', 'ES'),
-(9, 'GoiÃ¡s', 'GO'),
-(10, 'MaranhÃ£o', 'MA'),
+(8, 'Espírito Santo', 'ES'),
+(9, 'Goiás', 'GO'),
+(10, 'Maranhão', 'MA'),
 (11, 'Minas Gerais', 'MG'),
 (12, 'Mato Grosso do Sul', 'MS'),
 (13, 'Mato Grosso', 'MT'),
-(14, 'ParÃ¡', 'PA'),
-(15, 'ParaÃ­ba', 'PB'),
+(14, 'Pará', 'PA'),
+(15, 'Paraíba', 'PB'),
 (16, 'Pernambuco', 'PE'),
-(17, 'PiauÃ­', 'PI'),
-(18, 'ParanÃ¡', 'PR'),
+(17, 'Piauí', 'PI'),
+(18, 'Paraná', 'PR'),
 (19, 'Rio de Janeiro', 'RJ'),
 (20, 'Rio Grande do Norte', 'RN'),
-(21, 'RondÃ´nia', 'RO'),
+(21, 'Rondônia', 'RO'),
 (22, 'Roraima', 'RR'),
 (23, 'Rio Grande do Sul', 'RS'),
 (24, 'Santa Catarina', 'SC'),
 (25, 'Sergipe', 'SE'),
-(26, 'SÃ£o Paulo', 'SP'),
+(26, 'São Paulo', 'SP'),
 (27, 'Tocantins', 'TO');
 
 -- --------------------------------------------------------
@@ -9851,6 +9849,11 @@ CREATE TABLE IF NOT EXISTS `eventos` (
   KEY `fk_evento_imagem1_idx` (`imagem_id`)
 ) ENGINE=InnoDB  DEFAULT CHARSET=utf8 AUTO_INCREMENT=7 ;
 
+--
+-- Extraindo dados da tabela `eventos`
+--
+
+
 -- --------------------------------------------------------
 
 --
@@ -9864,6 +9867,11 @@ CREATE TABLE IF NOT EXISTS `eventos_usuarios` (
   KEY `fk_evento_has_usuario_evento1_idx` (`evento_id`),
   KEY `fk_evento_has_usuarios_usuarios1_idx` (`usuario_id`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+
+--
+-- Extraindo dados da tabela `eventos_usuarios`
+--
+
 
 -- --------------------------------------------------------
 
@@ -9883,6 +9891,11 @@ CREATE TABLE IF NOT EXISTS `horarios` (
   KEY `fk_horario_programacao1_idx` (`programacao_id`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 AUTO_INCREMENT=1 ;
 
+--
+-- Extraindo dados da tabela `horarios`
+--
+
+
 -- --------------------------------------------------------
 
 --
@@ -9899,6 +9912,11 @@ CREATE TABLE IF NOT EXISTS `imagens` (
   PRIMARY KEY (`id`),
   KEY `fk_imagens_usuarios1_idx` (`usuario_id`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 AUTO_INCREMENT=1 ;
+
+--
+-- Extraindo dados da tabela `imagens`
+--
+
 
 -- --------------------------------------------------------
 
@@ -9919,6 +9937,11 @@ CREATE TABLE IF NOT EXISTS `inscricoes` (
   KEY `fk_inscricao_tipo_inscricao1_idx` (`tipo_inscricao_id`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 AUTO_INCREMENT=1 ;
 
+--
+-- Extraindo dados da tabela `inscricoes`
+--
+
+
 -- --------------------------------------------------------
 
 --
@@ -9938,6 +9961,11 @@ CREATE TABLE IF NOT EXISTS `msgs` (
   KEY `fk_mensagens_usuarios1_idx` (`usuarios_id`)
 ) ENGINE=InnoDB  DEFAULT CHARSET=utf8 AUTO_INCREMENT=8 ;
 
+--
+-- Extraindo dados da tabela `msgs`
+--
+
+
 -- --------------------------------------------------------
 
 --
@@ -9955,6 +9983,11 @@ CREATE TABLE IF NOT EXISTS `noticias` (
   PRIMARY KEY (`id`),
   KEY `fk_noticia_evento1_idx` (`evento_id`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 AUTO_INCREMENT=1 ;
+
+--
+-- Extraindo dados da tabela `noticias`
+--
+
 
 -- --------------------------------------------------------
 
@@ -9974,6 +10007,11 @@ CREATE TABLE IF NOT EXISTS `pagamentos` (
   PRIMARY KEY (`id`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 AUTO_INCREMENT=1 ;
 
+--
+-- Extraindo dados da tabela `pagamentos`
+--
+
+
 -- --------------------------------------------------------
 
 --
@@ -9990,6 +10028,11 @@ CREATE TABLE IF NOT EXISTS `patrocinadores` (
   KEY `fk_patrocinador_endereco1_idx` (`endereco_id`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 AUTO_INCREMENT=1 ;
 
+--
+-- Extraindo dados da tabela `patrocinadores`
+--
+
+
 -- --------------------------------------------------------
 
 --
@@ -10003,6 +10046,33 @@ CREATE TABLE IF NOT EXISTS `patrocinador_has_eventos` (
   KEY `fk_patrocinador_has_evento_evento1_idx` (`evento_id`),
   KEY `fk_patrocinador_has_evento_patrocinador1_idx` (`patrocinador_id`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+
+--
+-- Extraindo dados da tabela `patrocinador_has_eventos`
+--
+
+
+-- --------------------------------------------------------
+
+--
+-- Estrutura da tabela `presencas`
+--
+
+CREATE TABLE IF NOT EXISTS `presencas` (
+  `id` int(11) NOT NULL,
+  `status` tinyint(1) DEFAULT NULL,
+  `data` date DEFAULT NULL,
+  `usuario_id` int(10) unsigned NOT NULL,
+  `evento_id` int(10) unsigned NOT NULL,
+  PRIMARY KEY (`id`),
+  KEY `fk_presenca_usuarios1_idx` (`usuario_id`),
+  KEY `fk_presenca_eventos1_idx` (`evento_id`)
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+
+--
+-- Extraindo dados da tabela `presencas`
+--
+
 
 -- --------------------------------------------------------
 
@@ -10022,6 +10092,11 @@ CREATE TABLE IF NOT EXISTS `programacoes` (
   KEY `fk_programacao_evento1_idx` (`evento_id`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 AUTO_INCREMENT=1 ;
 
+--
+-- Extraindo dados da tabela `programacoes`
+--
+
+
 -- --------------------------------------------------------
 
 --
@@ -10038,6 +10113,11 @@ CREATE TABLE IF NOT EXISTS `telefones` (
   KEY `fk_telefones_usuarios1_idx` (`usuario_id`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 AUTO_INCREMENT=1 ;
 
+--
+-- Extraindo dados da tabela `telefones`
+--
+
+
 -- --------------------------------------------------------
 
 --
@@ -10052,6 +10132,11 @@ CREATE TABLE IF NOT EXISTS `tipo_inscricoes` (
   PRIMARY KEY (`id`),
   KEY `fk_tipo_inscricao_pagamento1_idx` (`pagamento_id`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 AUTO_INCREMENT=1 ;
+
+--
+-- Extraindo dados da tabela `tipo_inscricoes`
+--
+
 
 -- --------------------------------------------------------
 
@@ -10089,104 +10174,107 @@ INSERT INTO `usuarios` (`id`, `nome`, `sobrenome`, `nivel`, `cpf`, `rg`, `data_n
 (9, 'Usuario', 'teste', 0, '11111111111', '11', '2013-12-10', 1, 'teste@localhost.com', '7c4a8d09ca3762af61e59520943dc26494f8941b', '', '', '', NULL, '2013-12-10 17:42:21', '2013-12-10 17:42:21');
 
 --
--- RestriÃ§Ãµes para as tabelas dumpadas
+-- Restrições para as tabelas dumpadas
 --
 
 --
--- RestriÃ§Ãµes para a tabela `cidades`
+-- Restrições para a tabela `cidades`
 --
 ALTER TABLE `cidades`
   ADD CONSTRAINT `fk_cidades_estados1` FOREIGN KEY (`estado_id`) REFERENCES `estados` (`id`) ON DELETE NO ACTION ON UPDATE NO ACTION;
 
 --
--- RestriÃ§Ãµes para a tabela `enderecos`
+-- Restrições para a tabela `enderecos`
 --
 ALTER TABLE `enderecos`
   ADD CONSTRAINT `fk_enderecos_cidades1` FOREIGN KEY (`cidade_id`) REFERENCES `cidades` (`id`) ON DELETE NO ACTION ON UPDATE NO ACTION;
 
 --
--- RestriÃ§Ãµes para a tabela `eventos`
+-- Restrições para a tabela `eventos`
 --
 ALTER TABLE `eventos`
   ADD CONSTRAINT `fk_evento_endereco1` FOREIGN KEY (`endereco_id`) REFERENCES `enderecos` (`id`) ON DELETE NO ACTION ON UPDATE NO ACTION,
   ADD CONSTRAINT `fk_evento_imagem1` FOREIGN KEY (`imagem_id`) REFERENCES `imagens` (`id`) ON DELETE NO ACTION ON UPDATE NO ACTION;
 
 --
--- RestriÃ§Ãµes para a tabela `eventos_usuarios`
+-- Restrições para a tabela `eventos_usuarios`
 --
 ALTER TABLE `eventos_usuarios`
   ADD CONSTRAINT `fk_evento_has_usuarios_usuarios1` FOREIGN KEY (`usuario_id`) REFERENCES `usuarios` (`id`) ON DELETE NO ACTION ON UPDATE NO ACTION,
   ADD CONSTRAINT `fk_evento_has_usuario_evento1` FOREIGN KEY (`evento_id`) REFERENCES `eventos` (`id`) ON DELETE NO ACTION ON UPDATE NO ACTION;
 
 --
--- RestriÃ§Ãµes para a tabela `horarios`
+-- Restrições para a tabela `horarios`
 --
 ALTER TABLE `horarios`
   ADD CONSTRAINT `fk_horario_programacao1` FOREIGN KEY (`programacao_id`) REFERENCES `programacoes` (`id`) ON DELETE NO ACTION ON UPDATE NO ACTION;
 
 --
--- RestriÃ§Ãµes para a tabela `imagens`
+-- Restrições para a tabela `imagens`
 --
 ALTER TABLE `imagens`
   ADD CONSTRAINT `fk_imagens_usuarios1` FOREIGN KEY (`usuario_id`) REFERENCES `usuarios` (`id`) ON DELETE NO ACTION ON UPDATE NO ACTION;
 
 --
--- RestriÃ§Ãµes para a tabela `inscricoes`
+-- Restrições para a tabela `inscricoes`
 --
 ALTER TABLE `inscricoes`
   ADD CONSTRAINT `fk_inscricao_evento1` FOREIGN KEY (`evento_id`) REFERENCES `eventos` (`id`) ON DELETE NO ACTION ON UPDATE NO ACTION,
   ADD CONSTRAINT `fk_inscricao_tipo_inscricao1` FOREIGN KEY (`tipo_inscricao_id`) REFERENCES `tipo_inscricoes` (`id`) ON DELETE NO ACTION ON UPDATE NO ACTION;
 
 --
--- RestriÃ§Ãµes para a tabela `msgs`
+-- Restrições para a tabela `msgs`
 --
 ALTER TABLE `msgs`
   ADD CONSTRAINT `fk_mensagens_usuarios1` FOREIGN KEY (`usuarios_id`) REFERENCES `usuarios` (`id`) ON DELETE NO ACTION ON UPDATE NO ACTION;
 
 --
--- RestriÃ§Ãµes para a tabela `noticias`
+-- Restrições para a tabela `noticias`
 --
 ALTER TABLE `noticias`
   ADD CONSTRAINT `fk_noticia_evento1` FOREIGN KEY (`evento_id`) REFERENCES `eventos` (`id`) ON DELETE NO ACTION ON UPDATE NO ACTION;
 
 --
--- RestriÃ§Ãµes para a tabela `patrocinadores`
+-- Restrições para a tabela `patrocinadores`
 --
 ALTER TABLE `patrocinadores`
   ADD CONSTRAINT `fk_patrocinador_endereco1` FOREIGN KEY (`endereco_id`) REFERENCES `enderecos` (`id`) ON DELETE NO ACTION ON UPDATE NO ACTION;
 
 --
--- RestriÃ§Ãµes para a tabela `patrocinador_has_eventos`
+-- Restrições para a tabela `patrocinador_has_eventos`
 --
 ALTER TABLE `patrocinador_has_eventos`
   ADD CONSTRAINT `fk_patrocinador_has_evento_evento1` FOREIGN KEY (`evento_id`) REFERENCES `eventos` (`id`) ON DELETE NO ACTION ON UPDATE NO ACTION,
   ADD CONSTRAINT `fk_patrocinador_has_evento_patrocinador1` FOREIGN KEY (`patrocinador_id`) REFERENCES `patrocinadores` (`id`) ON DELETE NO ACTION ON UPDATE NO ACTION;
 
 --
--- RestriÃ§Ãµes para a tabela `programacoes`
+-- Restrições para a tabela `presencas`
+--
+ALTER TABLE `presencas`
+  ADD CONSTRAINT `fk_presenca_usuarios1` FOREIGN KEY (`usuario_id`) REFERENCES `usuarios` (`id`) ON DELETE NO ACTION ON UPDATE NO ACTION,
+  ADD CONSTRAINT `fk_presenca_eventos1` FOREIGN KEY (`evento_id`) REFERENCES `eventos` (`id`) ON DELETE NO ACTION ON UPDATE NO ACTION;
+
+--
+-- Restrições para a tabela `programacoes`
 --
 ALTER TABLE `programacoes`
   ADD CONSTRAINT `fk_programacao_evento1` FOREIGN KEY (`evento_id`) REFERENCES `eventos` (`id`) ON DELETE NO ACTION ON UPDATE NO ACTION;
 
 --
--- RestriÃ§Ãµes para a tabela `telefones`
+-- Restrições para a tabela `telefones`
 --
 ALTER TABLE `telefones`
   ADD CONSTRAINT `fk_telefones_usuarios1` FOREIGN KEY (`usuario_id`) REFERENCES `usuarios` (`id`) ON DELETE NO ACTION ON UPDATE NO ACTION,
   ADD CONSTRAINT `fk_telefone_patrocinador1` FOREIGN KEY (`patrocinador_id`) REFERENCES `patrocinadores` (`id`) ON DELETE NO ACTION ON UPDATE NO ACTION;
 
 --
--- RestriÃ§Ãµes para a tabela `tipo_inscricoes`
+-- Restrições para a tabela `tipo_inscricoes`
 --
 ALTER TABLE `tipo_inscricoes`
   ADD CONSTRAINT `fk_tipo_inscricao_pagamento1` FOREIGN KEY (`pagamento_id`) REFERENCES `pagamentos` (`id`) ON DELETE NO ACTION ON UPDATE NO ACTION;
 
 --
--- RestriÃ§Ãµes para a tabela `usuarios`
+-- Restrições para a tabela `usuarios`
 --
 ALTER TABLE `usuarios`
   ADD CONSTRAINT `fk_usuarios_cidades1` FOREIGN KEY (`cidade_id`) REFERENCES `cidades` (`id`) ON DELETE NO ACTION ON UPDATE NO ACTION;
-
-/*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
-/*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;
-/*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
