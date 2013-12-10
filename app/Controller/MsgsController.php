@@ -30,12 +30,12 @@ class MsgsController extends AppController {
 
     public function admin_visualizar($id) {
         if (!$id) {
-            throw new NotFoundException(__('Invalid post'));
+            throw new NotFoundException(__('Erro! Menssagem invalida'));
         }
 
         $post = $this->Msg->findById($id);
         if (!$post) {
-            throw new NotFoundException(__('Invalid post'));
+            throw new NotFoundException(__('Erro! Menssagem invalida'));
         }
         $this->set('msg', $post);
     	$this->Msg->id = $id;
@@ -52,10 +52,10 @@ class MsgsController extends AppController {
             $this->Msg->create();
             $this->request->data['Msg']['usuarios_id'] = $this->Auth->user('id');
             if ($this->Msg->save($this->request->data)) {
-                $this->Session->setFlash(__('Your post has been saved.'),'success');
+                $this->Session->setFlash(__('Sua menssagem foi enviada.'),'success');
                 return $this->redirect(array('action' => 'index','admin' => true));
             }else{
-            	$this->Session->setFlash(__('Unable to add your post.'), 'error');	
+            	$this->Session->setFlash(__('Erro ao enviar sua menssagem.'), 'error');	
             }    
         }
         $this->loadModel('Usuario');

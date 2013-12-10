@@ -3,7 +3,7 @@
 -- http://www.phpmyadmin.net
 --
 -- Servidor: localhost
--- Tempo de Geração: 10/12/2013 às 14h34min
+-- Tempo de Geração: 10/12/2013 às 15h42min
 -- Versão do Servidor: 5.5.34
 -- Versão do PHP: 5.3.10-1ubuntu3.8
 
@@ -9849,15 +9849,7 @@ CREATE TABLE IF NOT EXISTS `eventos` (
   PRIMARY KEY (`id`),
   KEY `fk_evento_endereco1_idx` (`endereco_id`),
   KEY `fk_evento_imagem1_idx` (`imagem_id`)
-) ENGINE=InnoDB  DEFAULT CHARSET=utf8 AUTO_INCREMENT=3 ;
-
---
--- Extraindo dados da tabela `eventos`
---
-
-INSERT INTO `eventos` (`id`, `nome`, `descricao`, `data_ini`, `data_fim`, `tipo_evento`, `tema`, `vagas`, `duracao_horas`, `aprovacao`, `url`, `endereco_id`, `imagem_id`, `created`, `modified`) VALUES
-(1, 'Evento de teste', 'alguma coisa', NULL, NULL, NULL, NULL, NULL, NULL, 0, NULL, NULL, NULL, '2013-12-08 17:38:51', '2013-12-08 17:38:51'),
-(2, 'evento de teste', 'vai descriÃ§Ã£o do evento', NULL, NULL, NULL, NULL, NULL, NULL, 0, NULL, NULL, NULL, '2013-12-10 13:09:11', '2013-12-10 13:09:11');
+) ENGINE=InnoDB  DEFAULT CHARSET=utf8 AUTO_INCREMENT=7 ;
 
 -- --------------------------------------------------------
 
@@ -9872,14 +9864,6 @@ CREATE TABLE IF NOT EXISTS `eventos_usuarios` (
   KEY `fk_evento_has_usuario_evento1_idx` (`evento_id`),
   KEY `fk_evento_has_usuarios_usuarios1_idx` (`usuario_id`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
-
---
--- Extraindo dados da tabela `eventos_usuarios`
---
-
-INSERT INTO `eventos_usuarios` (`evento_id`, `usuario_id`) VALUES
-(1, 1),
-(2, 8);
 
 -- --------------------------------------------------------
 
@@ -9952,15 +9936,7 @@ CREATE TABLE IF NOT EXISTS `msgs` (
   `modified` datetime NOT NULL,
   PRIMARY KEY (`id`),
   KEY `fk_mensagens_usuarios1_idx` (`usuarios_id`)
-) ENGINE=InnoDB  DEFAULT CHARSET=utf8 AUTO_INCREMENT=3 ;
-
---
--- Extraindo dados da tabela `msgs`
---
-
-INSERT INTO `msgs` (`id`, `titulo`, `texto`, `status`, `usuario_msg`, `usuarios_id`, `created`, `modified`) VALUES
-(1, 'efrefdsdf', 'dfsdfsd', 0, 0, 1, '2013-12-08 20:42:50', '2013-12-08 20:42:50'),
-(2, 'df', 'fdsdfs', 0, 0, 1, '2013-12-09 17:55:57', '2013-12-09 17:55:57');
+) ENGINE=InnoDB  DEFAULT CHARSET=utf8 AUTO_INCREMENT=8 ;
 
 -- --------------------------------------------------------
 
@@ -10102,7 +10078,7 @@ CREATE TABLE IF NOT EXISTS `usuarios` (
   `modified` datetime DEFAULT NULL,
   PRIMARY KEY (`id`),
   KEY `fk_usuarios_cidades1_idx` (`cidade_id`)
-) ENGINE=InnoDB  DEFAULT CHARSET=utf8 AUTO_INCREMENT=9 ;
+) ENGINE=InnoDB  DEFAULT CHARSET=utf8 AUTO_INCREMENT=10 ;
 
 --
 -- Extraindo dados da tabela `usuarios`
@@ -10110,7 +10086,7 @@ CREATE TABLE IF NOT EXISTS `usuarios` (
 
 INSERT INTO `usuarios` (`id`, `nome`, `sobrenome`, `nivel`, `cpf`, `rg`, `data_nasc`, `sexo`, `email`, `senha`, `instituicao`, `end_rede_soc`, `outro_contato_url`, `cidade_id`, `created`, `modified`) VALUES
 (1, 'admin', '', 1, NULL, NULL, NULL, NULL, 'admin@localhost.com', 'd033e22ae348aeb5660fc2140aec35850c4da997', 'Dono do sistema', NULL, NULL, NULL, NULL, NULL),
-(8, 'Usuario', 'teste', 0, '', '', '2013-12-10', NULL, 'asantos@inf.ufsm.br', 'b02854aab34f0686863d4c9d07f66e36d91fda62', '', '', '', NULL, '2013-12-10 13:07:32', '2013-12-10 13:07:32');
+(9, 'Usuario', 'teste', 0, '11111111111', '11', '2013-12-10', 1, 'teste@localhost.com', '7c4a8d09ca3762af61e59520943dc26494f8941b', '', '', '', NULL, '2013-12-10 17:42:21', '2013-12-10 17:42:21');
 
 --
 -- Restrições para as tabelas dumpadas

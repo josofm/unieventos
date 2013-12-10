@@ -1,10 +1,10 @@
 <?php if(AuthComponent::user('nivel') == 0){ ?>
-    <h1>Voce não tem permição de acessar essa pagina</h1>
+      <h1 class="text-center" style="color: #ff0000;">Você não tem permição para acessar essa pagina!</h1>
 <?php } else{?>
     <?php if(empty($lista)){ ?>
-        <div class="alert">
+        <div class="alert alert-info">
           <button type="button" class="close" data-dismiss="alert">&times;</button>
-          <strong>Atenção!!</strong> Você não tem menssagem.
+          <strong>Atenção!!</strong> Você não tem mais eventos para aprovar.
         </div>
     <?php }else{ ?>
     <h1 class="text-center"><?php echo __('Eventos a serem aprovados') ?></h1>

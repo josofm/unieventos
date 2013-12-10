@@ -6,14 +6,19 @@ class EventosController extends AppController{
 	public $helpers = array('Html', 'Form');
 	public $components = array('Session');
 
+	public function admin_index(){
+		$this->Evento->recursive= 0;
+		$this->set('eventos', $this->Evento->find('all'));
+	}
+
 	public function admin_cadastrarEvento() {
 	    if ($this->request->is('post')) {
 	    	$this->Evento->create();
 	    	if ($this->Evento->saveAll($this->request->data)) {
-	        	$this->Session->setFlash(__('O Evento foi cadastrado com sucesso'));
+	        	$this->Session->setFlash(__('O Evento foi cadastrado com sucesso'),'success');
 	        	$this->redirect(array('action' => 'index'));
 	      	} else {
-	        	$this->Session->setFlash(__('Erro ao cadastrar o evento. Por favor, tente novamente em alguns segundos.'));
+	        	$this->Session->setFlash(__('Erro ao cadastrar o evento. Por favor, tente novamente em alguns segundos.'),'error');
 	      	} 
 	    }
 	}
