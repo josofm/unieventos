@@ -25,6 +25,8 @@
  */
 
 // Setup a 'default' cache configuration for use in the application.
+CakePlugin::loadAll();
+//CakePlugin::load('CakeBr');
 Cache::config('default', array('engine' => 'File'));
 
 /**

@@ -112,8 +112,8 @@ class Usuario extends AppModel{
                             'required' => true,
                             'message' => 'Confirme seu Estado.'
                     ),
-            ),
-        
+            ),            
+                
     );//
         public function passwordConfirmation($data){
          
@@ -130,5 +130,13 @@ class Usuario extends AppModel{
              
         }         
     }
+    
+   /* var $name = 'Usuario';
+	var $actsAs = array('CakeBr.Validacao'); // Aqui inclui o behavior do plugin CakeBr
+	var $validates = array(
+		'cpf' => array(
+			'rule' => 'cpf'
+		)
+	);*/
 }
 ?>
