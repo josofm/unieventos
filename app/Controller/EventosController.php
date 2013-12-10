@@ -15,12 +15,36 @@ class EventosController extends AppController{
 	    if ($this->request->is('post')) {
 	    	$this->Evento->create();
 	    	if ($this->Evento->saveAll($this->request->data)) {
-	        	$this->Session->setFlash(__('O Evento foi cadastrado com sucesso'),'success');
-	        	$this->redirect(array('action' => 'index'));
+	        	$this->Session->setFlash(__('O Evento foi cadastrado com sucesso!'),'success');
+	        	if($this->Auth->user('nivel')== 1)
+	        		$this->redirect(array('action' => 'index'));
+	        	$this->redirect(array('action' => 'meusEventos'));
 	      	} else {
 	        	$this->Session->setFlash(__('Erro ao cadastrar o evento. Por favor, tente novamente em alguns segundos.'),'error');
 	      	} 
 	    }
+	}
+
+	public function admin_meusEventos(){
+		$this->set('eventos', $this->Evento->find(
+        	'all', array(
+        		'fields' => array('*'),
+        		'conditions' => array( 
+        			'Evento.aprovacao ' => '1' 
+        			),
+        		'joins' =>  array(
+                    array(
+                        'table' => 'eventos_usuarios',
+                        'alias' => 'Euser',
+                        'type' => 'INNER', 
+                        'conditions'=> array(
+                        	'Euser.usuario_id' => $this->Auth->user('id')
+                        	)
+                    )
+              	),
+              	'group' => 'id'
+            )
+        ));
 	}
 
 	public function admin_listaAprovacoes(){

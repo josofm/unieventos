@@ -1,5 +1,6 @@
 <?php 
 	class Evento extends AppModel{
+		public $hasMany = array('Programacao');
 		public $displayField = 'name';
 
 		public $hasAndBelongsToMany = array(
