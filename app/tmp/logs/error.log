@@ -258,3 +258,309 @@ Request URL: /unieventos/css/bootstrap3.css
 Stack Trace:
 #0 /var/www/unieventos/app/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
 #1 {main}
+2013-12-10 17:43:38 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /unieventos/css/login.css
+Stack Trace:
+#0 /var/www/unieventos/app/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2013-12-10 17:43:38 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /unieventos/css/bootstrap3.css
+Stack Trace:
+#0 /var/www/unieventos/app/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2013-12-10 17:50:55 Error: [MissingViewException] View file "/var/www/unieventos/app/View/Eventos/admin_meus_eventos.ctp" is missing.
+Exception Attributes: array (
+  'file' => '/var/www/unieventos/app/View/Eventos/admin_meus_eventos.ctp',
+)
+Request URL: /unieventos/admin/eventos/meusEventos
+Stack Trace:
+#0 /var/www/unieventos/lib/Cake/View/View.php(459): View->_getViewFileName(NULL)
+#1 /var/www/unieventos/lib/Cake/Controller/Controller.php(952): View->render(NULL, NULL)
+#2 /var/www/unieventos/lib/Cake/Routing/Dispatcher.php(194): Controller->render()
+#3 /var/www/unieventos/lib/Cake/Routing/Dispatcher.php(162): Dispatcher->_invoke(Object(EventosController), Object(CakeRequest), Object(CakeResponse))
+#4 /var/www/unieventos/app/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2013-12-10 18:01:16 Error: Fatal Error (4): syntax error, unexpected T_DOUBLE_ARROW, expecting ')' in [/var/www/unieventos/app/Controller/EventosController.php, line 40]
+2013-12-10 18:01:16 Error: [FatalErrorException] syntax error, unexpected T_DOUBLE_ARROW, expecting ')'
+Request URL: /unieventos/admin/eventos/meusEventos
+Stack Trace:
+#0 /var/www/unieventos/lib/Cake/Error/ErrorHandler.php(205): ErrorHandler::handleFatalError(4, 'syntax error, u...', '/var/www/unieve...', 40)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', '/var/www/unieve...', 40, Array)
+#2 /var/www/unieventos/lib/Cake/Core/App.php(931): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', '/var/www/unieve...', 40, Array)
+#3 /var/www/unieventos/lib/Cake/Core/App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2013-12-10 18:02:54 Error: [PDOException] SQLSTATE[42S22]: Column not found: 1054 Unknown column 'Euser.usuarios_id' in 'on clause'
+Request URL: /unieventos/admin/eventos/meusEventos
+Stack Trace:
+#0 /var/www/unieventos/lib/Cake/Model/Datasource/DboSource.php(460): PDOStatement->execute(Array)
+#1 /var/www/unieventos/lib/Cake/Model/Datasource/DboSource.php(426): DboSource->_execute('SELECT * FROM `...', Array)
+#2 /var/www/unieventos/lib/Cake/Model/Datasource/DboSource.php(666): DboSource->execute('SELECT * FROM `...', Array, Array)
+#3 /var/www/unieventos/lib/Cake/Model/Datasource/DboSource.php(1077): DboSource->fetchAll('SELECT * FROM `...', false)
+#4 /var/www/unieventos/lib/Cake/Model/Model.php(2880): DboSource->read(Object(Evento), Array)
+#5 /var/www/unieventos/lib/Cake/Model/Model.php(2852): Model->_readDataSource('all', Array)
+#6 /var/www/unieventos/app/Controller/EventosController.php(46): Model->find('all', Array)
+#7 [internal function]: EventosController->admin_meusEventos()
+#8 /var/www/unieventos/lib/Cake/Controller/Controller.php(490): ReflectionMethod->invokeArgs(Object(EventosController), Array)
+#9 /var/www/unieventos/lib/Cake/Routing/Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
+#10 /var/www/unieventos/lib/Cake/Routing/Dispatcher.php(162): Dispatcher->_invoke(Object(EventosController), Object(CakeRequest), Object(CakeResponse))
+#11 /var/www/unieventos/app/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#12 {main}
+2013-12-10 18:03:58 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /unieventos/css/login.css
+Stack Trace:
+#0 /var/www/unieventos/app/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2013-12-10 18:03:58 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /unieventos/css/bootstrap3.css
+Stack Trace:
+#0 /var/www/unieventos/app/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2013-12-10 18:04:39 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /unieventos/css/login.css
+Stack Trace:
+#0 /var/www/unieventos/app/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2013-12-10 18:04:39 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /unieventos/css/bootstrap3.css
+Stack Trace:
+#0 /var/www/unieventos/app/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2013-12-10 18:13:12 Error: Fatal Error (4): syntax error, unexpected '}' in [/var/www/unieventos/app/View/Eventos/admin_meus_eventos.ctp, line 42]
+2013-12-10 18:13:12 Error: [FatalErrorException] syntax error, unexpected '}'
+Request URL: /unieventos/admin/eventos/meusEventos
+Stack Trace:
+#0 /var/www/unieventos/lib/Cake/Error/ErrorHandler.php(205): ErrorHandler::handleFatalError(4, 'syntax error, u...', '/var/www/unieve...', 42)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', '/var/www/unieve...', 42, Array)
+#2 /var/www/unieventos/lib/Cake/Core/App.php(931): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', '/var/www/unieve...', 42, Array)
+#3 /var/www/unieventos/lib/Cake/Core/App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2013-12-10 18:15:06 Error: [PDOException] SQLSTATE[42S22]: Column not found: 1054 Unknown column 'Euser.usuarios_id' in 'on clause'
+Request URL: /unieventos/admin/eventos/meusEventos
+Stack Trace:
+#0 /var/www/unieventos/lib/Cake/Model/Datasource/DboSource.php(460): PDOStatement->execute(Array)
+#1 /var/www/unieventos/lib/Cake/Model/Datasource/DboSource.php(426): DboSource->_execute('SELECT * FROM `...', Array)
+#2 /var/www/unieventos/lib/Cake/Model/Datasource/DboSource.php(666): DboSource->execute('SELECT * FROM `...', Array, Array)
+#3 /var/www/unieventos/lib/Cake/Model/Datasource/DboSource.php(1077): DboSource->fetchAll('SELECT * FROM `...', false)
+#4 /var/www/unieventos/lib/Cake/Model/Model.php(2880): DboSource->read(Object(Evento), Array)
+#5 /var/www/unieventos/lib/Cake/Model/Model.php(2852): Model->_readDataSource('all', Array)
+#6 /var/www/unieventos/app/Controller/EventosController.php(46): Model->find('all', Array)
+#7 [internal function]: EventosController->admin_meusEventos()
+#8 /var/www/unieventos/lib/Cake/Controller/Controller.php(490): ReflectionMethod->invokeArgs(Object(EventosController), Array)
+#9 /var/www/unieventos/lib/Cake/Routing/Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
+#10 /var/www/unieventos/lib/Cake/Routing/Dispatcher.php(162): Dispatcher->_invoke(Object(EventosController), Object(CakeRequest), Object(CakeResponse))
+#11 /var/www/unieventos/app/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#12 {main}
+2013-12-10 19:16:17 Error: Fatal Error (1): Call to a member function create() on a non-object in [/var/www/unieventos/app/Controller/ProgramacoesController.php, line 13]
+2013-12-10 19:16:17 Error: [FatalErrorException] Call to a member function create() on a non-object
+Request URL: /unieventos/admin/programacoes/programacao
+Stack Trace:
+#0 /var/www/unieventos/lib/Cake/Error/ErrorHandler.php(205): ErrorHandler::handleFatalError(1, 'Call to a membe...', '/var/www/unieve...', 13)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to a membe...', '/var/www/unieve...', 13, Array)
+#2 /var/www/unieventos/lib/Cake/Core/App.php(931): call_user_func('ErrorHandler::h...', 1, 'Call to a membe...', '/var/www/unieve...', 13, Array)
+#3 /var/www/unieventos/lib/Cake/Core/App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2013-12-10 19:17:30 Error: Fatal Error (1): Call to a member function create() on a non-object in [/var/www/unieventos/app/Controller/ProgramacoesController.php, line 13]
+2013-12-10 19:17:30 Error: [FatalErrorException] Call to a member function create() on a non-object
+Request URL: /unieventos/admin/programacoes/programacaoEvento
+Stack Trace:
+#0 /var/www/unieventos/lib/Cake/Error/ErrorHandler.php(205): ErrorHandler::handleFatalError(1, 'Call to a membe...', '/var/www/unieve...', 13)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to a membe...', '/var/www/unieve...', 13, Array)
+#2 /var/www/unieventos/lib/Cake/Core/App.php(931): call_user_func('ErrorHandler::h...', 1, 'Call to a membe...', '/var/www/unieve...', 13, Array)
+#3 /var/www/unieventos/lib/Cake/Core/App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2013-12-10 19:18:26 Error: [PDOException] SQLSTATE[23000]: Integrity constraint violation: 1048 Column 'evento_id' cannot be null
+Request URL: /unieventos/admin/programacoes/programacaoEvento
+Stack Trace:
+#0 /var/www/unieventos/lib/Cake/Model/Datasource/DboSource.php(460): PDOStatement->execute(Array)
+#1 /var/www/unieventos/lib/Cake/Model/Datasource/DboSource.php(426): DboSource->_execute('INSERT INTO `un...', Array)
+#2 /var/www/unieventos/lib/Cake/Model/Datasource/DboSource.php(1004): DboSource->execute('INSERT INTO `un...')
+#3 /var/www/unieventos/lib/Cake/Model/Model.php(1827): DboSource->create(Object(Programacao), Array, Array)
+#4 /var/www/unieventos/app/Controller/ProgramacoesController.php(15): Model->save(Array)
+#5 [internal function]: ProgramacoesController->admin_programacaoEvento()
+#6 /var/www/unieventos/lib/Cake/Controller/Controller.php(490): ReflectionMethod->invokeArgs(Object(ProgramacoesController), Array)
+#7 /var/www/unieventos/lib/Cake/Routing/Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
+#8 /var/www/unieventos/lib/Cake/Routing/Dispatcher.php(162): Dispatcher->_invoke(Object(ProgramacoesController), Object(CakeRequest), Object(CakeResponse))
+#9 /var/www/unieventos/app/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#10 {main}
+2013-12-10 19:19:17 Error: Fatal Error (4): syntax error, unexpected T_PUBLIC, expecting ',' or ';' in [/var/www/unieventos/app/Model/Evento.php, line 4]
+2013-12-10 19:19:17 Error: [FatalErrorException] syntax error, unexpected T_PUBLIC, expecting ',' or ';'
+Request URL: /unieventos/admin/eventos/cadastrarEvento
+Stack Trace:
+#0 /var/www/unieventos/lib/Cake/Error/ErrorHandler.php(205): ErrorHandler::handleFatalError(4, 'syntax error, u...', '/var/www/unieve...', 4)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', '/var/www/unieve...', 4, Array)
+#2 /var/www/unieventos/lib/Cake/Core/App.php(931): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', '/var/www/unieve...', 4, Array)
+#3 /var/www/unieventos/lib/Cake/Core/App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2013-12-10 19:22:11 Error: [MissingActionException] Action EventosController::admin_programacaoEvento() could not be found.
+Exception Attributes: array (
+  'controller' => 'EventosController',
+  'action' => 'admin_programacaoEvento',
+)
+Request URL: /unieventos/admin/eventos/programacaoEvento/7
+Stack Trace:
+#0 /var/www/unieventos/lib/Cake/Routing/Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
+#1 /var/www/unieventos/lib/Cake/Routing/Dispatcher.php(162): Dispatcher->_invoke(Object(EventosController), Object(CakeRequest), Object(CakeResponse))
+#2 /var/www/unieventos/app/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2013-12-10 19:54:48 Error: [MissingControllerException] Controller class JsController could not be found.
+Exception Attributes: array (
+  'class' => 'JsController',
+  'plugin' => NULL,
+)
+Request URL: /unieventos/js/admin/jquery.min.map
+Stack Trace:
+#0 /var/www/unieventos/app/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2013-12-10 20:09:03 Error: [MissingControllerException] Controller class JsController could not be found.
+Exception Attributes: array (
+  'class' => 'JsController',
+  'plugin' => NULL,
+)
+Request URL: /unieventos/js/admin/jquery.min.map
+Stack Trace:
+#0 /var/www/unieventos/app/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2013-12-10 20:11:42 Error: Fatal Error (4): syntax error, unexpected T_ARRAY in [/var/www/unieventos/app/View/Programacoes/admin_programacao_evento.ctp, line 34]
+2013-12-10 20:11:42 Error: [FatalErrorException] syntax error, unexpected T_ARRAY
+Request URL: /unieventos/admin/programacoes/programacaoEvento/9
+Stack Trace:
+#0 /var/www/unieventos/lib/Cake/Error/ErrorHandler.php(205): ErrorHandler::handleFatalError(4, 'syntax error, u...', '/var/www/unieve...', 34)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', '/var/www/unieve...', 34, Array)
+#2 /var/www/unieventos/lib/Cake/Core/App.php(931): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', '/var/www/unieve...', 34, Array)
+#3 /var/www/unieventos/lib/Cake/Core/App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2013-12-10 20:11:42 Error: [MissingControllerException] Controller class JsController could not be found.
+Exception Attributes: array (
+  'class' => 'JsController',
+  'plugin' => NULL,
+)
+Request URL: /unieventos/js/admin/jquery.min.map
+Stack Trace:
+#0 /var/www/unieventos/app/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2013-12-10 20:11:57 Error: [MissingControllerException] Controller class JsController could not be found.
+Exception Attributes: array (
+  'class' => 'JsController',
+  'plugin' => NULL,
+)
+Request URL: /unieventos/js/admin/jquery.min.map
+Stack Trace:
+#0 /var/www/unieventos/app/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2013-12-10 20:41:42 Error: [MissingControllerException] Controller class JsController could not be found.
+Exception Attributes: array (
+  'class' => 'JsController',
+  'plugin' => NULL,
+)
+Request URL: /unieventos/js/admin/jquery.min.map
+Stack Trace:
+#0 /var/www/unieventos/app/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2013-12-10 20:45:13 Error: Fatal Error (4): syntax error, unexpected T_LNUMBER in [/var/www/unieventos/app/View/Programacoes/admin_programacao_evento.ctp, line 29]
+2013-12-10 20:45:13 Error: [FatalErrorException] syntax error, unexpected T_LNUMBER
+Request URL: /unieventos/admin/programacoes/programacaoEvento/7
+Stack Trace:
+#0 /var/www/unieventos/lib/Cake/Error/ErrorHandler.php(205): ErrorHandler::handleFatalError(4, 'syntax error, u...', '/var/www/unieve...', 29)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', '/var/www/unieve...', 29, Array)
+#2 /var/www/unieventos/lib/Cake/Core/App.php(931): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', '/var/www/unieve...', 29, Array)
+#3 /var/www/unieventos/lib/Cake/Core/App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2013-12-10 20:46:18 Error: Fatal Error (4): syntax error, unexpected T_LNUMBER in [/var/www/unieventos/app/View/Programacoes/admin_programacao_evento.ctp, line 29]
+2013-12-10 20:46:18 Error: [FatalErrorException] syntax error, unexpected T_LNUMBER
+Request URL: /unieventos/admin/programacoes/programacaoEvento/7
+Stack Trace:
+#0 /var/www/unieventos/lib/Cake/Error/ErrorHandler.php(205): ErrorHandler::handleFatalError(4, 'syntax error, u...', '/var/www/unieve...', 29)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', '/var/www/unieve...', 29, Array)
+#2 /var/www/unieventos/lib/Cake/Core/App.php(931): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', '/var/www/unieve...', 29, Array)
+#3 /var/www/unieventos/lib/Cake/Core/App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2013-12-10 20:56:50 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /unieventos/css/bootstrap3.css
+Stack Trace:
+#0 /var/www/unieventos/app/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2013-12-10 20:56:50 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /unieventos/css/login.css
+Stack Trace:
+#0 /var/www/unieventos/app/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2013-12-10 21:00:32 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /unieventos/css/login.css
+Stack Trace:
+#0 /var/www/unieventos/app/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2013-12-10 21:00:32 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /unieventos/css/bootstrap3.css
+Stack Trace:
+#0 /var/www/unieventos/app/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2013-12-10 21:09:46 Error: Fatal Error (4): syntax error, unexpected ')' in [/var/www/unieventos/app/Controller/UsuariosController.php, line 50]
+2013-12-10 21:09:46 Error: [FatalErrorException] syntax error, unexpected ')'
+Request URL: /unieventos/usuarios/cadastro
+Stack Trace:
+#0 /var/www/unieventos/lib/Cake/Error/ErrorHandler.php(205): ErrorHandler::handleFatalError(4, 'syntax error, u...', '/var/www/unieve...', 50)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', '/var/www/unieve...', 50, Array)
+#2 /var/www/unieventos/lib/Cake/Core/App.php(931): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', '/var/www/unieve...', 50, Array)
+#3 /var/www/unieventos/lib/Cake/Core/App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2013-12-10 21:28:17 Error: [MissingViewException] View file "/var/www/unieventos/app/View/Usuarios/admin_deletar.ctp" is missing.
+Exception Attributes: array (
+  'file' => '/var/www/unieventos/app/View/Usuarios/admin_deletar.ctp',
+)
+Request URL: /unieventos/admin/usuarios/deletar/15
+Stack Trace:
+#0 /var/www/unieventos/lib/Cake/View/View.php(459): View->_getViewFileName(NULL)
+#1 /var/www/unieventos/lib/Cake/Controller/Controller.php(952): View->render(NULL, NULL)
+#2 /var/www/unieventos/lib/Cake/Routing/Dispatcher.php(194): Controller->render()
+#3 /var/www/unieventos/lib/Cake/Routing/Dispatcher.php(162): Dispatcher->_invoke(Object(UsuariosController), Object(CakeRequest), Object(CakeResponse))
+#4 /var/www/unieventos/app/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
