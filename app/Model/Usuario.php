@@ -44,8 +44,64 @@ class Usuario extends AppModel{
                     ),
                     
             ),
+            
+            'nome' => array(
+                    'notEmpty' => array(
+                            'rule' => 'notEmpty',
+                            'required' => true,
+                            'message' => 'Confime seu nome.'
+                    ),
+                    'minLength' => array(
+                            'rule' => array('minLength', 2),
+                            'required' => true,
+                            'message' => 'Seu nome precisa conter pelo menos 2 caracteres.'
+                    ),                    
+                    
+            ),
+            
+            'cpf' => array(
+                    'notEmpty' => array(
+                            'rule' => 'notEmpty',
+                            'required' => true,
+                            'message' => 'Confirme seu CPF.'
+                    ), 
+                    'minLength' => array(
+                            'rule' => array('minLength', 11),
+                            'required' => true,
+                            'message' => 'Seu CPF não está completo.'
+                    ),
+            ),
+            
+            'rg' => array(
+                    'notEmpty' => array(
+                            'rule' => 'notEmpty',
+                            'required' => true,
+                            'message' => 'Confirme seu RG.'
+                    ),
+            ),
+            'sexo' => array(
+                    'notEmpty' => array(
+                            'rule' => 'notEmpty',
+                            'required' => true,
+                            'message' => 'Confirme o Sexo.'
+                    ),
+            ),
+            'email' => array(
+                    'notEmpty' => array(
+                            'rule' => 'notEmpty',
+                            'required' => true,
+                            'message' => 'Confirme o e-mail.'
+                    ),
+            ),
+            'estado_id' => array(
+                    'notEmpty' => array(
+                            'rule' => 'notEmpty',
+                            'required' => true,
+                            'message' => 'Confirme seu Estado.'
+                    ),
+            ),
         
-    );
+    );//
         public function passwordConfirmation($data){
          
         $senha = $this->data['Usuario']['senha'];
@@ -59,8 +115,7 @@ class Usuario extends AppModel{
              
             return false;
              
-        }
-         
+        }         
     }
 }
 ?>
