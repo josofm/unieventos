@@ -1,5 +1,7 @@
 <?php if(AuthComponent::user('nivel') == 0){ ?>
-    <h1>Voce não tem permição de acessar essa pagina</h1>
+    <div class="alert alert-danger">
+        <h1 class="text-center" style="color: #ff0000;">Você não tem permição para acessar essa pagina!</h1>
+    </div>
 <?php } else { ?>
 <div class="text-right">
     <?php echo $this->Html->link('<i class="fa fa-user"></i> ' . __('Cadastrar'), array('controller' => 'usuarios', 'action' => 'cadastro', 'admin' => true),  array('escape' => false, 'class' => 'btn btn-primary btn-lg active')) ?>

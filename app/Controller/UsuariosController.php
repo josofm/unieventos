@@ -13,10 +13,10 @@ class UsuariosController extends AppController {
                 //$this->request->data['Usuario']['senha']= Security::hash($this->request->data['Usuario']['senha'], null, true);//                
                 //$last = $this->Usuario->save($this->request->data);//
             if ($this->Usuario->save($this->request->data)) {
-                $this->Session->setFlash(__('Voce foi cadastrado com sucesso.'));
+                $this->Session->setFlash(__('Voce foi cadastrado com sucesso.'),'success');
                 return $this->redirect(array('action' => 'sucesso'));
             }
-            $this->Session->setFlash(__('Ocorreu um erro!'));
+            $this->Session->setFlash(__('Ocorreu um erro!'),'error');
 	    }
             
 	    self::getEstado();	
@@ -59,10 +59,10 @@ class UsuariosController extends AppController {
         }
         if ($this->request->is('post') || $this->request->is('put')) {
             if ($this->Usuario->save($this->request->data)) {
-                $this->Session->setFlash(__('O Usuario foi Salvo com sucesso.'));
+                $this->Session->setFlash(__('O Usuario foi Salvo com sucesso.'),'success');
                 return $this->redirect(array('action' => 'index'));
             }
-            $this->Session->setFlash(__('O usuario não foi salvo, tente novamente em alguns segundos.'));
+            $this->Session->setFlash(__('O usuario não foi salvo, tente novamente em alguns segundos.'),'error');
         } else {
         	$this->Usuario->recursive= 0;
             $this->request->data = $this->Usuario->read(null, $id);
@@ -74,10 +74,10 @@ class UsuariosController extends AppController {
 		if ($this->request->is('post')) {
             $this->Usuario->create();
             if ($this->Usuario->save($this->request->data)) {
-                $this->Session->setFlash(__('O usuario foi cadastrado com sucesso.'));
+                $this->Session->setFlash(__('O usuario foi cadastrado com sucesso.'),'success');
                 return $this->redirect(array('action' => 'index'));
             }
-            $this->Session->setFlash(__('Ocorreu um erro!'));
+            $this->Session->setFlash(__('Ocorreu um erro!','error'));
 	    }
 	    self::getEstado();	
 	}
@@ -108,10 +108,10 @@ class UsuariosController extends AppController {
         }
         if ($this->request->is('post') || $this->request->is('put')) {
             if ($this->Usuario->save($this->request->data)) {
-                $this->Session->setFlash(__('O Usuario foi Salvo com sucesso.'));
+                $this->Session->setFlash(__('O Usuario foi Salvo com sucesso.'),'success');
                 return $this->redirect(array('action' => 'index'));
             }
-            $this->Session->setFlash(__('O usuario não foi salvo, tente novamente em alguns segundos.'));
+            $this->Session->setFlash(__('O usuario não foi salvo, tente novamente em alguns segundos.'),'error');
         } else {
         	$this->Usuario->recursive= 0;
             $this->request->data = $this->Usuario->read(null, $id);

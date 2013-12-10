@@ -1,5 +1,9 @@
 <?php if(AuthComponent::user('nivel') == 0){ ?>
-    <h1>Voce não tem permição de acessar essa pagina</h1>
+  <div class="alert alert-danger">
+    <button type="button" class="close" data-dismiss="alert">&times;</button>
+      <h1>Você não tem permição para acessar essa pagina!</h1>
+  </div>
+
 <?php } else{?>
 <div class="breadcrumbs" id="breadcrumbs">
 </div>
