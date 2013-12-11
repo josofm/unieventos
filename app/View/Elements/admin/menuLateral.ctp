@@ -9,6 +9,9 @@
     <li>
         <?php echo $this->html->link('<i class="fa fa-envelope"></i> '.__('Criar evento'), array('controller' => 'eventos', 'action' => 'cadastrarEvento', 'admin' => true), array('escape' => false)) ?>
     </li>
+    <li>
+        <?php echo $this->html->link('<i class="fa fa-envelope"></i> '.__('Meus eventos'), array('controller' => 'eventos', 'action' => 'meusEventos', 'admin' => true), array('escape' => false)) ?>
+    </li>
     <?php }if(AuthComponent::user('nivel') == 1){?>
     <li class="dropdown">
         <a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-caret-square-o-down"></i> <?php echo __('Usuarios'); ?> <b class="caret"></b></a>

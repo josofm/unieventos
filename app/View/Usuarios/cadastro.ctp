@@ -1,7 +1,8 @@
 
 <?php  
   echo $this->Form->create('Usuario', array('class' => 'form-horizontal', 'novalidate' )); ?>
-    <fieldset>  
+    <fieldset>
+        
       <legend><?php echo __('Cadastre-se para participe dos eventos') ?></legend>  
       <div class="control-group">  
         <label class="control-label" for="input01"><?php echo __('Nome'); ?></label>  
@@ -88,9 +89,8 @@
         <div class="controls"> 
           <?php echo $this->Form->input('cidade_id', array('class' => 'input-xlarge', 'label' => false, 'id' =>'cidades', 'empty' => 'Selecione uma cidade...')); ?> 
         </div>  
-      </div>
-
+      </div>      
       </fieldset>  
       <div class="form-actions">     
-			 <?php  echo $this->Form->end(__('Cadastrar'), array('class' => 'btn btn-primary')); ?>
+            <?php  echo $this->Form->end(__('Cadastrar'), array('class' => 'btn btn-primary')); ?>
       </div>  
