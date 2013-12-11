@@ -21,84 +21,61 @@
     <div class="col-xs-12">
       <?php  
   echo $this->Form->create('Usuario', array('class' => 'form-horizontal', 'novalidate' )); ?>
-    <fieldset>  
-      <div class="control-group">  
-        <label class="col-sm-3 control-label no-padding-right" for="form-field-1"><?php echo __('Nome'); ?></label>  
-        <div class="col-sm-9"> 
-          <?php echo $this->Form->input('nome', array('id' => 'form-field-1','class' => 'col-xs-10 col-sm-5', 'label' => false, 'placeholder' => 'Nome completo ')); ?> 
-        </div>  
+    <fieldset>
+      <div class="form-group">  
+        <label  for="nome"><?php echo __('Nome'); ?></label>  
+          <?php echo $this->Form->input('nome', array('class' => 'form-control', 'label' => false, 'placeholder' => 'Nome completo ')); ?>  
       </div>
-      <div class="control-group">  
-        <label class="control-label" for="input01"><?php echo __('Sobrenome'); ?></label>  
-        <div class="controls"> 
-          <?php echo $this->Form->input('sobrenome', array('class' => 'input-xlarge', 'label' => false, 'placeholder' => 'sobrenome')); ?> 
-        </div>  
+      <div class="form-group">  
+        <label for="sobrenome"><?php echo __('Sobrenome'); ?></label>  
+          <?php echo $this->Form->input('sobrenome', array('class' => 'form-control', 'label' => false, 'placeholder' => 'sobrenome')); ?> 
       </div>   
-      <div class="control-group">  
-        <label class="col-sm-3 control-label no-padding-right" for="form-field-2"><?php echo __('CPF'); ?></label>  
-        <div class="col-sm-9"> 
-          <?php echo $this->Form->input('cpf', array('id' => 'form-field-2','class' => 'col-xs-10 col-sm-5', 'label' => false)); ?> 
+      <div class="form-group">  
+        <label for="cpf" ><?php echo __('CPF'); ?></label>   
+          <?php echo $this->Form->input('cpf', array('class' => 'form-control', 'label' => false)); ?>    
+      </div>
+      <div class="form-group">  
+        <label for="rg"><?php echo __('RG'); ?></label>  
+          <?php echo $this->Form->input('rg', array('class' => 'form-control', 'label' => false)); ?> 
         </div>  
       </div>
-      <div class="control-group">  
-        <label class="col-sm-3 control-label no-padding-right" for="form-field-3"><?php echo __('RG'); ?></label>  
-        <div class="col-sm-9"> 
-          <?php echo $this->Form->input('rg', array('id' => 'form-field-3','class' => 'col-xs-10 col-sm-5', 'label' => false)); ?> 
-        </div>  
+      <div class="form-group ">  
+        <label for="sexo"><?php echo __('Sexo'); ?></label>  
+        <div></div>
+          <?php echo $this->Form->radio('sexo', array('0' => __('Feminino'), '1' => __('Masculino')) ,array('legend' => false, 'after' => '--after--', 'between' => '--between---','separator' => '<br />')); ?>   
       </div>
-      <div class="control-group ">  
-        <label class="col-sm-3 control-label no-padding-right" for="input01"><?php echo __('Sexo'); ?></label>  
-        <div class="col-sm-9 radio"> 
-          <?php echo $this->Form->radio('sexo', array('0' => __('Feminino'), '1' => __('Masculino')) ,array('legend' => false, 'after' => '--after--', 'between' => '--between---','separator' => '<br />')); ?> 
-        </div>  
+      <div class="form-group">  
+        <label for="data_nasc"><?php echo __('Data de Nascimento'); ?></label>   
+          <?php echo $this->Form->input('data_nasc', array('id' => 'form-field-4','class' => 'col-xs-10 col-sm-5','dateFormat' => 'DMY', 'label' => false, 'style' => 'width: inherit;')); ?>   
       </div>
-      <div class="control-group">  
-        <label class="col-sm-3 control-label no-padding-right" for="form-field-4"><?php echo __('Data de Nascimento'); ?></label>  
-        <div class="col-sm-9"> 
-          <?php echo $this->Form->input('data_nasc', array('id' => 'form-field-4','class' => 'col-xs-10 col-sm-5','dateFormat' => 'DMY', 'label' => false, 'style' => 'width: inherit;')); ?> 
-        </div>  
+      <div class="form-group">  
+        <label  for="email"><?php echo __('Email') ?></label>       
+          <?php echo $this->Form->input('email', array('class' => 'form-control', 'label' => false)); ?> 
       </div>
-      <div class="control-group">  
-        <label class="col-sm-3 control-label no-padding-right" for="form-field-5"><?php echo __('Email') ?></label>  
-        <div class="col-sm-9"> 
-          <?php echo $this->Form->input('email', array('id' => 'form-field-5','class' => 'col-xs-10 col-sm-5', 'label' => false)); ?> 
-        </div>  
+      <div class="form-group">  
+        <label for="intituicao"><?php echo __('Instituição de ensino') ?></label>  
+          <?php echo $this->Form->input('instituicao', array('class' => 'form-control', 'label' => false)); ?> 
       </div>
-      <div class="control-group">  
-        <label class="col-sm-3 control-label no-padding-right" for="form-field-6"><?php echo __('Instituição de ensino') ?></label>  
-        <div class="col-sm-9"> 
-          <?php echo $this->Form->input('instituicao', array('id' => 'form-field-6','class' => 'col-xs-10 col-sm-5', 'label' => false)); ?> 
-        </div>  
+      <div class="form-group">  
+        <label  for="end_rede_soc"><?php echo __('Rede Social'); ?></label>  
+          <?php echo $this->Form->input('end_rede_soc', array('class' => 'form-control', 'label' => false)); ?>  
       </div>
-      <div class="control-group">  
-        <label class="col-sm-3 control-label no-padding-right" for="form-field-7"><?php echo __('Rede Social'); ?></label>  
-        <div class="col-sm-9"> 
-          <?php echo $this->Form->input('end_rede_soc', array('id' => 'form-field-7','class' => 'col-xs-10 col-sm-5', 'label' => false)); ?> 
-        </div>  
-      </div>
-      <div class="control-group">  
-        <label class="col-sm-3 control-label no-padding-right" for="form-field-8"><?php echo __('Outro contato'); ?></label>  
-        <div class="col-sm-9"> 
-          <?php echo $this->Form->input('outro_contato_url', array('id' => 'form-field-8','class' => 'col-xs-10 col-sm-5 input-mask-date', 'label' => false)); ?> 
-        </div>  
+      <div class="form-group">  
+        <label for="outro_contato_url"><?php echo __('Outro contato'); ?></label>  
+          <?php echo $this->Form->input('outro_contato_url', array('class' => 'form-control', 'label' => false)); ?>    
       </div>
       <!--relacionado com outra tabela -->
-      <div class="control-group">  
-        <label class="col-sm-3 control-label no-padding-right" for="form-field-9"><?php echo __('Estado'); ?></label>  
-        <div class="col-sm-9"> 
-          <?php echo $this->Form->input('estado_id', array('id' => 'form-field-9','class' => 'col-xs-10 col-sm-5','options' => $estados, 'label' => false, 'type' => 'select', 'id' => 'estados', 'empty' => 'Selecione um estado...')); ?> 
-        </div> 
-
+      <div class="form-group">  
+        <label for="estado_id"><?php echo __('Estado'); ?></label>  
+          <?php echo $this->Form->input('estado_id', array('class' => 'form-control', 'label' => false, 'id' =>'estado', 'empty' => 'Selecione um estado...')); ?> 
       </div>
-      <div class="control-group">  
-        <label class="col-sm-3 control-label no-padding-right" for="form-field-10"><?php echo __('Cidade') ?></label>  
-        <div class="col-sm-9"> 
-          <?php echo $this->Form->input('cidade_id', array('id' => 'form-field-10','class' => 'col-xs-10 col-sm-5', 'label' => false, 'id' =>'cidades', 'empty' => 'Selecione uma cidade...')); ?> 
-        </div>  
+      <div class="form-group">  
+        <label for="cidade"><?php echo __('Cidade') ?></label>   
+          <?php echo $this->Form->input('cidade_id', array('class' => 'form-control', 'label' => false, 'id' =>'cidade', 'empty' => 'Selecione uma cidade...')); ?> 
       </div>
 
       </fieldset>  
-      <div class="form-actions">     
+      <div class="form-group">     
        <?php  echo $this->Form->end(__('Cadastrar'), array('class' => 'btn btn-primary')); ?>
       </div>
     </div><!-- /.col -->
