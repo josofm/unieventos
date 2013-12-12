@@ -18,7 +18,7 @@
             <?php echo $recado['Msg']['status']? $recado['Usuario']['nome']:'<b>'.$recado['Usuario']['nome'].'</b>'; ?>
         </td>
         <td>
-            <?php echo $this->Html->link($recado['Msg']['titulo'], array('controller' => 'msgs', 'action' => 'visualizar',$recado['Msg']['id'])); ?>
+            <?php echo $this->Html->link($recado['Msg']['titulo'], array('controller' => 'msgs', 'action' => 'visualizar', 'escape' => false,$recado['Msg']['id'])); ?>
         </td>
         <td>
             <?php echo $this->Text->truncate($recado['Msg']['texto'],50,array('ellipsis' => '...', 'exact' => false)); ?>

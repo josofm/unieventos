@@ -65,11 +65,7 @@ class EventosController extends AppController{
 	        $this->Evento->id = $id;
 	        $this->request->data['Evento']['aprovacao'] = 1;
 	        $this->Evento->save($this->request->data);
-	        $Email = new CakeEmail('default');
-			$Email->from(array('adrianoknofre@gmail.com' => 'My Site'));
-			$Email->to('asantos@inf.ufsm.br');
-			$Email->subject('About');
-			$Email->send('My message');
+	        
 
 
 	        $this->redirect(array('action' => 'admin_listaAprovacoes'));

@@ -15,7 +15,7 @@
                 <label class="control-label"><?php echo __('Descrição do Evento'); ?></label>
                   
             <div class="controls">
-                <textarea class="form-control" rows="3"><?php echo $this->Form->input('descricao', array('class' => 'input-xlarge', 'textarea' => false, 'placeholder' => ' ')); ?></textarea> 
+               <?php echo $this->Form->input('descricao', array('class' => 'input-xlarge', 'label' => false, 'placeholder' => ' ')); ?>
             </div>  
             </div>
             <div class="form-group">  

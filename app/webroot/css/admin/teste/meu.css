@@ -1,0 +1,21 @@
+#cab{
+	background: #438eb9;
+}
+
+
+.side-nav-clear {
+	margin-left: -225px;
+	left: 225px;
+	width: 225px;
+	position: fixed;
+	top: 50px;
+	height: 100%;
+	border-radius: 0;
+	border: 1px solid #ccc;
+	border-width: 0 1px 0 0 ;
+	overflow-y: auto;
+  }
+
+.sid-nav-inv{
+	color: #585858;
+}

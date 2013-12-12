@@ -14,7 +14,7 @@
     </li>
     <?php }if(AuthComponent::user('nivel') == 1){?>
     <li class="dropdown">
-        <a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-caret-square-o-down"></i> <?php echo __('Usuarios'); ?> <b class="caret"></b></a>
+        <a href="#" class="dropdown-toggle sid-nav-inv" data-toggle="dropdown" ><i class="fa fa-user"></i> <?php echo __('Usuarios'); ?> <b class="caret"></b></a>
         <ul class="dropdown-menu">
             <li>
                 <?php echo $this->Html->link(__('Cadastrar Usuario'), array('controller' => 'usuarios', 'action' => 'cadastro', 'admin' => true)); ?>
@@ -26,7 +26,7 @@
     </li>
 
     <li class="dropdown">
-        <a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-caret-square-o-down"></i> <?php echo __('Eventos'); ?> <b class="caret"></b></a>
+        <a href="#" class="dropdown-toggle sid-nav-inv" data-toggle="dropdown"><i class="fa fa-caret-square-o-down"></i> <?php echo __('Eventos'); ?> <b class="caret"></b></a>
         <ul class="dropdown-menu">
             <li>
                 <?php echo $this->Html->link(__('Criar Evento'), array('controller' => 'eventos', 'action' => 'cadastrarEvento', 'admin' => true)); ?>

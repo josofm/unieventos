@@ -9,11 +9,12 @@
     <title>Dashboard - SB Admin</title>
 
     <!-- Add custom CSS here -->
-    <?php 
+    <?php
       echo $this->Html->css('admin/bootstrap.css');
       echo $this->Html->css('admin/sb-admin');
       echo $this->Html->css('admin/font-awesome.min');
       echo $this->Html->css('admin/morris-0.4.3.min');
+      //echo $this->Html->css('admin/teste/meu');
       
       
      ?>
@@ -22,7 +23,7 @@
   <body>
     <div id="wrapper">
       <!-- Sidebar -->
-      <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+      <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation" id="cab">
         <!-- Brand and toggle get grouped for better mobile display -->
         <div class="navbar-header">
           <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">

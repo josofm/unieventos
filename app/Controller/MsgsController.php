@@ -7,7 +7,6 @@ class MsgsController extends AppController {
     public $components = array('Session');
     
     public function admin_index() {
-    	
         $this->set('msgs', $this->Msg->find(
         	'all', array(
         		'fields' => array('*'),
@@ -26,7 +25,26 @@ class MsgsController extends AppController {
         ));
     }
 
-    
+    public function admin_conta(){
+        return $this->Msg->find(
+            'count', array(
+                'fields' => array('*'),
+                'conditions' => array( 
+                    'Msg.usuario_msg ' => $this->Auth->user('id'),
+                    'Msg.status' => 0 
+                    ),
+                'joins' =>  array(
+                    array(
+                        'table' => 'usuarios',
+                        'alias' => 'Usuario',
+                        'type' => 'INNER', 
+                        'conditions'=> 'Usuario.id = Msg.usuarios_id'
+                    )
+                )
+            )
+        );
+    }
+
 
     public function admin_visualizar($id) {
         if (!$id) {
@@ -64,6 +82,26 @@ class MsgsController extends AppController {
 		
     }
 
+
+    public function admin_naoLidas(){
+        return $this->Msg->find(
+            'all', array(
+                'fields' => array('*'),
+                'conditions' => array( 
+                    'Msg.usuario_msg ' => $this->Auth->user('id'),
+                    'Msg.status' => 0 
+                    ),
+                'joins' =>  array(
+                    array(
+                        'table' => 'usuarios',
+                        'alias' => 'Usuario',
+                        'type' => 'INNER', 
+                        'conditions'=> 'Usuario.id = Msg.usuarios_id'
+                    )
+                )
+            )
+        );
+    }
 
 
 }

@@ -1,36 +1,43 @@
 <ul class="nav navbar-nav navbar-right navbar-user">
   <li class="dropdown messages-dropdown">
-    <a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-envelope"></i> Messages <span class="badge">7</span> <b class="caret"></b></a>
+    <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+      <i class="fa fa-envelope"></i> <?php echo __('Menssagens') ?>
+      <?php 
+      $val = $this->requestAction(array('controller' => 'msgs', 'action' => 'conta', 'admin' => true));
+      if($val > 0)
+        echo '<span class="badge">'.$val.'</span>';  
+      ?> 
+      <b class="caret"></b>
+    </a>
     <ul class="dropdown-menu">
-      <li class="dropdown-header">7 New Messages</li>
+      <li class="dropdown-header">
+        <?php 
+          if($val == 0){
+            echo __('Nenhuma Menssagem');
+          }elseif ($val == 1) {
+            echo __($val.' Nova Menssagem');
+          }else{
+            echo __($val.' Novas Menssagens'); 
+          }?>
+      </li>
+      <?php  
+        $msgs = $this->requestAction(array('controller' => 'msgs', 'action' => 'naoLidas', 'admin' => true));
+        foreach ($msgs as $recado):
+      ?>
       <li class="message-preview">
         <a href="#">
           <span class="avatar"><img src="http://placehold.it/50x50"></span>
-          <span class="name">John Smith:</span>
-          <span class="message">Hey there, I wanted to ask you something...</span>
+          <span class="name"><?php echo  $recado['Usuario']['nome'] ?></span>
+          <span class="message"><?php echo  $recado['Msg']['texto'] ?></span>
           <span class="time"><i class="fa fa-clock-o"></i> 4:34 PM</span>
         </a>
       </li>
       <li class="divider"></li>
-      <li class="message-preview">
-        <a href="#">
-          <span class="avatar"><img src="http://placehold.it/50x50"></span>
-          <span class="name">John Smith:</span>
-          <span class="message">Hey there, I wanted to ask you something...</span>
-          <span class="time"><i class="fa fa-clock-o"></i> 4:34 PM</span>
-        </a>
+    <?php endforeach; ?>
+
+      <li class="text-right">
+        <?php echo $this->Html->link(__('Caixa de Entrada'), array('controller'=>'msgs', 'action' => 'index', 'admin' => true)) ?>
       </li>
-      <li class="divider"></li>
-      <li class="message-preview">
-        <a href="#">
-          <span class="avatar"><img src="http://placehold.it/50x50"></span>
-          <span class="name">John Smith:</span>
-          <span class="message">Hey there, I wanted to ask you something...</span>
-          <span class="time"><i class="fa fa-clock-o"></i> 4:34 PM</span>
-        </a>
-      </li>
-      <li class="divider"></li>
-      <li><a href="#">View Inbox <span class="badge">7</span></a></li>
     </ul>
   </li>
   <li class="dropdown alerts-dropdown">

@@ -45,9 +45,10 @@ class UsuariosController extends AppController {
 	    }
 
 	    if ($this->Usuario->delete($id)) {
-	    	$s = $this->Auth->user($id);
 	        $this->Session->setFlash(__('O usuario foi deletado com sucesso.'),'success');
 	        return $this->redirect(array('action' => 'index'));
+	    }else{
+	    	$this->Session->setFlash(__('Ocorreu um erro ao deletar o usuario, tente novamente em alguns segundos.'),'error');
 	    }
 	}
 
