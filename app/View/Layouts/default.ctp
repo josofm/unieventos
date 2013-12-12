@@ -52,15 +52,13 @@
     <!-- Conteudo
     ======================================================= -->
     <div class="row">
-        <div class="span9">
+        <div class="span8">
             <?php echo $this->Session->flash(); ?>
 
             <?php echo $this->fetch('content'); ?>
         </div>
-        <div class="span3">
-           <div class="well">
-               Aqui vai os menus
-           </div>
+        <div class="span4">
+           <?php echo $this->element('site/siteLat'); ?>
         </div>
     </div>
 
@@ -86,6 +84,6 @@
     echo $this->Html->script('site/bootswatch.js');
     ?>
 
-
+<?php echo $this->element('sql_dump'); ?>
   </body>
 </html>

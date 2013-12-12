@@ -4,7 +4,7 @@
                 	
         <fieldset>
             <legend> <?php echo __('Cadastre seu Evento') ?> </legend>
-            <form role="form">
+
             <div class="form-group">  
                 <label class="control-label"><?php echo __('Nome do Evento'); ?></label>  
             <div class="controls">
@@ -59,8 +59,7 @@
             <div class="controls">
                 <?php echo $this->Form->input('url', array('class' => 'input-xlarge', 'label' => false, 'placeholder' => 'caso tenha página externa')); ?> 
             </div>  
-            </div>           
-            </form>
+            </div>       
         </fieldset>
 
         <div class="form-actions">     

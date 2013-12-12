@@ -1,6 +1,16 @@
 <?php 
 class Usuario extends AppModel{
 	public $hasMany = array('Estado','Msg');
+    
+    public $actsAs = array(
+        'Upload.Upload' => array(
+            'photo' => array(
+                'fields' => array(
+                    'dir' => 'photo_dir'
+                )
+            )
+        )
+    );
 	
 	public $hasAndBelongsToMany = array(
 		'Evento' => array(

@@ -38,7 +38,7 @@
                     <?php echo $evento['Evento']['aprovacao']? __('Aprovado'): 'Esperando Aprovação'; ?>
                 </td>
                 <td>
-                    <?php echo $this->Html->link('Ver', array('action' => 'verPerfil', 'admin' => true, $evento['Evento']['id'])); ?> |
+                    <?php echo $this->Form->button('Ver', array('action' => 'verPerfil', 'admin' => true, $evento['Evento']['id'])); ?> |
                     <?php echo $this->Form->postLink('Deletar', array('action' => 'deletar', 'admin' => true, $evento['Evento']['id']),
                         array('confirm' => __('Você Deseja deletar o evento '.$evento['Evento']['nome']) )); ?>
                 </td>

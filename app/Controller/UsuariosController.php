@@ -6,12 +6,15 @@ class UsuariosController extends AppController {
 	public $components = array('Session');
 
 	public function cadastro(){
-        $isPost = $this->request->isPost(); //apagar
-		
+        
             if ($this->request->is('post')) {
                 $this->Usuario->create();            
                 //$this->request->data['Usuario']['senha']= Security::hash($this->request->data['Usuario']['senha'], null, true);//                
                 //$last = $this->Usuario->save($this->request->data);//
+                $img = $this->data['Usuario']['photo'];
+                $imgTypes = array("image/gif", "image/jpeg", "image/png");
+                $uploadFolder = "upload";
+                $uploadPath = WWW_ROOT.$uploadFolder;
             if ($this->Usuario->save($this->request->data)) {
                 $this->Session->setFlash(__('Voce foi cadastrado com sucesso.'),'success');
                 return $this->redirect(array('action' => 'sucesso'));
@@ -73,6 +76,7 @@ class UsuariosController extends AppController {
 	public function admin_cadastro(){
 		if ($this->request->is('post')) {
             $this->Usuario->create();
+            $this->request->data['Usuario']['senha'] = 123456;
             if ($this->Usuario->save($this->request->data)) {
                 $this->Session->setFlash(__('O usuario foi cadastrado com sucesso.'),'success');
                 return $this->redirect(array('action' => 'index'));

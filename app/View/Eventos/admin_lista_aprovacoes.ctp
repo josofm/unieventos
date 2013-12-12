@@ -15,7 +15,7 @@
                 <?php echo $l['Evento']['nome']; ?>
             </td>
             <td>
-                <?php echo $this->Html->link('Aprovar', 
+                <?php echo $this->Form->postLink('Aprovar', 
                     array(
                         'controller' => 'eventos',
                         'action' => 'aprovacao', 

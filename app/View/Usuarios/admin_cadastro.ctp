@@ -11,10 +11,6 @@
   <div class="page-header">
     <h1>
       <?php echo __('Cadastro de novos usuarios'); ?>
-      <small>
-        <i class="icon-double-angle-right"></i>
-        overview &amp; stats
-      </small>
     </h1>
   </div>
   <div class="row">
@@ -42,7 +38,7 @@
       <div class="form-group ">  
         <label for="sexo"><?php echo __('Sexo'); ?></label>  
         <div></div>
-          <?php echo $this->Form->radio('sexo', array('0' => __('Feminino'), '1' => __('Masculino')) ,array('legend' => false, 'after' => '--after--', 'between' => '--between---','separator' => '<br />')); ?>   
+          <?php echo $this->Form->select('sexo', array('0' => __('Feminino'), '1' => __('Masculino')) ,array('legend' => false, 'after' => '--after--', 'between' => '--between---','separator' => '<br />')); ?>   
       </div>
       <div class="form-group">  
         <label for="data_nasc"><?php echo __('Data de Nascimento'); ?></label>   

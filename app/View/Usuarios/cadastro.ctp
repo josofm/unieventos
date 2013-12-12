@@ -11,6 +11,13 @@
         </div>  
       </div>
       <div class="control-group">  
+        <label class="control-label" for="input01"><?php echo __('Foto'); ?></label>  
+        <div class="controls"> 
+          <?php echo $this->Form->input('photo', array('type' => 'file','class' => 'input-xlarge', 'label' => false, 'placeholder' => 'Nome completo ')); ?> 
+        </div>  
+      </div>
+
+      <div class="control-group">  
         <label class="control-label" for="input01"><?php echo __('Sobrenome'); ?></label>  
         <div class="controls"> 
           <?php echo $this->Form->input('sobrenome', array('class' => 'input-xlarge', 'label' => false, 'placeholder' => 'sobrenome')); ?> 

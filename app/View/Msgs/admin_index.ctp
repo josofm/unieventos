@@ -1,5 +1,5 @@
 <div class="btn-group right">
-    <button type="button" class="btn btn-default">Atualizar</button>
+    <?php echo $this->Form->button($this->Html->link('<i class="fa fa-refresh fa-2x"></i>',array('action' => 'index', 'admin' => true), array('escape' => false)), array('class' => 'btn btn-default' )) ?>
     <?php echo $this->Html->link('Escrever', array('controller' => 'msgs', 'action' => 'enviar', 'admin' => true), array('class'=>'btn btn-primary btn-lg active', 'role'=>'button')) ?>
 </div>
 <?php if(empty($msgs)){ ?>
