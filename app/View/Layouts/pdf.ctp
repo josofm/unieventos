@@ -1,6 +1,6 @@
 <?php
 
-header("Content-type: application/pdf"); 
+/*header("Content-type: application/pdf"); 
 echo $content_for_layout;
 
 App::import('Vendor','xtcpdf');  
@@ -24,7 +24,24 @@ $tcpdf->SetFont($textfont,'B',20);
 $tcpdf->Cell(0,14, "Hello World", 0,1,'L'); 
   
 
-echo $tcpdf->Output('filename.pdf', 'D');
+echo $tcpdf->Output('filename.pdf', 'D');*/
+
+Configure::write('CakePdf', array(
+        'engine' => 'CakePdf.WkHtmlToPdf',
+        'options' => array(
+            'print-media-type' => false,
+            'outline' => true,
+            'dpi' => 96
+        ),
+        'margin' => array(
+            'bottom' => 15,
+            'left' => 50,
+            'right' => 30,
+            'top' => 45
+        ),
+        'orientation' => 'landscape',
+        'download' => true
+    ));
 ?>
 
 <html>

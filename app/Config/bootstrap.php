@@ -26,6 +26,7 @@
 
 // Setup a 'default' cache configuration for use in the application.
 CakePlugin::loadAll();
+CakePlugin::load('CakePdf', array('bootstrap' => true, 'routes' => true));
 //CakePlugin::load('upload');
 Cache::config('default', array('engine' => 'File'));
 
