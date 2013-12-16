@@ -9,23 +9,41 @@
        <a class="brand" href="../">Home</a>
        <div class="nav-collapse collapse" id="main-menu">
         <ul class="nav" id="main-menu-left">
-          <li><a onclick="pageTracker._link(this.href); return false;" href="http://news.bootswatch.com">News</a></li>
+          <li><a href="#">Sobre</a></li>
           <li><a id="swatch-link" href="../#gallery">Gallery</a></li>
           <li><a href="#">Preview </a>
           </li>
           <li class="dropdown" id="preview-menu">
-            <a class="dropdown-toggle" data-toggle="dropdown" href="#">Download <b class="caret"></b></a>
+            <a class="dropdown-toggle" data-toggle="dropdown" href="#">Eventos<b class="caret"></b></a>
             <ul class="dropdown-menu">
-              <li><a target="_blank" href="bootstrap.min.css">bootstrap.min.css</a></li>
-              <li><a target="_blank" href="bootstrap.css">bootstrap.css</a></li>
-              <li class="divider"></li>
-              <li><a target="_blank" href="variables.less">variables.less</a></li>
-              <li><a target="_blank" href="bootswatch.less">bootswatch.less</a></li>
+              <li>
+                <?php echo $this->Html->link(__('Proximos'), array('controller' => 'eventos', 'action' => 'todosInicio')) ?>
+              </li>
+              <li>
+                <?php echo $this->Html->link(__('recentes'), array('controller' => 'eventos', 'action' => 'recentesAll')) ?>
+              </li>
+              <li>
+                <?php echo $this->Html->link(__('Todos'), array('controller' => 'eventos', 'action' => 'todosEventos')) ?>
+              </li>
             </ul>
           </li>
-          <?php echo $this->Html->tag('li',$this->Html->link(__('Cadastre-se'), array('controller' => 'usuarios', 'action' => 'cadastro')));  ?>
-          <?php echo $this->Html->tag('li', $this->Html->link(__('Entrar'), array('controller' => 'usuarios', 'action' => 'login', 'admin' => true))); ?>
-        </ul>
+                   
+
+          <?php if(!$logged_in): ?>
+            <?php echo $this->Html->tag('li',$this->Html->link(__('Cadastre-se'), array('controller' => 'usuarios', 'action' => 'cadastro')));  ?>
+            <?php echo $this->Html->tag('li', $this->Html->link(__('Entrar'), array('controller' => 'usuarios', 'action' => 'login', 'admin' => false))); ?>
+            </ul>
+          <?php else: ?>
+            <li>
+              <?php echo $this->Html->link(__('Painel de Controle'), array('controller' => 'pages', 'action' => 'index', 'admin' => true), array('target' => '_blank')) ?>
+            </li>
+            </ul>
+              <p class="brand" style="float:right;">
+                <?php echo __('Seja bem vindo, '). $current_user['nome']. $this->Html->link(__(' Sair'), array('controller' => 'usuarios', 'action' => 'logout', 'admin' => false), array('escape' => false)); ?>
+              </p> 
+
+          <?php endif; ?>
+        
        </div>
      </div>
    </div>

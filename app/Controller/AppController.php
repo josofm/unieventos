@@ -56,8 +56,9 @@ class AppController extends Controller {
 		$this->Auth->loginAction = array(
 			'controller' => 'usuarios',
 			'action' => 'login',
-			'admin' => true
+			'admin' => false
 			);
+		$this->Auth->logoutAction = array('controller' => 'pages', 'action' => 'display', 'home');
 		/*$this->loadModel('Usuario');
 		$this->Usuario->save(array(
 			'nome' => 'admin',
@@ -65,7 +66,8 @@ class AppController extends Controller {
 			'senha' => 'admin'
 			));
 		*/
-
+		$this->set('logged_in', $this->Auth->loggedIn());
+        $this->set('current_user', $this->Auth->user());
 		parent::beforeFilter();
 
 	}

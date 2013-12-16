@@ -11,10 +11,6 @@ class UsuariosController extends AppController {
                 $this->Usuario->create();            
                 //$this->request->data['Usuario']['senha']= Security::hash($this->request->data['Usuario']['senha'], null, true);//                
                 //$last = $this->Usuario->save($this->request->data);//
-                $img = $this->data['Usuario']['photo'];
-                $imgTypes = array("image/gif", "image/jpeg", "image/png");
-                $uploadFolder = "upload";
-                $uploadPath = WWW_ROOT.$uploadFolder;
             if ($this->Usuario->save($this->request->data)) {
                 $this->Session->setFlash(__('Voce foi cadastrado com sucesso.'),'success');
                 return $this->redirect(array('action' => 'sucesso'));
@@ -88,11 +84,11 @@ class UsuariosController extends AppController {
 
 	
 
-	public function admin_login(){
+	public function login(){
 			$this->layout = 'login';
 			if($this->request->is('post')){
 				if($this->Auth->login()){
-					$this->redirect(array('controller' => 'pages', 'action' => 'index', 'admin' => true));	
+					$this->redirect(array('controller' => 'pages', 'action' => 'index', 'admin' => false));	
 				}
 					
 				}else{
@@ -100,7 +96,8 @@ class UsuariosController extends AppController {
 				}
 			}
 
-	public function admin_logout(){
+	public function logout(){
+			$this->Session->destroy();
 			$this->redirect($this->Auth->logout());
 		}
 

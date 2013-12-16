@@ -65,7 +65,7 @@
       <li><a href="#"><i class="fa fa-gear"></i> <?php echo __('Configurações'); ?></a></li>
       <li class="divider"></li>
       <li>
-        <?php echo $this->html->link('<i class="fa fa-power-off"></i> '.__('Sair'), array('controller' => 'usuarios', 'action' => 'logout', 'admin' => true), array('escape' => false)) ?>
+        <?php echo $this->html->link('<i class="fa fa-power-off"></i> '.__('Sair'), array('controller' => 'usuarios', 'action' => 'logout', 'admin' => false), array('escape' => false)) ?>
       </li>
     </ul>
   </li>

@@ -3,19 +3,24 @@ class Usuario extends AppModel{
 	public $hasMany = array('Estado','Msg');
     
     public $actsAs = array(
-        'Upload.Upload' => array(
-            'photo' => array(
+        'MeioUpload.MeioUpload' => array(
+            'foto' => array(
+                'allowedMime' => array('image/jpeg', 'image/pjpeg', 'image/png'),
+                'allowedExt' => array('.jpg', '.jpeg', '.png'),
                 'fields' => array(
-                    'dir' => 'photo_dir'
-                )
+                    'dir' => 'pasta',
+                    'filesize' => 'tamanho',
+                    'mimetype' => 'mimetype'
+                ),
             )
         )
     );
+    
 	
 	public $hasAndBelongsToMany = array(
 		'Evento' => array(
 			'className' => 'Evento',
-			'joinTable' => 'eventos_usuarios',
+			'joinTable' => 'cadastros',
 			'foreignKey' => 'usuario_id',
 			'associationForeignKey' => 'evento_id',
 			'unique' => 'keepExisting',

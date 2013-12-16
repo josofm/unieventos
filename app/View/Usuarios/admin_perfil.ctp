@@ -8,7 +8,10 @@
 		<div class="row">
 			<div class="col-md-4">
 				<a href="#" class="thumbnail">
-			      <?php echo $this->Html->image('avatar/dafault.png'); ?>
+			      <?php 
+              echo $this->Html->image('avatar/dafault.png'); 
+            
+            ?>
 			    </a>
 			</div>
 			<div class="col-md-8">

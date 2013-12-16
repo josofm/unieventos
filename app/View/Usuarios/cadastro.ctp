@@ -1,6 +1,6 @@
 
 <?php  
-  echo $this->Form->create('Usuario', array('class' => 'form-horizontal', 'novalidate' )); ?>
+  echo $this->Form->create('Usuario', array('type' => 'file','class' => 'form-horizontal', 'novalidate' )); ?>
     <fieldset>
         
       <legend><?php echo __('Cadastre-se para participe dos eventos') ?></legend>  
@@ -10,13 +10,6 @@
         	<?php echo $this->Form->input('nome', array('class' => 'input-xlarge', 'label' => false, 'placeholder' => 'Nome completo ')); ?> 
         </div>  
       </div>
-      <div class="control-group">  
-        <label class="control-label" for="input01"><?php echo __('Foto'); ?></label>  
-        <div class="controls"> 
-          <?php echo $this->Form->input('photo', array('type' => 'file','class' => 'input-xlarge', 'label' => false, 'placeholder' => 'Nome completo ')); ?> 
-        </div>  
-      </div>
-
       <div class="control-group">  
         <label class="control-label" for="input01"><?php echo __('Sobrenome'); ?></label>  
         <div class="controls"> 

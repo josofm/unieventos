@@ -7,28 +7,56 @@ class EventosController extends AppController{
 	public $components = array('Session');
 
 
+    public function todosEventos(){
+       $this->set('evento', 
+            $this->Evento->find(
+            'all', array( 
+                'conditions' => array('aprovacao' => 1)
+                )
+            )
+        );
+        
+    }
+
+    public function todosInicio(){
+       $this->set('evento', 
+            $this->Evento->find(
+            'all', array( 
+                'conditions' => array(
+                    'aprovacao' => 1,
+                    'data_ini >= CURDATE()'
+                    ),
+                'order' => array('data_ini ASC')
+                )
+            )
+        );        
+    }
+
+
     public function view($id = null) {
+        //$this->Evento->recursive= 0;
         $this->Evento->id = $id;
         if (!$this->Evento->exists()) {
             throw new NotFoundException(__('Evento invalido'));
         }
-        $this->set('evento', $this->Evento->read(null, $id));
+        $this->Evento->hasMany['Inscricao']['conditions'] = array('Inscricao.evento_id' => $id);
+
+        $this->set('evento', $this->Evento->findById($id));
     }
 
 	public function admin_index(){
 		$this->Evento->recursive= 0;
-		$this->set('eventos', $this->Evento->find('all'));
+		$this->set('eventos', $this->Evento->findById('all'));
 	}
 
 	public function admin_cadastrarEvento() {
 	    if ($this->request->is('post')) {
 	    	$this->Evento->create();
             $this->request->data['Evento']['nivel'] = 1 ;// 1 = dono do evento
-	    	if ($this->Evento->saveAll($this->request->data)) {
+            if ($this->Evento->saveAll($this->request->data)) {
+                $id = $this->Evento->id;
 	        	$this->Session->setFlash(__('O Evento foi cadastrado com sucesso!'),'success');
-	        	if($this->Auth->user('nivel')== 1)
-	        		$this->redirect(array('action' => 'index'));
-	        	$this->redirect(array('action' => 'meusEventos'));
+	        	$this->redirect(array('controller' => 'inscricoes','action' => 'inscricoesEvento',$id));
 	      	} else {
 	        	$this->Session->setFlash(__('Erro ao cadastrar o evento. Por favor, tente novamente em alguns segundos.'),'error');
 	      	} 
@@ -57,7 +85,7 @@ class EventosController extends AppController{
         			),
         		'joins' =>  array(
                     array(
-                        'table' => 'eventos_usuarios',
+                        'table' => 'cadastros',
                         'alias' => 'Euser',
                         'type' => 'INNER', 
                         'conditions'=> array(
@@ -101,6 +129,7 @@ class EventosController extends AppController{
     }
 
     public function eventosRecentes(){
+        $this->Evento->recursive= 0;
        return $this->Evento->find(
             'all', array(
                 'limit' => 4, 
@@ -108,7 +137,6 @@ class EventosController extends AppController{
                 'order' => array('created DESC')
                 )
             );
-        
     }
 
     public function eventosInicio(){

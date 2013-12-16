@@ -1,12 +1,12 @@
 <?php 
 	class Evento extends AppModel{
-		public $hasMany = array('Programacao');
+		public $hasMany = array('Programacao','Inscricao');
 		public $displayField = 'name';
 
 		public $hasAndBelongsToMany = array(
 		    'Usuario' => array(
 		      'className' => 'Usuario',
-		      'joinTable' => 'eventos_usuarios',
+		      'joinTable' => 'cadastros',
 		      'foreignKey' => 'evento_id',
 		      'associationForeignKey' => 'usuario_id',
 		      'unique' => 'keepExisting',

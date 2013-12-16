@@ -20,6 +20,18 @@
             }    
         }	
 		}
+
+		public function admin_inscricoesEvento($idEvento = null){
+			if ($this->request->is('post')) {
+	            $this->Inscricao->create();
+	            $this->request->data['Inscricao']['evento_id'] = $idEvento;
+	            if ($this->Inscricao->save($this->request->data)) {
+	                $this->Session->setFlash(__('Your post has been saved.'));
+	                return $this->redirect(array('controller' => 'pages','action' => 'index', 'admin' => true));
+	            }
+	            $this->Session->setFlash(__('Unable to add your post.'));
+	        }
+		}
 	}
 
 ?>
