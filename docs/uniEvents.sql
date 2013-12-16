@@ -3,9 +3,9 @@
 -- http://www.phpmyadmin.net
 --
 -- Servidor: localhost
--- Tempo de Geração: 12/12/2013 às 16h07min
+-- Tempo de Geração: 16/12/2013 às 18h10min
 -- Versão do Servidor: 5.5.34
--- Versão do PHP: 5.3.10-1ubuntu3.8
+-- Versão do PHP: 5.3.10-1ubuntu3.9
 
 SET SQL_MODE="NO_AUTO_VALUE_ON_ZERO";
 SET time_zone = "+00:00";
@@ -19,6 +19,25 @@ SET time_zone = "+00:00";
 --
 -- Banco de Dados: `uniEvents`
 --
+
+-- --------------------------------------------------------
+
+--
+-- Estrutura da tabela `cadastros`
+--
+
+CREATE TABLE IF NOT EXISTS `cadastros` (
+  `evento_id` int(10) unsigned NOT NULL,
+  `usuario_id` int(10) unsigned NOT NULL,
+  PRIMARY KEY (`evento_id`,`usuario_id`),
+  KEY `fk_evento_has_usuario_evento1_idx` (`evento_id`),
+  KEY `fk_evento_has_usuarios_usuarios1_idx` (`usuario_id`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+
+--
+-- Extraindo dados da tabela `cadastros`
+--
+
 
 -- --------------------------------------------------------
 
@@ -9832,7 +9851,6 @@ INSERT INTO `estados` (`id`, `nome`, `uf`) VALUES
 
 CREATE TABLE IF NOT EXISTS `eventos` (
   `id` int(10) unsigned NOT NULL AUTO_INCREMENT,
-  `nivel` tinyint(1) NOT NULL DEFAULT '0',
   `nome` varchar(90) DEFAULT NULL,
   `descricao` varchar(120) DEFAULT NULL,
   `data_ini` date DEFAULT NULL,
@@ -9852,75 +9870,6 @@ CREATE TABLE IF NOT EXISTS `eventos` (
   KEY `fk_evento_imagem1_idx` (`imagem_id`)
 ) ENGINE=InnoDB  DEFAULT CHARSET=utf8 AUTO_INCREMENT=29 ;
 
---
--- Extraindo dados da tabela `eventos`
---
-
-INSERT INTO `eventos` (`id`, `nivel`, `nome`, `descricao`, `data_ini`, `data_fim`, `tipo_evento`, `tema`, `vagas`, `duracao_horas`, `aprovacao`, `url`, `endereco_id`, `imagem_id`, `created`, `modified`) VALUES
-(7, 0, 'teste', 'testando', '2013-12-10', '2013-12-10', '', '', NULL, NULL, 1, '', NULL, NULL, '2013-12-10 20:33:42', '2013-12-12 04:21:39'),
-(8, 0, 'teste', '', '2013-12-10', '2013-12-10', '', '', NULL, NULL, 1, '', NULL, NULL, '2013-12-10 21:02:25', '2013-12-12 04:32:25'),
-(9, 0, 'Sainf', 'hdfjhskdshfkjshfk', '2013-12-12', '2014-01-12', 'simposio', 'informatica', 6, 120, 1, '', NULL, NULL, '2013-12-12 03:13:13', '2013-12-12 04:32:27'),
-(10, 0, 'Sainf2', 'kjlkjlkjlkjlkjlkj', '2013-12-12', '2013-12-17', 'palestra', 'informatica', 22, 29, 1, '', NULL, NULL, '2013-12-12 03:18:02', '2013-12-12 04:32:29'),
-(11, 0, 'KLB', 'musica', '2013-12-12', '2013-12-18', 'palestra', 'musica', 9, 21, 1, '', NULL, NULL, '2013-12-12 03:42:45', '2013-12-12 05:42:23'),
-(12, 0, 'BBDB', 'banco de dados...', '2013-12-12', '2014-05-07', 'minicurso', 'BD', 10, 126, 1, '', NULL, NULL, '2013-12-12 03:46:26', '2013-12-12 05:42:25'),
-(13, 0, 'SBBB', 'simposio em SP', '2013-12-12', '2014-02-15', 'simposio', 'informatica', 45, 200, 1, '', NULL, NULL, '2013-12-12 03:47:29', '2013-12-12 05:42:27'),
-(14, 0, 'Sainf 3', 'seminário', '2013-04-12', '2013-12-04', 'seminario', 'informatica', 80, 600, 1, '', NULL, NULL, '2013-12-12 03:48:18', '2013-12-12 05:42:29'),
-(15, 0, 'Reacao', 'banda de rock', '2013-12-12', '2013-12-12', 'show', 'rock', 200, 2, 1, '', NULL, NULL, '2013-12-12 03:49:42', '2013-12-12 09:50:20'),
-(16, 0, 'Mini - Danca', 'minicurso de danca', '2014-02-02', '2014-02-09', 'minicurso', 'danca', 98, 700, 1, '', NULL, NULL, '2013-12-12 03:50:39', '2013-12-12 09:54:55'),
-(17, 0, 'Mineracao de Dados', 'seminario de MD', '2013-12-17', '2013-12-20', 'seminario', 'MD', 30, 20, 1, '', NULL, NULL, '2013-12-12 03:51:38', '2013-12-12 09:58:51'),
-(18, 0, 'Sistemas Distribuidos', 'palestra de SD', '2013-12-12', '2013-12-12', 'palestra', 'Sistemas Banco', 70, 120, 1, '', NULL, NULL, '2013-12-12 03:52:33', '2013-12-12 10:01:24'),
-(19, 0, 'Olimpiada', 'competição', '2013-04-12', '2014-08-12', 'minicurso', 'Copa', 12, 300, 0, '', NULL, NULL, '2013-12-12 03:54:05', '2013-12-12 03:54:05'),
-(20, 0, 'SGGG', 'simposio em MT', '2013-12-12', '2014-03-12', 'simposio', 'arquitetura', 90, 60, 1, '', NULL, NULL, '2013-12-12 03:55:29', '2013-12-12 11:50:13'),
-(21, 0, 'JKUY', 'palestra em JKUY', '2013-11-12', '2013-12-17', 'palestra', 'JKUY em 2014', 23, 200, 0, '', NULL, NULL, '2013-12-12 03:56:27', '2013-12-12 03:56:27'),
-(22, 0, 'BCDD', 'minicurso em ABC', '2013-08-12', '2014-12-12', 'minicurso', 'leitura', 23, 78, 0, '', NULL, NULL, '2013-12-12 03:57:54', '2013-12-12 03:57:54'),
-(23, 0, 'VBBB', 'minicurso em VBBB', '2013-09-02', '2013-12-16', 'minicurso', 'VBBB', 23, 123, 0, '', NULL, NULL, '2013-12-12 04:00:50', '2013-12-12 04:00:50'),
-(24, 0, 'Sainf 4', 'palestra em informatica', '2013-12-15', '2013-12-15', 'palestra', 'informatica', 45, 80, 0, '', NULL, NULL, '2013-12-12 04:01:48', '2013-12-12 04:01:48'),
-(25, 0, 'SOPQ', 'simposio em SOPQ', '2013-03-08', '2014-08-08', 'simposio', 'SOPQ', 55, 200, 0, '', NULL, NULL, '2013-12-12 04:04:33', '2013-12-12 04:04:33'),
-(26, 0, 'SHHH', 'seminario em SHHH', '2013-12-12', '2013-12-12', 'seminario', 'SHHHH', 34, 100, 0, '', NULL, NULL, '2013-12-12 04:05:13', '2013-12-12 04:05:13'),
-(27, 0, 'HGTR', 'minicurso em HGTR', '2013-12-12', '2014-03-15', 'minicurso', 'HGTR', 39, 90, 0, '', NULL, NULL, '2013-12-12 04:05:50', '2013-12-12 04:05:50'),
-(28, 0, 'HGFD', 'palestra em HGFD', '2013-02-05', '2013-12-12', 'palestra', 'HGFD', 20, 30, 0, '', NULL, NULL, '2013-12-12 04:06:28', '2013-12-12 04:06:28');
-
--- --------------------------------------------------------
-
---
--- Estrutura da tabela `eventos_usuarios`
---
-
-CREATE TABLE IF NOT EXISTS `eventos_usuarios` (
-  `evento_id` int(10) unsigned NOT NULL,
-  `usuario_id` int(10) unsigned NOT NULL,
-  PRIMARY KEY (`evento_id`,`usuario_id`),
-  KEY `fk_evento_has_usuario_evento1_idx` (`evento_id`),
-  KEY `fk_evento_has_usuarios_usuarios1_idx` (`usuario_id`)
-) ENGINE=InnoDB DEFAULT CHARSET=utf8;
-
---
--- Extraindo dados da tabela `eventos_usuarios`
---
-
-INSERT INTO `eventos_usuarios` (`evento_id`, `usuario_id`) VALUES
-(7, 10),
-(8, 10),
-(9, 1),
-(10, 1),
-(11, 10),
-(12, 10),
-(13, 10),
-(14, 10),
-(15, 10),
-(16, 10),
-(17, 10),
-(18, 10),
-(19, 10),
-(20, 10),
-(21, 10),
-(22, 10),
-(23, 10),
-(24, 10),
-(25, 10),
-(26, 10),
-(27, 10),
-(28, 10);
 
 -- --------------------------------------------------------
 
@@ -9964,17 +9913,16 @@ CREATE TABLE IF NOT EXISTS `imagens` (
 --
 
 CREATE TABLE IF NOT EXISTS `inscricoes` (
-  `id` int(10) unsigned NOT NULL AUTO_INCREMENT,
+  `id` int(10) NOT NULL,
   `data_ini` date NOT NULL,
   `data_fim` date NOT NULL,
-  `evento_id` int(10) unsigned NOT NULL,
-  `tipo_inscricao_id` int(10) unsigned NOT NULL,
-  `created` datetime DEFAULT NULL,
-  `modified` datetime DEFAULT NULL,
+  `paga` tinyint(1) NOT NULL,
+  `eventos_id` int(10) NOT NULL,
+  `created` datetime NOT NULL,
+  `modified` datetime NOT NULL,
   PRIMARY KEY (`id`),
-  KEY `fk_inscricao_evento1_idx` (`evento_id`),
-  KEY `fk_inscricao_tipo_inscricao1_idx` (`tipo_inscricao_id`)
-) ENGINE=InnoDB DEFAULT CHARSET=utf8 AUTO_INCREMENT=1 ;
+  KEY `eventos_id` (`eventos_id`)
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 -- --------------------------------------------------------
 
@@ -9999,56 +9947,6 @@ CREATE TABLE IF NOT EXISTS `msgs` (
 -- Extraindo dados da tabela `msgs`
 --
 
-INSERT INTO `msgs` (`id`, `titulo`, `texto`, `status`, `usuario_msg`, `usuarios_id`, `created`, `modified`) VALUES
-(1, 'Conversa', 'bla lksçdlkaçlkd', 0, 22, 1, '2013-12-12 03:20:01', '2013-12-12 03:20:01'),
-(2, 'MD', 'kfjgkfgkdjghkdj', 0, 10, 1, '2013-12-12 03:21:31', '2013-12-12 03:21:31'),
-(3, 'PSW', 'dkjflksjlfkjsdlfkjslkhf', 0, 17, 1, '2013-12-12 03:21:46', '2013-12-12 03:21:46'),
-(4, 'Tg', 'lskdjlfksjlff', 0, 22, 1, '2013-12-12 03:22:12', '2013-12-12 03:22:12'),
-(5, 'OK', 'kjflsjkfisdhgislgkns', 0, 19, 1, '2013-12-12 03:22:26', '2013-12-12 03:22:26'),
-(6, 'OKL', 'sjkflkajlkfanhlf', 0, 10, 1, '2013-12-12 03:22:43', '2013-12-12 03:22:43'),
-(7, 'YU', 'sakjflkajfla', 0, 11, 1, '2013-12-12 03:24:28', '2013-12-12 03:24:28'),
-(8, 'UH', 'sdjfhlsjflsjhgvls', 0, 18, 1, '2013-12-12 03:24:43', '2013-12-12 03:24:43'),
-(9, 'OI', 'lakjdlfkajflkanfv', 0, 16, 1, '2013-12-12 03:25:02', '2013-12-12 03:25:02'),
-(10, 'LoL', 'lkasjlkfjalkfncav', 0, 23, 1, '2013-12-12 03:25:19', '2013-12-12 03:25:19'),
-(11, 'OKI', 'slcjasljflakfc', 0, 17, 1, '2013-12-12 03:25:35', '2013-12-12 03:25:35'),
-(12, 'LOL', 'kjclsknvlsv', 0, 10, 1, '2013-12-12 03:26:17', '2013-12-12 03:26:17'),
-(13, 'KIK', 'skjldasjklcfknal ', 1, 13, 1, '2013-12-12 03:27:33', '2013-12-12 03:28:29'),
-(14, 'PO', 'skjcslafnlcde', 0, 22, 1, '2013-12-12 03:27:49', '2013-12-12 03:27:49'),
-(15, 'UJ', 'lkajflakfnls', 0, 1, 13, '2013-12-12 03:29:30', '2013-12-12 03:29:30'),
-(16, 'POW', 'sdjflskjfljk', 0, 1, 13, '2013-12-12 03:30:03', '2013-12-12 03:30:03'),
-(17, 'LOLI', 'jcfsljfsl', 0, 10, 13, '2013-12-12 03:30:20', '2013-12-12 03:30:20'),
-(18, 'TY', 'jfchdsalkfjlakf', 0, 11, 13, '2013-12-12 03:30:32', '2013-12-12 03:30:32'),
-(19, 'FD', 'lsamkçlma', 0, 23, 13, '2013-12-12 03:30:45', '2013-12-12 03:30:45'),
-(20, 'IK', 'sdkfjmslmkf', 0, 22, 13, '2013-12-12 03:30:56', '2013-12-12 03:30:56'),
-(21, 'RA', 'çslakdça', 0, 11, 13, '2013-12-12 03:31:11', '2013-12-12 03:31:11'),
-(22, 'JU', 'kjkdjfk', 0, 1, 20, '2013-12-12 03:31:48', '2013-12-12 03:31:48'),
-(23, 'OKÇ', 'dfvskjfçls', 0, 12, 20, '2013-12-12 03:32:02', '2013-12-12 03:32:02'),
-(24, 'TY', 'kldcjslkfs', 0, 18, 20, '2013-12-12 03:32:14', '2013-12-12 03:32:14'),
-(25, 'RE', 'gfhghg', 0, 10, 20, '2013-12-12 03:32:25', '2013-12-12 03:32:25'),
-(26, 'AS', 'dgdgf', 0, 21, 20, '2013-12-12 03:32:37', '2013-12-12 03:32:37'),
-(27, 'LÇ', 'hjgjg', 0, 22, 20, '2013-12-12 03:32:51', '2013-12-12 03:32:51'),
-(28, 'OP', 'hgjgjghj', 0, 17, 20, '2013-12-12 03:33:02', '2013-12-12 03:33:02'),
-(29, 'TR', 'kaslksa', 0, 13, 21, '2013-12-12 03:34:08', '2013-12-12 03:34:08'),
-(30, 'OI', 'fdfd', 0, 11, 21, '2013-12-12 03:34:19', '2013-12-12 03:34:19'),
-(31, 'PU', 'dsds', 0, 15, 21, '2013-12-12 03:34:31', '2013-12-12 03:34:31'),
-(32, 'RD', 'sdd', 0, 19, 21, '2013-12-12 03:34:46', '2013-12-12 03:34:46'),
-(33, 'FG', 'kldsk', 0, 9, 21, '2013-12-12 03:35:09', '2013-12-12 03:35:09'),
-(34, 'TGIO', 'kjdksjdks', 0, 1, 21, '2013-12-12 03:35:27', '2013-12-12 03:35:27'),
-(35, 'HJ', 'kdslkdl', 0, 1, 23, '2013-12-12 03:36:09', '2013-12-12 03:36:09'),
-(36, 'PO', 'lklsdf', 0, 9, 23, '2013-12-12 03:36:20', '2013-12-12 03:36:20'),
-(37, 'IU', 'jdksdjsk', 0, 10, 23, '2013-12-12 03:36:31', '2013-12-12 03:36:31'),
-(38, 'IJ', 'sklds', 0, 11, 23, '2013-12-12 03:36:42', '2013-12-12 03:36:42'),
-(39, 'UJ', 'kjsdkdj', 0, 12, 23, '2013-12-12 03:36:53', '2013-12-12 03:36:53'),
-(40, 'oie', 'ksldfkd', 0, 13, 23, '2013-12-12 03:37:07', '2013-12-12 03:37:07'),
-(41, 'ED', 'jhsjd', 0, 14, 23, '2013-12-12 03:37:21', '2013-12-12 03:37:21'),
-(42, 'VB', 'jndskjd', 0, 15, 23, '2013-12-12 03:37:34', '2013-12-12 03:37:34'),
-(43, 'nm', 'fdfdf', 0, 16, 23, '2013-12-12 03:37:45', '2013-12-12 03:37:45'),
-(44, 'MMM', 'dlskdlsd', 0, 17, 23, '2013-12-12 03:37:57', '2013-12-12 03:37:57'),
-(45, 'NB', 'fdfdfd', 0, 18, 23, '2013-12-12 03:38:11', '2013-12-12 03:38:11'),
-(46, 'HN', 'fdfd', 0, 19, 23, '2013-12-12 03:38:23', '2013-12-12 03:38:23'),
-(47, 'IK', 'kkkkk', 0, 20, 23, '2013-12-12 03:38:34', '2013-12-12 03:38:34'),
-(48, 'OL', 'dsds', 0, 21, 23, '2013-12-12 03:38:45', '2013-12-12 03:38:45'),
-(49, 'ÇL', 'ldskd', 0, 22, 23, '2013-12-12 03:38:57', '2013-12-12 03:38:57');
 
 -- --------------------------------------------------------
 
@@ -10083,7 +9981,11 @@ CREATE TABLE IF NOT EXISTS `pagamentos` (
   `cod_seg` int(3) DEFAULT NULL,
   `created` datetime DEFAULT NULL,
   `modified` datetime DEFAULT NULL,
-  PRIMARY KEY (`id`)
+  `usuarios_id` int(10) NOT NULL,
+  `eventos_id` int(10) NOT NULL,
+  PRIMARY KEY (`id`),
+  KEY `usuarios_id` (`usuarios_id`),
+  KEY `eventos_id` (`eventos_id`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 AUTO_INCREMENT=1 ;
 
 -- --------------------------------------------------------
@@ -10154,6 +10056,20 @@ CREATE TABLE IF NOT EXISTS `programacoes` (
 -- --------------------------------------------------------
 
 --
+-- Estrutura da tabela `status_pagamentos`
+--
+
+CREATE TABLE IF NOT EXISTS `status_pagamentos` (
+  `id` int(10) unsigned NOT NULL AUTO_INCREMENT,
+  `status` tinyint(1) NOT NULL,
+  `pagamento_id` int(10) unsigned NOT NULL,
+  PRIMARY KEY (`id`),
+  KEY `fk_tipo_inscricao_pagamento1_idx` (`pagamento_id`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8 AUTO_INCREMENT=1 ;
+
+-- --------------------------------------------------------
+
+--
 -- Estrutura da tabela `telefones`
 --
 
@@ -10170,30 +10086,17 @@ CREATE TABLE IF NOT EXISTS `telefones` (
 -- --------------------------------------------------------
 
 --
--- Estrutura da tabela `tipo_inscricoes`
---
-
-CREATE TABLE IF NOT EXISTS `tipo_inscricoes` (
-  `id` int(10) unsigned NOT NULL AUTO_INCREMENT,
-  `pago` tinyint(1) DEFAULT NULL,
-  `status` tinyint(1) NOT NULL,
-  `pagamento_id` int(10) unsigned NOT NULL,
-  PRIMARY KEY (`id`),
-  KEY `fk_tipo_inscricao_pagamento1_idx` (`pagamento_id`)
-) ENGINE=InnoDB DEFAULT CHARSET=utf8 AUTO_INCREMENT=1 ;
-
--- --------------------------------------------------------
-
---
 -- Estrutura da tabela `usuarios`
 --
 
 CREATE TABLE IF NOT EXISTS `usuarios` (
   `id` int(10) unsigned NOT NULL AUTO_INCREMENT,
-  `photo` varchar(255) DEFAULT NULL,
-  `photo_dir` varchar(255) NOT NULL,
   `nome` varchar(30) DEFAULT NULL,
   `sobrenome` varchar(100) NOT NULL,
+  `foto` varchar(255) NOT NULL,
+  `pasta` varchar(255) NOT NULL,
+  `mimetype` varchar(255) NOT NULL,
+  `tamanho` int(11) NOT NULL,
   `nivel` tinyint(1) NOT NULL DEFAULT '0',
   `cpf` varchar(11) DEFAULT NULL,
   `rg` varchar(10) DEFAULT NULL,
@@ -10209,35 +10112,25 @@ CREATE TABLE IF NOT EXISTS `usuarios` (
   `modified` datetime DEFAULT NULL,
   PRIMARY KEY (`id`),
   KEY `fk_usuarios_cidades1_idx` (`cidade_id`)
-) ENGINE=InnoDB  DEFAULT CHARSET=utf8 AUTO_INCREMENT=26 ;
+) ENGINE=InnoDB  DEFAULT CHARSET=utf8 AUTO_INCREMENT=24 ;
 
 --
 -- Extraindo dados da tabela `usuarios`
 --
 
-INSERT INTO `usuarios` (`id`, `photo`, `photo_dir`, `nome`, `sobrenome`, `nivel`, `cpf`, `rg`, `data_nasc`, `sexo`, `email`, `senha`, `instituicao`, `end_rede_soc`, `outro_contato_url`, `cidade_id`, `created`, `modified`) VALUES
-(1, NULL, '', 'admin', '', 1, NULL, NULL, NULL, NULL, 'admin@localhost.com', 'd033e22ae348aeb5660fc2140aec35850c4da997', 'Dono do sistema', NULL, NULL, NULL, NULL, NULL),
-(9, NULL, '', 'Usuario', 'teste', 0, '11111111111', '11', '2013-12-10', 1, 'teste@localhost.com', '7c4a8d09ca3762af61e59520943dc26494f8941b', '', '', '', NULL, '2013-12-10 17:42:21', '2013-12-10 17:42:21'),
-(10, NULL, '', 'Caren', 'Possobom', 0, '01276533009', '1087452309', '1993-02-03', 0, 'cpossobom@inf.ufsm.br', '7c4a8d09ca3762af61e59520943dc26494f8941b', 'ufsm', '', '', NULL, '2013-12-10 19:42:27', '2013-12-10 19:42:27'),
-(11, NULL, '', 'joao', 'Pascoto', 0, '78126981229', '8956342387', '1993-07-17', 1, 'joao@gmail.com', '7c4a8d09ca3762af61e59520943dc26494f8941b', 'ufsm', '', '', NULL, '2013-12-12 02:19:49', '2013-12-12 02:19:49'),
-(12, NULL, '', 'fulano', 'de tal', 0, '19337447746', '2356431234', '1993-02-17', 1, 'fulano@gmail.com', '7c4a8d09ca3762af61e59520943dc26494f8941b', 'ufsm', 'face', '', NULL, '2013-12-12 02:23:52', '2013-12-12 02:23:52'),
-(13, NULL, '', 'Ana', 'Oliveira', 0, '53927681644', '7865123456', '1997-07-19', 0, 'ana@gmail.com', '7c4a8d09ca3762af61e59520943dc26494f8941b', 'ufsm', 'face', '', NULL, '2013-12-12 02:25:04', '2013-12-12 02:25:04'),
-(14, NULL, '', 'Maria', 'do Carmo', 0, '90128956690', '90876543', '2018-07-14', 0, 'maria@gmail.com', '20eabe5d64b0e216796e834f52d61fd0b70332fc', 'ufsm', 'face', '', NULL, '2013-12-12 02:54:49', '2013-12-12 02:54:49'),
-(15, NULL, '', 'Paulo', 'Santos', 0, '23258179549', '98542378', '1997-01-16', 1, 'paulo@gmail.com', '20eabe5d64b0e216796e834f52d61fd0b70332fc', 'ufsm', 'face', '', NULL, '2013-12-12 02:56:16', '2013-12-12 02:56:16'),
-(16, NULL, '', 'Roberta', 'Machado', 0, '29274425252', '0912786534', '2020-04-17', 0, 'roberta@gmail.com', 'b1b3773a05c0ed0176787a4f1574ff0075f7521e', 'ufsm', 'face', '', NULL, '2013-12-12 02:57:55', '2013-12-12 02:57:55'),
-(17, NULL, '', 'Josue', 'Furlan', 0, '16831725406', '87563456', '2028-03-20', 1, 'josue@gmail.com', 'f6a7651443d5867f394fe61ab082aac01c3c25fd', 'ufsm', 'face', '', NULL, '2013-12-12 02:59:04', '2013-12-12 02:59:04'),
-(18, NULL, '', 'Daniel', 'Golman', 0, '13772452256', '8976123453', '2015-11-18', 1, 'daniel@gmail.com', '7c4a8d09ca3762af61e59520943dc26494f8941b', 'ufsm', 'face', '', NULL, '2013-12-12 03:00:39', '2013-12-12 03:00:39'),
-(19, NULL, '', 'Lina', 'Oliveira', 0, '13772452256', '1234567643', '2016-04-07', 0, 'lina@gmail.com', '7c4a8d09ca3762af61e59520943dc26494f8941b', 'ufsm', 'face', '', NULL, '2013-12-12 03:01:31', '2013-12-12 03:01:31'),
-(20, NULL, '', 'Carlos', 'Brutti', 0, '13772452256', '8723546732', '1994-06-15', 1, 'carlos@gmail.com', '7c4a8d09ca3762af61e59520943dc26494f8941b', 'ufsm', 'face', '', NULL, '2013-12-12 03:02:49', '2013-12-12 03:02:49'),
-(21, NULL, '', 'Eduardo', 'Santos', 0, '13772452256', '5468739283', '2017-02-16', 1, 'eduardo@gmail.com', '7c4a8d09ca3762af61e59520943dc26494f8941b', 'ufsm', 'face', '', NULL, '2013-12-12 03:03:38', '2013-12-12 03:03:38'),
-(22, NULL, '', 'Julia', 'Silva', 0, '13772452256', '34652032', '1993-12-12', 0, 'julia@gmail.com', '7c4a8d09ca3762af61e59520943dc26494f8941b', 'ufsm', 'face', '', NULL, '2013-12-12 03:04:34', '2013-12-12 03:04:34'),
-(23, NULL, '', 'Karine', 'Pinto', 0, '13772452256', '8754948394', '1993-12-12', 0, 'karine@gmail.com', '7c4a8d09ca3762af61e59520943dc26494f8941b', 'ufsm', 'face', '', NULL, '2013-12-12 03:05:20', '2013-12-12 03:05:20'),
-(24, 'images.jpg', '', 'adriano', ' canfore', 0, '11111111111', '11', '2013-12-12', 0, 'asantos@inf.ufsm.br', 'b02854aab34f0686863d4c9d07f66e36d91fda62', 'ufsm', '', '', NULL, '2013-12-12 10:24:41', '2013-12-12 10:24:41'),
-(25, 'images.jpg', '', 'adriano', ' canfore', 0, '83235590072', '11', '2013-12-12', 1, 'asantos@inf.ufsm.br', 'b02854aab34f0686863d4c9d07f66e36d91fda62', '', '', '', NULL, '2013-12-12 10:33:59', '2013-12-12 10:33:59');
+INSERT INTO `usuarios` (`id`, `nome`, `sobrenome`, `foto`, `pasta`, `mimetype`, `tamanho`, `nivel`, `cpf`, `rg`, `data_nasc`, `sexo`, `email`, `senha`, `instituicao`, `end_rede_soc`, `outro_contato_url`, `cidade_id`, `created`, `modified`) VALUES
+(1, 'admin', '', '', '', '', 0, 1, NULL, NULL, NULL, NULL, 'admin@localhost.com', 'd033e22ae348aeb5660fc2140aec35850c4da997', 'Dono do sistema', NULL, NULL, NULL, NULL, NULL);
 
 --
 -- Restrições para as tabelas dumpadas
 --
+
+--
+-- Restrições para a tabela `cadastros`
+--
+ALTER TABLE `cadastros`
+  ADD CONSTRAINT `fk_evento_has_usuarios_usuarios1` FOREIGN KEY (`usuario_id`) REFERENCES `usuarios` (`id`) ON DELETE NO ACTION ON UPDATE NO ACTION,
+  ADD CONSTRAINT `fk_evento_has_usuario_evento1` FOREIGN KEY (`evento_id`) REFERENCES `eventos` (`id`) ON DELETE NO ACTION ON UPDATE NO ACTION;
 
 --
 -- Restrições para a tabela `cidades`
@@ -10259,13 +10152,6 @@ ALTER TABLE `eventos`
   ADD CONSTRAINT `fk_evento_imagem1` FOREIGN KEY (`imagem_id`) REFERENCES `imagens` (`id`) ON DELETE NO ACTION ON UPDATE NO ACTION;
 
 --
--- Restrições para a tabela `eventos_usuarios`
---
-ALTER TABLE `eventos_usuarios`
-  ADD CONSTRAINT `fk_evento_has_usuarios_usuarios1` FOREIGN KEY (`usuario_id`) REFERENCES `usuarios` (`id`) ON DELETE NO ACTION ON UPDATE NO ACTION,
-  ADD CONSTRAINT `fk_evento_has_usuario_evento1` FOREIGN KEY (`evento_id`) REFERENCES `eventos` (`id`) ON DELETE NO ACTION ON UPDATE NO ACTION;
-
---
 -- Restrições para a tabela `horarios`
 --
 ALTER TABLE `horarios`
@@ -10276,13 +10162,6 @@ ALTER TABLE `horarios`
 --
 ALTER TABLE `imagens`
   ADD CONSTRAINT `fk_imagens_usuarios1` FOREIGN KEY (`usuario_id`) REFERENCES `usuarios` (`id`) ON DELETE NO ACTION ON UPDATE NO ACTION;
-
---
--- Restrições para a tabela `inscricoes`
---
-ALTER TABLE `inscricoes`
-  ADD CONSTRAINT `fk_inscricao_evento1` FOREIGN KEY (`evento_id`) REFERENCES `eventos` (`id`) ON DELETE NO ACTION ON UPDATE NO ACTION,
-  ADD CONSTRAINT `fk_inscricao_tipo_inscricao1` FOREIGN KEY (`tipo_inscricao_id`) REFERENCES `tipo_inscricoes` (`id`) ON DELETE NO ACTION ON UPDATE NO ACTION;
 
 --
 -- Restrições para a tabela `msgs`
@@ -10323,17 +10202,17 @@ ALTER TABLE `programacoes`
   ADD CONSTRAINT `fk_programacao_evento1` FOREIGN KEY (`evento_id`) REFERENCES `eventos` (`id`) ON DELETE NO ACTION ON UPDATE NO ACTION;
 
 --
+-- Restrições para a tabela `status_pagamentos`
+--
+ALTER TABLE `status_pagamentos`
+  ADD CONSTRAINT `fk_tipo_inscricao_pagamento1` FOREIGN KEY (`pagamento_id`) REFERENCES `pagamentos` (`id`) ON DELETE NO ACTION ON UPDATE NO ACTION;
+
+--
 -- Restrições para a tabela `telefones`
 --
 ALTER TABLE `telefones`
   ADD CONSTRAINT `fk_telefones_usuarios1` FOREIGN KEY (`usuario_id`) REFERENCES `usuarios` (`id`) ON DELETE NO ACTION ON UPDATE NO ACTION,
   ADD CONSTRAINT `fk_telefone_patrocinador1` FOREIGN KEY (`patrocinador_id`) REFERENCES `patrocinadores` (`id`) ON DELETE NO ACTION ON UPDATE NO ACTION;
-
---
--- Restrições para a tabela `tipo_inscricoes`
---
-ALTER TABLE `tipo_inscricoes`
-  ADD CONSTRAINT `fk_tipo_inscricao_pagamento1` FOREIGN KEY (`pagamento_id`) REFERENCES `pagamentos` (`id`) ON DELETE NO ACTION ON UPDATE NO ACTION;
 
 --
 -- Restrições para a tabela `usuarios`
