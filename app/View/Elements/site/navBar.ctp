@@ -6,13 +6,13 @@
          <span class="icon-bar"></span>
          <span class="icon-bar"></span>
        </a>
-       <a class="brand" href="../">Home</a>
+       <a class="brand" href="http://localhost/unieventos/">Home</a>
        <div class="nav-collapse collapse" id="main-menu">
         <ul class="nav" id="main-menu-left">
-          <li><a href="#">Sobre</a></li>
+          <!--<li><a href="#">Sobre</a></li>
           <li><a id="swatch-link" href="../#gallery">Gallery</a></li>
           <li><a href="#">Preview </a>
-          </li>
+          </li>-->
           <li class="dropdown" id="preview-menu">
             <a class="dropdown-toggle" data-toggle="dropdown" href="#">Eventos<b class="caret"></b></a>
             <ul class="dropdown-menu">

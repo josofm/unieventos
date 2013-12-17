@@ -1,8 +1,8 @@
 <header class="jumbotron subhead" id="overview">
   <div class="row">
     <div class="span6">
-      <h1>Cerulean</h1>
-      <p class="lead">A calm, blue sky.</p>
+      <h1>UNIEVENTOS</h1>
+      <p class="lead">Gerenciador de Eventos</p>
     </div>
     <div class="span6">
       <div class="bsa">
@@ -10,7 +10,7 @@
       </div>
     </div>
   </div>
-  <div class="subnav">
+  <!--<div class="subnav">
     <ul class="nav nav-pills">
       <li><a href="#typography">Typography</a></li>
       <li><a href="#navbar">Navbar</a></li>
@@ -19,5 +19,5 @@
       <li><a href="#tables">Tables</a></li>
       <li><a href="#miscellaneous">Miscellaneous</a></li>
     </ul>
-  </div>
+  </div>-->
 </header>
