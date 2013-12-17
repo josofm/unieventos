@@ -3,7 +3,7 @@
 -- http://www.phpmyadmin.net
 --
 -- Servidor: localhost
--- Tempo de Geração: 16/12/2013 às 18h10min
+-- Tempo de Geração: 16/12/2013 às 23h23min
 -- Versão do Servidor: 5.5.34
 -- Versão do PHP: 5.3.10-1ubuntu3.9
 
@@ -29,6 +29,7 @@ SET time_zone = "+00:00";
 CREATE TABLE IF NOT EXISTS `cadastros` (
   `evento_id` int(10) unsigned NOT NULL,
   `usuario_id` int(10) unsigned NOT NULL,
+  `nivel` tinyint(1) NOT NULL DEFAULT '1',
   PRIMARY KEY (`evento_id`,`usuario_id`),
   KEY `fk_evento_has_usuario_evento1_idx` (`evento_id`),
   KEY `fk_evento_has_usuarios_usuarios1_idx` (`usuario_id`)
@@ -38,6 +39,11 @@ CREATE TABLE IF NOT EXISTS `cadastros` (
 -- Extraindo dados da tabela `cadastros`
 --
 
+INSERT INTO `cadastros` (`evento_id`, `usuario_id`, `nivel`) VALUES
+(3, 2, 1),
+(4, 2, 1),
+(5, 2, 1),
+(5, 3, 0);
 
 -- --------------------------------------------------------
 
@@ -9868,26 +9874,18 @@ CREATE TABLE IF NOT EXISTS `eventos` (
   PRIMARY KEY (`id`),
   KEY `fk_evento_endereco1_idx` (`endereco_id`),
   KEY `fk_evento_imagem1_idx` (`imagem_id`)
-) ENGINE=InnoDB  DEFAULT CHARSET=utf8 AUTO_INCREMENT=29 ;
-
-
--- --------------------------------------------------------
+) ENGINE=InnoDB  DEFAULT CHARSET=utf8 AUTO_INCREMENT=6 ;
 
 --
--- Estrutura da tabela `horarios`
+-- Extraindo dados da tabela `eventos`
 --
 
-CREATE TABLE IF NOT EXISTS `horarios` (
-  `id` int(10) unsigned NOT NULL AUTO_INCREMENT,
-  `hora_ini` varchar(5) NOT NULL,
-  `hora_fim` varchar(5) NOT NULL,
-  `data` date NOT NULL,
-  `programacao_id` int(10) unsigned NOT NULL,
-  `created` datetime DEFAULT NULL,
-  `modified` datetime DEFAULT NULL,
-  PRIMARY KEY (`id`),
-  KEY `fk_horario_programacao1_idx` (`programacao_id`)
-) ENGINE=InnoDB DEFAULT CHARSET=utf8 AUTO_INCREMENT=1 ;
+INSERT INTO `eventos` (`id`, `nome`, `descricao`, `data_ini`, `data_fim`, `tipo_evento`, `tema`, `vagas`, `duracao_horas`, `aprovacao`, `url`, `endereco_id`, `imagem_id`, `created`, `modified`) VALUES
+(1, 'Sainf 2013', 'alguma coisa', '2013-12-18', '2013-12-20', 'palestra', 'Informatica', 100, 40, 1, '', NULL, NULL, '2013-12-17 00:26:36', '2013-12-17 00:32:57'),
+(2, 'FISL 2014', 'forum Internacional De software livre', '2014-04-17', '2014-04-20', 'forum', 'Software Livre', 100, 100, 1, '', NULL, NULL, '2013-12-17 00:34:46', '2013-12-17 00:46:28'),
+(3, 'FISL 2014', 'vai funcionar', '2013-12-17', '2013-12-17', 'forim', 'informatica', 998, 100, 1, '', NULL, NULL, '2013-12-17 00:44:43', '2013-12-17 00:46:26'),
+(4, 'Sainf 2013', 'informatica', '2013-12-24', '2013-12-27', 'dsajfioasd', 'sdfas', 100, 20, 1, '', NULL, NULL, '2013-12-17 00:45:45', '2013-12-17 00:46:23'),
+(5, 'Campus Party', 'fdsfsa', '2014-01-17', '2014-01-20', 'dfasdfsa', 'dfsafdas', 8000, 500, 1, '', NULL, NULL, '2013-12-17 00:47:36', '2013-12-17 00:48:18');
 
 -- --------------------------------------------------------
 
@@ -9913,16 +9911,25 @@ CREATE TABLE IF NOT EXISTS `imagens` (
 --
 
 CREATE TABLE IF NOT EXISTS `inscricoes` (
-  `id` int(10) NOT NULL,
+  `id` int(10) NOT NULL AUTO_INCREMENT,
   `data_ini` date NOT NULL,
   `data_fim` date NOT NULL,
   `paga` tinyint(1) NOT NULL,
-  `eventos_id` int(10) NOT NULL,
+  `evento_id` int(10) NOT NULL,
   `created` datetime NOT NULL,
   `modified` datetime NOT NULL,
   PRIMARY KEY (`id`),
-  KEY `eventos_id` (`eventos_id`)
-) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+  KEY `eventos_id` (`evento_id`)
+) ENGINE=InnoDB  DEFAULT CHARSET=latin1 AUTO_INCREMENT=4 ;
+
+--
+-- Extraindo dados da tabela `inscricoes`
+--
+
+INSERT INTO `inscricoes` (`id`, `data_ini`, `data_fim`, `paga`, `evento_id`, `created`, `modified`) VALUES
+(1, '2013-12-17', '2013-12-17', 0, 3, '2013-12-17 00:44:47', '2013-12-17 00:44:47'),
+(2, '2013-12-17', '2013-12-26', 0, 4, '2013-12-17 00:45:55', '2013-12-17 00:45:55'),
+(3, '2013-12-17', '2014-01-17', 0, 5, '2013-12-17 00:47:50', '2013-12-17 00:47:50');
 
 -- --------------------------------------------------------
 
@@ -9941,12 +9948,7 @@ CREATE TABLE IF NOT EXISTS `msgs` (
   `modified` datetime NOT NULL,
   PRIMARY KEY (`id`),
   KEY `fk_mensagens_usuarios1_idx` (`usuarios_id`)
-) ENGINE=InnoDB  DEFAULT CHARSET=utf8 AUTO_INCREMENT=50 ;
-
---
--- Extraindo dados da tabela `msgs`
---
-
+) ENGINE=InnoDB DEFAULT CHARSET=utf8 AUTO_INCREMENT=1 ;
 
 -- --------------------------------------------------------
 
@@ -10047,11 +10049,22 @@ CREATE TABLE IF NOT EXISTS `programacoes` (
   `titulo` varchar(45) NOT NULL,
   `descricao` varchar(120) DEFAULT NULL,
   `palestrante` varchar(45) DEFAULT NULL,
+  `data` date NOT NULL,
+  `hora_ini` time NOT NULL,
+  `hora_fim` time NOT NULL,
   `created` datetime DEFAULT NULL,
   `modified` datetime DEFAULT NULL,
   PRIMARY KEY (`id`),
   KEY `fk_programacao_evento1_idx` (`evento_id`)
-) ENGINE=InnoDB DEFAULT CHARSET=utf8 AUTO_INCREMENT=1 ;
+) ENGINE=InnoDB  DEFAULT CHARSET=utf8 AUTO_INCREMENT=3 ;
+
+--
+-- Extraindo dados da tabela `programacoes`
+--
+
+INSERT INTO `programacoes` (`id`, `evento_id`, `titulo`, `descricao`, `palestrante`, `data`, `hora_ini`, `hora_fim`, `created`, `modified`) VALUES
+(1, 1, 'computaÃ§Ã£o pervasiva', 'computaÃ§Ã£o pervasiva', 'iara', '0000-00-00', '00:00:00', '00:00:00', '2013-12-17 00:51:34', '2013-12-17 00:51:34'),
+(2, 1, 'teste', 'cdncoadsnkosdsad', 'adriano', '2013-12-17', '05:13:00', '06:13:00', '2013-12-17 01:01:26', '2013-12-17 01:01:26');
 
 -- --------------------------------------------------------
 
@@ -10112,14 +10125,16 @@ CREATE TABLE IF NOT EXISTS `usuarios` (
   `modified` datetime DEFAULT NULL,
   PRIMARY KEY (`id`),
   KEY `fk_usuarios_cidades1_idx` (`cidade_id`)
-) ENGINE=InnoDB  DEFAULT CHARSET=utf8 AUTO_INCREMENT=24 ;
+) ENGINE=InnoDB  DEFAULT CHARSET=utf8 AUTO_INCREMENT=4 ;
 
 --
 -- Extraindo dados da tabela `usuarios`
 --
 
 INSERT INTO `usuarios` (`id`, `nome`, `sobrenome`, `foto`, `pasta`, `mimetype`, `tamanho`, `nivel`, `cpf`, `rg`, `data_nasc`, `sexo`, `email`, `senha`, `instituicao`, `end_rede_soc`, `outro_contato_url`, `cidade_id`, `created`, `modified`) VALUES
-(1, 'admin', '', '', '', '', 0, 1, NULL, NULL, NULL, NULL, 'admin@localhost.com', 'd033e22ae348aeb5660fc2140aec35850c4da997', 'Dono do sistema', NULL, NULL, NULL, NULL, NULL);
+(1, 'admin', '', '', '', '', 0, 1, NULL, NULL, NULL, NULL, 'admin@localhost.com', 'd033e22ae348aeb5660fc2140aec35850c4da997', 'Dono do sistema', NULL, NULL, NULL, NULL, NULL),
+(2, 'adriano', 'canofre', '', '', '', 0, 0, '83235590072', '7094445975', '2013-12-17', 1, 'asantos@inf.ufsm.br', 'b02854aab34f0686863d4c9d07f66e36d91fda62', 'UFSM', '', '', NULL, '2013-12-17 00:25:32', '2013-12-17 00:25:32'),
+(3, 'Usuario ', 'Teste', '', '', '', 0, 0, '83235590072', '7094445975', '2013-12-17', 1, 'teste@localhost.com', 'b02854aab34f0686863d4c9d07f66e36d91fda62', 'ufsm', 'dfsdfds', 'dfas', NULL, '2013-12-17 01:15:47', '2013-12-17 01:15:47');
 
 --
 -- Restrições para as tabelas dumpadas
@@ -10150,12 +10165,6 @@ ALTER TABLE `enderecos`
 ALTER TABLE `eventos`
   ADD CONSTRAINT `fk_evento_endereco1` FOREIGN KEY (`endereco_id`) REFERENCES `enderecos` (`id`) ON DELETE NO ACTION ON UPDATE NO ACTION,
   ADD CONSTRAINT `fk_evento_imagem1` FOREIGN KEY (`imagem_id`) REFERENCES `imagens` (`id`) ON DELETE NO ACTION ON UPDATE NO ACTION;
-
---
--- Restrições para a tabela `horarios`
---
-ALTER TABLE `horarios`
-  ADD CONSTRAINT `fk_horario_programacao1` FOREIGN KEY (`programacao_id`) REFERENCES `programacoes` (`id`) ON DELETE NO ACTION ON UPDATE NO ACTION;
 
 --
 -- Restrições para a tabela `imagens`

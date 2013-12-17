@@ -3,7 +3,10 @@
 <p><small>Created: <?php echo $evento['Evento']['created']; ?></small></p>
 
 <p><?php echo h($evento['Evento']['descricao']); ?></p>
-<p><?php echo $evento['Inscricao']['paga']; ?></p>
+
+<p><?php echo $evento['Inscricao'][0]['data_ini']; ?></p>
+
+
 
 <?php 
 	if($logged_in){ 

@@ -3,6 +3,9 @@
 	echo $this->Form->input('titulo');
 	echo $this->Form->input('palestrante');
 	echo $this->Form->input('descricao');
+	echo $this->Form->input('data');
+	echo $this->Form->input('hora_ini');
+	echo $this->Form->input('hora_fim');
 
 	echo $this->Form->end('salvar'); 
 	

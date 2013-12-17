@@ -3028,3 +3028,254 @@ Request URL: /unieventos/css/login/bootstrap3.css
 Stack Trace:
 #0 /var/www/unieventos/app/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
 #1 {main}
+2013-12-17 00:24:42 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /unieventos/css/login/bootstrap3.css
+Stack Trace:
+#0 /var/www/unieventos/app/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2013-12-17 00:25:35 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /unieventos/css/login/bootstrap3.css
+Stack Trace:
+#0 /var/www/unieventos/app/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2013-12-17 00:27:10 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /unieventos/css/login/bootstrap3.css
+Stack Trace:
+#0 /var/www/unieventos/app/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2013-12-17 00:27:30 Error: [PDOException] SQLSTATE[42S22]: Column not found: 1054 Unknown column 'Inscricao.evento_id' in 'field list'
+Request URL: /unieventos/admin/eventos/listaAprovacoes
+Stack Trace:
+#0 /var/www/unieventos/lib/Cake/Model/Datasource/DboSource.php(460): PDOStatement->execute(Array)
+#1 /var/www/unieventos/lib/Cake/Model/Datasource/DboSource.php(426): DboSource->_execute('SELECT `Inscric...', Array)
+#2 /var/www/unieventos/lib/Cake/Model/Datasource/DboSource.php(666): DboSource->execute('SELECT `Inscric...', Array, Array)
+#3 /var/www/unieventos/lib/Cake/Model/Datasource/DboSource.php(1339): DboSource->fetchAll('SELECT `Inscric...', false)
+#4 /var/www/unieventos/lib/Cake/Model/Datasource/DboSource.php(1201): DboSource->fetchAssociated(Object(Evento), 'SELECT `Inscric...', Array)
+#5 /var/www/unieventos/lib/Cake/Model/Datasource/DboSource.php(1112): DboSource->queryAssociation(Object(Evento), Object(Inscricao), 'hasMany', 'Inscricao', Array, Array, true, Array, 0, Array)
+#6 /var/www/unieventos/lib/Cake/Model/Model.php(2880): DboSource->read(Object(Evento), Array)
+#7 /var/www/unieventos/lib/Cake/Model/Model.php(2852): Model->_readDataSource('all', Array)
+#8 /var/www/unieventos/app/Controller/EventosController.php(102): Model->find('all', Array)
+#9 [internal function]: EventosController->admin_listaAprovacoes()
+#10 /var/www/unieventos/lib/Cake/Controller/Controller.php(490): ReflectionMethod->invokeArgs(Object(EventosController), Array)
+#11 /var/www/unieventos/lib/Cake/Routing/Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
+#12 /var/www/unieventos/lib/Cake/Routing/Dispatcher.php(162): Dispatcher->_invoke(Object(EventosController), Object(CakeRequest), Object(CakeResponse))
+#13 /var/www/unieventos/app/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#14 {main}
+2013-12-17 00:29:11 Error: [PDOException] SQLSTATE[42S22]: Column not found: 1054 Unknown column 'Inscricao.evento_id' in 'field list'
+Request URL: /unieventos/admin/eventos/listaAprovacoes
+Stack Trace:
+#0 /var/www/unieventos/lib/Cake/Model/Datasource/DboSource.php(460): PDOStatement->execute(Array)
+#1 /var/www/unieventos/lib/Cake/Model/Datasource/DboSource.php(426): DboSource->_execute('SELECT `Inscric...', Array)
+#2 /var/www/unieventos/lib/Cake/Model/Datasource/DboSource.php(666): DboSource->execute('SELECT `Inscric...', Array, Array)
+#3 /var/www/unieventos/lib/Cake/Model/Datasource/DboSource.php(1339): DboSource->fetchAll('SELECT `Inscric...', false)
+#4 /var/www/unieventos/lib/Cake/Model/Datasource/DboSource.php(1201): DboSource->fetchAssociated(Object(Evento), 'SELECT `Inscric...', Array)
+#5 /var/www/unieventos/lib/Cake/Model/Datasource/DboSource.php(1112): DboSource->queryAssociation(Object(Evento), Object(Inscricao), 'hasMany', 'Inscricao', Array, Array, true, Array, 0, Array)
+#6 /var/www/unieventos/lib/Cake/Model/Model.php(2880): DboSource->read(Object(Evento), Array)
+#7 /var/www/unieventos/lib/Cake/Model/Model.php(2852): Model->_readDataSource('all', Array)
+#8 /var/www/unieventos/app/Controller/EventosController.php(102): Model->find('all', Array)
+#9 [internal function]: EventosController->admin_listaAprovacoes()
+#10 /var/www/unieventos/lib/Cake/Controller/Controller.php(490): ReflectionMethod->invokeArgs(Object(EventosController), Array)
+#11 /var/www/unieventos/lib/Cake/Routing/Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
+#12 /var/www/unieventos/lib/Cake/Routing/Dispatcher.php(162): Dispatcher->_invoke(Object(EventosController), Object(CakeRequest), Object(CakeResponse))
+#13 /var/www/unieventos/app/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#14 {main}
+2013-12-17 00:33:01 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /unieventos/css/login/bootstrap3.css
+Stack Trace:
+#0 /var/www/unieventos/app/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2013-12-17 00:35:08 Error: [PDOException] SQLSTATE[23000]: Integrity constraint violation: 1062 Duplicate entry '0' for key 'PRIMARY'
+Request URL: /unieventos/admin/inscricoes/inscricoesEvento/2
+Stack Trace:
+#0 /var/www/unieventos/lib/Cake/Model/Datasource/DboSource.php(460): PDOStatement->execute(Array)
+#1 /var/www/unieventos/lib/Cake/Model/Datasource/DboSource.php(426): DboSource->_execute('INSERT INTO `un...', Array)
+#2 /var/www/unieventos/lib/Cake/Model/Datasource/DboSource.php(1004): DboSource->execute('INSERT INTO `un...')
+#3 /var/www/unieventos/lib/Cake/Model/Model.php(1827): DboSource->create(Object(Inscricao), Array, Array)
+#4 /var/www/unieventos/app/Controller/InscricoesController.php(28): Model->save(Array)
+#5 [internal function]: InscricoesController->admin_inscricoesEvento('2')
+#6 /var/www/unieventos/lib/Cake/Controller/Controller.php(490): ReflectionMethod->invokeArgs(Object(InscricoesController), Array)
+#7 /var/www/unieventos/lib/Cake/Routing/Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
+#8 /var/www/unieventos/lib/Cake/Routing/Dispatcher.php(162): Dispatcher->_invoke(Object(InscricoesController), Object(CakeRequest), Object(CakeResponse))
+#9 /var/www/unieventos/app/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#10 {main}
+2013-12-17 00:44:51 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /unieventos/css/login/bootstrap3.css
+Stack Trace:
+#0 /var/www/unieventos/app/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2013-12-17 00:45:59 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /unieventos/css/login/bootstrap3.css
+Stack Trace:
+#0 /var/www/unieventos/app/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2013-12-17 00:46:04 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /unieventos/css/login/bootstrap3.css
+Stack Trace:
+#0 /var/www/unieventos/app/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2013-12-17 00:46:32 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /unieventos/css/login/bootstrap3.css
+Stack Trace:
+#0 /var/www/unieventos/app/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2013-12-17 00:47:55 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /unieventos/css/login/bootstrap3.css
+Stack Trace:
+#0 /var/www/unieventos/app/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2013-12-17 00:48:22 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /unieventos/css/login/bootstrap3.css
+Stack Trace:
+#0 /var/www/unieventos/app/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2013-12-17 00:48:27 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /unieventos/css/login/bootstrap3.css
+Stack Trace:
+#0 /var/www/unieventos/app/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2013-12-17 00:48:53 Error: [MissingActionException] Action EventosController::admin_deletar() could not be found.
+Exception Attributes: array (
+  'controller' => 'EventosController',
+  'action' => 'admin_deletar',
+)
+Request URL: /unieventos/admin/eventos/deletar/4
+Stack Trace:
+#0 /var/www/unieventos/lib/Cake/Routing/Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
+#1 /var/www/unieventos/lib/Cake/Routing/Dispatcher.php(162): Dispatcher->_invoke(Object(EventosController), Object(CakeRequest), Object(CakeResponse))
+#2 /var/www/unieventos/app/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2013-12-17 01:06:48 Error: [PDOException] SQLSTATE[42S22]: Column not found: 1054 Unknown column 'Estado.usuario_id' in 'field list'
+Request URL: /unieventos/eventos/view/5
+Stack Trace:
+#0 /var/www/unieventos/lib/Cake/Model/Datasource/DboSource.php(460): PDOStatement->execute(Array)
+#1 /var/www/unieventos/lib/Cake/Model/Datasource/DboSource.php(426): DboSource->_execute('SELECT `Estado`...', Array)
+#2 /var/www/unieventos/lib/Cake/Model/Datasource/DboSource.php(666): DboSource->execute('SELECT `Estado`...', Array, Array)
+#3 /var/www/unieventos/lib/Cake/Model/Datasource/DboSource.php(1339): DboSource->fetchAll('SELECT `Estado`...', false)
+#4 /var/www/unieventos/lib/Cake/Model/Datasource/DboSource.php(1201): DboSource->fetchAssociated(Object(Usuario), 'SELECT `Estado`...', Array)
+#5 /var/www/unieventos/lib/Cake/Model/Datasource/DboSource.php(1291): DboSource->queryAssociation(Object(Usuario), Object(AppModel), 'hasMany', 'Estado', Array, Array, true, Array, 0, Array)
+#6 /var/www/unieventos/lib/Cake/Model/Datasource/DboSource.php(1112): DboSource->queryAssociation(Object(Evento), Object(Usuario), 'hasAndBelongsTo...', 'Usuario', Array, Array, true, Array, 1, Array)
+#7 /var/www/unieventos/lib/Cake/Model/Model.php(2880): DboSource->read(Object(Evento), Array)
+#8 /var/www/unieventos/lib/Cake/Model/Model.php(2852): Model->_readDataSource('first', Array)
+#9 /var/www/unieventos/lib/Cake/Model/Model.php(1589): Model->find('first', Array)
+#10 /var/www/unieventos/app/Controller/EventosController.php(44): Model->read(NULL, '5')
+#11 [internal function]: EventosController->view('5')
+#12 /var/www/unieventos/lib/Cake/Controller/Controller.php(490): ReflectionMethod->invokeArgs(Object(EventosController), Array)
+#13 /var/www/unieventos/lib/Cake/Routing/Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
+#14 /var/www/unieventos/lib/Cake/Routing/Dispatcher.php(162): Dispatcher->_invoke(Object(EventosController), Object(CakeRequest), Object(CakeResponse))
+#15 /var/www/unieventos/app/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#16 {main}
+2013-12-17 01:06:48 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /unieventos/css/cake.generic.css
+Stack Trace:
+#0 /var/www/unieventos/app/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2013-12-17 01:12:38 Error: Fatal Error (4): syntax error, unexpected ']', expecting ',' or ';' in [/var/www/unieventos/app/View/Eventos/view.ctp, line 8]
+2013-12-17 01:12:38 Error: [FatalErrorException] syntax error, unexpected ']', expecting ',' or ';'
+Request URL: /unieventos/eventos/view/5
+Stack Trace:
+#0 /var/www/unieventos/lib/Cake/Error/ErrorHandler.php(205): ErrorHandler::handleFatalError(4, 'syntax error, u...', '/var/www/unieve...', 8)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', '/var/www/unieve...', 8, Array)
+#2 /var/www/unieventos/lib/Cake/Core/App.php(931): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', '/var/www/unieve...', 8, Array)
+#3 /var/www/unieventos/lib/Cake/Core/App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2013-12-17 01:14:29 Error: [PDOException] SQLSTATE[23000]: Integrity constraint violation: 1062 Duplicate entry '5-2' for key 'PRIMARY'
+Request URL: /unieventos/cadastros/inscricao/5
+Stack Trace:
+#0 /var/www/unieventos/lib/Cake/Model/Datasource/DboSource.php(460): PDOStatement->execute(Array)
+#1 /var/www/unieventos/lib/Cake/Model/Datasource/DboSource.php(426): DboSource->_execute('INSERT INTO `un...', Array)
+#2 /var/www/unieventos/lib/Cake/Model/Datasource/DboSource.php(1004): DboSource->execute('INSERT INTO `un...')
+#3 /var/www/unieventos/lib/Cake/Model/Model.php(1827): DboSource->create(Object(AppModel), Array, Array)
+#4 /var/www/unieventos/app/Controller/CadastrosController.php(15): Model->save(Array)
+#5 [internal function]: CadastrosController->inscricao('5')
+#6 /var/www/unieventos/lib/Cake/Controller/Controller.php(490): ReflectionMethod->invokeArgs(Object(CadastrosController), Array)
+#7 /var/www/unieventos/lib/Cake/Routing/Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
+#8 /var/www/unieventos/lib/Cake/Routing/Dispatcher.php(162): Dispatcher->_invoke(Object(CadastrosController), Object(CakeRequest), Object(CakeResponse))
+#9 /var/www/unieventos/app/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#10 {main}
+2013-12-17 01:14:49 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /unieventos/css/login/bootstrap3.css
+Stack Trace:
+#0 /var/www/unieventos/app/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2013-12-17 01:15:11 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /unieventos/css/login/bootstrap3.css
+Stack Trace:
+#0 /var/www/unieventos/app/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2013-12-17 01:15:54 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /unieventos/css/login/bootstrap3.css
+Stack Trace:
+#0 /var/www/unieventos/app/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2013-12-17 01:16:09 Error: [MissingActionException] Action CadastrosController::index() could not be found.
+Exception Attributes: array (
+  'controller' => 'CadastrosController',
+  'action' => 'index',
+)
+Request URL: /unieventos/cadastros
+Stack Trace:
+#0 /var/www/unieventos/lib/Cake/Routing/Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
+#1 /var/www/unieventos/lib/Cake/Routing/Dispatcher.php(162): Dispatcher->_invoke(Object(CadastrosController), Object(CakeRequest), Object(CakeResponse))
+#2 /var/www/unieventos/app/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}

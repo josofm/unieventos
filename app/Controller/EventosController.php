@@ -40,7 +40,6 @@ class EventosController extends AppController{
             throw new NotFoundException(__('Evento invalido'));
         }
         $this->Evento->hasMany['Inscricao']['conditions'] = array('Inscricao.evento_id' => $id);
-
         $this->set('evento', $this->Evento->findById($id));
     }
 
@@ -129,7 +128,6 @@ class EventosController extends AppController{
     }
 
     public function eventosRecentes(){
-        $this->Evento->recursive= 0;
        return $this->Evento->find(
             'all', array(
                 'limit' => 4, 
@@ -137,6 +135,7 @@ class EventosController extends AppController{
                 'order' => array('created DESC')
                 )
             );
+        
     }
 
     public function eventosInicio(){

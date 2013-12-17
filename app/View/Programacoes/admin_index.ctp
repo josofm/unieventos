@@ -4,7 +4,7 @@
 <?php if(empty($prog)){ ?>
     <div class="alert alert-info">
       <button type="button" class="close" data-dismiss="alert">&times;</button>
-      <strong><?php echo __('Atenção!!') ?></strong> <?php echo __('No momento não existe nenhum evento cadstrado.'); ?>
+      <strong><?php echo __('Atenção!!') ?></strong> <?php echo __('No momento não existe nenhuma programação cadastrada.'); ?>
     </div>
 <?php }else{ ?>
     <table class="table table-hover">
