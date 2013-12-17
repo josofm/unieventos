@@ -10,14 +10,35 @@
       </div>
     </div>
   </div>
-  <!--<div class="subnav">
+  <div class="subnav" style="top:0px;">
     <ul class="nav nav-pills">
-      <li><a href="#typography">Typography</a></li>
-      <li><a href="#navbar">Navbar</a></li>
-      <li><a href="#buttons">Buttons</a></li>
-      <li><a href="#forms">Forms</a></li>
-      <li><a href="#tables">Tables</a></li>
-      <li><a href="#miscellaneous">Miscellaneous</a></li>
+      <li><a href="#typography">Home</a></li>
+
+      <li class="dropdown" id="preview-menu">
+            <a class="dropdown-toggle" data-toggle="dropdown" href="#">Eventos<b class="caret"></b></a>
+            <ul class="dropdown-menu">
+              <li>
+                <?php echo $this->Html->link(__('Proximos'), array('controller' => 'eventos', 'action' => 'todosInicio')) ?>
+              </li>
+              <li>
+                <?php echo $this->Html->link(__('recentes'), array('controller' => 'eventos', 'action' => 'recentesAll')) ?>
+              </li>
+              <li>
+                <?php echo $this->Html->link(__('Todos'), array('controller' => 'eventos', 'action' => 'todosEventos')) ?>
+              </li>
+            </ul>
+          </li>
+          <?php if(!$logged_in): ?>
+            <?php echo $this->Html->tag('li',$this->Html->link(__('Cadastre-se'), array('controller' => 'usuarios', 'action' => 'cadastro')));  ?>
+            <?php echo $this->Html->tag('li', $this->Html->link(__('Entrar'), array('controller' => 'usuarios', 'action' => 'login', 'admin' => false))); ?>
+            
+          <?php else: ?>
+            <li>
+              <?php echo $this->Html->link(__('Painel de Controle'), array('controller' => 'pages', 'action' => 'index', 'admin' => true), array('target' => '_blank')) ?>
+            </li>
+            
+
+          <?php endif; ?>
     </ul>
-  </div>-->
+  </div>
 </header>

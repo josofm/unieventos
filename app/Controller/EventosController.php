@@ -43,6 +43,16 @@ class EventosController extends AppController{
         $this->set('evento', $this->Evento->findById($id));
     }
 
+    public function verMais($id = null) {
+        //$this->Evento->recursive= 0;
+        $this->Evento->id = $id;
+        if (!$this->Evento->exists()) {
+            throw new NotFoundException(__('Evento invalido'));
+        }
+        $this->Evento->hasMany['Inscricao']['conditions'] = array('Inscricao.evento_id' => $id);
+        $this->set('evento', $this->Evento->findById($id));
+    }
+
 	public function admin_index(){
 		$this->Evento->recursive= 0;
 		$this->set('eventos', $this->Evento->findById('all'));

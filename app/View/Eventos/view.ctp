@@ -9,8 +9,15 @@
 
 
 <?php 
-	if($logged_in){ 
-		echo $this->Form->postLink('Inscrever', 
+	if($logged_in){
+		echo $this->Form->postLink('Ver mais',
+			array(
+				'controller' => 'eventos',
+				'action' => 'verMais',
+				$evento['Evento']['id']
+			)
+		); 
+		/*echo $this->Form->postLink('Inscrever', 
 			array(
 				'controller' => 'cadastros', 
 				'action' => 'inscricao', 
@@ -19,7 +26,7 @@
 			array(
                         'confirm' => __('Você deseja realmente inscriver-se no evento "'. $evento['Evento']['nome'].'"?')
                         )
-		);
+		);*/
 	}
 ?>
 

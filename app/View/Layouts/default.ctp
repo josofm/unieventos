@@ -36,7 +36,7 @@
 
   </head>
 
-  <body class="preview" id="top" data-spy="scroll" data-target=".subnav" data-offset="80">
+  <body id="top" data-spy="scroll" data-target=".subnav" data-offset="80">
     <?php echo $this->Html->script('site/bsa'); ?>
 
 

@@ -1,2 +1,2 @@
-1387243401
-a:2:{i:0;b:0;s:3:"app";a:1:{s:7:"plugins";a:4:{i:0;s:6:"CakeBr";i:1;s:7:"CakePdf";i:2;s:10:"MeioUpload";i:3;s:6:"Upload";}}}
+1387251524
+a:2:{i:0;b:0;s:3:"app";a:1:{s:7:"plugins";a:5:{i:0;s:7:"Boletos";i:1;s:6:"CakeBr";i:2;s:7:"CakePdf";i:3;s:10:"MeioUpload";i:4;s:6:"Upload";}}}
