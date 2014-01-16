@@ -3,12 +3,12 @@ App::uses('AppController', 'Controller');
 App::uses('CakeEmail', 'Network/Email');
 
 class EventosController extends AppController{
-	public $helpers = array('Html', 'Form');
+	public $helpers = array('Html', 'Form','Locale.Locale');
 	public $components = array('Session');
 
 
     public function todosEventos(){
-       $this->set('evento', 
+       $this->set('eventos', 
             $this->Evento->find(
             'all', array( 
                 'conditions' => array('aprovacao' => 1)
@@ -18,8 +18,8 @@ class EventosController extends AppController{
         
     }
 
-    public function todosInicio(){
-       $this->set('evento', 
+    public function todosProximo(){
+       $this->set('eventos', 
             $this->Evento->find(
             'all', array( 
                 'conditions' => array(
@@ -159,6 +159,10 @@ class EventosController extends AppController{
                 'order' => array('data_ini ASC')
                 )
             );        
+    }
+
+    public function logar(){
+        
     }
 
 }

@@ -27,6 +27,19 @@
 // Setup a 'default' cache configuration for use in the application.
 CakePlugin::loadAll();
 CakePlugin::load('CakePdf', array('bootstrap' => true, 'routes' => true));
+CakePlugin::load('CakePtbr');
+ 
+Configure::write('CakePdf', array(
+'engine' => 'CakePdf.DomPdf',
+'margin' => array(
+'bottom' => 15,
+'left' => 50,
+'right' => 30,
+'top' => 45
+),
+'encoding'=>'UTF-8',
+'download' => true
+));
 //CakePlugin::load('upload');
 Cache::config('default', array('engine' => 'File'));
 
@@ -110,3 +123,7 @@ CakeLog::config('error', array(
 	'types' => array('warning', 'error', 'critical', 'alert', 'emergency'),
 	'file' => 'error',
 ));
+
+setlocale(LC_ALL, 'pt_BR.utf-8', 'pt_BR', 'pt-br');
+
+include CakePlugin::path('CakePtbr') . 'Config' . DS . 'traducao_core.php';

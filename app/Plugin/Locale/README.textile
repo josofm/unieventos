@@ -1,0 +1,65 @@
+h1. CakePHP Locale !https://travis-ci.org/radig/locale.png?branch=master(Build Status)!:https://travis-ci.org/radig/locale
+
+That plugin allow your users to input localized data (like dates and decimals) while
+kept consistency at database-level.
+
+It's also included a Helper to output a non-localized data in users locale format.
+
+Some static libs are delivered in bundle and are used by Helper and Behavior,
+at the same time allow you to work with localized data where you need (like shells).
+----
+Este plugin permite que usuários de seu sistema visualizem e insiram
+dados em formatos locais/regionais ao mesmo tempo que garante a consistência
+dos dados convertendo-o para um formato aceito pelo banco de dados escolhido.
+
+h2. Autor e Copyright
+
+* *Copyright 2009-2013,* "*Radig - Soluções em TI*":http://www.radig.com.br
+* Licença MIT - Isto quer dizer que o código está disponível sem nenhuma garantia, ao mesmo tempo que
+você pode usa-lo de forma isolada ou em conjunto com seu próprio código.
+
+
+h2. Observações/Observations
+
+* PHP >= 5.3
+* CakePHP 2.x
+* Consulte os testes incluído no plugin para ver melhor seu funcionamento (Consult unit tests included)
+
+h2. Como usar / How begin
+
+* A única configuração necessária é ter definido o locale da sua aplicação. Caso não tenha feito isso, basta utilizar a função _setlocale_
+* Only configuration is define the locale of application with:
+
+bc. setlocale(LC_ALL, 'pt_BR.utf-8', 'pt_BR', 'pt-br');
+
+h3. Utilizando o Behavior
+
+* Basta definir, no model que deseja ativa-lo, a seguinte linha:
+
+bc. $actsAs = array('Locale.Locale');
+
+* A partir daí o behavior vai converter seus dados antes da validação e antes de salvar.
+
+h3. Utilizando o Helper
+
+* Nos controladores de interesse, adicione o helper _Locale.Locale_, deixando similar a linha abaixo:
+
+bc. $helpers = array('Locale.Locale');
+
+* Agora nas views de seu controlador, você pode chamar o helper, como abaixo:
+
+bc. echo $this->Locale->dateTime('2010-08-26');
+
+h3. Além do Behavior e Helper...
+
+Agora você também pode trabalhar com a normalização de desnormalização de dados em diferentes contextos
+de sua aplicação (como em Shells), bastando para isso carregar as libs Localize e Unlocalize, de acordo
+com suas necessidades.
+
+bc. App::uses('Localize', 'Locale.Lib');
+
+Elas são todas estáticas, então você deve usa-las sem se preocupar com instâncias:
+
+bc. $localizada = Localize::date('2012-04-16');
+
+Desta forma, a variável _$localizada_ armazenará _"16/04/2012"_ caso seu locale esteja definido para pt_BR

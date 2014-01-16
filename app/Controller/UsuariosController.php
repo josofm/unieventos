@@ -59,7 +59,9 @@ class UsuariosController extends AppController {
         if ($this->request->is('post') || $this->request->is('put')) {
             if ($this->Usuario->save($this->request->data)) {
                 $this->Session->setFlash(__('O Usuario foi Salvo com sucesso.'),'success');
-                return $this->redirect(array('action' => 'index'));
+                if($this->Auth->user('nivel') == 1)
+                	return $this->redirect(array('action' => 'index'));
+                return $this->redirect(array('controller' => 'pages','action' => 'index','admin' => true));
             }
             $this->Session->setFlash(__('O usuario não foi salvo, tente novamente em alguns segundos.'),'error');
         } else {
@@ -90,12 +92,11 @@ class UsuariosController extends AppController {
 				if($this->Auth->login()){
 					$this->redirect(array('controller' => 'pages', 'action' => 'index', 'admin' => false));	
 				}
-					
-				}else{
-					$this->Session->setFlash('Siape e/ou Senha Incorretos!');
+				else{
+					$this->Session->setFlash(__('Email e/ou Senha Incorretos!'),'senha');
 				}
 			}
-
+}
 	public function logout(){
 			$this->Session->destroy();
 			$this->redirect($this->Auth->logout());
@@ -110,7 +111,9 @@ class UsuariosController extends AppController {
         if ($this->request->is('post') || $this->request->is('put')) {
             if ($this->Usuario->save($this->request->data)) {
                 $this->Session->setFlash(__('O Usuario foi Salvo com sucesso.'),'success');
-                return $this->redirect(array('action' => 'index'));
+                if($this->Auth->user('nivel') == 1)
+                	return $this->redirect(array('action' => 'index'));
+                return $this->redirect(array('controller' => 'pages','action' => 'index','admin' => true));
             }
             $this->Session->setFlash(__('O usuario não foi salvo, tente novamente em alguns segundos.'),'error');
         } else {

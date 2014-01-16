@@ -1,11 +1,12 @@
 <h1><?php echo h($evento['Evento']['nome']); ?></h1>
 
-<p><small>Created: <?php echo $evento['Evento']['created']; ?></small></p>
-
 <p><?php echo h($evento['Evento']['descricao']); ?></p>
 
-<p><?php echo $evento['Inscricao'][0]['data_ini']; ?></p>
-<p><?php echo $evento['Inscricao'][0]['valor']; ?></p>
+<b>Inscrições</b>:
+<p> De:<?php echo $this->Locale->date($evento['Inscricao'][0]['data_ini']); ?><br /> 
+Ate  <?php echo $this->Locale->date($evento['Inscricao'][0]['data_fim']); ?></p>
+
+<p>Valor R$: <?php echo $evento['Inscricao'][0]['valor']; ?></p>
 
 
 
@@ -22,11 +23,16 @@
                         'confirm' => __('Você deseja realmente inscriver-se no evento "'. $evento['Evento']['nome'].'"?')
                         )
 		);
+		echo ' | ';
+		echo $this->Html->link('Programação', 
+			array('controller' => 'programacoes','action' => 'programacao', $evento['Evento']['id'])
+		);
+	}else{
+		echo $this->Html->link('Ver mais',
+			array(
+				'controller' => 'eventos',
+				'action' => 'logar'
+			)
+		);
 	}
-?>
-
-<?php 
-echo '<pre>';
-var_dump($evento); 
-echo '</pre>';
 ?>

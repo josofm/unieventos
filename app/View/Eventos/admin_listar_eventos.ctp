@@ -18,7 +18,7 @@
                 <?php echo $l['Evento']['tipo_evento']; ?>
             </td>
             <td>
-                <?php echo $this->Html->link('Inscrever', array('action' => 'inscricao', $l['Evento']['id'])) ?>
+                <?php echo $this->Html->link('Ver Mais', array('action' => 'verMais', 'admin' => false, $l['Evento']['id']), array('target' => '_blank', 'class' => 'btn btn-primary')); ?>
             </td>
             <?php //echo $this->element('sql_dump'); ?>
             

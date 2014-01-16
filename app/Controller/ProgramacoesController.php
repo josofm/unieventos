@@ -3,6 +3,7 @@ App::uses('AppController', 'Controller');
 
 class ProgramacoesController extends AppController{
 	public $uses = array('Programacao');
+    public $helpers = array('CakePtbr.Formatacao');
     
 	public function admin_index($id = null){
         $this->set('prog', $this->Programacao->find('all', array('conditions' => array('evento_id' => $id))));
@@ -21,6 +22,10 @@ class ProgramacoesController extends AppController{
             }    
         }		
 	}
+
+    public function programacao($id =null){
+        $this->set('prog', $this->Programacao->find('all', array('conditions' => array('evento_id' => $id))));
+    }
 }
 
 ?>

@@ -40,5 +40,7 @@
         </ul>
     </li>
     <?php } ?>
-    
+    <li>
+        <?php echo $this->html->link('<i class="fa fa-th-list"></i> '.__('Gerar Boletos'), array('controller' => 'cadastros', 'action' => 'boletos', 'admin' => true), array('escape' => false)) ?>
+    </li>
 </ul>

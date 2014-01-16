@@ -26,8 +26,8 @@
                     <?php echo $evento['Evento']['descricao']; ?>
                 </td>
                 <td>
-                    <?php echo $this->Html->link(__('Ver Programação'), array('controller' => 'programacoes','action' => 'index', 'admin' => true, $evento['Evento']['id'])); ?> |
-                    <?php echo $this->Form->postLink('Deletar', array('action' => 'deletar', 'admin' => true, $evento['Evento']['id']),
+                    <?php echo $this->Html->link(__('Ver Programação'), array('controller' => 'programacoes','action' => 'index', 'admin' => true, $evento['Evento']['id']), array('class' => 'btn btn-primary')); ?> 
+                    <?php echo $this->Form->postLink('Deletar', array('action' => 'deletar', 'admin' => true, $evento['Evento']['id']),array('class' => 'btn btn-primary'),
                         array('confirm' => __('Você Deseja deletar o evento '.$evento['Evento']['nome']) )); ?>
                 </td>
             </tr>
