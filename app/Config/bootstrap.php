@@ -110,3 +110,5 @@ CakeLog::config('error', array(
 	'types' => array('warning', 'error', 'critical', 'alert', 'emergency'),
 	'file' => 'error',
 ));
+
+setlocale(LC_ALL, 'pt_BR.utf-8', 'pt_BR', 'pt-br');

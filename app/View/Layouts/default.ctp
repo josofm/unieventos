@@ -58,7 +58,7 @@
             <?php echo $this->fetch('content'); ?>
         </div>
         <div class="span4">
-           <?php echo $this->element('site/siteLat'); ?>
+          <?php echo $this->element('site/siteLat'); ?>
         </div>
     </div>
 
@@ -84,6 +84,6 @@
     echo $this->Html->script('site/bootswatch.js');
     ?>
 
-<?php echo $this->element('sql_dump'); ?>
+<?php //echo $this->element('sql_dump'); ?>
   </body>
 </html>

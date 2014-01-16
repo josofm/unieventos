@@ -1,0 +1,1 @@
+Sua inscrição foi paga com sucesso.

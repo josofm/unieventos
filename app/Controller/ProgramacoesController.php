@@ -21,6 +21,10 @@ class ProgramacoesController extends AppController{
             }    
         }		
 	}
+
+    public function programacao($id =null){
+        $this->set('prog', $this->Programacao->find('all', array('conditions' => array('evento_id' => $id))));
+    }
 }
 
 ?>

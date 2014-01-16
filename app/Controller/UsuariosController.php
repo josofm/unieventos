@@ -90,12 +90,11 @@ class UsuariosController extends AppController {
 				if($this->Auth->login()){
 					$this->redirect(array('controller' => 'pages', 'action' => 'index', 'admin' => false));	
 				}
-					
-				}else{
-					$this->Session->setFlash('Siape e/ou Senha Incorretos!');
+				else{
+					$this->Session->setFlash(__('Email e/ou Senha Incorretos!'),'senha');
 				}
 			}
-
+}
 	public function logout(){
 			$this->Session->destroy();
 			$this->redirect($this->Auth->logout());

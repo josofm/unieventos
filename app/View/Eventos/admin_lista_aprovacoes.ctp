@@ -20,7 +20,7 @@
                         'controller' => 'eventos',
                         'action' => 'aprovacao', 
                         'admin' => true, $l['Evento']['id']
-                        ),  
+                        ),array('class' => 'btn btn-primary'),  
                     array(
                         'confirm' => __('Você deseja realmente aprovar o evento "'. $l['Evento']['nome'].'"?')
                         )

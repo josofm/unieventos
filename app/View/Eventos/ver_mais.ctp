@@ -22,11 +22,16 @@
                         'confirm' => __('Você deseja realmente inscriver-se no evento "'. $evento['Evento']['nome'].'"?')
                         )
 		);
+		echo ' | ';
+		echo $this->Html->link('Programação', 
+			array('controller' => 'programacoes','action' => 'programacao', $evento['Evento']['id'])
+		);
+	}else{
+		echo $this->Html->link('Ver mais',
+			array(
+				'controller' => 'eventos',
+				'action' => 'logar'
+			)
+		);
 	}
-?>
-
-<?php 
-echo '<pre>';
-var_dump($evento); 
-echo '</pre>';
 ?>

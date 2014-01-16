@@ -12,16 +12,13 @@
   </div>
   <div class="subnav" style="top:0px;">
     <ul class="nav nav-pills">
-      <li><a href="#typography">Home</a></li>
+      <li><?php echo $this->Html->link('Home', array('controller' => 'pages', 'action' => 'index')) ?></li>
 
       <li class="dropdown" id="preview-menu">
             <a class="dropdown-toggle" data-toggle="dropdown" href="#">Eventos<b class="caret"></b></a>
             <ul class="dropdown-menu">
               <li>
-                <?php echo $this->Html->link(__('Proximos'), array('controller' => 'eventos', 'action' => 'todosInicio')) ?>
-              </li>
-              <li>
-                <?php echo $this->Html->link(__('recentes'), array('controller' => 'eventos', 'action' => 'recentesAll')) ?>
+                <?php echo $this->Html->link(__('Proximos'), array('controller' => 'eventos', 'action' => 'todosProximo')) ?>
               </li>
               <li>
                 <?php echo $this->Html->link(__('Todos'), array('controller' => 'eventos', 'action' => 'todosEventos')) ?>

@@ -6,7 +6,7 @@
     <title>Signin Template for Bootstrap</title>
     <!-- Bootstrap core CSS -->
     <?php 
-      echo $this->Html->css('login/bootstrap3');
+      echo $this->Html->css('login/bootstrap');
       echo $this->Html->css('login/login');
     ?>
 
