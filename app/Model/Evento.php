@@ -2,6 +2,10 @@
 	class Evento extends AppModel{
 		public $hasMany = array('Programacao','Inscricao');
 		public $displayField = 'name';
+<<<<<<< HEAD
+=======
+		
+>>>>>>> c075f76cf1acea2e0b4814bee435f9abc78a18d4
 		//public $actsAs = array('Locale.Locale');
 
 		public $hasAndBelongsToMany = array(

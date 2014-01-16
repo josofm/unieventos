@@ -1,11 +1,12 @@
 <h1><?php echo h($evento['Evento']['nome']); ?></h1>
 
-<p><small>Created: <?php echo $evento['Evento']['created']; ?></small></p>
-
 <p><?php echo h($evento['Evento']['descricao']); ?></p>
 
-<p><?php echo $evento['Inscricao'][0]['data_ini']; ?></p>
-<p><?php echo $evento['Inscricao'][0]['valor']; ?></p>
+<b>Inscrições</b>:
+<p> De:<?php echo $this->Locale->date($evento['Inscricao'][0]['data_ini']); ?><br /> 
+Ate  <?php echo $this->Locale->date($evento['Inscricao'][0]['data_fim']); ?></p>
+
+<p>Valor R$: <?php echo $evento['Inscricao'][0]['valor']; ?></p>
 
 
 

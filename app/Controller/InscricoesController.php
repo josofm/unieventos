@@ -26,7 +26,7 @@
 	            $this->Inscricao->create();
 	            $this->request->data['Inscricao']['evento_id'] = $idEvento;
 	            if ($this->Inscricao->save($this->request->data)) {
-	                $this->Session->setFlash(__('Your post has been saved.'));
+	                $this->Session->setFlash(__('Seu Evento foi cadastrado.'));
 	                return $this->redirect(array('controller' => 'pages','action' => 'index', 'admin' => true));
 	            }
 	            $this->Session->setFlash(__('Unable to add your post.'));

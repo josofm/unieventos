@@ -15,7 +15,6 @@
 			    </a>
 			</div>
 			<div class="col-md-8">
-                               <form role="form">
             <div class="form-group">
                 <label for="nome">Nome</label>
                 <?php echo $this->Form->input('nome', array('class' => 'form-control', 'label' => false, 'placeholder' => 'Nome completo ')); ?>
@@ -48,16 +47,8 @@
               <label for="email">Email</label>
                <?php echo $this->Form->input('email', array('class' => 'form-control', 'label' => false)); ?> 
          </div>
-                                   
+                                  
          <div class="form-group">
-              <label for="senha">Password</label>
-               <?php echo $this->Form->input('senha', array('type' => 'password','class' => 'form-control', 'label' => false, 'value'=>'')); ?> 
-         </div>
-         <div class="form-group">
-              <label for="senha_confirm">Confirmar senha</label>
-               <?php echo $this->Form->input('senha_confirm', array('class' => 'form-control', 'label' => false, 'value'=>'', 'type'=>'password')); ?> 
-         </div>
-        <div class="form-group">
               <label for="instituicao">Instituição de Ensino</label>
                <?php echo $this->Form->input('instituicao', array('class' => 'form-control', 'label' => false)); ?> 
          </div>
@@ -65,17 +56,10 @@
               <label for="end_rede_soc">Rede Social</label>
                <?php echo $this->Form->input('end_rede_soc', array('class' => 'form-control', 'label' => false)); ?> 
          </div>
-         
-         <div class="form-group">
-              <label for="estado_id">Estado</label>
-               <?php echo $this->Form->input('cidade_id', array('class' => 'form-control', 'label' => false, 'id' =>'cidades', 'empty' => 'Selecione uma cidade...')); ?> 
-         </div>
-            </div>
+        </div>
                     <div class="btn btn-default">     
 			 <?php  echo $this->Form->end(__('Cadastrar'), array('class' => 'btn btn-primary')); ?>
       </div>  
-            
-</form>
                             
 			</div>
 		</div>
