@@ -4563,3 +4563,12 @@ Stack Trace:
 #3 /var/www/unieventos/lib/Cake/Core/App.php(904): App::_checkFatalError()
 #4 [internal function]: App::shutdown()
 #5 {main}
+2014-01-16 23:55:10 Error: Fatal Error (4): syntax error, unexpected '<<' (T_SL) in [C:\xampp\htdocs\unieventos\app\Config\bootstrap.php, line 127]
+2014-01-16 23:55:10 Error: [FatalErrorException] syntax error, unexpected '<<' (T_SL)
+Stack Trace:
+#0 C:\xampp\htdocs\unieventos\lib\Cake\Error\ErrorHandler.php(205): ErrorHandler::handleFatalError(4, 'syntax error, u...', 'C:\xampp\htdocs...', 127)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', 'C:\xampp\htdocs...', 127, Array)
+#2 C:\xampp\htdocs\unieventos\lib\Cake\Core\App.php(931): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', 'C:\xampp\htdocs...', 127, Array)
+#3 C:\xampp\htdocs\unieventos\lib\Cake\Core\App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
