@@ -67,7 +67,7 @@ class DATABASE_CONFIG {
 		'host' => 'localhost',
 		'login' => 'unieventos',
 		'password' => 'uN13v3nt0$',
-		'database' => 'uniEvents',
+		'database' => 'unievents',
 		'prefix' => '',
 		//'encoding' => 'utf8',
 	);
