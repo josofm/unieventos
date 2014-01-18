@@ -4653,3 +4653,72 @@ Stack Trace:
 #23 /var/www/unieventos/app/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
 #24 {main}
 >>>>>>> 3303da514fc17eee3209a3f9b4d77224152590b7
+2014-01-18 20:24:28 Error: [MissingActionException] Action AppController::View() could not be found.
+Exception Attributes: array (
+  'controller' => 'AppController',
+  'action' => 'View',
+)
+Request URL: /unieventos/app/View/Usuarios/admin_cadastro.ctp?%2FView%2FUsuarios%2Fadmin_cadastro_ctp=
+Stack Trace:
+#0 C:\xampp\htdocs\unieventos\lib\Cake\Routing\Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
+#1 C:\xampp\htdocs\unieventos\lib\Cake\Routing\Dispatcher.php(162): Dispatcher->_invoke(Object(AppController), Object(CakeRequest), Object(CakeResponse))
+#2 C:\xampp\htdocs\unieventos\app\webroot\index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2014-01-18 20:24:45 Error: [MissingActionException] Action AppController::View() could not be found.
+Exception Attributes: array (
+  'controller' => 'AppController',
+  'action' => 'View',
+)
+Request URL: /unieventos/app/View/Usuarios/cadastro.ctp?%2FView%2FUsuarios%2Fcadastro_ctp=
+Stack Trace:
+#0 C:\xampp\htdocs\unieventos\lib\Cake\Routing\Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
+#1 C:\xampp\htdocs\unieventos\lib\Cake\Routing\Dispatcher.php(162): Dispatcher->_invoke(Object(AppController), Object(CakeRequest), Object(CakeResponse))
+#2 C:\xampp\htdocs\unieventos\app\webroot\index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2014-01-18 20:25:47 Error: [MissingActionException] Action AppController::View() could not be found.
+Exception Attributes: array (
+  'controller' => 'AppController',
+  'action' => 'View',
+)
+Request URL: /unieventos/app/View/Usuarios/login.ctp?%2FView%2FUsuarios%2Flogin_ctp=
+Stack Trace:
+#0 C:\xampp\htdocs\unieventos\lib\Cake\Routing\Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
+#1 C:\xampp\htdocs\unieventos\lib\Cake\Routing\Dispatcher.php(162): Dispatcher->_invoke(Object(AppController), Object(CakeRequest), Object(CakeResponse))
+#2 C:\xampp\htdocs\unieventos\app\webroot\index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2014-01-18 20:26:17 Error: [MissingActionException] Action AppController::View() could not be found.
+Exception Attributes: array (
+  'controller' => 'AppController',
+  'action' => 'View',
+)
+Request URL: /unieventos/app/View/Usuarios/admin_index.ctp?%2FView%2FUsuarios%2Fadmin_index_ctp=
+Stack Trace:
+#0 C:\xampp\htdocs\unieventos\lib\Cake\Routing\Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
+#1 C:\xampp\htdocs\unieventos\lib\Cake\Routing\Dispatcher.php(162): Dispatcher->_invoke(Object(AppController), Object(CakeRequest), Object(CakeResponse))
+#2 C:\xampp\htdocs\unieventos\app\webroot\index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2014-01-18 22:18:24 Error: [MissingActionException] Action EventosController::admin_index.html() could not be found.
+Exception Attributes: array (
+  'controller' => 'EventosController',
+  'action' => 'admin_index.html',
+)
+Request URL: /unieventos/admin/eventos/index.html
+Stack Trace:
+#0 C:\xampp\htdocs\unieventos\lib\Cake\Routing\Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
+#1 C:\xampp\htdocs\unieventos\lib\Cake\Routing\Dispatcher.php(162): Dispatcher->_invoke(Object(EventosController), Object(CakeRequest), Object(CakeResponse))
+#2 C:\xampp\htdocs\unieventos\app\webroot\index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2014-01-18 23:07:21 Error: [PDOException] SQLSTATE[23000]: Integrity constraint violation: 1048 Column 'valor' cannot be null
+Request URL: /unieventos/admin/inscricoes/inscricoesEvento/15
+Stack Trace:
+#0 C:\xampp\htdocs\unieventos\lib\Cake\Model\Datasource\DboSource.php(460): PDOStatement->execute(Array)
+#1 C:\xampp\htdocs\unieventos\lib\Cake\Model\Datasource\DboSource.php(426): DboSource->_execute('INSERT INTO `un...', Array)
+#2 C:\xampp\htdocs\unieventos\lib\Cake\Model\Datasource\DboSource.php(1004): DboSource->execute('INSERT INTO `un...')
+#3 C:\xampp\htdocs\unieventos\lib\Cake\Model\Model.php(1827): DboSource->create(Object(Inscricao), Array, Array)
+#4 C:\xampp\htdocs\unieventos\app\Controller\InscricoesController.php(28): Model->save(Array)
+#5 [internal function]: InscricoesController->admin_inscricoesEvento('15')
+#6 C:\xampp\htdocs\unieventos\lib\Cake\Controller\Controller.php(490): ReflectionMethod->invokeArgs(Object(InscricoesController), Array)
+#7 C:\xampp\htdocs\unieventos\lib\Cake\Routing\Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
+#8 C:\xampp\htdocs\unieventos\lib\Cake\Routing\Dispatcher.php(162): Dispatcher->_invoke(Object(InscricoesController), Object(CakeRequest), Object(CakeResponse))
+#9 C:\xampp\htdocs\unieventos\app\webroot\index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#10 {main}

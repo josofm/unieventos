@@ -7,7 +7,7 @@
       <div class="control-group">  
         <label class="control-label" for="input01"><?php echo __('Nome'); ?></label>  
         <div class="controls"> 
-        	<?php echo $this->Form->input('nome', array('class' => 'input-xlarge', 'label' => false, 'placeholder' => 'Nome completo ')); ?> 
+        	<?php echo $this->Form->input('nome', array('class' => 'input-xlarge', 'label' => false, 'placeholder' => 'Nome')); ?> 
         </div>  
       </div>
       <div class="control-group">  

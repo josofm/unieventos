@@ -1,7 +1,10 @@
 <?php 
 	echo $this->Form->create('Evento');
         echo $this->Form->input('Usuario.id', array('type' => 'hidden' , 'value' => AuthComponent::user('id'))); ?>
-                	
+
+
+        <!--echo $this->Form->create('Evento', array('type' => 'file','class' => 'form-horizontal', 'novalidate' )); ?>-->
+
         <fieldset>
             <legend> <?php echo __('Cadastre seu Evento') ?> </legend>
 
