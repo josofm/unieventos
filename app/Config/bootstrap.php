@@ -123,11 +123,3 @@ CakeLog::config('error', array(
 	'types' => array('warning', 'error', 'critical', 'alert', 'emergency'),
 	'file' => 'error',
 ));
-
-<<<<<<< HEAD
-setlocale(LC_ALL, 'pt_BR.utf-8', 'pt_BR', 'pt-br');
-=======
-setlocale(LC_ALL, 'pt_BR.utf-8', 'pt_BR', 'pt-br');
-
-include CakePlugin::path('CakePtbr') . 'Config' . DS . 'traducao_core.php';
->>>>>>> c075f76cf1acea2e0b4814bee435f9abc78a18d4

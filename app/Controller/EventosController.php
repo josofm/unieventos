@@ -85,6 +85,21 @@ class EventosController extends AppController{
         $this->set('evento', $evento);
 	}
 
+    public function admin_informacoes($id = null){
+
+    }
+
+    public function admin_inscritos($id = null){
+        $this->set('dados', $this->Evento->Cadastro->find(
+            'all', array(
+                'conditions' => array(
+                    'Cadastro.evento_id' => $id
+                    )
+                )
+            )
+        );
+    }
+
 	public function admin_meusEventos(){
 		$this->set('eventos', $this->Evento->find(
         	'all', array(

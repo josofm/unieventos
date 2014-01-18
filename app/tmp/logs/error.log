@@ -4572,6 +4572,7 @@ Stack Trace:
 #3 C:\xampp\htdocs\unieventos\lib\Cake\Core\App.php(904): App::_checkFatalError()
 #4 [internal function]: App::shutdown()
 #5 {main}
+<<<<<<< HEAD
 2014-01-17 00:54:23 Error: Fatal Error (4): syntax error, unexpected '<<' (T_SL) in [C:\xampp\htdocs\unieventos\app\Config\bootstrap.php, line 127]
 2014-01-17 00:54:24 Error: [FatalErrorException] syntax error, unexpected '<<' (T_SL)
 Stack Trace:
@@ -4617,3 +4618,38 @@ Stack Trace:
 #3 C:\xampp\htdocs\unieventos\lib\Cake\Core\App.php(904): App::_checkFatalError()
 #4 [internal function]: App::shutdown()
 #5 {main}
+=======
+2014-01-18 18:53:33 Error: [MissingTableException] Table msgs for model Msg was not found in datasource default.
+Exception Attributes: array (
+  'table' => 'msgs',
+  'class' => 'Msg',
+  'ds' => 'default',
+)
+Request URL: /unieventos/admin
+Stack Trace:
+#0 /var/www/unieventos/lib/Cake/Model/Model.php(3476): Model->setSource('msgs')
+#1 /var/www/unieventos/lib/Cake/Model/Model.php(2999): Model->getDataSource()
+#2 /var/www/unieventos/lib/Cake/Model/Model.php(2912): Model->_findCount('before', Array)
+#3 /var/www/unieventos/lib/Cake/Model/Model.php(2847): Model->buildQuery('count', Array)
+#4 /var/www/unieventos/app/Controller/MsgsController.php(45): Model->find('count', Array)
+#5 [internal function]: MsgsController->admin_conta()
+#6 /var/www/unieventos/lib/Cake/Controller/Controller.php(490): ReflectionMethod->invokeArgs(Object(MsgsController), Array)
+#7 /var/www/unieventos/lib/Cake/Routing/Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
+#8 /var/www/unieventos/lib/Cake/Routing/Dispatcher.php(162): Dispatcher->_invoke(Object(MsgsController), Object(CakeRequest), Object(CakeResponse))
+#9 /var/www/unieventos/lib/Cake/Core/Object.php(106): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse), Array)
+#10 /var/www/unieventos/app/View/Elements/admin/menuHeader.ctp(6): Object->requestAction(Array)
+#11 /var/www/unieventos/lib/Cake/View/View.php(931): include('/var/www/unieve...')
+#12 /var/www/unieventos/lib/Cake/View/View.php(893): View->_evaluate('/var/www/unieve...', Array)
+#13 /var/www/unieventos/lib/Cake/View/View.php(1191): View->_render('/var/www/unieve...', Array)
+#14 /var/www/unieventos/lib/Cake/View/View.php(408): View->_renderElement('/var/www/unieve...', Array, Array)
+#15 /var/www/unieventos/app/View/Layouts/admin.ctp(41): View->element('admin/menuHeade...')
+#16 /var/www/unieventos/lib/Cake/View/View.php(931): include('/var/www/unieve...')
+#17 /var/www/unieventos/lib/Cake/View/View.php(893): View->_evaluate('/var/www/unieve...', Array)
+#18 /var/www/unieventos/lib/Cake/View/View.php(525): View->_render('/var/www/unieve...')
+#19 /var/www/unieventos/lib/Cake/View/View.php(470): View->renderLayout('', 'admin')
+#20 /var/www/unieventos/lib/Cake/Controller/Controller.php(952): View->render(NULL, NULL)
+#21 /var/www/unieventos/lib/Cake/Routing/Dispatcher.php(194): Controller->render()
+#22 /var/www/unieventos/lib/Cake/Routing/Dispatcher.php(162): Dispatcher->_invoke(Object(PagesController), Object(CakeRequest), Object(CakeResponse))
+#23 /var/www/unieventos/app/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#24 {main}
+>>>>>>> 3303da514fc17eee3209a3f9b4d77224152590b7
