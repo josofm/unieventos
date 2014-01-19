@@ -92,8 +92,27 @@ class EventosController extends AppController{
     public function admin_inscritos($id = null){
         $this->set('dados', $this->Evento->Cadastro->find(
             'all', array(
+                'fields' => array('*'),
                 'conditions' => array(
                     'Cadastro.evento_id' => $id
+                    ),
+                'joins' => array(
+                    array(
+                            'table' => 'usuarios',
+                            'alias' => 'user',
+                            'type' => 'INNER', 
+                            'conditions'=> array(
+                                'user.id = Cadastro.usuario_id'
+                                )
+                        ),
+                    array(
+                            'table' => 'pagamentos',
+                            'alias' => 'pag',
+                            'type' => 'INNER', 
+                            'conditions'=> array(
+                                'pag.cadastros_evento_id' => $id
+                                )
+                        )
                     )
                 )
             )
