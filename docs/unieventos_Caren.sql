@@ -3,7 +3,7 @@
 -- http://www.phpmyadmin.net
 --
 -- Servidor: localhost
--- Tempo de Geração: Jan 18, 2014 as 08:42 PM
+-- Tempo de Geração: Jan 19, 2014 as 03:41 AM
 -- Versão do Servidor: 5.5.32
 -- Versão do PHP: 5.4.19
 
@@ -9922,18 +9922,16 @@ CREATE TABLE IF NOT EXISTS `inscricoes` (
   `evento_id` int(10) NOT NULL,
   `created` datetime NOT NULL,
   `modified` datetime NOT NULL,
+  `eventos_id` int(10) unsigned NOT NULL,
   PRIMARY KEY (`id`),
-  KEY `eventos_id` (`evento_id`)
+  KEY `eventos_id` (`evento_id`),
+  KEY `fk_inscricoes_eventos1_idx` (`eventos_id`)
 ) ENGINE=InnoDB  DEFAULT CHARSET=latin1 AUTO_INCREMENT=4 ;
 
 --
 -- Extraindo dados da tabela `inscricoes`
 --
 
-INSERT INTO `inscricoes` (`id`, `data_ini`, `data_fim`, `paga`, `valor`, `evento_id`, `created`, `modified`) VALUES
-(1, '2013-12-17', '2013-12-17', 0, 0, 3, '2013-12-17 00:44:47', '2013-12-17 00:44:47'),
-(2, '2013-12-17', '2013-12-26', 0, 0, 4, '2013-12-17 00:45:55', '2013-12-17 00:45:55'),
-(3, '2013-12-17', '2014-01-17', 0, 0, 5, '2013-12-17 00:47:50', '2013-12-17 00:47:50');
 
 -- --------------------------------------------------------
 
@@ -9997,12 +9995,10 @@ CREATE TABLE IF NOT EXISTS `pagamentos` (
   `cod_seg` int(3) DEFAULT NULL,
   `created` datetime DEFAULT NULL,
   `modified` datetime DEFAULT NULL,
-  `usuarios_id` int(10) NOT NULL,
-  `eventos_id` int(10) NOT NULL,
+  `usuarios_id` int(10) unsigned NOT NULL,
   PRIMARY KEY (`id`),
-  KEY `usuarios_id` (`usuarios_id`),
-  KEY `eventos_id` (`eventos_id`)
-) ENGINE=InnoDB DEFAULT CHARSET=utf8 AUTO_INCREMENT=1 ;
+  KEY `fk_pagamentos_usuarios1_idx` (`usuarios_id`)
+) ENGINE=InnoDB DEFAULT CHARSET=latin1 AUTO_INCREMENT=1 ;
 
 --
 -- Extraindo dados da tabela `pagamentos`
@@ -10101,7 +10097,7 @@ CREATE TABLE IF NOT EXISTS `programacoes` (
 --
 
 INSERT INTO `programacoes` (`id`, `evento_id`, `titulo`, `descricao`, `palestrante`, `local`, `sala`, `data`, `hora_ini`, `hora_fim`, `created`, `modified`) VALUES
-(1, 1, 'computaÃ§Ã£o pervasiva', 'computaÃ§Ã£o pervasiva', 'iara', '', '', '0000-00-00', '00:00:00', '00:00:00', '2013-12-17 00:51:34', '2013-12-17 00:51:34'),
+(1, 1, 'computação pervasiva', 'computação pervasiva', 'iara', '', '', '0000-00-00', '00:00:00', '00:00:00', '2013-12-17 00:51:34', '2013-12-17 00:51:34'),
 (2, 1, 'teste', 'cdncoadsnkosdsad', 'adriano', '', '', '2013-12-17', '05:13:00', '06:13:00', '2013-12-17 01:01:26', '2013-12-17 01:01:26');
 
 -- --------------------------------------------------------
@@ -10114,8 +10110,10 @@ CREATE TABLE IF NOT EXISTS `status_pagamentos` (
   `id` int(10) unsigned NOT NULL AUTO_INCREMENT,
   `status` tinyint(1) NOT NULL,
   `pagamento_id` int(10) unsigned NOT NULL,
+  `inscricoes_id` int(10) NOT NULL,
   PRIMARY KEY (`id`),
-  KEY `fk_tipo_inscricao_pagamento1_idx` (`pagamento_id`)
+  KEY `fk_tipo_inscricao_pagamento1_idx` (`pagamento_id`),
+  KEY `fk_status_pagamentos_inscricoes1_idx` (`inscricoes_id`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 AUTO_INCREMENT=1 ;
 
 --
@@ -10221,6 +10219,12 @@ ALTER TABLE `imagens`
   ADD CONSTRAINT `fk_imagens_usuarios1` FOREIGN KEY (`usuario_id`) REFERENCES `usuarios` (`id`) ON DELETE NO ACTION ON UPDATE NO ACTION;
 
 --
+-- Restrições para a tabela `inscricoes`
+--
+ALTER TABLE `inscricoes`
+  ADD CONSTRAINT `fk_inscricoes_eventos1` FOREIGN KEY (`eventos_id`) REFERENCES `eventos` (`id`) ON DELETE NO ACTION ON UPDATE NO ACTION;
+
+--
 -- Restrições para a tabela `msgs`
 --
 ALTER TABLE `msgs`
@@ -10231,6 +10235,12 @@ ALTER TABLE `msgs`
 --
 ALTER TABLE `noticias`
   ADD CONSTRAINT `fk_noticia_evento1` FOREIGN KEY (`evento_id`) REFERENCES `eventos` (`id`) ON DELETE NO ACTION ON UPDATE NO ACTION;
+
+--
+-- Restrições para a tabela `pagamentos`
+--
+ALTER TABLE `pagamentos`
+  ADD CONSTRAINT `fk_pagamentos_usuarios1` FOREIGN KEY (`usuarios_id`) REFERENCES `usuarios` (`id`) ON DELETE NO ACTION ON UPDATE NO ACTION;
 
 --
 -- Restrições para a tabela `patrocinadores`
@@ -10262,7 +10272,8 @@ ALTER TABLE `programacoes`
 -- Restrições para a tabela `status_pagamentos`
 --
 ALTER TABLE `status_pagamentos`
-  ADD CONSTRAINT `fk_tipo_inscricao_pagamento1` FOREIGN KEY (`pagamento_id`) REFERENCES `pagamentos` (`id`) ON DELETE NO ACTION ON UPDATE NO ACTION;
+  ADD CONSTRAINT `fk_tipo_inscricao_pagamento1` FOREIGN KEY (`pagamento_id`) REFERENCES `pagamentos` (`id`) ON DELETE NO ACTION ON UPDATE NO ACTION,
+  ADD CONSTRAINT `fk_status_pagamentos_inscricoes1` FOREIGN KEY (`inscricoes_id`) REFERENCES `inscricoes` (`id`) ON DELETE NO ACTION ON UPDATE NO ACTION;
 
 --
 -- Restrições para a tabela `telefones`
