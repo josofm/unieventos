@@ -4930,3 +4930,289 @@ Stack Trace:
 #10 /var/www/unieventos/lib/Cake/Routing/Dispatcher.php(162): Dispatcher->_invoke(Object(EventosController), Object(CakeRequest), Object(CakeResponse))
 #11 /var/www/unieventos/app/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
 #12 {main}
+2014-01-19 14:00:49 Error: Fatal Error (4): syntax error, unexpected T_IF in [/var/www/unieventos/app/Controller/EventosController.php, line 122]
+2014-01-19 14:00:49 Error: [FatalErrorException] syntax error, unexpected T_IF
+Request URL: /unieventos/admin/eventos/inscritos/1
+Stack Trace:
+#0 /var/www/unieventos/lib/Cake/Error/ErrorHandler.php(205): ErrorHandler::handleFatalError(4, 'syntax error, u...', '/var/www/unieve...', 122)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', '/var/www/unieve...', 122, Array)
+#2 /var/www/unieventos/lib/Cake/Core/App.php(931): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', '/var/www/unieve...', 122, Array)
+#3 /var/www/unieventos/lib/Cake/Core/App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-01-19 14:01:05 Error: [NotFoundException] Invalid post
+Request URL: /unieventos/admin/eventos/inscritos/1
+Stack Trace:
+#0 [internal function]: EventosController->admin_inscritos('1')
+#1 /var/www/unieventos/lib/Cake/Controller/Controller.php(490): ReflectionMethod->invokeArgs(Object(EventosController), Array)
+#2 /var/www/unieventos/lib/Cake/Routing/Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
+#3 /var/www/unieventos/lib/Cake/Routing/Dispatcher.php(162): Dispatcher->_invoke(Object(EventosController), Object(CakeRequest), Object(CakeResponse))
+#4 /var/www/unieventos/app/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2014-01-19 14:01:40 Error: [NotFoundException] Invalid post
+Request URL: /unieventos/admin/eventos/inscritos/1
+Stack Trace:
+#0 [internal function]: EventosController->admin_inscritos('1')
+#1 /var/www/unieventos/lib/Cake/Controller/Controller.php(490): ReflectionMethod->invokeArgs(Object(EventosController), Array)
+#2 /var/www/unieventos/lib/Cake/Routing/Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
+#3 /var/www/unieventos/lib/Cake/Routing/Dispatcher.php(162): Dispatcher->_invoke(Object(EventosController), Object(CakeRequest), Object(CakeResponse))
+#4 /var/www/unieventos/app/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2014-01-19 17:03:14 Error: [MissingControllerException] Controller class PagamentoController could not be found.
+Exception Attributes: array (
+  'class' => 'PagamentoController',
+  'plugin' => NULL,
+)
+Request URL: /unieventos/admin/pagamento/validarPagamento/2
+Stack Trace:
+#0 /var/www/unieventos/app/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-01-19 17:03:34 Error: Fatal Error (4): syntax error, unexpected T_ARRAY in [/var/www/unieventos/app/Controller/PagamentosController.php, line 45]
+2014-01-19 17:03:34 Error: [FatalErrorException] syntax error, unexpected T_ARRAY
+Request URL: /unieventos/admin/pagamentos/validarPagamento/2
+Stack Trace:
+#0 /var/www/unieventos/lib/Cake/Error/ErrorHandler.php(205): ErrorHandler::handleFatalError(4, 'syntax error, u...', '/var/www/unieve...', 45)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', '/var/www/unieve...', 45, Array)
+#2 /var/www/unieventos/lib/Cake/Core/App.php(931): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', '/var/www/unieve...', 45, Array)
+#3 /var/www/unieventos/lib/Cake/Core/App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-01-19 17:03:59 Error: Fatal Error (4): syntax error, unexpected T_ARRAY in [/var/www/unieventos/app/Controller/PagamentosController.php, line 45]
+2014-01-19 17:03:59 Error: [FatalErrorException] syntax error, unexpected T_ARRAY
+Request URL: /unieventos/admin/pagamentos/validarPagamento/2
+Stack Trace:
+#0 /var/www/unieventos/lib/Cake/Error/ErrorHandler.php(205): ErrorHandler::handleFatalError(4, 'syntax error, u...', '/var/www/unieve...', 45)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', '/var/www/unieve...', 45, Array)
+#2 /var/www/unieventos/lib/Cake/Core/App.php(931): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', '/var/www/unieve...', 45, Array)
+#3 /var/www/unieventos/lib/Cake/Core/App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-01-19 17:04:03 Error: Fatal Error (4): syntax error, unexpected T_ARRAY in [/var/www/unieventos/app/Controller/PagamentosController.php, line 45]
+2014-01-19 17:04:03 Error: [FatalErrorException] syntax error, unexpected T_ARRAY
+Request URL: /unieventos/admin/pagamentos/validarPagamento/2
+Stack Trace:
+#0 /var/www/unieventos/lib/Cake/Error/ErrorHandler.php(205): ErrorHandler::handleFatalError(4, 'syntax error, u...', '/var/www/unieve...', 45)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', '/var/www/unieve...', 45, Array)
+#2 /var/www/unieventos/lib/Cake/Core/App.php(931): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', '/var/www/unieve...', 45, Array)
+#3 /var/www/unieventos/lib/Cake/Core/App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-01-19 17:24:18 Error: Fatal Error (4): syntax error, unexpected '[', expecting T_VARIABLE or '$' in [/var/www/unieventos/app/View/Pagamentos/admin_validar_pagamento.ctp, line 11]
+2014-01-19 17:24:18 Error: [FatalErrorException] syntax error, unexpected '[', expecting T_VARIABLE or '$'
+Request URL: /unieventos/admin/pagamentos/validarPagamento/2
+Stack Trace:
+#0 /var/www/unieventos/lib/Cake/Error/ErrorHandler.php(205): ErrorHandler::handleFatalError(4, 'syntax error, u...', '/var/www/unieve...', 11)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', '/var/www/unieve...', 11, Array)
+#2 /var/www/unieventos/lib/Cake/Core/App.php(931): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', '/var/www/unieve...', 11, Array)
+#3 /var/www/unieventos/lib/Cake/Core/App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-01-19 17:24:34 Error: Fatal Error (4): syntax error, unexpected '[' in [/var/www/unieventos/app/View/Pagamentos/admin_validar_pagamento.ctp, line 11]
+2014-01-19 17:24:34 Error: [FatalErrorException] syntax error, unexpected '['
+Request URL: /unieventos/admin/pagamentos/validarPagamento/2
+Stack Trace:
+#0 /var/www/unieventos/lib/Cake/Error/ErrorHandler.php(205): ErrorHandler::handleFatalError(4, 'syntax error, u...', '/var/www/unieve...', 11)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', '/var/www/unieve...', 11, Array)
+#2 /var/www/unieventos/lib/Cake/Core/App.php(931): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', '/var/www/unieve...', 11, Array)
+#3 /var/www/unieventos/lib/Cake/Core/App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-01-19 17:36:19 Error: [PDOException] SQLSTATE[42S22]: Column not found: 1054 Unknown column 'Pagamento.' in 'field list'
+Request URL: /unieventos/admin/pagamentos/validarPagamento/3
+Stack Trace:
+#0 /var/www/unieventos/lib/Cake/Model/Datasource/DboSource.php(460): PDOStatement->execute(Array)
+#1 /var/www/unieventos/lib/Cake/Model/Datasource/DboSource.php(426): DboSource->_execute('SELECT DISTINCT...', Array)
+#2 /var/www/unieventos/lib/Cake/Model/Datasource/DboSource.php(666): DboSource->execute('SELECT DISTINCT...', Array, Array)
+#3 /var/www/unieventos/lib/Cake/Model/Datasource/DboSource.php(1077): DboSource->fetchAll('SELECT DISTINCT...', false)
+#4 /var/www/unieventos/lib/Cake/Model/Model.php(2880): DboSource->read(Object(AppModel), Array)
+#5 /var/www/unieventos/lib/Cake/Model/Model.php(2852): Model->_readDataSource('first', Array)
+#6 /var/www/unieventos/lib/Cake/Model/Datasource/DboSource.php(599): Model->find('first', Array)
+#7 /var/www/unieventos/lib/Cake/Model/Model.php(801): DboSource->query('findById', Array, Object(AppModel))
+#8 /var/www/unieventos/app/Controller/PagamentosController.php(57): Model->__call('findById', Array)
+#9 /var/www/unieventos/app/Controller/PagamentosController.php(57): AppModel->findById('3', Array)
+#10 [internal function]: PagamentosController->admin_validarPagamento('3')
+#11 /var/www/unieventos/lib/Cake/Controller/Controller.php(490): ReflectionMethod->invokeArgs(Object(PagamentosController), Array)
+#12 /var/www/unieventos/lib/Cake/Routing/Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
+#13 /var/www/unieventos/lib/Cake/Routing/Dispatcher.php(162): Dispatcher->_invoke(Object(PagamentosController), Object(CakeRequest), Object(CakeResponse))
+#14 /var/www/unieventos/app/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#15 {main}
+2014-01-19 17:47:01 Error: Fatal Error (1): Call to a member function render() on a non-object in [/var/www/unieventos/app/Controller/PagamentosController.php, line 23]
+2014-01-19 17:47:01 Error: [FatalErrorException] Call to a member function render() on a non-object
+Request URL: /unieventos/admin/pagamentos/geraBoleto/16
+Stack Trace:
+#0 /var/www/unieventos/lib/Cake/Error/ErrorHandler.php(205): ErrorHandler::handleFatalError(1, 'Call to a membe...', '/var/www/unieve...', 23)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to a membe...', '/var/www/unieve...', 23, Array)
+#2 /var/www/unieventos/lib/Cake/Core/App.php(931): call_user_func('ErrorHandler::h...', 1, 'Call to a membe...', '/var/www/unieve...', 23, Array)
+#3 /var/www/unieventos/lib/Cake/Core/App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-01-19 17:47:23 Error: Fatal Error (1): Call to a member function render() on a non-object in [/var/www/unieventos/app/Controller/PagamentosController.php, line 23]
+2014-01-19 17:47:23 Error: [FatalErrorException] Call to a member function render() on a non-object
+Request URL: /unieventos/admin/pagamentos/geraBoleto/15
+Stack Trace:
+#0 /var/www/unieventos/lib/Cake/Error/ErrorHandler.php(205): ErrorHandler::handleFatalError(1, 'Call to a membe...', '/var/www/unieve...', 23)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to a membe...', '/var/www/unieve...', 23, Array)
+#2 /var/www/unieventos/lib/Cake/Core/App.php(931): call_user_func('ErrorHandler::h...', 1, 'Call to a membe...', '/var/www/unieve...', 23, Array)
+#3 /var/www/unieventos/lib/Cake/Core/App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-01-19 17:49:28 Error: [NotFoundException] Invalid post
+Request URL: /unieventos/admin/pagamentos/validarPagamento/6
+Stack Trace:
+#0 [internal function]: PagamentosController->admin_validarPagamento('6')
+#1 /var/www/unieventos/lib/Cake/Controller/Controller.php(490): ReflectionMethod->invokeArgs(Object(PagamentosController), Array)
+#2 /var/www/unieventos/lib/Cake/Routing/Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
+#3 /var/www/unieventos/lib/Cake/Routing/Dispatcher.php(162): Dispatcher->_invoke(Object(PagamentosController), Object(CakeRequest), Object(CakeResponse))
+#4 /var/www/unieventos/app/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2014-01-19 17:50:16 Error: [NotFoundException] Invalid post
+Request URL: /unieventos/admin/pagamentos/validarPagamento/6
+Stack Trace:
+#0 [internal function]: PagamentosController->admin_validarPagamento('6')
+#1 /var/www/unieventos/lib/Cake/Controller/Controller.php(490): ReflectionMethod->invokeArgs(Object(PagamentosController), Array)
+#2 /var/www/unieventos/lib/Cake/Routing/Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
+#3 /var/www/unieventos/lib/Cake/Routing/Dispatcher.php(162): Dispatcher->_invoke(Object(PagamentosController), Object(CakeRequest), Object(CakeResponse))
+#4 /var/www/unieventos/app/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2014-01-19 18:39:35 Error: [PDOException] SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'AND)  WHERE `Cadastro`.`evento_id` = 15' at line 1
+Request URL: /unieventos/admin/eventos/inscritos/15
+Stack Trace:
+#0 /var/www/unieventos/lib/Cake/Model/Datasource/DboSource.php(460): PDOStatement->execute(Array)
+#1 /var/www/unieventos/lib/Cake/Model/Datasource/DboSource.php(426): DboSource->_execute('SELECT * FROM `...', Array)
+#2 /var/www/unieventos/lib/Cake/Model/Datasource/DboSource.php(666): DboSource->execute('SELECT * FROM `...', Array, Array)
+#3 /var/www/unieventos/lib/Cake/Model/Datasource/DboSource.php(1077): DboSource->fetchAll('SELECT * FROM `...', false)
+#4 /var/www/unieventos/lib/Cake/Model/Model.php(2880): DboSource->read(Object(AppModel), Array)
+#5 /var/www/unieventos/lib/Cake/Model/Model.php(2852): Model->_readDataSource('all', Array)
+#6 /var/www/unieventos/app/Controller/EventosController.php(122): Model->find('all', Array)
+#7 [internal function]: EventosController->admin_inscritos('15')
+#8 /var/www/unieventos/lib/Cake/Controller/Controller.php(490): ReflectionMethod->invokeArgs(Object(EventosController), Array)
+#9 /var/www/unieventos/lib/Cake/Routing/Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
+#10 /var/www/unieventos/lib/Cake/Routing/Dispatcher.php(162): Dispatcher->_invoke(Object(EventosController), Object(CakeRequest), Object(CakeResponse))
+#11 /var/www/unieventos/app/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#12 {main}
+2014-01-19 18:50:17 Error: [MissingControllerException] Controller class JsController could not be found.
+Exception Attributes: array (
+  'class' => 'JsController',
+  'plugin' => NULL,
+)
+Request URL: /unieventos/js/admin/jquery.min.map
+Stack Trace:
+#0 /var/www/unieventos/app/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-01-19 18:53:23 Error: [MissingControllerException] Controller class JsController could not be found.
+Exception Attributes: array (
+  'class' => 'JsController',
+  'plugin' => NULL,
+)
+Request URL: /unieventos/js/admin/jquery.min.map
+Stack Trace:
+#0 /var/www/unieventos/app/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-01-19 18:59:08 Error: [MissingControllerException] Controller class JsController could not be found.
+Exception Attributes: array (
+  'class' => 'JsController',
+  'plugin' => NULL,
+)
+Request URL: /unieventos/js/admin/jquery.min.map
+Stack Trace:
+#0 /var/www/unieventos/app/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-01-19 20:35:46 Error: [NotFoundException] Invalid post
+Request URL: /unieventos/admin/pagamentos/validarPagamento
+Stack Trace:
+#0 [internal function]: PagamentosController->admin_validarPagamento()
+#1 /var/www/unieventos/lib/Cake/Controller/Controller.php(490): ReflectionMethod->invokeArgs(Object(PagamentosController), Array)
+#2 /var/www/unieventos/lib/Cake/Routing/Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
+#3 /var/www/unieventos/lib/Cake/Routing/Dispatcher.php(162): Dispatcher->_invoke(Object(PagamentosController), Object(CakeRequest), Object(CakeResponse))
+#4 /var/www/unieventos/app/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2014-01-19 20:51:39 Error: [MissingControllerException] Controller class PController could not be found.
+Exception Attributes: array (
+  'class' => 'PController',
+  'plugin' => NULL,
+)
+Request URL: /unieventos/admin/p
+Stack Trace:
+#0 /var/www/unieventos/app/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-01-19 21:07:39 Error: Fatal Error (4): syntax error, unexpected ',' in [/var/www/unieventos/app/View/Pagamentos/admin_validar_pagamento.ctp, line 15]
+2014-01-19 21:07:39 Error: [FatalErrorException] syntax error, unexpected ','
+Request URL: /unieventos/admin/pagamentos/validarPagamento/3
+Stack Trace:
+#0 /var/www/unieventos/lib/Cake/Error/ErrorHandler.php(205): ErrorHandler::handleFatalError(4, 'syntax error, u...', '/var/www/unieve...', 15)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', '/var/www/unieve...', 15, Array)
+#2 /var/www/unieventos/lib/Cake/Core/App.php(931): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', '/var/www/unieve...', 15, Array)
+#3 /var/www/unieventos/lib/Cake/Core/App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-01-19 21:08:51 Error: Fatal Error (4): syntax error, unexpected ',' in [/var/www/unieventos/app/View/Pagamentos/admin_validar_pagamento.ctp, line 15]
+2014-01-19 21:08:51 Error: [FatalErrorException] syntax error, unexpected ','
+Request URL: /unieventos/admin/pagamentos/validarPagamento/3
+Stack Trace:
+#0 /var/www/unieventos/lib/Cake/Error/ErrorHandler.php(205): ErrorHandler::handleFatalError(4, 'syntax error, u...', '/var/www/unieve...', 15)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', '/var/www/unieve...', 15, Array)
+#2 /var/www/unieventos/lib/Cake/Core/App.php(931): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', '/var/www/unieve...', 15, Array)
+#3 /var/www/unieventos/lib/Cake/Core/App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-01-19 21:09:15 Error: Fatal Error (4): syntax error, unexpected ',' in [/var/www/unieventos/app/View/Pagamentos/admin_validar_pagamento.ctp, line 15]
+2014-01-19 21:09:15 Error: [FatalErrorException] syntax error, unexpected ','
+Request URL: /unieventos/admin/pagamentos/validarPagamento/3
+Stack Trace:
+#0 /var/www/unieventos/lib/Cake/Error/ErrorHandler.php(205): ErrorHandler::handleFatalError(4, 'syntax error, u...', '/var/www/unieve...', 15)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', '/var/www/unieve...', 15, Array)
+#2 /var/www/unieventos/lib/Cake/Core/App.php(931): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', '/var/www/unieve...', 15, Array)
+#3 /var/www/unieventos/lib/Cake/Core/App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-01-19 21:27:30 Error: [NotFoundException] Invalid post
+Request URL: /unieventos/admin/pagamentos/validarPagamento/3
+Stack Trace:
+#0 [internal function]: PagamentosController->admin_validarPagamento('3')
+#1 /var/www/unieventos/lib/Cake/Controller/Controller.php(490): ReflectionMethod->invokeArgs(Object(PagamentosController), Array)
+#2 /var/www/unieventos/lib/Cake/Routing/Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
+#3 /var/www/unieventos/lib/Cake/Routing/Dispatcher.php(162): Dispatcher->_invoke(Object(PagamentosController), Object(CakeRequest), Object(CakeResponse))
+#4 /var/www/unieventos/app/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2014-01-19 21:27:45 Error: [NotFoundException] Invalid post
+Request URL: /unieventos/admin/pagamentos/validarPagamento/6
+Stack Trace:
+#0 [internal function]: PagamentosController->admin_validarPagamento('6')
+#1 /var/www/unieventos/lib/Cake/Controller/Controller.php(490): ReflectionMethod->invokeArgs(Object(PagamentosController), Array)
+#2 /var/www/unieventos/lib/Cake/Routing/Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
+#3 /var/www/unieventos/lib/Cake/Routing/Dispatcher.php(162): Dispatcher->_invoke(Object(PagamentosController), Object(CakeRequest), Object(CakeResponse))
+#4 /var/www/unieventos/app/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2014-01-19 21:30:24 Error: Fatal Error (4): syntax error, unexpected ';' in [/var/www/unieventos/app/View/Eventos/admin_inscritos.ctp, line 34]
+2014-01-19 21:30:24 Error: [FatalErrorException] syntax error, unexpected ';'
+Request URL: /unieventos/admin/eventos/inscritos/15
+Stack Trace:
+#0 /var/www/unieventos/lib/Cake/Error/ErrorHandler.php(205): ErrorHandler::handleFatalError(4, 'syntax error, u...', '/var/www/unieve...', 34)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', '/var/www/unieve...', 34, Array)
+#2 /var/www/unieventos/lib/Cake/Core/App.php(931): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', '/var/www/unieve...', 34, Array)
+#3 /var/www/unieventos/lib/Cake/Core/App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-01-19 21:35:16 Error: [NotFoundException] Invalid post
+Request URL: /unieventos/admin/pagamentos/validarPagamento/%2C%2C
+Stack Trace:
+#0 [internal function]: PagamentosController->admin_validarPagamento(',,')
+#1 /var/www/unieventos/lib/Cake/Controller/Controller.php(490): ReflectionMethod->invokeArgs(Object(PagamentosController), Array)
+#2 /var/www/unieventos/lib/Cake/Routing/Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
+#3 /var/www/unieventos/lib/Cake/Routing/Dispatcher.php(162): Dispatcher->_invoke(Object(PagamentosController), Object(CakeRequest), Object(CakeResponse))
+#4 /var/www/unieventos/app/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2014-01-19 21:38:47 Error: [PDOException] SQLSTATE[23000]: Integrity constraint violation: 1452 Cannot add or update a child row: a foreign key constraint fails (`unievents`.`pagamentos`, CONSTRAINT `fk_status_pagamentos_inscricoes1` FOREIGN KEY (`inscricoes_id`) REFERENCES `inscricoes` (`id`) ON DELETE NO ACTION ON UPDATE NO ACTION)
+Request URL: /unieventos/admin/pagamentos/validarPagamento/6-15-5
+Stack Trace:
+#0 /var/www/unieventos/lib/Cake/Model/Datasource/DboSource.php(460): PDOStatement->execute(Array)
+#1 /var/www/unieventos/lib/Cake/Model/Datasource/DboSource.php(426): DboSource->_execute('INSERT INTO `un...', Array)
+#2 /var/www/unieventos/lib/Cake/Model/Datasource/DboSource.php(1004): DboSource->execute('INSERT INTO `un...')
+#3 /var/www/unieventos/lib/Cake/Model/Model.php(1827): DboSource->create(Object(AppModel), Array, Array)
+#4 /var/www/unieventos/app/Controller/PagamentosController.php(22): Model->save(Array)
+#5 [internal function]: PagamentosController->admin_validarPagamento('6-15-5')
+#6 /var/www/unieventos/lib/Cake/Controller/Controller.php(490): ReflectionMethod->invokeArgs(Object(PagamentosController), Array)
+#7 /var/www/unieventos/lib/Cake/Routing/Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
+#8 /var/www/unieventos/lib/Cake/Routing/Dispatcher.php(162): Dispatcher->_invoke(Object(PagamentosController), Object(CakeRequest), Object(CakeResponse))
+#9 /var/www/unieventos/app/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#10 {main}

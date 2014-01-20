@@ -4,24 +4,52 @@
 
 	class PagamentosController extends AppController{
 		public $helpers = array('Html', 'Form', 'Session');
-    	public $components = array('Session','Boletos.BoletoBb');
+    	public $components = array('Session');
 
+	    public function admin_validarPagamento($dados = null){
+	    	$dados = explode('-', $dados);
+	    	if (!$dados[0] && !$dados[1]) {
+		        throw new NotFoundException(__('Invalid post'));
+		    }
 
-    	public function admin_geraBoleto($id = null){
-	    	$this->autoRender = false;
-	    	$this->loadModel('Inscricao');
-	    	$this->Inscricao->recursive= -1;
-	    	$evento = $this->Inscricao->findByEventoId($id);
+		    $pag = $this->Pagamento->findById($dados[2]);
+		    if (!$pag) {
+		        throw new NotFoundException(__('Invalid post'));
+		    }
+		    $this->request->data['Pagamento']['status'] = 1;
+		    if ($this->request->is(array('post', 'put'))) {
+		        $this->Pagamento->id = $dados[2];
+		        if ($this->Pagamento->save($this->request->data)) {
+		            $this->Session->setFlash(__('Your post has been updated.'));
+		            return $this->redirect(array('controller' => 'eventos', 'action' => 'inscritos', $dados[1]));
+		        }
+		        $this->Session->setFlash(__('Unable to update your post.'));
+		    }else{
+		    	$usuario = $this->Pagamento->find('first',
+		    		array(
+		    			'fields' => array('*'),
+                		'conditions' => array(
+                    		'Pagamento.cadastros_usuario_id' => $dados[0]
+                    	),
+                    	'joins' => array(
+                    		array(
+	                            'table' => 'usuarios',
+	                            'alias' => 'user',
+	                            'type' => 'INNER', 
+	                            'conditions'=> array(
+	                                'user.id' => $dados[0]
+                                )
+                        	)
+                		)
+		    		)
+		    	);
+		    	$this->set('usuario', $usuario);
+		    }
 
-			$dados = array(
-				'sacado' => 'Fulano de Tal',
-				'endereco1' => 'Rua do funal de tal, 88',
-				'endereco2' => 'Curitiba/PR',
-				'valor_cobrado' => $evento['Inscricao']['valor'],
-				'pedido' => 5 // Usado para gerar o número do documento e o nosso número.
-			);
-			$this->BoletoBb->render($dados);
-	    }
+		    if (!$this->request->data) {
+		        $this->request->data = $pag;
+		    }
+		}
 	}
 
 ?>

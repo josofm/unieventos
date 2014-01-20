@@ -90,7 +90,10 @@ class EventosController extends AppController{
     }
 
     public function admin_inscritos($id = null){
-        $this->set('dados', $this->Evento->Cadastro->find(
+        if (!$id) {
+            throw new NotFoundException(__('Invalid post'));
+        }
+        $dados = $this->Evento->Cadastro->find(
             'all', array(
                 'fields' => array('*'),
                 'conditions' => array(
@@ -110,13 +113,19 @@ class EventosController extends AppController{
                             'alias' => 'pag',
                             'type' => 'INNER', 
                             'conditions'=> array(
-                                'pag.cadastros_evento_id' => $id
+                                'AND' => array(
+                                    array('pag.cadastros_evento_id' => $id),
+                                    array('pag.cadastros_usuario_id =  Cadastro.usuario_id')
                                 )
+                            )
                         )
                     )
                 )
-            )
-        );
+            );
+        if (!$dados) {
+                throw new NotFoundException(__('Invalid post'));
+            }
+        $this->set('dados', $dados);
     }
 
 	public function admin_meusEventos(){

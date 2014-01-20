@@ -1,4 +1,10 @@
-<h1><?php echo h($evento['Evento']['nome']); ?></h1>
+<?php 
+	echo '<pre>';
+	var_dump($evento);
+	echo '</pre>';
+	//echo $this->element('sql_dump');
+	exit();
+ ?><h1><?php echo h($evento['Evento']['nome']); ?></h1>
 
 <p><?php echo h($evento['Evento']['descricao']); ?></p>
 

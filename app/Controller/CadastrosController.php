@@ -15,7 +15,7 @@ App::uses('AppController', 'Controller');
 	            $this->request->data['Cadastro']['nivel'] = 0;
 	            if ($this->Cadastro->save($this->request->data)) {
 	                $this->Session->setFlash(__('Sua Inscricao foi realizada.'));
-	                return $this->redirect(array('action' => 'inscricao',));
+	                return $this->redirect(array('action' => 'inscricao'));
 	            }
 	            $this->Session->setFlash(__('Unable to add your post.'));
 	        }
