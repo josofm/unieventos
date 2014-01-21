@@ -28,7 +28,9 @@
         <div class="control-group">  
             <label class="control-label" for="input01"><?php echo __('Valor'); ?></label>  
             <div class="controls">
-                <?php echo $this->Form->input('valor', array('class' => 'input-xlarge', 'label' => false, 'placeholder' => ' ')); ?> 
+                <div class="input-prepend input-append">
+                    <span class="add-on">R$</span><?php echo $this->Form->input('valor', array('class' => 'input-xlarge', 'label' => false, 'div' => false, 'placeholder' => ' ')); ?> 
+                </div>
             </div>  
         </div>
      <br/>

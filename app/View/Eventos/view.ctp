@@ -1,9 +1,9 @@
 <?php 
-	echo '<pre>';
-	var_dump($evento);
-	echo '</pre>';
+	//echo '<pre>';
+	//var_dump($evento);
+	//echo '</pre>';
 	//echo $this->element('sql_dump');
-	exit();
+	//exit();
  ?><h1><?php echo h($evento['Evento']['nome']); ?></h1>
 
 <p><?php echo h($evento['Evento']['descricao']); ?></p>
@@ -42,6 +42,3 @@ Ate  <?php echo $this->Locale->date($evento['Inscricao'][0]['data_fim']); ?></p>
 	}
 ?>
 
-<?php 
-
-?>

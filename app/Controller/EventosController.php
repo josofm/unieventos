@@ -86,7 +86,12 @@ class EventosController extends AppController{
 	}
 
     public function admin_informacoes($id = null){
-
+        if(!$id)
+            throw new NotFoundException(__('Evento Invalido'));
+        $evento = $this->Evento->findById($id);
+        if(!$evento)
+            throw new NotFoundException(__('Evento Invalido'));
+        $this->set('evento', $evento);
     }
 
     public function admin_inscritos($id = null){

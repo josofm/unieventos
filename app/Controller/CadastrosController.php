@@ -25,6 +25,9 @@ App::uses('AppController', 'Controller');
 	    	$this->set('bol', $this->Cadastro->findAllByUsuarioId($this->Auth->user('id')));
 	    }
 	    
-
+	    public function conta($id = null){
+	    	 return $this->Cadastro->find('count', array('conditions' => array('evento_id' => $id)));
+	    	
+	    }
 	}	
 ?>
