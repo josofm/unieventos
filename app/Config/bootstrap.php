@@ -34,7 +34,7 @@ Configure::write('CakePdf', array(
 'margin' => array(
 'bottom' => 15,
 'left' => 50,
-'right' => 30,
+'right' => 50,
 'top' => 45
 ),
 'encoding'=>'UTF-8',
@@ -121,5 +121,11 @@ CakeLog::config('debug', array(
 CakeLog::config('error', array(
 	'engine' => 'File',
 	'types' => array('warning', 'error', 'critical', 'alert', 'emergency'),
-	'file' => 'error',
+	'file' => 'error'
+
+	//Configure::write('Config.language', 'por');
+	//Configure::write('Config.language', 'eng');
 ));
+
+//Configure::write('Config.language', 'eng');
+Configure::write('Config.language', 'por');

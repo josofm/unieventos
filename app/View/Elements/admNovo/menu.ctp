@@ -35,6 +35,9 @@
 			<li>
 				<?php echo $this->html->link('<i class="icon-barcode"></i><span class="hidden-tablet">'.__('Gerar Boletos').'</span>', array('controller' => 'cadastros', 'action' => 'boletos', 'admin' => true), array('escape' => false, 'class'=>'ajax-link')) ?>
 			</li>
+			<li>
+				<?php echo $this->html->link('<i class="icon-barcode"></i><span class="hidden-tablet">'.__('Certificados').'</span>', array('controller' => 'invoices', 'action' => 'index', 'admin' => true), array('escape' => false, 'class'=>'ajax-link')) ?>
+			</li>
 		</ul>
 		<label id="for-is-ajax" class="hidden-tablet" for="is-ajax"><input id="is-ajax" type="checkbox"> Ajax on menu</label>
 	</div><!--/.well -->

@@ -1,5 +1,4 @@
-<?php var_dump($pres); ?>
-
+<?php //var_dump($pres); ?>
 <div>
     <ul class="breadcrumb">
         <li>
@@ -41,7 +40,7 @@
                         <?php //echo $this->element('sql_dump'); ?>
                         
                         <td>
-                            <?php echo $p['user']['nome']; ?>
+                            <?php echo $p['user']['nome'].' '.$p['user']['sobrenome']; ?>
                         </td>
                     </tr>        
                     <?php endforeach; }?>

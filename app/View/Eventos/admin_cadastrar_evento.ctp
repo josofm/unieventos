@@ -30,13 +30,13 @@
             <div class="form-group">  
                 <label class="control-label" for="input01"><?php echo __('Data de Início'); ?></label>  
             <div class="controls">
-                <?php echo $this->Form->input('data_ini', array('class' => 'input-xlarge datepicker', 'label' => false, 'placeholder' => ' ')); ?> 
+                <?php echo $this->Form->text('data_ini', array('class' => 'input-xlarge datepicker', 'label' => false, 'placeholder' => ' ')); ?> 
             </div>  
             </div>
             <div class="form-group">  
                 <label class="control-label" for="input01"><?php echo __('Data de Término'); ?></label>  
             <div class="controls">
-                <?php echo $this->Form->input('data_fim', array('class' => 'input-xlarge datepicker', 'label' => false, 'placeholder' => ' ')); ?> 
+                <?php echo $this->Form->text('data_fim', array('class' => 'input-xlarge datepicker', 'label' => false, 'placeholder' => ' ')); ?> 
             </div>  
             </div>
             <div class="form-group">  

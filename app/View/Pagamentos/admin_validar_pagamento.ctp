@@ -2,7 +2,7 @@
 	//echo '<pre>';
 	//var_dump($usuario);
 	//echo '</pre>';
-	echo $this->element('sql_dump');
+	//echo $this->element('sql_dump');
 	//exit();
  ?>
 

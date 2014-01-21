@@ -1,5 +1,5 @@
-<div class="text-right">
-    <?php echo $this->Html->link('<i class="fa fa-user"></i> ' . __('Cadastrar Programação'), array('controller' => 'programacoes','action' => 'programacaoEvento', 'admin' => true, $ide),  array('escape' => false, 'class' => 'btn btn-primary btn-lg active')) ?>
+<div class="pull-right">
+    <?php echo $this->Html->link('<i class="fa fa-user"></i> ' . __('Cadastrar Programação'), array('controller' => 'programacoes','action' => 'programacaoEvento', 'admin' => true, $ide),  array('escape' => false, 'class' => 'btn btn-large btn-primary')) ?>
 </div>
 <?php if(empty($prog)){ ?>
     <div class="alert alert-info">

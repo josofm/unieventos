@@ -9389,3 +9389,2392 @@ Stack Trace:
 #1 /var/www/unieventos/lib/Cake/Routing/Dispatcher.php(162): Dispatcher->_invoke(Object(EventosController), Object(CakeRequest), Object(CakeResponse))
 #2 /var/www/unieventos/app/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
 #3 {main}
+2014-01-21 11:47:21 Error: [MissingActionException] Action EventosController::admin_img() could not be found.
+Exception Attributes: array (
+  'controller' => 'EventosController',
+  'action' => 'admin_img',
+)
+Request URL: /unieventos/admin/eventos/img/logo20.png
+Stack Trace:
+#0 /var/www/unieventos/lib/Cake/Routing/Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
+#1 /var/www/unieventos/lib/Cake/Routing/Dispatcher.php(162): Dispatcher->_invoke(Object(EventosController), Object(CakeRequest), Object(CakeResponse))
+#2 /var/www/unieventos/app/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2014-01-21 11:47:25 Error: [NotFoundException] Evento Invalido
+Request URL: /unieventos/admin/eventos/informacoes/img/logo20.png
+Stack Trace:
+#0 [internal function]: EventosController->admin_informacoes('img', 'logo20.png')
+#1 /var/www/unieventos/lib/Cake/Controller/Controller.php(490): ReflectionMethod->invokeArgs(Object(EventosController), Array)
+#2 /var/www/unieventos/lib/Cake/Routing/Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
+#3 /var/www/unieventos/lib/Cake/Routing/Dispatcher.php(162): Dispatcher->_invoke(Object(EventosController), Object(CakeRequest), Object(CakeResponse))
+#4 /var/www/unieventos/app/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2014-01-21 11:47:26 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /unieventos/css/img/sprite.png
+Stack Trace:
+#0 /var/www/unieventos/app/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-01-21 11:47:26 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /unieventos/css/img/controls.png
+Stack Trace:
+#0 /var/www/unieventos/app/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-01-21 11:47:26 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /unieventos/css/img/border.png
+Stack Trace:
+#0 /var/www/unieventos/app/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-01-21 11:47:26 Error: [NotFoundException] Evento Invalido
+Request URL: /unieventos/admin/eventos/informacoes/img/favicon.ico
+Stack Trace:
+#0 [internal function]: EventosController->admin_informacoes('img', 'favicon.ico')
+#1 /var/www/unieventos/lib/Cake/Controller/Controller.php(490): ReflectionMethod->invokeArgs(Object(EventosController), Array)
+#2 /var/www/unieventos/lib/Cake/Routing/Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
+#3 /var/www/unieventos/lib/Cake/Routing/Dispatcher.php(162): Dispatcher->_invoke(Object(EventosController), Object(CakeRequest), Object(CakeResponse))
+#4 /var/www/unieventos/app/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2014-01-21 11:47:51 Error: [NotFoundException] Evento Invalido
+Request URL: /unieventos/admin/eventos/informacoes/img/logo20.png
+Stack Trace:
+#0 [internal function]: EventosController->admin_informacoes('img', 'logo20.png')
+#1 /var/www/unieventos/lib/Cake/Controller/Controller.php(490): ReflectionMethod->invokeArgs(Object(EventosController), Array)
+#2 /var/www/unieventos/lib/Cake/Routing/Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
+#3 /var/www/unieventos/lib/Cake/Routing/Dispatcher.php(162): Dispatcher->_invoke(Object(EventosController), Object(CakeRequest), Object(CakeResponse))
+#4 /var/www/unieventos/app/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2014-01-21 11:48:49 Error: [NotFoundException] Evento Invalido
+Request URL: /unieventos/admin/eventos/informacoes/img/logo20.png
+Stack Trace:
+#0 [internal function]: EventosController->admin_informacoes('img', 'logo20.png')
+#1 /var/www/unieventos/lib/Cake/Controller/Controller.php(490): ReflectionMethod->invokeArgs(Object(EventosController), Array)
+#2 /var/www/unieventos/lib/Cake/Routing/Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
+#3 /var/www/unieventos/lib/Cake/Routing/Dispatcher.php(162): Dispatcher->_invoke(Object(EventosController), Object(CakeRequest), Object(CakeResponse))
+#4 /var/www/unieventos/app/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2014-01-21 11:52:15 Error: [NotFoundException] Evento Invalido
+Request URL: /unieventos/admin/eventos/informacoes/img/logo20.png
+Stack Trace:
+#0 [internal function]: EventosController->admin_informacoes('img', 'logo20.png')
+#1 /var/www/unieventos/lib/Cake/Controller/Controller.php(490): ReflectionMethod->invokeArgs(Object(EventosController), Array)
+#2 /var/www/unieventos/lib/Cake/Routing/Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
+#3 /var/www/unieventos/lib/Cake/Routing/Dispatcher.php(162): Dispatcher->_invoke(Object(EventosController), Object(CakeRequest), Object(CakeResponse))
+#4 /var/www/unieventos/app/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2014-01-21 12:06:08 Error: Fatal Error (4): syntax error, unexpected '}' in [/var/www/unieventos/app/Controller/CertificadosController.php, line 21]
+2014-01-21 12:06:08 Error: [FatalErrorException] syntax error, unexpected '}'
+Request URL: /unieventos/certificados/pdf/1.pdf
+Stack Trace:
+#0 /var/www/unieventos/lib/Cake/Error/ErrorHandler.php(205): ErrorHandler::handleFatalError(4, 'syntax error, u...', '/var/www/unieve...', 21)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', '/var/www/unieve...', 21, Array)
+#2 /var/www/unieventos/lib/Cake/Core/App.php(931): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', '/var/www/unieve...', 21, Array)
+#3 /var/www/unieventos/lib/Cake/Core/App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-01-21 12:06:08 Error: Fatal Error (4): syntax error, unexpected '}' in [/var/www/unieventos/app/Controller/CertificadosController.php, line 21]
+2014-01-21 12:06:08 Error: [FatalErrorException] syntax error, unexpected '}'
+Request URL: /unieventos/certificados/pdf/Sem%20T%EDtulo-1.jpg?%2Fcertificados%2Fpdf%2FSem_T%EDtulo-1_jpg=
+Stack Trace:
+#0 /var/www/unieventos/lib/Cake/Error/ErrorHandler.php(205): ErrorHandler::handleFatalError(4, 'syntax error, u...', '/var/www/unieve...', 21)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', '/var/www/unieve...', 21, Array)
+#2 /var/www/unieventos/lib/Cake/Core/App.php(931): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', '/var/www/unieve...', 21, Array)
+#3 /var/www/unieventos/lib/Cake/Core/App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-01-21 12:06:08 Error: Fatal Error (4): syntax error, unexpected '}' in [/var/www/unieventos/app/Controller/CertificadosController.php, line 21]
+2014-01-21 12:06:08 Error: [FatalErrorException] syntax error, unexpected '}'
+Request URL: /unieventos/certificados/pdf/logo.png
+Stack Trace:
+#0 /var/www/unieventos/lib/Cake/Error/ErrorHandler.php(205): ErrorHandler::handleFatalError(4, 'syntax error, u...', '/var/www/unieve...', 21)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', '/var/www/unieve...', 21, Array)
+#2 /var/www/unieventos/lib/Cake/Core/App.php(931): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', '/var/www/unieve...', 21, Array)
+#3 /var/www/unieventos/lib/Cake/Core/App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-01-21 12:07:20 Error: Fatal Error (4): syntax error, unexpected '}' in [/var/www/unieventos/app/Controller/CertificadosController.php, line 21]
+2014-01-21 12:07:20 Error: [FatalErrorException] syntax error, unexpected '}'
+Request URL: /unieventos/certificados/pdf/1.pdf
+Stack Trace:
+#0 /var/www/unieventos/lib/Cake/Error/ErrorHandler.php(205): ErrorHandler::handleFatalError(4, 'syntax error, u...', '/var/www/unieve...', 21)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', '/var/www/unieve...', 21, Array)
+#2 /var/www/unieventos/lib/Cake/Core/App.php(931): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', '/var/www/unieve...', 21, Array)
+#3 /var/www/unieventos/lib/Cake/Core/App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-01-21 12:07:20 Error: Fatal Error (4): syntax error, unexpected '}' in [/var/www/unieventos/app/Controller/CertificadosController.php, line 21]
+2014-01-21 12:07:20 Error: [FatalErrorException] syntax error, unexpected '}'
+Request URL: /unieventos/certificados/pdf/logo.png
+Stack Trace:
+#0 /var/www/unieventos/lib/Cake/Error/ErrorHandler.php(205): ErrorHandler::handleFatalError(4, 'syntax error, u...', '/var/www/unieve...', 21)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', '/var/www/unieve...', 21, Array)
+#2 /var/www/unieventos/lib/Cake/Core/App.php(931): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', '/var/www/unieve...', 21, Array)
+#3 /var/www/unieventos/lib/Cake/Core/App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-01-21 12:07:20 Error: Fatal Error (4): syntax error, unexpected '}' in [/var/www/unieventos/app/Controller/CertificadosController.php, line 21]
+2014-01-21 12:07:20 Error: [FatalErrorException] syntax error, unexpected '}'
+Request URL: /unieventos/certificados/pdf/Sem%20T%EDtulo-1.jpg?%2Fcertificados%2Fpdf%2FSem_T%EDtulo-1_jpg=
+Stack Trace:
+#0 /var/www/unieventos/lib/Cake/Error/ErrorHandler.php(205): ErrorHandler::handleFatalError(4, 'syntax error, u...', '/var/www/unieve...', 21)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', '/var/www/unieve...', 21, Array)
+#2 /var/www/unieventos/lib/Cake/Core/App.php(931): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', '/var/www/unieve...', 21, Array)
+#3 /var/www/unieventos/lib/Cake/Core/App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-01-21 12:07:23 Error: Fatal Error (4): syntax error, unexpected '}' in [/var/www/unieventos/app/Controller/CertificadosController.php, line 21]
+2014-01-21 12:07:23 Error: [FatalErrorException] syntax error, unexpected '}'
+Request URL: /unieventos/certificados/pdf/1.pdf
+Stack Trace:
+#0 /var/www/unieventos/lib/Cake/Error/ErrorHandler.php(205): ErrorHandler::handleFatalError(4, 'syntax error, u...', '/var/www/unieve...', 21)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', '/var/www/unieve...', 21, Array)
+#2 /var/www/unieventos/lib/Cake/Core/App.php(931): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', '/var/www/unieve...', 21, Array)
+#3 /var/www/unieventos/lib/Cake/Core/App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-01-21 12:07:23 Error: Fatal Error (4): syntax error, unexpected '}' in [/var/www/unieventos/app/Controller/CertificadosController.php, line 21]
+2014-01-21 12:07:23 Error: [FatalErrorException] syntax error, unexpected '}'
+Request URL: /unieventos/certificados/pdf/Sem%20T%EDtulo-1.jpg?%2Fcertificados%2Fpdf%2FSem_T%EDtulo-1_jpg=
+Stack Trace:
+#0 /var/www/unieventos/lib/Cake/Error/ErrorHandler.php(205): ErrorHandler::handleFatalError(4, 'syntax error, u...', '/var/www/unieve...', 21)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', '/var/www/unieve...', 21, Array)
+#2 /var/www/unieventos/lib/Cake/Core/App.php(931): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', '/var/www/unieve...', 21, Array)
+#3 /var/www/unieventos/lib/Cake/Core/App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-01-21 12:07:23 Error: Fatal Error (4): syntax error, unexpected '}' in [/var/www/unieventos/app/Controller/CertificadosController.php, line 21]
+2014-01-21 12:07:23 Error: [FatalErrorException] syntax error, unexpected '}'
+Request URL: /unieventos/certificados/pdf/logo.png
+Stack Trace:
+#0 /var/www/unieventos/lib/Cake/Error/ErrorHandler.php(205): ErrorHandler::handleFatalError(4, 'syntax error, u...', '/var/www/unieve...', 21)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', '/var/www/unieve...', 21, Array)
+#2 /var/www/unieventos/lib/Cake/Core/App.php(931): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', '/var/www/unieve...', 21, Array)
+#3 /var/www/unieventos/lib/Cake/Core/App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-01-21 12:07:52 Error: [MissingTableException] Table invoices for model Invoice was not found in datasource default.
+Exception Attributes: array (
+  'table' => 'invoices',
+  'class' => 'Invoice',
+  'ds' => 'default',
+)
+Request URL: /unieventos/invoices/view/1.pdf
+Stack Trace:
+#0 /var/www/unieventos/lib/Cake/Model/Model.php(3476): Model->setSource('invoices')
+#1 /var/www/unieventos/lib/Cake/Model/Model.php(2999): Model->getDataSource()
+#2 /var/www/unieventos/lib/Cake/Model/Model.php(2912): Model->_findCount('before', Array)
+#3 /var/www/unieventos/lib/Cake/Model/Model.php(2847): Model->buildQuery('count', Array)
+#4 /var/www/unieventos/lib/Cake/Model/Model.php(2762): Model->find('count', Array)
+#5 /var/www/unieventos/app/Controller/InvoicesController.php(10): Model->exists()
+#6 [internal function]: InvoicesController->view('1')
+#7 /var/www/unieventos/lib/Cake/Controller/Controller.php(490): ReflectionMethod->invokeArgs(Object(InvoicesController), Array)
+#8 /var/www/unieventos/lib/Cake/Routing/Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
+#9 /var/www/unieventos/lib/Cake/Routing/Dispatcher.php(162): Dispatcher->_invoke(Object(InvoicesController), Object(CakeRequest), Object(CakeResponse))
+#10 /var/www/unieventos/app/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#11 {main}
+2014-01-21 12:07:53 Error: [MissingTableException] Table invoices for model Invoice was not found in datasource default.
+Exception Attributes: array (
+  'table' => 'invoices',
+  'class' => 'Invoice',
+  'ds' => 'default',
+)
+Request URL: /unieventos/invoices/view/logo.png
+Stack Trace:
+#0 /var/www/unieventos/lib/Cake/Model/Model.php(3476): Model->setSource('invoices')
+#1 /var/www/unieventos/lib/Cake/Model/Model.php(2999): Model->getDataSource()
+#2 /var/www/unieventos/lib/Cake/Model/Model.php(2912): Model->_findCount('before', Array)
+#3 /var/www/unieventos/lib/Cake/Model/Model.php(2847): Model->buildQuery('count', Array)
+#4 /var/www/unieventos/lib/Cake/Model/Model.php(2762): Model->find('count', Array)
+#5 /var/www/unieventos/app/Controller/InvoicesController.php(10): Model->exists()
+#6 [internal function]: InvoicesController->view('logo.png')
+#7 /var/www/unieventos/lib/Cake/Controller/Controller.php(490): ReflectionMethod->invokeArgs(Object(InvoicesController), Array)
+#8 /var/www/unieventos/lib/Cake/Routing/Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
+#9 /var/www/unieventos/lib/Cake/Routing/Dispatcher.php(162): Dispatcher->_invoke(Object(InvoicesController), Object(CakeRequest), Object(CakeResponse))
+#10 /var/www/unieventos/app/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#11 {main}
+2014-01-21 12:07:53 Error: [MissingTableException] Table invoices for model Invoice was not found in datasource default.
+Exception Attributes: array (
+  'table' => 'invoices',
+  'class' => 'Invoice',
+  'ds' => 'default',
+)
+Request URL: /unieventos/invoices/view/Sem%20T%EDtulo-1.jpg?%2Finvoices%2Fview%2FSem_T%EDtulo-1_jpg=
+Stack Trace:
+#0 /var/www/unieventos/lib/Cake/Model/Model.php(3476): Model->setSource('invoices')
+#1 /var/www/unieventos/lib/Cake/Model/Model.php(2999): Model->getDataSource()
+#2 /var/www/unieventos/lib/Cake/Model/Model.php(2912): Model->_findCount('before', Array)
+#3 /var/www/unieventos/lib/Cake/Model/Model.php(2847): Model->buildQuery('count', Array)
+#4 /var/www/unieventos/lib/Cake/Model/Model.php(2762): Model->find('count', Array)
+#5 /var/www/unieventos/app/Controller/InvoicesController.php(10): Model->exists()
+#6 [internal function]: InvoicesController->view('Sem T?tulo-1.jp...')
+#7 /var/www/unieventos/lib/Cake/Controller/Controller.php(490): ReflectionMethod->invokeArgs(Object(InvoicesController), Array)
+#8 /var/www/unieventos/lib/Cake/Routing/Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
+#9 /var/www/unieventos/lib/Cake/Routing/Dispatcher.php(162): Dispatcher->_invoke(Object(InvoicesController), Object(CakeRequest), Object(CakeResponse))
+#10 /var/www/unieventos/app/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#11 {main}
+2014-01-21 12:08:42 Error: [MissingTableException] Table invoices for model Invoice was not found in datasource default.
+Exception Attributes: array (
+  'table' => 'invoices',
+  'class' => 'Invoice',
+  'ds' => 'default',
+)
+Request URL: /unieventos/invoices/view/1.pdf
+Stack Trace:
+#0 /var/www/unieventos/lib/Cake/Model/Model.php(3476): Model->setSource('invoices')
+#1 /var/www/unieventos/lib/Cake/Model/Model.php(2999): Model->getDataSource()
+#2 /var/www/unieventos/lib/Cake/Model/Model.php(2912): Model->_findCount('before', Array)
+#3 /var/www/unieventos/lib/Cake/Model/Model.php(2847): Model->buildQuery('count', Array)
+#4 /var/www/unieventos/lib/Cake/Model/Model.php(2762): Model->find('count', Array)
+#5 /var/www/unieventos/app/Controller/InvoicesController.php(10): Model->exists()
+#6 [internal function]: InvoicesController->view('1')
+#7 /var/www/unieventos/lib/Cake/Controller/Controller.php(490): ReflectionMethod->invokeArgs(Object(InvoicesController), Array)
+#8 /var/www/unieventos/lib/Cake/Routing/Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
+#9 /var/www/unieventos/lib/Cake/Routing/Dispatcher.php(162): Dispatcher->_invoke(Object(InvoicesController), Object(CakeRequest), Object(CakeResponse))
+#10 /var/www/unieventos/app/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#11 {main}
+2014-01-21 12:08:43 Error: [MissingTableException] Table invoices for model Invoice was not found in datasource default.
+Exception Attributes: array (
+  'table' => 'invoices',
+  'class' => 'Invoice',
+  'ds' => 'default',
+)
+Request URL: /unieventos/invoices/view/logo.png
+Stack Trace:
+#0 /var/www/unieventos/lib/Cake/Model/Model.php(3476): Model->setSource('invoices')
+#1 /var/www/unieventos/lib/Cake/Model/Model.php(2999): Model->getDataSource()
+#2 /var/www/unieventos/lib/Cake/Model/Model.php(2912): Model->_findCount('before', Array)
+#3 /var/www/unieventos/lib/Cake/Model/Model.php(2847): Model->buildQuery('count', Array)
+#4 /var/www/unieventos/lib/Cake/Model/Model.php(2762): Model->find('count', Array)
+#5 /var/www/unieventos/app/Controller/InvoicesController.php(10): Model->exists()
+#6 [internal function]: InvoicesController->view('logo.png')
+#7 /var/www/unieventos/lib/Cake/Controller/Controller.php(490): ReflectionMethod->invokeArgs(Object(InvoicesController), Array)
+#8 /var/www/unieventos/lib/Cake/Routing/Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
+#9 /var/www/unieventos/lib/Cake/Routing/Dispatcher.php(162): Dispatcher->_invoke(Object(InvoicesController), Object(CakeRequest), Object(CakeResponse))
+#10 /var/www/unieventos/app/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#11 {main}
+2014-01-21 12:08:43 Error: [MissingTableException] Table invoices for model Invoice was not found in datasource default.
+Exception Attributes: array (
+  'table' => 'invoices',
+  'class' => 'Invoice',
+  'ds' => 'default',
+)
+Request URL: /unieventos/invoices/view/Sem%20T%EDtulo-1.jpg?%2Finvoices%2Fview%2FSem_T%EDtulo-1_jpg=
+Stack Trace:
+#0 /var/www/unieventos/lib/Cake/Model/Model.php(3476): Model->setSource('invoices')
+#1 /var/www/unieventos/lib/Cake/Model/Model.php(2999): Model->getDataSource()
+#2 /var/www/unieventos/lib/Cake/Model/Model.php(2912): Model->_findCount('before', Array)
+#3 /var/www/unieventos/lib/Cake/Model/Model.php(2847): Model->buildQuery('count', Array)
+#4 /var/www/unieventos/lib/Cake/Model/Model.php(2762): Model->find('count', Array)
+#5 /var/www/unieventos/app/Controller/InvoicesController.php(10): Model->exists()
+#6 [internal function]: InvoicesController->view('Sem T?tulo-1.jp...')
+#7 /var/www/unieventos/lib/Cake/Controller/Controller.php(490): ReflectionMethod->invokeArgs(Object(InvoicesController), Array)
+#8 /var/www/unieventos/lib/Cake/Routing/Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
+#9 /var/www/unieventos/lib/Cake/Routing/Dispatcher.php(162): Dispatcher->_invoke(Object(InvoicesController), Object(CakeRequest), Object(CakeResponse))
+#10 /var/www/unieventos/app/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#11 {main}
+2014-01-21 12:08:59 Error: [MissingTableException] Table invoices for model Invoice was not found in datasource default.
+Exception Attributes: array (
+  'table' => 'invoices',
+  'class' => 'Invoice',
+  'ds' => 'default',
+)
+Request URL: /unieventos/invoices/view/1.pdf
+Stack Trace:
+#0 /var/www/unieventos/lib/Cake/Model/Model.php(3476): Model->setSource('invoices')
+#1 /var/www/unieventos/lib/Cake/Model/Model.php(2999): Model->getDataSource()
+#2 /var/www/unieventos/lib/Cake/Model/Model.php(2912): Model->_findCount('before', Array)
+#3 /var/www/unieventos/lib/Cake/Model/Model.php(2847): Model->buildQuery('count', Array)
+#4 /var/www/unieventos/lib/Cake/Model/Model.php(2762): Model->find('count', Array)
+#5 /var/www/unieventos/app/Controller/InvoicesController.php(10): Model->exists()
+#6 [internal function]: InvoicesController->view('1')
+#7 /var/www/unieventos/lib/Cake/Controller/Controller.php(490): ReflectionMethod->invokeArgs(Object(InvoicesController), Array)
+#8 /var/www/unieventos/lib/Cake/Routing/Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
+#9 /var/www/unieventos/lib/Cake/Routing/Dispatcher.php(162): Dispatcher->_invoke(Object(InvoicesController), Object(CakeRequest), Object(CakeResponse))
+#10 /var/www/unieventos/app/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#11 {main}
+2014-01-21 12:08:59 Error: [MissingTableException] Table invoices for model Invoice was not found in datasource default.
+Exception Attributes: array (
+  'table' => 'invoices',
+  'class' => 'Invoice',
+  'ds' => 'default',
+)
+Request URL: /unieventos/invoices/view/logo.png
+Stack Trace:
+#0 /var/www/unieventos/lib/Cake/Model/Model.php(3476): Model->setSource('invoices')
+#1 /var/www/unieventos/lib/Cake/Model/Model.php(2999): Model->getDataSource()
+#2 /var/www/unieventos/lib/Cake/Model/Model.php(2912): Model->_findCount('before', Array)
+#3 /var/www/unieventos/lib/Cake/Model/Model.php(2847): Model->buildQuery('count', Array)
+#4 /var/www/unieventos/lib/Cake/Model/Model.php(2762): Model->find('count', Array)
+#5 /var/www/unieventos/app/Controller/InvoicesController.php(10): Model->exists()
+#6 [internal function]: InvoicesController->view('logo.png')
+#7 /var/www/unieventos/lib/Cake/Controller/Controller.php(490): ReflectionMethod->invokeArgs(Object(InvoicesController), Array)
+#8 /var/www/unieventos/lib/Cake/Routing/Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
+#9 /var/www/unieventos/lib/Cake/Routing/Dispatcher.php(162): Dispatcher->_invoke(Object(InvoicesController), Object(CakeRequest), Object(CakeResponse))
+#10 /var/www/unieventos/app/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#11 {main}
+2014-01-21 12:08:59 Error: [MissingTableException] Table invoices for model Invoice was not found in datasource default.
+Exception Attributes: array (
+  'table' => 'invoices',
+  'class' => 'Invoice',
+  'ds' => 'default',
+)
+Request URL: /unieventos/invoices/view/Sem%20T%EDtulo-1.jpg?%2Finvoices%2Fview%2FSem_T%EDtulo-1_jpg=
+Stack Trace:
+#0 /var/www/unieventos/lib/Cake/Model/Model.php(3476): Model->setSource('invoices')
+#1 /var/www/unieventos/lib/Cake/Model/Model.php(2999): Model->getDataSource()
+#2 /var/www/unieventos/lib/Cake/Model/Model.php(2912): Model->_findCount('before', Array)
+#3 /var/www/unieventos/lib/Cake/Model/Model.php(2847): Model->buildQuery('count', Array)
+#4 /var/www/unieventos/lib/Cake/Model/Model.php(2762): Model->find('count', Array)
+#5 /var/www/unieventos/app/Controller/InvoicesController.php(10): Model->exists()
+#6 [internal function]: InvoicesController->view('Sem T?tulo-1.jp...')
+#7 /var/www/unieventos/lib/Cake/Controller/Controller.php(490): ReflectionMethod->invokeArgs(Object(InvoicesController), Array)
+#8 /var/www/unieventos/lib/Cake/Routing/Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
+#9 /var/www/unieventos/lib/Cake/Routing/Dispatcher.php(162): Dispatcher->_invoke(Object(InvoicesController), Object(CakeRequest), Object(CakeResponse))
+#10 /var/www/unieventos/app/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#11 {main}
+2014-01-21 12:09:51 Error: [MissingTableException] Table invoices for model Invoice was not found in datasource default.
+Exception Attributes: array (
+  'table' => 'invoices',
+  'class' => 'Invoice',
+  'ds' => 'default',
+)
+Request URL: /unieventos/invoices/view/1.pdf
+Stack Trace:
+#0 /var/www/unieventos/lib/Cake/Model/Model.php(3476): Model->setSource('invoices')
+#1 /var/www/unieventos/lib/Cake/Model/Model.php(2999): Model->getDataSource()
+#2 /var/www/unieventos/lib/Cake/Model/Model.php(2912): Model->_findCount('before', Array)
+#3 /var/www/unieventos/lib/Cake/Model/Model.php(2847): Model->buildQuery('count', Array)
+#4 /var/www/unieventos/lib/Cake/Model/Model.php(2762): Model->find('count', Array)
+#5 /var/www/unieventos/app/Controller/InvoicesController.php(10): Model->exists()
+#6 [internal function]: InvoicesController->view('1')
+#7 /var/www/unieventos/lib/Cake/Controller/Controller.php(490): ReflectionMethod->invokeArgs(Object(InvoicesController), Array)
+#8 /var/www/unieventos/lib/Cake/Routing/Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
+#9 /var/www/unieventos/lib/Cake/Routing/Dispatcher.php(162): Dispatcher->_invoke(Object(InvoicesController), Object(CakeRequest), Object(CakeResponse))
+#10 /var/www/unieventos/app/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#11 {main}
+2014-01-21 12:34:38 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /unieventos/css/img/ajax-loaders/ajax-loader-6.gif
+Stack Trace:
+#0 /var/www/unieventos/app/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-01-21 12:34:38 Error: [PDOException] SQLSTATE[42S22]: Column not found: 1054 Unknown column 'Cadastro.id' in 'field list'
+Request URL: /unieventos/admin/cadastros/boletos
+Stack Trace:
+#0 /var/www/unieventos/lib/Cake/Model/Datasource/DboSource.php(460): PDOStatement->execute(Array)
+#1 /var/www/unieventos/lib/Cake/Model/Datasource/DboSource.php(426): DboSource->_execute('SELECT `Cadastr...', Array)
+#2 /var/www/unieventos/lib/Cake/Model/Datasource/DboSource.php(666): DboSource->execute('SELECT `Cadastr...', Array, Array)
+#3 /var/www/unieventos/lib/Cake/Model/Datasource/DboSource.php(1077): DboSource->fetchAll('SELECT `Cadastr...', false)
+#4 /var/www/unieventos/lib/Cake/Model/Model.php(2880): DboSource->read(Object(Cadastro), Array)
+#5 /var/www/unieventos/lib/Cake/Model/Model.php(2852): Model->_readDataSource('all', Array)
+#6 /var/www/unieventos/lib/Cake/Model/Datasource/DboSource.php(594): Model->find('all', Array)
+#7 /var/www/unieventos/lib/Cake/Model/Model.php(801): DboSource->query('findAllByUsuari...', Array, Object(Cadastro))
+#8 /var/www/unieventos/app/Controller/CadastrosController.php(25): Model->__call('findAllByUsuari...', Array)
+#9 /var/www/unieventos/app/Controller/CadastrosController.php(25): Cadastro->findAllByUsuarioId('2')
+#10 [internal function]: CadastrosController->admin_boletos()
+#11 /var/www/unieventos/lib/Cake/Controller/Controller.php(490): ReflectionMethod->invokeArgs(Object(CadastrosController), Array)
+#12 /var/www/unieventos/lib/Cake/Routing/Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
+#13 /var/www/unieventos/lib/Cake/Routing/Dispatcher.php(162): Dispatcher->_invoke(Object(CadastrosController), Object(CakeRequest), Object(CakeResponse))
+#14 /var/www/unieventos/app/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#15 {main}
+2014-01-21 12:34:38 Error: [MissingActionException] Action CadastrosController::admin_img() could not be found.
+Exception Attributes: array (
+  'controller' => 'CadastrosController',
+  'action' => 'admin_img',
+)
+Request URL: /unieventos/admin/cadastros/img/favicon.ico
+Stack Trace:
+#0 /var/www/unieventos/lib/Cake/Routing/Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
+#1 /var/www/unieventos/lib/Cake/Routing/Dispatcher.php(162): Dispatcher->_invoke(Object(CadastrosController), Object(CakeRequest), Object(CakeResponse))
+#2 /var/www/unieventos/app/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2014-01-21 12:34:46 Error: [PDOException] SQLSTATE[42S22]: Column not found: 1054 Unknown column 'Cadastro.id' in 'field list'
+Request URL: /unieventos/admin/cadastros/boletos
+Stack Trace:
+#0 /var/www/unieventos/lib/Cake/Model/Datasource/DboSource.php(460): PDOStatement->execute(Array)
+#1 /var/www/unieventos/lib/Cake/Model/Datasource/DboSource.php(426): DboSource->_execute('SELECT `Cadastr...', Array)
+#2 /var/www/unieventos/lib/Cake/Model/Datasource/DboSource.php(666): DboSource->execute('SELECT `Cadastr...', Array, Array)
+#3 /var/www/unieventos/lib/Cake/Model/Datasource/DboSource.php(1077): DboSource->fetchAll('SELECT `Cadastr...', false)
+#4 /var/www/unieventos/lib/Cake/Model/Model.php(2880): DboSource->read(Object(Cadastro), Array)
+#5 /var/www/unieventos/lib/Cake/Model/Model.php(2852): Model->_readDataSource('all', Array)
+#6 /var/www/unieventos/lib/Cake/Model/Datasource/DboSource.php(594): Model->find('all', Array)
+#7 /var/www/unieventos/lib/Cake/Model/Model.php(801): DboSource->query('findAllByUsuari...', Array, Object(Cadastro))
+#8 /var/www/unieventos/app/Controller/CadastrosController.php(25): Model->__call('findAllByUsuari...', Array)
+#9 /var/www/unieventos/app/Controller/CadastrosController.php(25): Cadastro->findAllByUsuarioId('2')
+#10 [internal function]: CadastrosController->admin_boletos()
+#11 /var/www/unieventos/lib/Cake/Controller/Controller.php(490): ReflectionMethod->invokeArgs(Object(CadastrosController), Array)
+#12 /var/www/unieventos/lib/Cake/Routing/Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
+#13 /var/www/unieventos/lib/Cake/Routing/Dispatcher.php(162): Dispatcher->_invoke(Object(CadastrosController), Object(CakeRequest), Object(CakeResponse))
+#14 /var/www/unieventos/app/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#15 {main}
+2014-01-21 12:34:46 Error: [MissingActionException] Action CadastrosController::admin_img() could not be found.
+Exception Attributes: array (
+  'controller' => 'CadastrosController',
+  'action' => 'admin_img',
+)
+Request URL: /unieventos/admin/cadastros/img/logo20.png
+Stack Trace:
+#0 /var/www/unieventos/lib/Cake/Routing/Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
+#1 /var/www/unieventos/lib/Cake/Routing/Dispatcher.php(162): Dispatcher->_invoke(Object(CadastrosController), Object(CakeRequest), Object(CakeResponse))
+#2 /var/www/unieventos/app/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2014-01-21 12:34:47 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /unieventos/css/img/border.png
+Stack Trace:
+#0 /var/www/unieventos/app/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-01-21 12:34:47 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /unieventos/css/img/sprite.png
+Stack Trace:
+#0 /var/www/unieventos/app/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-01-21 12:34:47 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /unieventos/css/img/controls.png
+Stack Trace:
+#0 /var/www/unieventos/app/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-01-21 12:35:28 Error: [PDOException] SQLSTATE[42S22]: Column not found: 1054 Unknown column 'Cadastro.id' in 'field list'
+Request URL: /unieventos/admin/cadastros/boletos
+Stack Trace:
+#0 /var/www/unieventos/lib/Cake/Model/Datasource/DboSource.php(460): PDOStatement->execute(Array)
+#1 /var/www/unieventos/lib/Cake/Model/Datasource/DboSource.php(426): DboSource->_execute('SELECT `Cadastr...', Array)
+#2 /var/www/unieventos/lib/Cake/Model/Datasource/DboSource.php(666): DboSource->execute('SELECT `Cadastr...', Array, Array)
+#3 /var/www/unieventos/lib/Cake/Model/Datasource/DboSource.php(1077): DboSource->fetchAll('SELECT `Cadastr...', false)
+#4 /var/www/unieventos/lib/Cake/Model/Model.php(2880): DboSource->read(Object(Cadastro), Array)
+#5 /var/www/unieventos/lib/Cake/Model/Model.php(2852): Model->_readDataSource('all', Array)
+#6 /var/www/unieventos/lib/Cake/Model/Datasource/DboSource.php(594): Model->find('all', Array)
+#7 /var/www/unieventos/lib/Cake/Model/Model.php(801): DboSource->query('findAllByUsuari...', Array, Object(Cadastro))
+#8 /var/www/unieventos/app/Controller/CadastrosController.php(25): Model->__call('findAllByUsuari...', Array)
+#9 /var/www/unieventos/app/Controller/CadastrosController.php(25): Cadastro->findAllByUsuarioId('2')
+#10 [internal function]: CadastrosController->admin_boletos()
+#11 /var/www/unieventos/lib/Cake/Controller/Controller.php(490): ReflectionMethod->invokeArgs(Object(CadastrosController), Array)
+#12 /var/www/unieventos/lib/Cake/Routing/Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
+#13 /var/www/unieventos/lib/Cake/Routing/Dispatcher.php(162): Dispatcher->_invoke(Object(CadastrosController), Object(CakeRequest), Object(CakeResponse))
+#14 /var/www/unieventos/app/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#15 {main}
+2014-01-21 12:35:28 Error: [MissingActionException] Action CadastrosController::admin_img() could not be found.
+Exception Attributes: array (
+  'controller' => 'CadastrosController',
+  'action' => 'admin_img',
+)
+Request URL: /unieventos/admin/cadastros/img/logo20.png
+Stack Trace:
+#0 /var/www/unieventos/lib/Cake/Routing/Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
+#1 /var/www/unieventos/lib/Cake/Routing/Dispatcher.php(162): Dispatcher->_invoke(Object(CadastrosController), Object(CakeRequest), Object(CakeResponse))
+#2 /var/www/unieventos/app/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2014-01-21 12:36:33 Error: [MissingActionException] Action EventosController::admin_img() could not be found.
+Exception Attributes: array (
+  'controller' => 'EventosController',
+  'action' => 'admin_img',
+)
+Request URL: /unieventos/admin/eventos/img/logo20.png
+Stack Trace:
+#0 /var/www/unieventos/lib/Cake/Routing/Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
+#1 /var/www/unieventos/lib/Cake/Routing/Dispatcher.php(162): Dispatcher->_invoke(Object(EventosController), Object(CakeRequest), Object(CakeResponse))
+#2 /var/www/unieventos/app/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2014-01-21 12:36:36 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /unieventos/css/img/ajax-loaders/ajax-loader-6.gif
+Stack Trace:
+#0 /var/www/unieventos/app/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-01-21 12:36:36 Error: [PDOException] SQLSTATE[42S22]: Column not found: 1054 Unknown column 'Cadastro.id' in 'field list'
+Request URL: /unieventos/admin/cadastros/boletos
+Stack Trace:
+#0 /var/www/unieventos/lib/Cake/Model/Datasource/DboSource.php(460): PDOStatement->execute(Array)
+#1 /var/www/unieventos/lib/Cake/Model/Datasource/DboSource.php(426): DboSource->_execute('SELECT `Cadastr...', Array)
+#2 /var/www/unieventos/lib/Cake/Model/Datasource/DboSource.php(666): DboSource->execute('SELECT `Cadastr...', Array, Array)
+#3 /var/www/unieventos/lib/Cake/Model/Datasource/DboSource.php(1077): DboSource->fetchAll('SELECT `Cadastr...', false)
+#4 /var/www/unieventos/lib/Cake/Model/Model.php(2880): DboSource->read(Object(Cadastro), Array)
+#5 /var/www/unieventos/lib/Cake/Model/Model.php(2852): Model->_readDataSource('all', Array)
+#6 /var/www/unieventos/lib/Cake/Model/Datasource/DboSource.php(594): Model->find('all', Array)
+#7 /var/www/unieventos/lib/Cake/Model/Model.php(801): DboSource->query('findAllByUsuari...', Array, Object(Cadastro))
+#8 /var/www/unieventos/app/Controller/CadastrosController.php(25): Model->__call('findAllByUsuari...', Array)
+#9 /var/www/unieventos/app/Controller/CadastrosController.php(25): Cadastro->findAllByUsuarioId('2')
+#10 [internal function]: CadastrosController->admin_boletos()
+#11 /var/www/unieventos/lib/Cake/Controller/Controller.php(490): ReflectionMethod->invokeArgs(Object(CadastrosController), Array)
+#12 /var/www/unieventos/lib/Cake/Routing/Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
+#13 /var/www/unieventos/lib/Cake/Routing/Dispatcher.php(162): Dispatcher->_invoke(Object(CadastrosController), Object(CakeRequest), Object(CakeResponse))
+#14 /var/www/unieventos/app/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#15 {main}
+2014-01-21 12:37:18 Error: [MissingControllerException] Controller class ImgController could not be found.
+Exception Attributes: array (
+  'class' => 'ImgController',
+  'plugin' => NULL,
+)
+Request URL: /unieventos/img/qrcode136.png
+Stack Trace:
+#0 /var/www/unieventos/app/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-01-21 12:37:18 Error: [MissingControllerException] Controller class ImgController could not be found.
+Exception Attributes: array (
+  'class' => 'ImgController',
+  'plugin' => NULL,
+)
+Request URL: /unieventos/img/logo20.png
+Stack Trace:
+#0 /var/www/unieventos/app/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-01-21 12:37:18 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /unieventos/css/img/opa-icons-red32.png
+Stack Trace:
+#0 /var/www/unieventos/app/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-01-21 12:37:18 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /unieventos/css/img/opa-icons-color32.png
+Stack Trace:
+#0 /var/www/unieventos/app/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-01-21 12:37:19 Error: [MissingControllerException] Controller class ImgController could not be found.
+Exception Attributes: array (
+  'class' => 'ImgController',
+  'plugin' => NULL,
+)
+Request URL: /unieventos/admin/img/favicon.ico
+Stack Trace:
+#0 /var/www/unieventos/app/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-01-21 12:37:19 Error: [MissingControllerException] Controller class ImgController could not be found.
+Exception Attributes: array (
+  'class' => 'ImgController',
+  'plugin' => NULL,
+)
+Request URL: /unieventos/admin/img/logo20.png
+Stack Trace:
+#0 /var/www/unieventos/app/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-01-21 12:37:21 Error: [MissingActionException] Action EventosController::admin_img() could not be found.
+Exception Attributes: array (
+  'controller' => 'EventosController',
+  'action' => 'admin_img',
+)
+Request URL: /unieventos/admin/eventos/img/logo20.png
+Stack Trace:
+#0 /var/www/unieventos/lib/Cake/Routing/Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
+#1 /var/www/unieventos/lib/Cake/Routing/Dispatcher.php(162): Dispatcher->_invoke(Object(EventosController), Object(CakeRequest), Object(CakeResponse))
+#2 /var/www/unieventos/app/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2014-01-21 12:37:21 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /unieventos/css/img/ui-bg_flat_75_ffffff_40x100.png
+Stack Trace:
+#0 /var/www/unieventos/app/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-01-21 12:39:53 Error: [MissingActionException] Action EventosController::admin_img() could not be found.
+Exception Attributes: array (
+  'controller' => 'EventosController',
+  'action' => 'admin_img',
+)
+Request URL: /unieventos/admin/eventos/img/logo20.png
+Stack Trace:
+#0 /var/www/unieventos/lib/Cake/Routing/Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
+#1 /var/www/unieventos/lib/Cake/Routing/Dispatcher.php(162): Dispatcher->_invoke(Object(EventosController), Object(CakeRequest), Object(CakeResponse))
+#2 /var/www/unieventos/app/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2014-01-21 12:40:09 Error: [MissingActionException] Action EventosController::admin_img() could not be found.
+Exception Attributes: array (
+  'controller' => 'EventosController',
+  'action' => 'admin_img',
+)
+Request URL: /unieventos/admin/eventos/img/logo20.png
+Stack Trace:
+#0 /var/www/unieventos/lib/Cake/Routing/Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
+#1 /var/www/unieventos/lib/Cake/Routing/Dispatcher.php(162): Dispatcher->_invoke(Object(EventosController), Object(CakeRequest), Object(CakeResponse))
+#2 /var/www/unieventos/app/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2014-01-21 12:44:08 Error: [MissingActionException] Action EventosController::admin_img() could not be found.
+Exception Attributes: array (
+  'controller' => 'EventosController',
+  'action' => 'admin_img',
+)
+Request URL: /unieventos/admin/eventos/img/logo20.png
+Stack Trace:
+#0 /var/www/unieventos/lib/Cake/Routing/Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
+#1 /var/www/unieventos/lib/Cake/Routing/Dispatcher.php(162): Dispatcher->_invoke(Object(EventosController), Object(CakeRequest), Object(CakeResponse))
+#2 /var/www/unieventos/app/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2014-01-21 12:44:10 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /unieventos/css/img/ui-bg_glass_55_fbf9ee_1x400.png
+Stack Trace:
+#0 /var/www/unieventos/app/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-01-21 12:44:10 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /unieventos/css/img/ui-bg_glass_75_e6e6e6_1x400.png
+Stack Trace:
+#0 /var/www/unieventos/app/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-01-21 12:44:10 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /unieventos/css/img/ui-icons_222222_256x240.png
+Stack Trace:
+#0 /var/www/unieventos/app/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-01-21 12:44:10 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /unieventos/css/img/ui-bg_highlight-soft_75_cccccc_1x100.png
+Stack Trace:
+#0 /var/www/unieventos/app/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-01-21 12:44:11 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /unieventos/css/img/ui-bg_glass_75_dadada_1x400.png
+Stack Trace:
+#0 /var/www/unieventos/app/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-01-21 12:44:28 Error: [MissingActionException] Action EventosController::admin_img() could not be found.
+Exception Attributes: array (
+  'controller' => 'EventosController',
+  'action' => 'admin_img',
+)
+Request URL: /unieventos/admin/eventos/img/logo20.png
+Stack Trace:
+#0 /var/www/unieventos/lib/Cake/Routing/Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
+#1 /var/www/unieventos/lib/Cake/Routing/Dispatcher.php(162): Dispatcher->_invoke(Object(EventosController), Object(CakeRequest), Object(CakeResponse))
+#2 /var/www/unieventos/app/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2014-01-21 12:44:35 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /unieventos/css/img/ui-icons_454545_256x240.png
+Stack Trace:
+#0 /var/www/unieventos/app/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-01-21 13:29:10 Error: [MissingControllerException] Controller class ImgController could not be found.
+Exception Attributes: array (
+  'class' => 'ImgController',
+  'plugin' => NULL,
+)
+Request URL: /unieventos/img/logo20.png
+Stack Trace:
+#0 /var/www/unieventos/app/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-01-21 13:29:10 Error: [MissingControllerException] Controller class ImgController could not be found.
+Exception Attributes: array (
+  'class' => 'ImgController',
+  'plugin' => NULL,
+)
+Request URL: /unieventos/img/qrcode136.png
+Stack Trace:
+#0 /var/www/unieventos/app/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-01-21 13:29:11 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /unieventos/css/img/opa-icons-red32.png
+Stack Trace:
+#0 /var/www/unieventos/app/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-01-21 13:29:11 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /unieventos/css/img/opa-icons-color32.png
+Stack Trace:
+#0 /var/www/unieventos/app/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-01-21 13:29:11 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /unieventos/css/img/sprite.png
+Stack Trace:
+#0 /var/www/unieventos/app/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-01-21 13:29:11 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /unieventos/css/img/border.png
+Stack Trace:
+#0 /var/www/unieventos/app/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-01-21 13:29:11 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /unieventos/css/img/controls.png
+Stack Trace:
+#0 /var/www/unieventos/app/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-01-21 13:29:12 Error: [MissingControllerException] Controller class ImgController could not be found.
+Exception Attributes: array (
+  'class' => 'ImgController',
+  'plugin' => NULL,
+)
+Request URL: /unieventos/img/favicon.ico
+Stack Trace:
+#0 /var/www/unieventos/app/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-01-21 13:29:15 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /unieventos/css/img/opa-icons-darkgray32.png
+Stack Trace:
+#0 /var/www/unieventos/app/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-01-21 13:29:45 Error: [MissingControllerException] Controller class ImgController could not be found.
+Exception Attributes: array (
+  'class' => 'ImgController',
+  'plugin' => NULL,
+)
+Request URL: /unieventos/admin/img/logo20.png
+Stack Trace:
+#0 /var/www/unieventos/app/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-01-21 13:29:45 Error: [MissingControllerException] Controller class ImgController could not be found.
+Exception Attributes: array (
+  'class' => 'ImgController',
+  'plugin' => NULL,
+)
+Request URL: /unieventos/admin/img/favicon.ico
+Stack Trace:
+#0 /var/www/unieventos/app/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-01-21 13:29:50 Error: [MissingActionException] Action EventosController::admin_img() could not be found.
+Exception Attributes: array (
+  'controller' => 'EventosController',
+  'action' => 'admin_img',
+)
+Request URL: /unieventos/admin/eventos/img/logo20.png
+Stack Trace:
+#0 /var/www/unieventos/lib/Cake/Routing/Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
+#1 /var/www/unieventos/lib/Cake/Routing/Dispatcher.php(162): Dispatcher->_invoke(Object(EventosController), Object(CakeRequest), Object(CakeResponse))
+#2 /var/www/unieventos/app/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2014-01-21 13:29:51 Error: [MissingActionException] Action EventosController::admin_img() could not be found.
+Exception Attributes: array (
+  'controller' => 'EventosController',
+  'action' => 'admin_img',
+)
+Request URL: /unieventos/admin/eventos/img/favicon.ico
+Stack Trace:
+#0 /var/www/unieventos/lib/Cake/Routing/Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
+#1 /var/www/unieventos/lib/Cake/Routing/Dispatcher.php(162): Dispatcher->_invoke(Object(EventosController), Object(CakeRequest), Object(CakeResponse))
+#2 /var/www/unieventos/app/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2014-01-21 13:29:54 Error: [NotFoundException] Evento Invalido
+Request URL: /unieventos/admin/eventos/informacoes/img/logo20.png
+Stack Trace:
+#0 [internal function]: EventosController->admin_informacoes('img', 'logo20.png')
+#1 /var/www/unieventos/lib/Cake/Controller/Controller.php(490): ReflectionMethod->invokeArgs(Object(EventosController), Array)
+#2 /var/www/unieventos/lib/Cake/Routing/Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
+#3 /var/www/unieventos/lib/Cake/Routing/Dispatcher.php(162): Dispatcher->_invoke(Object(EventosController), Object(CakeRequest), Object(CakeResponse))
+#4 /var/www/unieventos/app/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2014-01-21 13:29:55 Error: [NotFoundException] Evento Invalido
+Request URL: /unieventos/admin/eventos/informacoes/img/favicon.ico
+Stack Trace:
+#0 [internal function]: EventosController->admin_informacoes('img', 'favicon.ico')
+#1 /var/www/unieventos/lib/Cake/Controller/Controller.php(490): ReflectionMethod->invokeArgs(Object(EventosController), Array)
+#2 /var/www/unieventos/lib/Cake/Routing/Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
+#3 /var/www/unieventos/lib/Cake/Routing/Dispatcher.php(162): Dispatcher->_invoke(Object(EventosController), Object(CakeRequest), Object(CakeResponse))
+#4 /var/www/unieventos/app/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2014-01-21 13:34:46 Error: [NotFoundException] Evento Invalido
+Request URL: /unieventos/admin/eventos/informacoes/img/logo20.png
+Stack Trace:
+#0 [internal function]: EventosController->admin_informacoes('img', 'logo20.png')
+#1 /var/www/unieventos/lib/Cake/Controller/Controller.php(490): ReflectionMethod->invokeArgs(Object(EventosController), Array)
+#2 /var/www/unieventos/lib/Cake/Routing/Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
+#3 /var/www/unieventos/lib/Cake/Routing/Dispatcher.php(162): Dispatcher->_invoke(Object(EventosController), Object(CakeRequest), Object(CakeResponse))
+#4 /var/www/unieventos/app/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2014-01-21 13:34:50 Error: [MissingActionException] Action PresencasController::admin_certificados() could not be found.
+Exception Attributes: array (
+  'controller' => 'PresencasController',
+  'action' => 'admin_certificados',
+)
+Request URL: /unieventos/admin/presencas/certificados/15
+Stack Trace:
+#0 /var/www/unieventos/lib/Cake/Routing/Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
+#1 /var/www/unieventos/lib/Cake/Routing/Dispatcher.php(162): Dispatcher->_invoke(Object(PresencasController), Object(CakeRequest), Object(CakeResponse))
+#2 /var/www/unieventos/app/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2014-01-21 13:34:51 Error: [MissingActionException] Action PresencasController::admin_certificados() could not be found.
+Exception Attributes: array (
+  'controller' => 'PresencasController',
+  'action' => 'admin_certificados',
+)
+Request URL: /unieventos/admin/presencas/certificados/img/logo20.png
+Stack Trace:
+#0 /var/www/unieventos/lib/Cake/Routing/Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
+#1 /var/www/unieventos/lib/Cake/Routing/Dispatcher.php(162): Dispatcher->_invoke(Object(PresencasController), Object(CakeRequest), Object(CakeResponse))
+#2 /var/www/unieventos/app/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2014-01-21 13:34:51 Error: [MissingActionException] Action PresencasController::admin_certificados() could not be found.
+Exception Attributes: array (
+  'controller' => 'PresencasController',
+  'action' => 'admin_certificados',
+)
+Request URL: /unieventos/admin/presencas/certificados/img/favicon.ico
+Stack Trace:
+#0 /var/www/unieventos/lib/Cake/Routing/Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
+#1 /var/www/unieventos/lib/Cake/Routing/Dispatcher.php(162): Dispatcher->_invoke(Object(PresencasController), Object(CakeRequest), Object(CakeResponse))
+#2 /var/www/unieventos/app/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2014-01-21 13:35:41 Error: [MissingActionException] Action PresencasController::admin_certificados() could not be found.
+Exception Attributes: array (
+  'controller' => 'PresencasController',
+  'action' => 'admin_certificados',
+)
+Request URL: /unieventos/admin/presencas/certificados/15
+Stack Trace:
+#0 /var/www/unieventos/lib/Cake/Routing/Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
+#1 /var/www/unieventos/lib/Cake/Routing/Dispatcher.php(162): Dispatcher->_invoke(Object(PresencasController), Object(CakeRequest), Object(CakeResponse))
+#2 /var/www/unieventos/app/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2014-01-21 13:35:41 Error: [MissingActionException] Action PresencasController::admin_certificados() could not be found.
+Exception Attributes: array (
+  'controller' => 'PresencasController',
+  'action' => 'admin_certificados',
+)
+Request URL: /unieventos/admin/presencas/certificados/img/logo20.png
+Stack Trace:
+#0 /var/www/unieventos/lib/Cake/Routing/Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
+#1 /var/www/unieventos/lib/Cake/Routing/Dispatcher.php(162): Dispatcher->_invoke(Object(PresencasController), Object(CakeRequest), Object(CakeResponse))
+#2 /var/www/unieventos/app/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2014-01-21 13:35:47 Error: [NotFoundException] Evento Invalido
+Request URL: /unieventos/admin/eventos/informacoes/img/logo20.png
+Stack Trace:
+#0 [internal function]: EventosController->admin_informacoes('img', 'logo20.png')
+#1 /var/www/unieventos/lib/Cake/Controller/Controller.php(490): ReflectionMethod->invokeArgs(Object(EventosController), Array)
+#2 /var/www/unieventos/lib/Cake/Routing/Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
+#3 /var/www/unieventos/lib/Cake/Routing/Dispatcher.php(162): Dispatcher->_invoke(Object(EventosController), Object(CakeRequest), Object(CakeResponse))
+#4 /var/www/unieventos/app/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2014-01-21 13:35:50 Error: [NotFoundException] Evento Invalido
+Request URL: /unieventos/admin/eventos/certificados/img/logo20.png
+Stack Trace:
+#0 [internal function]: EventosController->admin_certificados('img', 'logo20.png')
+#1 /var/www/unieventos/lib/Cake/Controller/Controller.php(490): ReflectionMethod->invokeArgs(Object(EventosController), Array)
+#2 /var/www/unieventos/lib/Cake/Routing/Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
+#3 /var/www/unieventos/lib/Cake/Routing/Dispatcher.php(162): Dispatcher->_invoke(Object(EventosController), Object(CakeRequest), Object(CakeResponse))
+#4 /var/www/unieventos/app/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2014-01-21 13:35:50 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /unieventos/css/img/sprite.png
+Stack Trace:
+#0 /var/www/unieventos/app/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-01-21 13:35:50 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /unieventos/css/img/border.png
+Stack Trace:
+#0 /var/www/unieventos/app/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-01-21 13:35:50 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /unieventos/css/img/controls.png
+Stack Trace:
+#0 /var/www/unieventos/app/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-01-21 13:36:07 Error: [NotFoundException] Evento Invalido
+Request URL: /unieventos/admin/eventos/certificados/img/logo20.png
+Stack Trace:
+#0 [internal function]: EventosController->admin_certificados('img', 'logo20.png')
+#1 /var/www/unieventos/lib/Cake/Controller/Controller.php(490): ReflectionMethod->invokeArgs(Object(EventosController), Array)
+#2 /var/www/unieventos/lib/Cake/Routing/Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
+#3 /var/www/unieventos/lib/Cake/Routing/Dispatcher.php(162): Dispatcher->_invoke(Object(EventosController), Object(CakeRequest), Object(CakeResponse))
+#4 /var/www/unieventos/app/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2014-01-21 13:36:08 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /unieventos/css/img/controls.png
+Stack Trace:
+#0 /var/www/unieventos/app/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-01-21 13:36:08 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /unieventos/css/img/border.png
+Stack Trace:
+#0 /var/www/unieventos/app/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-01-21 13:36:08 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /unieventos/css/img/sprite.png
+Stack Trace:
+#0 /var/www/unieventos/app/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-01-21 13:36:08 Error: [NotFoundException] Evento Invalido
+Request URL: /unieventos/admin/eventos/certificados/img/favicon.ico
+Stack Trace:
+#0 [internal function]: EventosController->admin_certificados('img', 'favicon.ico')
+#1 /var/www/unieventos/lib/Cake/Controller/Controller.php(490): ReflectionMethod->invokeArgs(Object(EventosController), Array)
+#2 /var/www/unieventos/lib/Cake/Routing/Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
+#3 /var/www/unieventos/lib/Cake/Routing/Dispatcher.php(162): Dispatcher->_invoke(Object(EventosController), Object(CakeRequest), Object(CakeResponse))
+#4 /var/www/unieventos/app/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2014-01-21 13:38:23 Error: [NotFoundException] Evento Invalido
+Request URL: /unieventos/admin/eventos/certificados/img/logo20.png
+Stack Trace:
+#0 [internal function]: EventosController->admin_certificados('img', 'logo20.png')
+#1 /var/www/unieventos/lib/Cake/Controller/Controller.php(490): ReflectionMethod->invokeArgs(Object(EventosController), Array)
+#2 /var/www/unieventos/lib/Cake/Routing/Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
+#3 /var/www/unieventos/lib/Cake/Routing/Dispatcher.php(162): Dispatcher->_invoke(Object(EventosController), Object(CakeRequest), Object(CakeResponse))
+#4 /var/www/unieventos/app/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2014-01-21 13:40:31 Error: [NotFoundException] Evento Invalido
+Request URL: /unieventos/admin/eventos/certificados/img/logo20.png
+Stack Trace:
+#0 [internal function]: EventosController->admin_certificados('img', 'logo20.png')
+#1 /var/www/unieventos/lib/Cake/Controller/Controller.php(490): ReflectionMethod->invokeArgs(Object(EventosController), Array)
+#2 /var/www/unieventos/lib/Cake/Routing/Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
+#3 /var/www/unieventos/lib/Cake/Routing/Dispatcher.php(162): Dispatcher->_invoke(Object(EventosController), Object(CakeRequest), Object(CakeResponse))
+#4 /var/www/unieventos/app/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2014-01-21 13:40:52 Error: [NotFoundException] Evento Invalido
+Request URL: /unieventos/admin/eventos/certificados/img/logo20.png
+Stack Trace:
+#0 [internal function]: EventosController->admin_certificados('img', 'logo20.png')
+#1 /var/www/unieventos/lib/Cake/Controller/Controller.php(490): ReflectionMethod->invokeArgs(Object(EventosController), Array)
+#2 /var/www/unieventos/lib/Cake/Routing/Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
+#3 /var/www/unieventos/lib/Cake/Routing/Dispatcher.php(162): Dispatcher->_invoke(Object(EventosController), Object(CakeRequest), Object(CakeResponse))
+#4 /var/www/unieventos/app/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2014-01-21 13:47:14 Error: [NotFoundException] Evento Invalido
+Request URL: /unieventos/admin/eventos/certificados/img/logo20.png
+Stack Trace:
+#0 [internal function]: EventosController->admin_certificados('img', 'logo20.png')
+#1 /var/www/unieventos/lib/Cake/Controller/Controller.php(490): ReflectionMethod->invokeArgs(Object(EventosController), Array)
+#2 /var/www/unieventos/lib/Cake/Routing/Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
+#3 /var/www/unieventos/lib/Cake/Routing/Dispatcher.php(162): Dispatcher->_invoke(Object(EventosController), Object(CakeRequest), Object(CakeResponse))
+#4 /var/www/unieventos/app/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2014-01-21 13:54:25 Error: [NotFoundException] Evento Invalido
+Request URL: /unieventos/admin/eventos/certificados/img/logo20.png
+Stack Trace:
+#0 [internal function]: EventosController->admin_certificados('img', 'logo20.png')
+#1 /var/www/unieventos/lib/Cake/Controller/Controller.php(490): ReflectionMethod->invokeArgs(Object(EventosController), Array)
+#2 /var/www/unieventos/lib/Cake/Routing/Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
+#3 /var/www/unieventos/lib/Cake/Routing/Dispatcher.php(162): Dispatcher->_invoke(Object(EventosController), Object(CakeRequest), Object(CakeResponse))
+#4 /var/www/unieventos/app/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2014-01-21 13:54:29 Error: [MissingViewException] View file "/var/www/unieventos/app/View/Invoices/admin_gerar.ctp" is missing.
+Exception Attributes: array (
+  'file' => '/var/www/unieventos/app/View/Invoices/admin_gerar.ctp',
+)
+Request URL: /unieventos/admin/invoices/gerar/15
+Stack Trace:
+#0 /var/www/unieventos/lib/Cake/View/View.php(459): View->_getViewFileName(NULL)
+#1 /var/www/unieventos/lib/Cake/Controller/Controller.php(952): View->render(NULL, NULL)
+#2 /var/www/unieventos/lib/Cake/Routing/Dispatcher.php(194): Controller->render()
+#3 /var/www/unieventos/lib/Cake/Routing/Dispatcher.php(162): Dispatcher->_invoke(Object(InvoicesController), Object(CakeRequest), Object(CakeResponse))
+#4 /var/www/unieventos/app/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2014-01-21 13:54:29 Error: [MissingViewException] View file "/var/www/unieventos/app/View/Invoices/admin_gerar.ctp" is missing.
+Exception Attributes: array (
+  'file' => '/var/www/unieventos/app/View/Invoices/admin_gerar.ctp',
+)
+Request URL: /unieventos/admin/invoices/gerar/img/logo20.png
+Stack Trace:
+#0 /var/www/unieventos/lib/Cake/View/View.php(459): View->_getViewFileName(NULL)
+#1 /var/www/unieventos/lib/Cake/Controller/Controller.php(952): View->render(NULL, NULL)
+#2 /var/www/unieventos/lib/Cake/Routing/Dispatcher.php(194): Controller->render()
+#3 /var/www/unieventos/lib/Cake/Routing/Dispatcher.php(162): Dispatcher->_invoke(Object(InvoicesController), Object(CakeRequest), Object(CakeResponse))
+#4 /var/www/unieventos/app/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2014-01-21 13:54:30 Error: [MissingViewException] View file "/var/www/unieventos/app/View/Invoices/admin_gerar.ctp" is missing.
+Exception Attributes: array (
+  'file' => '/var/www/unieventos/app/View/Invoices/admin_gerar.ctp',
+)
+Request URL: /unieventos/admin/invoices/gerar/img/favicon.ico
+Stack Trace:
+#0 /var/www/unieventos/lib/Cake/View/View.php(459): View->_getViewFileName(NULL)
+#1 /var/www/unieventos/lib/Cake/Controller/Controller.php(952): View->render(NULL, NULL)
+#2 /var/www/unieventos/lib/Cake/Routing/Dispatcher.php(194): Controller->render()
+#3 /var/www/unieventos/lib/Cake/Routing/Dispatcher.php(162): Dispatcher->_invoke(Object(InvoicesController), Object(CakeRequest), Object(CakeResponse))
+#4 /var/www/unieventos/app/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2014-01-21 13:57:25 Error: [MissingViewException] View file "/var/www/unieventos/app/View/Invoices/admin_gerar.ctp" is missing.
+Exception Attributes: array (
+  'file' => '/var/www/unieventos/app/View/Invoices/admin_gerar.ctp',
+)
+Request URL: /unieventos/admin/invoices/gerar/15
+Stack Trace:
+#0 /var/www/unieventos/lib/Cake/View/View.php(459): View->_getViewFileName(NULL)
+#1 /var/www/unieventos/lib/Cake/Controller/Controller.php(952): View->render(NULL, NULL)
+#2 /var/www/unieventos/lib/Cake/Routing/Dispatcher.php(194): Controller->render()
+#3 /var/www/unieventos/lib/Cake/Routing/Dispatcher.php(162): Dispatcher->_invoke(Object(InvoicesController), Object(CakeRequest), Object(CakeResponse))
+#4 /var/www/unieventos/app/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2014-01-21 13:57:25 Error: [MissingViewException] View file "/var/www/unieventos/app/View/Invoices/admin_gerar.ctp" is missing.
+Exception Attributes: array (
+  'file' => '/var/www/unieventos/app/View/Invoices/admin_gerar.ctp',
+)
+Request URL: /unieventos/admin/invoices/gerar/img/logo20.png
+Stack Trace:
+#0 /var/www/unieventos/lib/Cake/View/View.php(459): View->_getViewFileName(NULL)
+#1 /var/www/unieventos/lib/Cake/Controller/Controller.php(952): View->render(NULL, NULL)
+#2 /var/www/unieventos/lib/Cake/Routing/Dispatcher.php(194): Controller->render()
+#3 /var/www/unieventos/lib/Cake/Routing/Dispatcher.php(162): Dispatcher->_invoke(Object(InvoicesController), Object(CakeRequest), Object(CakeResponse))
+#4 /var/www/unieventos/app/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2014-01-21 13:57:26 Error: [MissingViewException] View file "/var/www/unieventos/app/View/Invoices/admin_gerar.ctp" is missing.
+Exception Attributes: array (
+  'file' => '/var/www/unieventos/app/View/Invoices/admin_gerar.ctp',
+)
+Request URL: /unieventos/admin/invoices/gerar/img/favicon.ico
+Stack Trace:
+#0 /var/www/unieventos/lib/Cake/View/View.php(459): View->_getViewFileName(NULL)
+#1 /var/www/unieventos/lib/Cake/Controller/Controller.php(952): View->render(NULL, NULL)
+#2 /var/www/unieventos/lib/Cake/Routing/Dispatcher.php(194): Controller->render()
+#3 /var/www/unieventos/lib/Cake/Routing/Dispatcher.php(162): Dispatcher->_invoke(Object(InvoicesController), Object(CakeRequest), Object(CakeResponse))
+#4 /var/www/unieventos/app/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2014-01-21 13:57:31 Error: [MissingViewException] View file "/var/www/unieventos/app/View/Invoices/admin_gerar.ctp" is missing.
+Exception Attributes: array (
+  'file' => '/var/www/unieventos/app/View/Invoices/admin_gerar.ctp',
+)
+Request URL: /unieventos/admin/invoices/gerar/15
+Stack Trace:
+#0 /var/www/unieventos/lib/Cake/View/View.php(459): View->_getViewFileName(NULL)
+#1 /var/www/unieventos/lib/Cake/Controller/Controller.php(952): View->render(NULL, NULL)
+#2 /var/www/unieventos/lib/Cake/Routing/Dispatcher.php(194): Controller->render()
+#3 /var/www/unieventos/lib/Cake/Routing/Dispatcher.php(162): Dispatcher->_invoke(Object(InvoicesController), Object(CakeRequest), Object(CakeResponse))
+#4 /var/www/unieventos/app/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2014-01-21 13:57:31 Error: [MissingViewException] View file "/var/www/unieventos/app/View/Invoices/admin_gerar.ctp" is missing.
+Exception Attributes: array (
+  'file' => '/var/www/unieventos/app/View/Invoices/admin_gerar.ctp',
+)
+Request URL: /unieventos/admin/invoices/gerar/img/logo20.png
+Stack Trace:
+#0 /var/www/unieventos/lib/Cake/View/View.php(459): View->_getViewFileName(NULL)
+#1 /var/www/unieventos/lib/Cake/Controller/Controller.php(952): View->render(NULL, NULL)
+#2 /var/www/unieventos/lib/Cake/Routing/Dispatcher.php(194): Controller->render()
+#3 /var/www/unieventos/lib/Cake/Routing/Dispatcher.php(162): Dispatcher->_invoke(Object(InvoicesController), Object(CakeRequest), Object(CakeResponse))
+#4 /var/www/unieventos/app/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2014-01-21 13:57:31 Error: [MissingViewException] View file "/var/www/unieventos/app/View/Invoices/admin_gerar.ctp" is missing.
+Exception Attributes: array (
+  'file' => '/var/www/unieventos/app/View/Invoices/admin_gerar.ctp',
+)
+Request URL: /unieventos/admin/invoices/gerar/img/favicon.ico
+Stack Trace:
+#0 /var/www/unieventos/lib/Cake/View/View.php(459): View->_getViewFileName(NULL)
+#1 /var/www/unieventos/lib/Cake/Controller/Controller.php(952): View->render(NULL, NULL)
+#2 /var/www/unieventos/lib/Cake/Routing/Dispatcher.php(194): Controller->render()
+#3 /var/www/unieventos/lib/Cake/Routing/Dispatcher.php(162): Dispatcher->_invoke(Object(InvoicesController), Object(CakeRequest), Object(CakeResponse))
+#4 /var/www/unieventos/app/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2014-01-21 13:57:36 Error: [NotFoundException] Evento Invalido
+Request URL: /unieventos/admin/eventos/certificados/img/logo20.png
+Stack Trace:
+#0 [internal function]: EventosController->admin_certificados('img', 'logo20.png')
+#1 /var/www/unieventos/lib/Cake/Controller/Controller.php(490): ReflectionMethod->invokeArgs(Object(EventosController), Array)
+#2 /var/www/unieventos/lib/Cake/Routing/Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
+#3 /var/www/unieventos/lib/Cake/Routing/Dispatcher.php(162): Dispatcher->_invoke(Object(EventosController), Object(CakeRequest), Object(CakeResponse))
+#4 /var/www/unieventos/app/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2014-01-21 13:57:36 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /unieventos/css/img/sprite.png
+Stack Trace:
+#0 /var/www/unieventos/app/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-01-21 13:57:36 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /unieventos/css/img/border.png
+Stack Trace:
+#0 /var/www/unieventos/app/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-01-21 13:57:36 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /unieventos/css/img/controls.png
+Stack Trace:
+#0 /var/www/unieventos/app/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-01-21 13:57:37 Error: [NotFoundException] Evento Invalido
+Request URL: /unieventos/admin/eventos/certificados/img/favicon.ico
+Stack Trace:
+#0 [internal function]: EventosController->admin_certificados('img', 'favicon.ico')
+#1 /var/www/unieventos/lib/Cake/Controller/Controller.php(490): ReflectionMethod->invokeArgs(Object(EventosController), Array)
+#2 /var/www/unieventos/lib/Cake/Routing/Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
+#3 /var/www/unieventos/lib/Cake/Routing/Dispatcher.php(162): Dispatcher->_invoke(Object(EventosController), Object(CakeRequest), Object(CakeResponse))
+#4 /var/www/unieventos/app/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2014-01-21 13:58:25 Error: [NotFoundException] Evento Invalido
+Request URL: /unieventos/admin/eventos/certificados/img/logo20.png
+Stack Trace:
+#0 [internal function]: EventosController->admin_certificados('img', 'logo20.png')
+#1 /var/www/unieventos/lib/Cake/Controller/Controller.php(490): ReflectionMethod->invokeArgs(Object(EventosController), Array)
+#2 /var/www/unieventos/lib/Cake/Routing/Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
+#3 /var/www/unieventos/lib/Cake/Routing/Dispatcher.php(162): Dispatcher->_invoke(Object(EventosController), Object(CakeRequest), Object(CakeResponse))
+#4 /var/www/unieventos/app/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2014-01-21 13:58:42 Error: [NotFoundException] Evento Invalido
+Request URL: /unieventos/admin/eventos/certificados/img/logo20.png
+Stack Trace:
+#0 [internal function]: EventosController->admin_certificados('img', 'logo20.png')
+#1 /var/www/unieventos/lib/Cake/Controller/Controller.php(490): ReflectionMethod->invokeArgs(Object(EventosController), Array)
+#2 /var/www/unieventos/lib/Cake/Routing/Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
+#3 /var/www/unieventos/lib/Cake/Routing/Dispatcher.php(162): Dispatcher->_invoke(Object(EventosController), Object(CakeRequest), Object(CakeResponse))
+#4 /var/www/unieventos/app/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2014-01-21 14:00:19 Error: [NotFoundException] Evento Invalido
+Request URL: /unieventos/admin/eventos/informacoes/img/logo20.png
+Stack Trace:
+#0 [internal function]: EventosController->admin_informacoes('img', 'logo20.png')
+#1 /var/www/unieventos/lib/Cake/Controller/Controller.php(490): ReflectionMethod->invokeArgs(Object(EventosController), Array)
+#2 /var/www/unieventos/lib/Cake/Routing/Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
+#3 /var/www/unieventos/lib/Cake/Routing/Dispatcher.php(162): Dispatcher->_invoke(Object(EventosController), Object(CakeRequest), Object(CakeResponse))
+#4 /var/www/unieventos/app/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2014-01-21 14:00:19 Error: [NotFoundException] Evento Invalido
+Request URL: /unieventos/admin/eventos/informacoes/img/favicon.ico
+Stack Trace:
+#0 [internal function]: EventosController->admin_informacoes('img', 'favicon.ico')
+#1 /var/www/unieventos/lib/Cake/Controller/Controller.php(490): ReflectionMethod->invokeArgs(Object(EventosController), Array)
+#2 /var/www/unieventos/lib/Cake/Routing/Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
+#3 /var/www/unieventos/lib/Cake/Routing/Dispatcher.php(162): Dispatcher->_invoke(Object(EventosController), Object(CakeRequest), Object(CakeResponse))
+#4 /var/www/unieventos/app/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2014-01-21 14:01:16 Error: [MissingActionException] Action ProgramacoesController::admin_img() could not be found.
+Exception Attributes: array (
+  'controller' => 'ProgramacoesController',
+  'action' => 'admin_img',
+)
+Request URL: /unieventos/admin/programacoes/img/logo20.png
+Stack Trace:
+#0 /var/www/unieventos/lib/Cake/Routing/Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
+#1 /var/www/unieventos/lib/Cake/Routing/Dispatcher.php(162): Dispatcher->_invoke(Object(ProgramacoesController), Object(CakeRequest), Object(CakeResponse))
+#2 /var/www/unieventos/app/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2014-01-21 14:01:17 Error: [MissingActionException] Action ProgramacoesController::admin_img() could not be found.
+Exception Attributes: array (
+  'controller' => 'ProgramacoesController',
+  'action' => 'admin_img',
+)
+Request URL: /unieventos/admin/programacoes/img/favicon.ico
+Stack Trace:
+#0 /var/www/unieventos/lib/Cake/Routing/Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
+#1 /var/www/unieventos/lib/Cake/Routing/Dispatcher.php(162): Dispatcher->_invoke(Object(ProgramacoesController), Object(CakeRequest), Object(CakeResponse))
+#2 /var/www/unieventos/app/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2014-01-21 14:02:14 Error: [MissingActionException] Action EventosController::admin_img() could not be found.
+Exception Attributes: array (
+  'controller' => 'EventosController',
+  'action' => 'admin_img',
+)
+Request URL: /unieventos/admin/eventos/img/logo20.png
+Stack Trace:
+#0 /var/www/unieventos/lib/Cake/Routing/Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
+#1 /var/www/unieventos/lib/Cake/Routing/Dispatcher.php(162): Dispatcher->_invoke(Object(EventosController), Object(CakeRequest), Object(CakeResponse))
+#2 /var/www/unieventos/app/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2014-01-21 14:02:14 Error: [MissingActionException] Action EventosController::admin_img() could not be found.
+Exception Attributes: array (
+  'controller' => 'EventosController',
+  'action' => 'admin_img',
+)
+Request URL: /unieventos/admin/eventos/img/favicon.ico
+Stack Trace:
+#0 /var/www/unieventos/lib/Cake/Routing/Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
+#1 /var/www/unieventos/lib/Cake/Routing/Dispatcher.php(162): Dispatcher->_invoke(Object(EventosController), Object(CakeRequest), Object(CakeResponse))
+#2 /var/www/unieventos/app/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2014-01-21 14:02:17 Error: [NotFoundException] Evento Invalido
+Request URL: /unieventos/admin/eventos/informacoes/img/logo20.png
+Stack Trace:
+#0 [internal function]: EventosController->admin_informacoes('img', 'logo20.png')
+#1 /var/www/unieventos/lib/Cake/Controller/Controller.php(490): ReflectionMethod->invokeArgs(Object(EventosController), Array)
+#2 /var/www/unieventos/lib/Cake/Routing/Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
+#3 /var/www/unieventos/lib/Cake/Routing/Dispatcher.php(162): Dispatcher->_invoke(Object(EventosController), Object(CakeRequest), Object(CakeResponse))
+#4 /var/www/unieventos/app/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2014-01-21 14:14:35 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /unieventos/css/img/ui-bg_flat_75_ffffff_40x100.png
+Stack Trace:
+#0 /var/www/unieventos/app/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-01-21 14:14:39 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /unieventos/css/img/ui-bg_glass_75_e6e6e6_1x400.png
+Stack Trace:
+#0 /var/www/unieventos/app/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-01-21 14:14:39 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /unieventos/css/img/ui-bg_highlight-soft_75_cccccc_1x100.png
+Stack Trace:
+#0 /var/www/unieventos/app/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-01-21 14:14:39 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /unieventos/css/img/ui-bg_glass_55_fbf9ee_1x400.png
+Stack Trace:
+#0 /var/www/unieventos/app/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-01-21 14:14:39 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /unieventos/css/img/ui-icons_222222_256x240.png
+Stack Trace:
+#0 /var/www/unieventos/app/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-01-21 14:14:40 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /unieventos/css/img/ui-icons_454545_256x240.png
+Stack Trace:
+#0 /var/www/unieventos/app/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-01-21 14:14:40 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /unieventos/css/img/ui-bg_glass_75_dadada_1x400.png
+Stack Trace:
+#0 /var/www/unieventos/app/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-01-21 14:28:53 Error: [PDOException] SQLSTATE[23000]: Integrity constraint violation: 1048 Column 'hora_ini' cannot be null
+Request URL: /unieventos/admin/programacoes/programacaoEvento/15
+Stack Trace:
+#0 /var/www/unieventos/lib/Cake/Model/Datasource/DboSource.php(460): PDOStatement->execute(Array)
+#1 /var/www/unieventos/lib/Cake/Model/Datasource/DboSource.php(426): DboSource->_execute('INSERT INTO `un...', Array)
+#2 /var/www/unieventos/lib/Cake/Model/Datasource/DboSource.php(1004): DboSource->execute('INSERT INTO `un...')
+#3 /var/www/unieventos/lib/Cake/Model/Model.php(1827): DboSource->create(Object(Programacao), Array, Array)
+#4 /var/www/unieventos/lib/Cake/Model/Model.php(2373): Model->save(Array, Array)
+#5 /var/www/unieventos/lib/Cake/Model/Model.php(2163): Model->saveAssociated(Array, Array)
+#6 /var/www/unieventos/app/Controller/ProgramacoesController.php(17): Model->saveAll(Array)
+#7 [internal function]: ProgramacoesController->admin_programacaoEvento('15')
+#8 /var/www/unieventos/lib/Cake/Controller/Controller.php(490): ReflectionMethod->invokeArgs(Object(ProgramacoesController), Array)
+#9 /var/www/unieventos/lib/Cake/Routing/Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
+#10 /var/www/unieventos/lib/Cake/Routing/Dispatcher.php(162): Dispatcher->_invoke(Object(ProgramacoesController), Object(CakeRequest), Object(CakeResponse))
+#11 /var/www/unieventos/app/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#12 {main}
+2014-01-21 14:30:19 Error: [PDOException] SQLSTATE[23000]: Integrity constraint violation: 1048 Column 'hora_ini' cannot be null
+Request URL: /unieventos/admin/programacoes/programacaoEvento/15
+Stack Trace:
+#0 /var/www/unieventos/lib/Cake/Model/Datasource/DboSource.php(460): PDOStatement->execute(Array)
+#1 /var/www/unieventos/lib/Cake/Model/Datasource/DboSource.php(426): DboSource->_execute('INSERT INTO `un...', Array)
+#2 /var/www/unieventos/lib/Cake/Model/Datasource/DboSource.php(1004): DboSource->execute('INSERT INTO `un...')
+#3 /var/www/unieventos/lib/Cake/Model/Model.php(1827): DboSource->create(Object(Programacao), Array, Array)
+#4 /var/www/unieventos/lib/Cake/Model/Model.php(2373): Model->save(Array, Array)
+#5 /var/www/unieventos/lib/Cake/Model/Model.php(2163): Model->saveAssociated(Array, Array)
+#6 /var/www/unieventos/app/Controller/ProgramacoesController.php(17): Model->saveAll(Array)
+#7 [internal function]: ProgramacoesController->admin_programacaoEvento('15')
+#8 /var/www/unieventos/lib/Cake/Controller/Controller.php(490): ReflectionMethod->invokeArgs(Object(ProgramacoesController), Array)
+#9 /var/www/unieventos/lib/Cake/Routing/Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
+#10 /var/www/unieventos/lib/Cake/Routing/Dispatcher.php(162): Dispatcher->_invoke(Object(ProgramacoesController), Object(CakeRequest), Object(CakeResponse))
+#11 /var/www/unieventos/app/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#12 {main}
+2014-01-21 14:31:12 Error: [PDOException] SQLSTATE[23000]: Integrity constraint violation: 1048 Column 'hora_ini' cannot be null
+Request URL: /unieventos/admin/programacoes/programacaoEvento/15
+Stack Trace:
+#0 /var/www/unieventos/lib/Cake/Model/Datasource/DboSource.php(460): PDOStatement->execute(Array)
+#1 /var/www/unieventos/lib/Cake/Model/Datasource/DboSource.php(426): DboSource->_execute('INSERT INTO `un...', Array)
+#2 /var/www/unieventos/lib/Cake/Model/Datasource/DboSource.php(1004): DboSource->execute('INSERT INTO `un...')
+#3 /var/www/unieventos/lib/Cake/Model/Model.php(1827): DboSource->create(Object(Programacao), Array, Array)
+#4 /var/www/unieventos/lib/Cake/Model/Model.php(2373): Model->save(Array, Array)
+#5 /var/www/unieventos/lib/Cake/Model/Model.php(2163): Model->saveAssociated(Array, Array)
+#6 /var/www/unieventos/app/Controller/ProgramacoesController.php(17): Model->saveAll(Array)
+#7 [internal function]: ProgramacoesController->admin_programacaoEvento('15')
+#8 /var/www/unieventos/lib/Cake/Controller/Controller.php(490): ReflectionMethod->invokeArgs(Object(ProgramacoesController), Array)
+#9 /var/www/unieventos/lib/Cake/Routing/Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
+#10 /var/www/unieventos/lib/Cake/Routing/Dispatcher.php(162): Dispatcher->_invoke(Object(ProgramacoesController), Object(CakeRequest), Object(CakeResponse))
+#11 /var/www/unieventos/app/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#12 {main}
+2014-01-21 14:38:54 Error: [MissingControllerException] Controller class ImgController could not be found.
+Exception Attributes: array (
+  'class' => 'ImgController',
+  'plugin' => NULL,
+)
+Request URL: /unieventos/img/qrcode136.png
+Stack Trace:
+#0 /var/www/unieventos/app/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-01-21 14:38:54 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /unieventos/css/img/opa-icons-red32.png
+Stack Trace:
+#0 /var/www/unieventos/app/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-01-21 14:38:54 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /unieventos/css/img/opa-icons-color32.png
+Stack Trace:
+#0 /var/www/unieventos/app/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-01-21 14:38:55 Error: [MissingControllerException] Controller class ImgController could not be found.
+Exception Attributes: array (
+  'class' => 'ImgController',
+  'plugin' => NULL,
+)
+Request URL: /unieventos/img/favicon.ico
+Stack Trace:
+#0 /var/www/unieventos/app/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-01-21 14:39:55 Error: [MissingControllerException] Controller class ImgController could not be found.
+Exception Attributes: array (
+  'class' => 'ImgController',
+  'plugin' => NULL,
+)
+Request URL: /unieventos/img/qrcode136.png
+Stack Trace:
+#0 /var/www/unieventos/app/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-01-21 14:40:35 Error: [MissingControllerException] Controller class ImgController could not be found.
+Exception Attributes: array (
+  'class' => 'ImgController',
+  'plugin' => NULL,
+)
+Request URL: /unieventos/img/qrcode136.png
+Stack Trace:
+#0 /var/www/unieventos/app/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-01-21 14:40:37 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /unieventos/css/img/opa-icons-darkgray32.png
+Stack Trace:
+#0 /var/www/unieventos/app/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-01-21 14:43:22 Error: [MissingControllerException] Controller class ImgController could not be found.
+Exception Attributes: array (
+  'class' => 'ImgController',
+  'plugin' => NULL,
+)
+Request URL: /unieventos/img/qrcode136.png
+Stack Trace:
+#0 /var/www/unieventos/app/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-01-21 14:43:25 Error: [MissingActionException] Action InvoicesController::admin_index() could not be found.
+Exception Attributes: array (
+  'controller' => 'InvoicesController',
+  'action' => 'admin_index',
+)
+Request URL: /unieventos/admin/invoices
+Stack Trace:
+#0 /var/www/unieventos/lib/Cake/Routing/Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
+#1 /var/www/unieventos/lib/Cake/Routing/Dispatcher.php(162): Dispatcher->_invoke(Object(InvoicesController), Object(CakeRequest), Object(CakeResponse))
+#2 /var/www/unieventos/app/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2014-01-21 14:43:26 Error: [MissingControllerException] Controller class ImgController could not be found.
+Exception Attributes: array (
+  'class' => 'ImgController',
+  'plugin' => NULL,
+)
+Request URL: /unieventos/admin/img/favicon.ico
+Stack Trace:
+#0 /var/www/unieventos/app/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-01-21 14:57:53 Error: Fatal Error (4): syntax error, unexpected T_ARRAY in [/var/www/unieventos/app/Controller/InvoicesController.php, line 35]
+2014-01-21 14:57:53 Error: [FatalErrorException] syntax error, unexpected T_ARRAY
+Request URL: /unieventos/admin/invoices
+Stack Trace:
+#0 /var/www/unieventos/lib/Cake/Error/ErrorHandler.php(205): ErrorHandler::handleFatalError(4, 'syntax error, u...', '/var/www/unieve...', 35)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', '/var/www/unieve...', 35, Array)
+#2 /var/www/unieventos/lib/Cake/Core/App.php(931): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', '/var/www/unieve...', 35, Array)
+#3 /var/www/unieventos/lib/Cake/Core/App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-01-21 14:58:12 Error: Fatal Error (4): syntax error, unexpected T_ARRAY in [/var/www/unieventos/app/Controller/InvoicesController.php, line 38]
+2014-01-21 14:58:12 Error: [FatalErrorException] syntax error, unexpected T_ARRAY
+Request URL: /unieventos/admin/invoices
+Stack Trace:
+#0 /var/www/unieventos/lib/Cake/Error/ErrorHandler.php(205): ErrorHandler::handleFatalError(4, 'syntax error, u...', '/var/www/unieve...', 38)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', '/var/www/unieve...', 38, Array)
+#2 /var/www/unieventos/lib/Cake/Core/App.php(931): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', '/var/www/unieve...', 38, Array)
+#3 /var/www/unieventos/lib/Cake/Core/App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-01-21 14:58:39 Error: Fatal Error (4): syntax error, unexpected T_DOUBLE_ARROW in [/var/www/unieventos/app/Controller/InvoicesController.php, line 38]
+2014-01-21 14:58:39 Error: [FatalErrorException] syntax error, unexpected T_DOUBLE_ARROW
+Request URL: /unieventos/admin/invoices
+Stack Trace:
+#0 /var/www/unieventos/lib/Cake/Error/ErrorHandler.php(205): ErrorHandler::handleFatalError(4, 'syntax error, u...', '/var/www/unieve...', 38)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', '/var/www/unieve...', 38, Array)
+#2 /var/www/unieventos/lib/Cake/Core/App.php(931): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', '/var/www/unieve...', 38, Array)
+#3 /var/www/unieventos/lib/Cake/Core/App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-01-21 14:59:12 Error: [PDOException] SQLSTATE[42S02]: Base table or view not found: 1146 Table 'unievents.Certificados' doesn't exist
+Request URL: /unieventos/admin/invoices
+Stack Trace:
+#0 /var/www/unieventos/lib/Cake/Model/Datasource/DboSource.php(460): PDOStatement->execute(Array)
+#1 /var/www/unieventos/lib/Cake/Model/Datasource/DboSource.php(426): DboSource->_execute('SELECT * FROM `...', Array)
+#2 /var/www/unieventos/lib/Cake/Model/Datasource/DboSource.php(666): DboSource->execute('SELECT * FROM `...', Array, Array)
+#3 /var/www/unieventos/lib/Cake/Model/Datasource/DboSource.php(1077): DboSource->fetchAll('SELECT * FROM `...', false)
+#4 /var/www/unieventos/lib/Cake/Model/Model.php(2880): DboSource->read(Object(AppModel), Array)
+#5 /var/www/unieventos/lib/Cake/Model/Model.php(2852): Model->_readDataSource('all', Array)
+#6 /var/www/unieventos/app/Controller/InvoicesController.php(48): Model->find('all', Array)
+#7 [internal function]: InvoicesController->admin_index()
+#8 /var/www/unieventos/lib/Cake/Controller/Controller.php(490): ReflectionMethod->invokeArgs(Object(InvoicesController), Array)
+#9 /var/www/unieventos/lib/Cake/Routing/Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
+#10 /var/www/unieventos/lib/Cake/Routing/Dispatcher.php(162): Dispatcher->_invoke(Object(InvoicesController), Object(CakeRequest), Object(CakeResponse))
+#11 /var/www/unieventos/app/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#12 {main}
+2014-01-21 14:59:52 Error: [PDOException] SQLSTATE[42S02]: Base table or view not found: 1146 Table 'unievents.Cadastros' doesn't exist
+Request URL: /unieventos/admin/invoices
+Stack Trace:
+#0 /var/www/unieventos/lib/Cake/Model/Datasource/DboSource.php(460): PDOStatement->execute(Array)
+#1 /var/www/unieventos/lib/Cake/Model/Datasource/DboSource.php(426): DboSource->_execute('SELECT * FROM `...', Array)
+#2 /var/www/unieventos/lib/Cake/Model/Datasource/DboSource.php(666): DboSource->execute('SELECT * FROM `...', Array, Array)
+#3 /var/www/unieventos/lib/Cake/Model/Datasource/DboSource.php(1077): DboSource->fetchAll('SELECT * FROM `...', false)
+#4 /var/www/unieventos/lib/Cake/Model/Model.php(2880): DboSource->read(Object(AppModel), Array)
+#5 /var/www/unieventos/lib/Cake/Model/Model.php(2852): Model->_readDataSource('all', Array)
+#6 /var/www/unieventos/app/Controller/InvoicesController.php(48): Model->find('all', Array)
+#7 [internal function]: InvoicesController->admin_index()
+#8 /var/www/unieventos/lib/Cake/Controller/Controller.php(490): ReflectionMethod->invokeArgs(Object(InvoicesController), Array)
+#9 /var/www/unieventos/lib/Cake/Routing/Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
+#10 /var/www/unieventos/lib/Cake/Routing/Dispatcher.php(162): Dispatcher->_invoke(Object(InvoicesController), Object(CakeRequest), Object(CakeResponse))
+#11 /var/www/unieventos/app/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#12 {main}
+2014-01-21 15:01:03 Error: [MissingControllerException] Controller class ImgController could not be found.
+Exception Attributes: array (
+  'class' => 'ImgController',
+  'plugin' => NULL,
+)
+Request URL: /unieventos/img/qrcode136.png
+Stack Trace:
+#0 /var/www/unieventos/app/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-01-21 15:02:07 Error: [PDOException] SQLSTATE[42S02]: Base table or view not found: 1146 Table 'unievents.csadastros' doesn't exist
+Request URL: /unieventos/admin/invoices
+Stack Trace:
+#0 /var/www/unieventos/lib/Cake/Model/Datasource/DboSource.php(460): PDOStatement->execute(Array)
+#1 /var/www/unieventos/lib/Cake/Model/Datasource/DboSource.php(426): DboSource->_execute('SELECT * FROM `...', Array)
+#2 /var/www/unieventos/lib/Cake/Model/Datasource/DboSource.php(666): DboSource->execute('SELECT * FROM `...', Array, Array)
+#3 /var/www/unieventos/lib/Cake/Model/Datasource/DboSource.php(1077): DboSource->fetchAll('SELECT * FROM `...', false)
+#4 /var/www/unieventos/lib/Cake/Model/Model.php(2880): DboSource->read(Object(AppModel), Array)
+#5 /var/www/unieventos/lib/Cake/Model/Model.php(2852): Model->_readDataSource('all', Array)
+#6 /var/www/unieventos/app/Controller/InvoicesController.php(48): Model->find('all', Array)
+#7 [internal function]: InvoicesController->admin_index()
+#8 /var/www/unieventos/lib/Cake/Controller/Controller.php(490): ReflectionMethod->invokeArgs(Object(InvoicesController), Array)
+#9 /var/www/unieventos/lib/Cake/Routing/Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
+#10 /var/www/unieventos/lib/Cake/Routing/Dispatcher.php(162): Dispatcher->_invoke(Object(InvoicesController), Object(CakeRequest), Object(CakeResponse))
+#11 /var/www/unieventos/app/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#12 {main}
+2014-01-21 15:05:03 Error: [PDOException] SQLSTATE[42S02]: Base table or view not found: 1146 Table 'unievents.csadastros' doesn't exist
+Request URL: /unieventos/admin/invoices
+Stack Trace:
+#0 /var/www/unieventos/lib/Cake/Model/Datasource/DboSource.php(460): PDOStatement->execute(Array)
+#1 /var/www/unieventos/lib/Cake/Model/Datasource/DboSource.php(426): DboSource->_execute('SELECT * FROM `...', Array)
+#2 /var/www/unieventos/lib/Cake/Model/Datasource/DboSource.php(666): DboSource->execute('SELECT * FROM `...', Array, Array)
+#3 /var/www/unieventos/lib/Cake/Model/Datasource/DboSource.php(1077): DboSource->fetchAll('SELECT * FROM `...', false)
+#4 /var/www/unieventos/lib/Cake/Model/Model.php(2880): DboSource->read(Object(AppModel), Array)
+#5 /var/www/unieventos/lib/Cake/Model/Model.php(2852): Model->_readDataSource('all', Array)
+#6 /var/www/unieventos/app/Controller/InvoicesController.php(49): Model->find('all', Array)
+#7 [internal function]: InvoicesController->admin_index()
+#8 /var/www/unieventos/lib/Cake/Controller/Controller.php(490): ReflectionMethod->invokeArgs(Object(InvoicesController), Array)
+#9 /var/www/unieventos/lib/Cake/Routing/Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
+#10 /var/www/unieventos/lib/Cake/Routing/Dispatcher.php(162): Dispatcher->_invoke(Object(InvoicesController), Object(CakeRequest), Object(CakeResponse))
+#11 /var/www/unieventos/app/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#12 {main}
+2014-01-21 15:08:19 Error: [PDOException] SQLSTATE[42S22]: Column not found: 1054 Unknown column 'event.id' in 'on clause'
+Request URL: /unieventos/admin/invoices
+Stack Trace:
+#0 /var/www/unieventos/lib/Cake/Model/Datasource/DboSource.php(460): PDOStatement->execute(Array)
+#1 /var/www/unieventos/lib/Cake/Model/Datasource/DboSource.php(426): DboSource->_execute('SELECT * FROM `...', Array)
+#2 /var/www/unieventos/lib/Cake/Model/Datasource/DboSource.php(666): DboSource->execute('SELECT * FROM `...', Array, Array)
+#3 /var/www/unieventos/lib/Cake/Model/Datasource/DboSource.php(1077): DboSource->fetchAll('SELECT * FROM `...', false)
+#4 /var/www/unieventos/lib/Cake/Model/Model.php(2880): DboSource->read(Object(AppModel), Array)
+#5 /var/www/unieventos/lib/Cake/Model/Model.php(2852): Model->_readDataSource('all', Array)
+#6 /var/www/unieventos/app/Controller/InvoicesController.php(57): Model->find('all', Array)
+#7 [internal function]: InvoicesController->admin_index()
+#8 /var/www/unieventos/lib/Cake/Controller/Controller.php(490): ReflectionMethod->invokeArgs(Object(InvoicesController), Array)
+#9 /var/www/unieventos/lib/Cake/Routing/Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
+#10 /var/www/unieventos/lib/Cake/Routing/Dispatcher.php(162): Dispatcher->_invoke(Object(InvoicesController), Object(CakeRequest), Object(CakeResponse))
+#11 /var/www/unieventos/app/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#12 {main}
+2014-01-21 15:15:16 Error: Fatal Error (4): syntax error, unexpected $end in [/var/www/unieventos/app/View/Invoices/admin_index.ctp, line 18]
+2014-01-21 15:15:16 Error: [FatalErrorException] syntax error, unexpected $end
+Request URL: /unieventos/admin/invoices
+Stack Trace:
+#0 /var/www/unieventos/lib/Cake/Error/ErrorHandler.php(205): ErrorHandler::handleFatalError(4, 'syntax error, u...', '/var/www/unieve...', 18)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', '/var/www/unieve...', 18, Array)
+#2 /var/www/unieventos/lib/Cake/Core/App.php(931): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', '/var/www/unieve...', 18, Array)
+#3 /var/www/unieventos/lib/Cake/Core/App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-01-21 15:19:04 Error: [MissingActionException] Action InvoicesController::admin_view() could not be found.
+Exception Attributes: array (
+  'controller' => 'InvoicesController',
+  'action' => 'admin_view',
+)
+Request URL: /unieventos/admin/invoices/view/15
+Stack Trace:
+#0 /var/www/unieventos/lib/Cake/Routing/Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
+#1 /var/www/unieventos/lib/Cake/Routing/Dispatcher.php(162): Dispatcher->_invoke(Object(InvoicesController), Object(CakeRequest), Object(CakeResponse))
+#2 /var/www/unieventos/app/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2014-01-21 15:19:04 Error: [MissingActionException] Action InvoicesController::admin_view() could not be found.
+Exception Attributes: array (
+  'controller' => 'InvoicesController',
+  'action' => 'admin_view',
+)
+Request URL: /unieventos/admin/invoices/view/img/favicon.ico
+Stack Trace:
+#0 /var/www/unieventos/lib/Cake/Routing/Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
+#1 /var/www/unieventos/lib/Cake/Routing/Dispatcher.php(162): Dispatcher->_invoke(Object(InvoicesController), Object(CakeRequest), Object(CakeResponse))
+#2 /var/www/unieventos/app/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2014-01-21 15:19:46 Error: [NotFoundException] Invalid invoice
+Request URL: /unieventos/admin/invoices/view/15
+Stack Trace:
+#0 [internal function]: InvoicesController->admin_view('15')
+#1 /var/www/unieventos/lib/Cake/Controller/Controller.php(490): ReflectionMethod->invokeArgs(Object(InvoicesController), Array)
+#2 /var/www/unieventos/lib/Cake/Routing/Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
+#3 /var/www/unieventos/lib/Cake/Routing/Dispatcher.php(162): Dispatcher->_invoke(Object(InvoicesController), Object(CakeRequest), Object(CakeResponse))
+#4 /var/www/unieventos/app/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2014-01-21 15:26:38 Error: [MissingViewException] View file "/var/www/unieventos/app/View/Invoices/admin_view.ctp" is missing.
+Exception Attributes: array (
+  'file' => '/var/www/unieventos/app/View/Invoices/admin_view.ctp',
+)
+Request URL: /unieventos/admin/invoices/view/15
+Stack Trace:
+#0 /var/www/unieventos/lib/Cake/View/View.php(459): View->_getViewFileName(NULL)
+#1 /var/www/unieventos/lib/Cake/Controller/Controller.php(952): View->render(NULL, NULL)
+#2 /var/www/unieventos/lib/Cake/Routing/Dispatcher.php(194): Controller->render()
+#3 /var/www/unieventos/lib/Cake/Routing/Dispatcher.php(162): Dispatcher->_invoke(Object(InvoicesController), Object(CakeRequest), Object(CakeResponse))
+#4 /var/www/unieventos/app/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2014-01-21 15:27:45 Error: [MissingViewException] View file "/var/www/unieventos/app/View/Invoices/admin_view.ctp" is missing.
+Exception Attributes: array (
+  'file' => '/var/www/unieventos/app/View/Invoices/admin_view.ctp',
+)
+Request URL: /unieventos/admin/invoices/view/15
+Stack Trace:
+#0 /var/www/unieventos/lib/Cake/View/View.php(459): View->_getViewFileName(NULL)
+#1 /var/www/unieventos/lib/Cake/Controller/Controller.php(952): View->render(NULL, NULL)
+#2 /var/www/unieventos/lib/Cake/Routing/Dispatcher.php(194): Controller->render()
+#3 /var/www/unieventos/lib/Cake/Routing/Dispatcher.php(162): Dispatcher->_invoke(Object(InvoicesController), Object(CakeRequest), Object(CakeResponse))
+#4 /var/www/unieventos/app/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2014-01-21 15:28:50 Error: [MissingViewException] View file "/var/www/unieventos/app/View/Invoices/view.ctp" is missing.
+Exception Attributes: array (
+  'file' => '/var/www/unieventos/app/View/Invoices/view.ctp',
+)
+Request URL: /unieventos/invoices/view/15
+Stack Trace:
+#0 /var/www/unieventos/lib/Cake/View/View.php(459): View->_getViewFileName(NULL)
+#1 /var/www/unieventos/lib/Cake/Controller/Controller.php(952): View->render(NULL, NULL)
+#2 /var/www/unieventos/lib/Cake/Routing/Dispatcher.php(194): Controller->render()
+#3 /var/www/unieventos/lib/Cake/Routing/Dispatcher.php(162): Dispatcher->_invoke(Object(InvoicesController), Object(CakeRequest), Object(CakeResponse))
+#4 /var/www/unieventos/app/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2014-01-21 15:29:33 Error: [NotFoundException] Invalid invoice
+Request URL: /unieventos/invoices/view/15
+Stack Trace:
+#0 [internal function]: InvoicesController->view('15')
+#1 /var/www/unieventos/lib/Cake/Controller/Controller.php(490): ReflectionMethod->invokeArgs(Object(InvoicesController), Array)
+#2 /var/www/unieventos/lib/Cake/Routing/Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
+#3 /var/www/unieventos/lib/Cake/Routing/Dispatcher.php(162): Dispatcher->_invoke(Object(InvoicesController), Object(CakeRequest), Object(CakeResponse))
+#4 /var/www/unieventos/app/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2014-01-21 15:29:44 Error: [MissingViewException] View file "/var/www/unieventos/app/View/Invoices/view.ctp" is missing.
+Exception Attributes: array (
+  'file' => '/var/www/unieventos/app/View/Invoices/view.ctp',
+)
+Request URL: /unieventos/invoices/view/1
+Stack Trace:
+#0 /var/www/unieventos/lib/Cake/View/View.php(459): View->_getViewFileName(NULL)
+#1 /var/www/unieventos/lib/Cake/Controller/Controller.php(952): View->render(NULL, NULL)
+#2 /var/www/unieventos/lib/Cake/Routing/Dispatcher.php(194): Controller->render()
+#3 /var/www/unieventos/lib/Cake/Routing/Dispatcher.php(162): Dispatcher->_invoke(Object(InvoicesController), Object(CakeRequest), Object(CakeResponse))
+#4 /var/www/unieventos/app/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2014-01-21 15:32:09 Error: [MissingActionException] Action InvoicesController::admin_view() could not be found.
+Exception Attributes: array (
+  'controller' => 'InvoicesController',
+  'action' => 'admin_view',
+)
+Request URL: /unieventos/admin/invoices/view/15
+Stack Trace:
+#0 /var/www/unieventos/lib/Cake/Routing/Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
+#1 /var/www/unieventos/lib/Cake/Routing/Dispatcher.php(162): Dispatcher->_invoke(Object(InvoicesController), Object(CakeRequest), Object(CakeResponse))
+#2 /var/www/unieventos/app/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2014-01-21 15:32:16 Error: [MissingControllerException] Controller class ImgController could not be found.
+Exception Attributes: array (
+  'class' => 'ImgController',
+  'plugin' => NULL,
+)
+Request URL: /unieventos/admin/img/qrcode136.png
+Stack Trace:
+#0 /var/www/unieventos/app/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-01-21 15:32:47 Error: [MissingActionException] Action InvoicesController::admin_view() could not be found.
+Exception Attributes: array (
+  'controller' => 'InvoicesController',
+  'action' => 'admin_view',
+)
+Request URL: /unieventos/admin/invoices/view/1
+Stack Trace:
+#0 /var/www/unieventos/lib/Cake/Routing/Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
+#1 /var/www/unieventos/lib/Cake/Routing/Dispatcher.php(162): Dispatcher->_invoke(Object(InvoicesController), Object(CakeRequest), Object(CakeResponse))
+#2 /var/www/unieventos/app/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2014-01-21 15:33:09 Error: [MissingViewException] View file "/var/www/unieventos/app/View/Invoices/view.ctp" is missing.
+Exception Attributes: array (
+  'file' => '/var/www/unieventos/app/View/Invoices/view.ctp',
+)
+Request URL: /unieventos/invoices/view/1
+Stack Trace:
+#0 /var/www/unieventos/lib/Cake/View/View.php(459): View->_getViewFileName(NULL)
+#1 /var/www/unieventos/lib/Cake/Controller/Controller.php(952): View->render(NULL, NULL)
+#2 /var/www/unieventos/lib/Cake/Routing/Dispatcher.php(194): Controller->render()
+#3 /var/www/unieventos/lib/Cake/Routing/Dispatcher.php(162): Dispatcher->_invoke(Object(InvoicesController), Object(CakeRequest), Object(CakeResponse))
+#4 /var/www/unieventos/app/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2014-01-21 15:49:18 Error: [MissingControllerException] Controller class ImgController could not be found.
+Exception Attributes: array (
+  'class' => 'ImgController',
+  'plugin' => NULL,
+)
+Request URL: /unieventos/img/qrcode136.png
+Stack Trace:
+#0 /var/www/unieventos/app/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-01-21 15:49:18 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /unieventos/css/img/opa-icons-red32.png
+Stack Trace:
+#0 /var/www/unieventos/app/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-01-21 15:49:18 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /unieventos/css/img/opa-icons-color32.png
+Stack Trace:
+#0 /var/www/unieventos/app/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-01-21 15:49:18 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /unieventos/css/img/sprite.png
+Stack Trace:
+#0 /var/www/unieventos/app/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-01-21 15:49:24 Error: [NotFoundException] Invalid invoice
+Request URL: /unieventos/invoices/view
+Stack Trace:
+#0 [internal function]: InvoicesController->view()
+#1 /var/www/unieventos/lib/Cake/Controller/Controller.php(490): ReflectionMethod->invokeArgs(Object(InvoicesController), Array)
+#2 /var/www/unieventos/lib/Cake/Routing/Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
+#3 /var/www/unieventos/lib/Cake/Routing/Dispatcher.php(162): Dispatcher->_invoke(Object(InvoicesController), Object(CakeRequest), Object(CakeResponse))
+#4 /var/www/unieventos/app/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2014-01-21 15:54:04 Error: [MissingControllerException] Controller class ImgController could not be found.
+Exception Attributes: array (
+  'class' => 'ImgController',
+  'plugin' => NULL,
+)
+Request URL: /unieventos/img/qrcode136.png
+Stack Trace:
+#0 /var/www/unieventos/app/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-01-21 15:54:05 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /unieventos/css/img/opa-icons-darkgray32.png
+Stack Trace:
+#0 /var/www/unieventos/app/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-01-21 15:54:12 Error: [PDOException] SQLSTATE[42S22]: Column not found: 1054 Unknown column 'Estado.usuario_id' in 'field list'
+Request URL: /unieventos/invoices/view/1.pdf
+Stack Trace:
+#0 /var/www/unieventos/lib/Cake/Model/Datasource/DboSource.php(460): PDOStatement->execute(Array)
+#1 /var/www/unieventos/lib/Cake/Model/Datasource/DboSource.php(426): DboSource->_execute('SELECT `Estado`...', Array)
+#2 /var/www/unieventos/lib/Cake/Model/Datasource/DboSource.php(666): DboSource->execute('SELECT `Estado`...', Array, Array)
+#3 /var/www/unieventos/lib/Cake/Model/Datasource/DboSource.php(1339): DboSource->fetchAll('SELECT `Estado`...', false)
+#4 /var/www/unieventos/lib/Cake/Model/Datasource/DboSource.php(1201): DboSource->fetchAssociated(Object(Usuario), 'SELECT `Estado`...', Array)
+#5 /var/www/unieventos/lib/Cake/Model/Datasource/DboSource.php(1112): DboSource->queryAssociation(Object(Usuario), Object(AppModel), 'hasMany', 'Estado', Array, Array, true, Array, 0, Array)
+#6 /var/www/unieventos/lib/Cake/Model/Model.php(2880): DboSource->read(Object(Usuario), Array)
+#7 /var/www/unieventos/lib/Cake/Model/Model.php(2852): Model->_readDataSource('first', Array)
+#8 /var/www/unieventos/lib/Cake/Model/Datasource/DboSource.php(599): Model->find('first', Array)
+#9 /var/www/unieventos/lib/Cake/Model/Model.php(801): DboSource->query('findById', Array, Object(Usuario))
+#10 /var/www/unieventos/app/Controller/InvoicesController.php(21): Model->__call('findById', Array)
+#11 /var/www/unieventos/app/Controller/InvoicesController.php(21): Usuario->findById('2')
+#12 [internal function]: InvoicesController->view('1')
+#13 /var/www/unieventos/lib/Cake/Controller/Controller.php(490): ReflectionMethod->invokeArgs(Object(InvoicesController), Array)
+#14 /var/www/unieventos/lib/Cake/Routing/Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
+#15 /var/www/unieventos/lib/Cake/Routing/Dispatcher.php(162): Dispatcher->_invoke(Object(InvoicesController), Object(CakeRequest), Object(CakeResponse))
+#16 /var/www/unieventos/app/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#17 {main}
+2014-01-21 16:08:26 Error: [MissingControllerException] Controller class ImgController could not be found.
+Exception Attributes: array (
+  'class' => 'ImgController',
+  'plugin' => NULL,
+)
+Request URL: /unieventos/img/qrcode136.png
+Stack Trace:
+#0 /var/www/unieventos/app/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-01-21 16:08:26 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /unieventos/css/img/opa-icons-red32.png
+Stack Trace:
+#0 /var/www/unieventos/app/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-01-21 16:08:26 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /unieventos/css/img/opa-icons-color32.png
+Stack Trace:
+#0 /var/www/unieventos/app/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-01-21 16:12:43 Error: [NotFoundException] Invalid invoice
+Request URL: /unieventos/invoices/view
+Stack Trace:
+#0 [internal function]: InvoicesController->view()
+#1 /var/www/unieventos/lib/Cake/Controller/Controller.php(490): ReflectionMethod->invokeArgs(Object(InvoicesController), Array)
+#2 /var/www/unieventos/lib/Cake/Routing/Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
+#3 /var/www/unieventos/lib/Cake/Routing/Dispatcher.php(162): Dispatcher->_invoke(Object(InvoicesController), Object(CakeRequest), Object(CakeResponse))
+#4 /var/www/unieventos/app/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2014-01-21 16:13:55 Error: [MissingControllerException] Controller class ImgController could not be found.
+Exception Attributes: array (
+  'class' => 'ImgController',
+  'plugin' => NULL,
+)
+Request URL: /unieventos/img/qrcode136.png
+Stack Trace:
+#0 /var/www/unieventos/app/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-01-21 16:14:25 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /unieventos/css/img/chosen-sprite.png
+Stack Trace:
+#0 /var/www/unieventos/app/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-01-21 16:14:25 Error: [NotFoundException] Evento Invalido
+Request URL: /unieventos/admin/presencas/chamada/img/favicon.ico
+Stack Trace:
+#0 [internal function]: PresencasController->admin_chamada('img', 'favicon.ico')
+#1 /var/www/unieventos/lib/Cake/Controller/Controller.php(490): ReflectionMethod->invokeArgs(Object(PresencasController), Array)
+#2 /var/www/unieventos/lib/Cake/Routing/Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
+#3 /var/www/unieventos/lib/Cake/Routing/Dispatcher.php(162): Dispatcher->_invoke(Object(PresencasController), Object(CakeRequest), Object(CakeResponse))
+#4 /var/www/unieventos/app/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2014-01-21 16:15:39 Error: [NotFoundException] Invalid post
+Request URL: /unieventos/admin/eventos/inscritos/img/favicon.ico
+Stack Trace:
+#0 [internal function]: EventosController->admin_inscritos('img', 'favicon.ico')
+#1 /var/www/unieventos/lib/Cake/Controller/Controller.php(490): ReflectionMethod->invokeArgs(Object(EventosController), Array)
+#2 /var/www/unieventos/lib/Cake/Routing/Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
+#3 /var/www/unieventos/lib/Cake/Routing/Dispatcher.php(162): Dispatcher->_invoke(Object(EventosController), Object(CakeRequest), Object(CakeResponse))
+#4 /var/www/unieventos/app/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2014-01-21 16:15:49 Error: [NotFoundException] Invalid post
+Request URL: /unieventos/admin/pagamentos/validarPagamento/img/favicon.ico
+Stack Trace:
+#0 [internal function]: PagamentosController->admin_validarPagamento('img', 'favicon.ico')
+#1 /var/www/unieventos/lib/Cake/Controller/Controller.php(490): ReflectionMethod->invokeArgs(Object(PagamentosController), Array)
+#2 /var/www/unieventos/lib/Cake/Routing/Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
+#3 /var/www/unieventos/lib/Cake/Routing/Dispatcher.php(162): Dispatcher->_invoke(Object(PagamentosController), Object(CakeRequest), Object(CakeResponse))
+#4 /var/www/unieventos/app/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2014-01-21 16:26:39 Error: Fatal Error (4): syntax error, unexpected ';', expecting ')' in [/var/www/unieventos/app/Config/bootstrap.php, line 127]
+2014-01-21 16:26:39 Error: [FatalErrorException] syntax error, unexpected ';', expecting ')'
+Stack Trace:
+#0 /var/www/unieventos/lib/Cake/Error/ErrorHandler.php(205): ErrorHandler::handleFatalError(4, 'syntax error, u...', '/var/www/unieve...', 127)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', '/var/www/unieve...', 127, Array)
+#2 /var/www/unieventos/lib/Cake/Core/App.php(931): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', '/var/www/unieve...', 127, Array)
+#3 /var/www/unieventos/lib/Cake/Core/App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-01-21 16:26:39 Error: Fatal Error (4): syntax error, unexpected ';', expecting ')' in [/var/www/unieventos/app/Config/bootstrap.php, line 127]
+2014-01-21 16:26:39 Error: [FatalErrorException] syntax error, unexpected ';', expecting ')'
+Stack Trace:
+#0 /var/www/unieventos/lib/Cake/Error/ErrorHandler.php(205): ErrorHandler::handleFatalError(4, 'syntax error, u...', '/var/www/unieve...', 127)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', '/var/www/unieve...', 127, Array)
+#2 /var/www/unieventos/lib/Cake/Core/App.php(931): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', '/var/www/unieve...', 127, Array)
+#3 /var/www/unieventos/lib/Cake/Core/App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-01-21 16:28:03 Error: [MissingControllerException] Controller class ImgController could not be found.
+Exception Attributes: array (
+  'class' => 'ImgController',
+  'plugin' => NULL,
+)
+Request URL: /unieventos/img/qrcode136.png
+Stack Trace:
+#0 /var/www/unieventos/app/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-01-21 16:28:07 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /unieventos/css/img/opa-icons-red32.png
+Stack Trace:
+#0 /var/www/unieventos/app/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-01-21 16:28:07 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /unieventos/css/img/opa-icons-color32.png
+Stack Trace:
+#0 /var/www/unieventos/app/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-01-21 16:28:07 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /unieventos/css/img/border.png
+Stack Trace:
+#0 /var/www/unieventos/app/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-01-21 16:28:07 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /unieventos/css/img/sprite.png
+Stack Trace:
+#0 /var/www/unieventos/app/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-01-21 16:28:07 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /unieventos/css/img/controls.png
+Stack Trace:
+#0 /var/www/unieventos/app/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-01-21 16:31:00 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /unieventos/css/img/sprite.png
+Stack Trace:
+#0 /var/www/unieventos/app/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-01-21 16:31:00 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /unieventos/css/img/controls.png
+Stack Trace:
+#0 /var/www/unieventos/app/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-01-21 16:31:00 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /unieventos/css/img/border.png
+Stack Trace:
+#0 /var/www/unieventos/app/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-01-21 16:31:00 Error: [MissingActionException] Action EventosController::admin_img() could not be found.
+Exception Attributes: array (
+  'controller' => 'EventosController',
+  'action' => 'admin_img',
+)
+Request URL: /unieventos/admin/eventos/img/favicon.ico
+Stack Trace:
+#0 /var/www/unieventos/lib/Cake/Routing/Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
+#1 /var/www/unieventos/lib/Cake/Routing/Dispatcher.php(162): Dispatcher->_invoke(Object(EventosController), Object(CakeRequest), Object(CakeResponse))
+#2 /var/www/unieventos/app/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2014-01-21 16:31:42 Error: [MissingControllerException] Controller class ImgController could not be found.
+Exception Attributes: array (
+  'class' => 'ImgController',
+  'plugin' => NULL,
+)
+Request URL: /unieventos/img/favicon.ico
+Stack Trace:
+#0 /var/www/unieventos/app/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-01-21 16:31:48 Error: [NotFoundException] Invalid post
+Request URL: /unieventos/admin/eventos/inscritos/img/favicon.ico
+Stack Trace:
+#0 [internal function]: EventosController->admin_inscritos('img', 'favicon.ico')
+#1 /var/www/unieventos/lib/Cake/Controller/Controller.php(490): ReflectionMethod->invokeArgs(Object(EventosController), Array)
+#2 /var/www/unieventos/lib/Cake/Routing/Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
+#3 /var/www/unieventos/lib/Cake/Routing/Dispatcher.php(162): Dispatcher->_invoke(Object(EventosController), Object(CakeRequest), Object(CakeResponse))
+#4 /var/www/unieventos/app/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2014-01-21 16:33:56 Error: [MissingActionException] Action UsuariosController::admin_img() could not be found.
+Exception Attributes: array (
+  'controller' => 'UsuariosController',
+  'action' => 'admin_img',
+)
+Request URL: /unieventos/admin/usuarios/img/favicon.ico
+Stack Trace:
+#0 /var/www/unieventos/lib/Cake/Routing/Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
+#1 /var/www/unieventos/lib/Cake/Routing/Dispatcher.php(162): Dispatcher->_invoke(Object(UsuariosController), Object(CakeRequest), Object(CakeResponse))
+#2 /var/www/unieventos/app/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2014-01-21 16:33:58 Error: [MissingControllerException] Controller class ImgController could not be found.
+Exception Attributes: array (
+  'class' => 'ImgController',
+  'plugin' => NULL,
+)
+Request URL: /unieventos/admin/img/favicon.ico
+Stack Trace:
+#0 /var/www/unieventos/app/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-01-21 16:34:07 Error: [NotFoundException] Evento Invalido
+Request URL: /unieventos/admin/eventos/informacoes/img/favicon.ico
+Stack Trace:
+#0 [internal function]: EventosController->admin_informacoes('img', 'favicon.ico')
+#1 /var/www/unieventos/lib/Cake/Controller/Controller.php(490): ReflectionMethod->invokeArgs(Object(EventosController), Array)
+#2 /var/www/unieventos/lib/Cake/Routing/Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
+#3 /var/www/unieventos/lib/Cake/Routing/Dispatcher.php(162): Dispatcher->_invoke(Object(EventosController), Object(CakeRequest), Object(CakeResponse))
+#4 /var/www/unieventos/app/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2014-01-21 16:34:12 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /unieventos/css/img/ui-bg_flat_75_ffffff_40x100.png
+Stack Trace:
+#0 /var/www/unieventos/app/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-01-21 16:34:17 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /unieventos/css/img/ui-icons_222222_256x240.png
+Stack Trace:
+#0 /var/www/unieventos/app/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-01-21 16:34:17 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /unieventos/css/img/ui-bg_glass_75_e6e6e6_1x400.png
+Stack Trace:
+#0 /var/www/unieventos/app/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-01-21 16:34:17 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /unieventos/css/img/ui-bg_glass_55_fbf9ee_1x400.png
+Stack Trace:
+#0 /var/www/unieventos/app/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-01-21 16:34:17 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /unieventos/css/img/ui-bg_highlight-soft_75_cccccc_1x100.png
+Stack Trace:
+#0 /var/www/unieventos/app/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-01-21 16:34:19 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /unieventos/css/img/ui-bg_glass_75_dadada_1x400.png
+Stack Trace:
+#0 /var/www/unieventos/app/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-01-21 16:34:22 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /unieventos/css/img/ui-bg_glass_65_ffffff_1x400.png
+Stack Trace:
+#0 /var/www/unieventos/app/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-01-21 16:47:29 Error: [NotFoundException] Evento Invalido
+Request URL: /unieventos/admin/eventos/certificados/img/favicon.ico
+Stack Trace:
+#0 [internal function]: EventosController->admin_certificados('img', 'favicon.ico')
+#1 /var/www/unieventos/lib/Cake/Controller/Controller.php(490): ReflectionMethod->invokeArgs(Object(EventosController), Array)
+#2 /var/www/unieventos/lib/Cake/Routing/Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
+#3 /var/www/unieventos/lib/Cake/Routing/Dispatcher.php(162): Dispatcher->_invoke(Object(EventosController), Object(CakeRequest), Object(CakeResponse))
+#4 /var/www/unieventos/app/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2014-01-21 16:47:38 Error: [NotFoundException] Invalid invoice
+Request URL: /unieventos/invoices/view
+Stack Trace:
+#0 [internal function]: InvoicesController->view()
+#1 /var/www/unieventos/lib/Cake/Controller/Controller.php(490): ReflectionMethod->invokeArgs(Object(InvoicesController), Array)
+#2 /var/www/unieventos/lib/Cake/Routing/Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
+#3 /var/www/unieventos/lib/Cake/Routing/Dispatcher.php(162): Dispatcher->_invoke(Object(InvoicesController), Object(CakeRequest), Object(CakeResponse))
+#4 /var/www/unieventos/app/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2014-01-21 16:54:10 Error: [NotFoundException] Invalid invoice
+Request URL: /unieventos/invoices/view/15
+Stack Trace:
+#0 [internal function]: InvoicesController->view('15')
+#1 /var/www/unieventos/lib/Cake/Controller/Controller.php(490): ReflectionMethod->invokeArgs(Object(InvoicesController), Array)
+#2 /var/www/unieventos/lib/Cake/Routing/Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
+#3 /var/www/unieventos/lib/Cake/Routing/Dispatcher.php(162): Dispatcher->_invoke(Object(InvoicesController), Object(CakeRequest), Object(CakeResponse))
+#4 /var/www/unieventos/app/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2014-01-21 16:54:56 Error: Fatal Error (4): syntax error, unexpected ';' in [/var/www/unieventos/app/View/Invoices/admin_index.ctp, line 12]
+2014-01-21 16:54:56 Error: [FatalErrorException] syntax error, unexpected ';'
+Request URL: /unieventos/admin/invoices
+Stack Trace:
+#0 /var/www/unieventos/lib/Cake/Error/ErrorHandler.php(205): ErrorHandler::handleFatalError(4, 'syntax error, u...', '/var/www/unieve...', 12)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', '/var/www/unieve...', 12, Array)
+#2 /var/www/unieventos/lib/Cake/Core/App.php(931): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', '/var/www/unieve...', 12, Array)
+#3 /var/www/unieventos/lib/Cake/Core/App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-01-21 16:56:54 Error: [MissingViewException] View file "/var/www/unieventos/app/View/Invoices/view.ctp" is missing.
+Exception Attributes: array (
+  'file' => '/var/www/unieventos/app/View/Invoices/view.ctp',
+)
+Request URL: /unieventos/invoices/view/1
+Stack Trace:
+#0 /var/www/unieventos/lib/Cake/View/View.php(459): View->_getViewFileName(NULL)
+#1 /var/www/unieventos/lib/Cake/Controller/Controller.php(952): View->render(NULL, NULL)
+#2 /var/www/unieventos/lib/Cake/Routing/Dispatcher.php(194): Controller->render()
+#3 /var/www/unieventos/lib/Cake/Routing/Dispatcher.php(162): Dispatcher->_invoke(Object(InvoicesController), Object(CakeRequest), Object(CakeResponse))
+#4 /var/www/unieventos/app/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2014-01-21 17:02:46 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /unieventos/css/img/sprite.png
+Stack Trace:
+#0 /var/www/unieventos/app/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-01-21 17:02:46 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /unieventos/css/img/border.png
+Stack Trace:
+#0 /var/www/unieventos/app/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-01-21 17:02:46 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /unieventos/css/img/controls.png
+Stack Trace:
+#0 /var/www/unieventos/app/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-01-21 17:02:46 Error: [MissingControllerException] Controller class ImgController could not be found.
+Exception Attributes: array (
+  'class' => 'ImgController',
+  'plugin' => NULL,
+)
+Request URL: /unieventos/admin/img/favicon.ico
+Stack Trace:
+#0 /var/www/unieventos/app/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-01-21 17:03:22 Error: [MissingViewException] View file "/var/www/unieventos/app/View/Invoices/view.ctp" is missing.
+Exception Attributes: array (
+  'file' => '/var/www/unieventos/app/View/Invoices/view.ctp',
+)
+Request URL: /unieventos/invoices/view/1
+Stack Trace:
+#0 /var/www/unieventos/lib/Cake/View/View.php(459): View->_getViewFileName(NULL)
+#1 /var/www/unieventos/lib/Cake/Controller/Controller.php(952): View->render(NULL, NULL)
+#2 /var/www/unieventos/lib/Cake/Routing/Dispatcher.php(194): Controller->render()
+#3 /var/www/unieventos/lib/Cake/Routing/Dispatcher.php(162): Dispatcher->_invoke(Object(InvoicesController), Object(CakeRequest), Object(CakeResponse))
+#4 /var/www/unieventos/app/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2014-01-21 17:03:49 Error: [MissingViewException] View file "/var/www/unieventos/app/View/Invoices/view.ctp" is missing.
+Exception Attributes: array (
+  'file' => '/var/www/unieventos/app/View/Invoices/view.ctp',
+)
+Request URL: /unieventos/invoices/view/1
+Stack Trace:
+#0 /var/www/unieventos/lib/Cake/View/View.php(459): View->_getViewFileName(NULL)
+#1 /var/www/unieventos/lib/Cake/Controller/Controller.php(952): View->render(NULL, NULL)
+#2 /var/www/unieventos/lib/Cake/Routing/Dispatcher.php(194): Controller->render()
+#3 /var/www/unieventos/lib/Cake/Routing/Dispatcher.php(162): Dispatcher->_invoke(Object(InvoicesController), Object(CakeRequest), Object(CakeResponse))
+#4 /var/www/unieventos/app/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2014-01-21 17:04:00 Error: [MissingActionException] Action UsuariosController::admin_img() could not be found.
+Exception Attributes: array (
+  'controller' => 'UsuariosController',
+  'action' => 'admin_img',
+)
+Request URL: /unieventos/admin/usuarios/img/favicon.ico
+Stack Trace:
+#0 /var/www/unieventos/lib/Cake/Routing/Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
+#1 /var/www/unieventos/lib/Cake/Routing/Dispatcher.php(162): Dispatcher->_invoke(Object(UsuariosController), Object(CakeRequest), Object(CakeResponse))
+#2 /var/www/unieventos/app/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2014-01-21 17:04:06 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /unieventos/css/img/ui-bg_flat_75_ffffff_40x100.png
+Stack Trace:
+#0 /var/www/unieventos/app/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-01-21 17:04:06 Error: [MissingActionException] Action EventosController::admin_img() could not be found.
+Exception Attributes: array (
+  'controller' => 'EventosController',
+  'action' => 'admin_img',
+)
+Request URL: /unieventos/admin/eventos/img/favicon.ico
+Stack Trace:
+#0 /var/www/unieventos/lib/Cake/Routing/Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
+#1 /var/www/unieventos/lib/Cake/Routing/Dispatcher.php(162): Dispatcher->_invoke(Object(EventosController), Object(CakeRequest), Object(CakeResponse))
+#2 /var/www/unieventos/app/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2014-01-21 17:04:08 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /unieventos/css/img/ui-bg_glass_75_e6e6e6_1x400.png
+Stack Trace:
+#0 /var/www/unieventos/app/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-01-21 17:04:08 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /unieventos/css/img/ui-icons_222222_256x240.png
+Stack Trace:
+#0 /var/www/unieventos/app/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-01-21 17:04:08 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /unieventos/css/img/ui-bg_highlight-soft_75_cccccc_1x100.png
+Stack Trace:
+#0 /var/www/unieventos/app/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-01-21 17:04:08 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /unieventos/css/img/ui-bg_glass_55_fbf9ee_1x400.png
+Stack Trace:
+#0 /var/www/unieventos/app/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-01-21 17:04:08 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /unieventos/css/img/ui-bg_glass_75_dadada_1x400.png
+Stack Trace:
+#0 /var/www/unieventos/app/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-01-21 17:04:14 Error: [NotFoundException] Evento Invalido
+Request URL: /unieventos/admin/eventos/informacoes/img/favicon.ico
+Stack Trace:
+#0 [internal function]: EventosController->admin_informacoes('img', 'favicon.ico')
+#1 /var/www/unieventos/lib/Cake/Controller/Controller.php(490): ReflectionMethod->invokeArgs(Object(EventosController), Array)
+#2 /var/www/unieventos/lib/Cake/Routing/Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
+#3 /var/www/unieventos/lib/Cake/Routing/Dispatcher.php(162): Dispatcher->_invoke(Object(EventosController), Object(CakeRequest), Object(CakeResponse))
+#4 /var/www/unieventos/app/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2014-01-21 17:04:20 Error: [NotFoundException] Evento Invalido
+Request URL: /unieventos/admin/eventos/certificados/img/favicon.ico
+Stack Trace:
+#0 [internal function]: EventosController->admin_certificados('img', 'favicon.ico')
+#1 /var/www/unieventos/lib/Cake/Controller/Controller.php(490): ReflectionMethod->invokeArgs(Object(EventosController), Array)
+#2 /var/www/unieventos/lib/Cake/Routing/Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
+#3 /var/www/unieventos/lib/Cake/Routing/Dispatcher.php(162): Dispatcher->_invoke(Object(EventosController), Object(CakeRequest), Object(CakeResponse))
+#4 /var/www/unieventos/app/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2014-01-21 17:04:40 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /unieventos/css/img/chosen-sprite.png
+Stack Trace:
+#0 /var/www/unieventos/app/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-01-21 17:04:40 Error: [NotFoundException] Evento Invalido
+Request URL: /unieventos/admin/presencas/chamada/img/favicon.ico
+Stack Trace:
+#0 [internal function]: PresencasController->admin_chamada('img', 'favicon.ico')
+#1 /var/www/unieventos/lib/Cake/Controller/Controller.php(490): ReflectionMethod->invokeArgs(Object(PresencasController), Array)
+#2 /var/www/unieventos/lib/Cake/Routing/Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
+#3 /var/www/unieventos/lib/Cake/Routing/Dispatcher.php(162): Dispatcher->_invoke(Object(PresencasController), Object(CakeRequest), Object(CakeResponse))
+#4 /var/www/unieventos/app/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2014-01-21 17:05:08 Error: [NotFoundException] Invalid post
+Request URL: /unieventos/admin/eventos/inscritos/img/favicon.ico
+Stack Trace:
+#0 [internal function]: EventosController->admin_inscritos('img', 'favicon.ico')
+#1 /var/www/unieventos/lib/Cake/Controller/Controller.php(490): ReflectionMethod->invokeArgs(Object(EventosController), Array)
+#2 /var/www/unieventos/lib/Cake/Routing/Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
+#3 /var/www/unieventos/lib/Cake/Routing/Dispatcher.php(162): Dispatcher->_invoke(Object(EventosController), Object(CakeRequest), Object(CakeResponse))
+#4 /var/www/unieventos/app/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2014-01-21 17:05:21 Error: [NotFoundException] Invalid post
+Request URL: /unieventos/admin/pagamentos/validarPagamento/img/favicon.ico
+Stack Trace:
+#0 [internal function]: PagamentosController->admin_validarPagamento('img', 'favicon.ico')
+#1 /var/www/unieventos/lib/Cake/Controller/Controller.php(490): ReflectionMethod->invokeArgs(Object(PagamentosController), Array)
+#2 /var/www/unieventos/lib/Cake/Routing/Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
+#3 /var/www/unieventos/lib/Cake/Routing/Dispatcher.php(162): Dispatcher->_invoke(Object(PagamentosController), Object(CakeRequest), Object(CakeResponse))
+#4 /var/www/unieventos/app/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2014-01-21 18:27:11 Error: [MissingViewException] View file "/var/www/unieventos/app/View/Invoices/view.ctp" is missing.
+Exception Attributes: array (
+  'file' => '/var/www/unieventos/app/View/Invoices/view.ctp',
+)
+Request URL: /unieventos/invoices/view/1
+Stack Trace:
+#0 /var/www/unieventos/lib/Cake/View/View.php(459): View->_getViewFileName(NULL)
+#1 /var/www/unieventos/lib/Cake/Controller/Controller.php(952): View->render(NULL, NULL)
+#2 /var/www/unieventos/lib/Cake/Routing/Dispatcher.php(194): Controller->render()
+#3 /var/www/unieventos/lib/Cake/Routing/Dispatcher.php(162): Dispatcher->_invoke(Object(InvoicesController), Object(CakeRequest), Object(CakeResponse))
+#4 /var/www/unieventos/app/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}

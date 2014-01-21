@@ -1,9 +1,24 @@
+msgid "Atencao!!Voce nao tem mensagem"
+msgstr "Attention! You have no messages"
+
 
 msgid "Cadastre-se para participe dos eventos"
 msgstr "Sign up to participate in the event"
 
-msgid "Nome:"
-msgstr "Name:"
+msgid "Eventos"
+msgstr "Events"
+
+msgid "Sobrenome"
+msgstr "Last Name"
+
+msgid "Mensagens"
+msgstr "Message"
+
+msgid "Escrever"
+msgstr "Write"
+
+msgid "Nome"
+msgstr "Name"
 
 msgid "CPF"
 msgstr "CPF"
@@ -16,6 +31,15 @@ msgstr "Sex"
 
 msgid "Data de Nascimento"
 msgstr "Birthdate"
+
+msgid "Enviar"
+msgstr "Send"
+
+msgid "Titulo"
+msgstr "Title"
+
+msgid "Texto"
+msgstr "Text"
 
 msgid "Email"
 msgstr "Email"
@@ -55,3 +79,283 @@ msgstr "Welcome"
 
 msgid "Idade"
 msgstr "Age"
+
+msgid "Evento invalido"
+msgstr "Invalid event"
+
+msgid "O Evento foi cadastrado com sucesso!"
+msgstr "Registered event successfully"
+
+msgid "Erro ao cadastrar o evento. Por favor, tente novamente em alguns segundos"
+msgstr "Error registering the event. Please try again in a few seconds"
+
+msgid "A programação foi salva"
+msgstr "The program was saved"
+
+msgid "Erro ao enviar sua menssagem."
+msgstr "Error sending your message."
+
+msgid "Seu Evento foi cadastrado."
+msgstr "Your event has been registered."
+
+msgid "Erro! Mensagem invalida"
+msgstr "Error! message invalidates"
+
+msgid "Sua mensagem foi enviada."
+msgstr "Your message has been sent."
+
+msgid "A programação foi salva."
+msgstr "The program was saved."
+
+msgid "Voce foi cadastrado com sucesso."
+msgstr "You have been registered successfully."
+
+msgid "Ocorreu um erro!"
+msgstr "Error"
+
+msgid "O usuario foi deletado com sucesso"
+msgstr "The user was successfully deleted"
+
+msgid "Ocorreu um erro ao deletar o usuario, tente novamente em alguns segundos."
+msgstr "An error occurred while deleting the User try again in a few seconds."
+
+msgid "Usuario Invalido"
+msgstr "Invalid User"
+
+msgid "O Usuario foi Salvo com sucesso."
+msgstr "The User was saved successfully."
+
+msgid "O usuario não foi salvo, tente novamente em alguns segundos."
+msgstr "The User was not saved, try again in a few seconds."
+
+msgid "O usuario foi cadastrado com sucesso."
+msgstr "The User has been registered successfully."
+
+msgid "Email e/ou Senha Incorretos!"
+msgstr "Email and / or Password Incorrect!"
+
+msgid "Nenhuma Mensagem"
+msgstr "No Message"
+
+msgid "Nova Mensagem"
+msgstr "New Message"
+
+msgid "Deletar"
+msgstr "Delete"
+
+msgid "Novas Mensagens"
+msgstr "New posts"
+
+msgid "Caixa de entrada"
+msgstr "Inbox"
+
+msgid "Caixa de Entrada"
+msgstr "Inbox"
+
+msgid "Configurações"
+msgstr "Settings"
+
+msgid "Inicio"
+msgstr "Home"
+
+msgid "Criar evento"
+msgstr "Create event"
+
+msgid "Meus eventos"
+msgstr "My Events"
+
+msgid "Listar eventos"
+msgstr "List events"
+
+msgid "Cadastrar Usuario"
+msgstr "Register User"
+
+msgid "Aprovar Evento"
+msgstr "Approve Event"
+
+msgid "Gerar Boletos"
+msgstr "Generate bank slip"
+
+msgid "Proximos"
+msgstr "Next"
+
+msgid "Todos"
+msgstr "All"
+
+msgid "Cadastre-se"
+msgstr "Register"
+
+msgid "Painel de Controle"
+msgstr "Control panel"
+
+msgid "Cadastre seu Evento"
+msgstr "Register your Event"
+
+msgid "Nome do Evento"
+msgstr "Event name"
+
+msgid "Descricao do Evento"
+msgstr "Event description"
+
+msgid "Data de Inicio"
+msgstr "Start Date"
+
+msgid "Data de Termino"
+msgstr "Termination Date"
+
+msgid "Tipo de Evento"
+msgstr "Event Type"
+
+msgid "Tipo de Inscricao"
+msgstr "Type of inscription"
+
+msgid "Tema do Evento"
+msgstr "Theme Event"
+
+msgid "Numero de Vagas"
+msgstr "Number of jobs"
+
+msgid "Valor"
+msgstr "Value"
+
+msgid "Paga"
+msgstr "Payment"
+
+msgid "Gratuita"
+msgstr "Free"
+
+msgid "Salvar"
+msgstr "Save"
+
+
+msgid "Duracao em Horas"
+msgstr "Duration in Hours"
+
+msgid "Cadastrar Evento"
+msgstr "Register Event"
+
+msgid "Meus Eventos"
+msgstr "My Events"
+
+msgid "No momento nao existe nenhum evento cadastrado"
+msgstr "At the moment there are no registered event"
+
+msgid "Você deseja realmente aprovar o evento"
+msgstr "You really want to approve the event"
+
+msgid "Informacoes"
+msgstr "Informations"
+
+msgid "Todos os Direitos Reservados"
+msgstr "All rights reserved"
+
+msgid "Inscritos"
+msgstr "Subscribers"
+
+msgid "Complete Dados da Inscricao"
+msgstr "Complete the Registration Data"
+
+msgid "Voce deseja realmente inscriver-se no evento "
+msgstr "You really want to sign up for event"
+
+msgid "Cadastrar-se"
+msgstr "Subscribe"
+
+msgid "Ver"
+msgstr "View"
+
+msgid "De"
+msgstr "Of"
+
+msgid "Ate"
+msgstr "Until"
+
+msgid "Valor R$:"
+msgstr "Value $"
+
+
+
+msgid "Seu cadastro foi efetuado com sucesso, clique aqui para entrar no sistema."
+msgstr "Your registration was successful, click here to enter the system."
+
+msgid "Por Favor efetue o login"
+msgstr "Please log in"
+
+msgid "Esqueceu sua senha?"
+msgstr "Forgot your password?"
+
+msgid "Configurações de Perfil"
+msgstr "Profile Configuration"
+
+msgid "Atencao!!"
+msgstr "Attention!"
+
+msgid "Acoes"
+msgstr "Actions"
+
+msgid "Seja bem vindo"
+msgstr "Welcome"
+
+msgid "Sair"
+msgstr "Exit"
+
+msgid "Gerenciador de Eventos"
+msgstr "Event Manager"
+
+msgid "Proximos"
+msgstr "Next"
+
+msgid "Todos"
+msgstr "All"
+
+
+msgid "Você Deseja deletar o Usuario"
+msgstr "You want to delete the User?"
+
+msgid "Cadastro de novos usuarios"
+msgstr "New user registration"
+
+msgid "Descricao"
+msgstr "Description"
+
+msgid "Palestrante"
+msgstr "Panelist"
+
+msgid "Configuracoes"
+msgstr "Settings"
+
+msgid "Sair"
+msgstr "Exit"
+
+msgid " Sair"
+msgstr "Exit"
+
+msgid "Perfil"
+msgstr "Profile"
+
+msgid "Eventos"
+msgstr "Events"
+
+msgid "Recentes"
+msgstr "News"
+
+msgid "Seja bem vindo, "
+msgstr "Welcome "
+
+msgid "Ver Mais"
+msgstr "See More"
+
+msgid "Cadastrar Programacao"
+msgstr "Registering Programming"
+
+msgid "Programacao"
+msgstr "Programming"
+
+msgid "Inscrever-se"
+msgstr "Sign Up"
+
+msgid "Inscricoes"
+msgstr "Registrations"
+
+msgid "No momento nao existe nenhuma programacao cadastrada"
+msgstr "At the moment there is not any registered programming"

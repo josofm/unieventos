@@ -209,6 +209,19 @@ class EventosController extends AppController{
             );        
     }
 
+    public function admin_certificados($id = null){
+        if(!$id)
+            throw new NotFoundException(__('Evento Invalido'));
+
+        $event = $this->Evento->findById($id);
+        
+        if(!$event)
+            throw new NotFoundException(__('Evento Invalido'));
+
+        $this->set('evento', $event);
+
+    }
+
     public function logar(){
         
     }

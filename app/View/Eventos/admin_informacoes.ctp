@@ -1,4 +1,4 @@
-<?php var_dump($evento) ?>
+<?php //var_dump($evento) ?>
 
 <div class="box span12">
 	<div class="box span9">
@@ -32,13 +32,16 @@
 	<div class="box-content">
 		<ul class="dashboard-list">
 			<li>
+				<button class="btn btn-large btn-primary"><?php echo $this->Html->link('Programação', array('controller' => 'programacoes', 'action' => 'index', 'admin' => true, $evento['Evento']['id']), array('style' => 'color:#fff;')) ?></button>
+			</li>
+			<li>
 				<button class="btn btn-large btn-primary"><?php echo $this->Html->link('Chamada', array('controller' => 'presencas', 'action' => 'chamada', 'admin' => true, $evento['Evento']['id']), array('style' => 'color:#fff;')) ?></button>
 			</li>
 			<li>
 				<button class="btn btn-large btn-primary"><?php echo $this->Html->link('Presentes', array('controller' => 'presencas', 'action' => 'listar', 'admin' => true, $evento['Evento']['id'],), array('style' => 'color:#fff;')) ?></button>
 			</li>
 			<li>
-				
+				<button class="btn btn-large btn-primary"><?php echo $this->Html->link('Certificados', array('controller' => 'eventos', 'action' => 'certificados', 'admin' => true, $evento['Evento']['id'],), array('style' => 'color:#fff;')) ?></button>
 			</li>
 		</ul>
 	</div>

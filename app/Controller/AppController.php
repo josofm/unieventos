@@ -69,6 +69,7 @@ class AppController extends Controller {
 		$this->set('logged_in', $this->Auth->loggedIn());
         $this->set('current_user', $this->Auth->user());
 		parent::beforeFilter();
-
+		$this->Session->write('Config.language','por');
+		//$this->Session->write('Config.language','eng');
 	}
 }
